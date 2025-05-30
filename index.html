@@ -363,35 +363,62 @@ function highlightFilter(filter) {
     
     <script type="text/javascript">
       document.addEventListener('DOMContentLoaded', function() {
-        if (typeof network !== 'undefined' && network) {
-          network.on("click", function (params) {
-            if (params.nodes.length > 0) {
-              var nodeId = params.nodes[0];
-              if (nodeId && typeof nodeId === 'string' && (nodeId.startsWith('http://') || nodeId.startsWith('https://'))) {
-                console.log('Opening URL: ' + nodeId);
-                window.open(nodeId, '_blank');
-              } else {
-                console.log('Clicked node does not have a valid URL: ' + nodeId);
-              }
-            }
-          });
+        // A short delay to ensure 'network' object is most likely initialized by Pyvis
+        setTimeout(function() {
+          if (typeof network !== 'undefined' && network && network.body && network.body.data && network.body.data.nodes) {
+            
+            // Part 1: Convert string titles to HTML elements for rich tooltips
+            var node_dataset = network.body.data.nodes; // Get the Vis.js DataSet
+            var node_ids = node_dataset.getIds();
+            var nodesToUpdate = [];
 
-          network.on("hoverNode", function (params) {
-            if (network.canvas && network.canvas.body && network.canvas.body.container) {
+            node_ids.forEach(function(node_id) {
+              var nodeData = node_dataset.get(node_id); // Get full node data object
+              // Check if title is a string (our initial HTML string)
+              if (nodeData && typeof nodeData.title === 'string' && (nodeData.title.includes('<b') || nodeData.title.includes('<br'))) {
+                var tempDiv = document.createElement('div');
+                tempDiv.innerHTML = nodeData.title; // This parses the HTML string
+                nodesToUpdate.push({id: node_id, title: tempDiv}); // Vis.js expects an Element for HTML tooltips
+              }
+            });
+
+            if (nodesToUpdate.length > 0) {
+              node_dataset.update(nodesToUpdate); // Batch update nodes with new title (HTML element)
+              console.log("Updated " + nodesToUpdate.length + " node titles to use HTML elements for tooltips.");
+            }
+
+            // Part 2: Click handler to open URLs
+            network.on("click", function (params) {
+              if (params.nodes.length > 0) {
+                var nodeId = params.nodes[0]; // The ID is the URL
+                if (nodeId && typeof nodeId === 'string' && (nodeId.startsWith('http://') || nodeId.startsWith('https://'))) {
+                  console.log('Opening URL: ' + nodeId);
+                  window.open(nodeId, '_blank');
+                } else {
+                  console.log('Clicked node does not have a valid URL: ' + nodeId);
+                }
+              }
+            });
+
+            // Part 3: Cursor change on hover for clickable nodes
+            network.on("hoverNode", function (params) {
               var nodeId = params.node;
               if (nodeId && typeof nodeId === 'string' && (nodeId.startsWith('http://') || nodeId.startsWith('https://'))) {
-                 network.canvas.body.container.style.cursor = 'pointer';
+                if (network.canvas && network.canvas.body && network.canvas.body.container) {
+                   network.canvas.body.container.style.cursor = 'pointer';
+                }
               }
-            }
-          });
-          network.on("blurNode", function (params) {
-             if (network.canvas && network.canvas.body && network.canvas.body.container) {
-                network.canvas.body.container.style.cursor = 'default';
-             }
-          });
-        } else {
-          console.warn('Pyvis network object not found or initialized late.');
-        }
+            });
+            network.on("blurNode", function (params) {
+               if (network.canvas && network.canvas.body && network.canvas.body.container) {
+                  network.canvas.body.container.style.cursor = 'default';
+               }
+            });
+
+          } else {
+            console.warn('Pyvis network object or its data structures not fully initialized after delay. Tooltip/click enhancements might not apply.');
+          }
+        }, 700); // Increased delay slightly to 700ms just in case
       });
     </script>
     </body>
