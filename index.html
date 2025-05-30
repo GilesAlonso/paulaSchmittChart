@@ -367,35 +367,54 @@ function highlightFilter(filter) {
         setTimeout(function() {
           if (typeof network !== 'undefined' && network && network.body && network.body.data && network.body.data.nodes) {
             
+            // Part 0: Set Physics Solver to forceAtlas2Based
+            // These are typical default values for forceAtlas2Based, you can tweak them.
+            var fa2b_options = {
+              physics: {
+                forceAtlas2Based: {
+                  gravitationalConstant: -50, // Default -50
+                  centralGravity: 0.01,      // Default 0.01
+                  springLength: 100,         // Default 100
+                  springConstant: 0.08,      // Default 0.08
+                  damping: 0.4,              // Default 0.4
+                  avoidOverlap: 0            // Default 0 (can be 0 to 1)
+                },
+                minVelocity: 0.75, // General physics option
+                solver: 'forceAtlas2Based' // Explicitly set the solver
+              }
+            };
+            try {
+              network.setOptions(fa2b_options);
+              console.log("Physics solver set to forceAtlas2Based with options.");
+            } catch (e) {
+              console.error("Error setting physics options for forceAtlas2Based:", e);
+            }
+
             // Part 1: Convert string titles to HTML elements for rich tooltips
-            var node_dataset = network.body.data.nodes; // Get the Vis.js DataSet
+            var node_dataset = network.body.data.nodes;
             var node_ids = node_dataset.getIds();
             var nodesToUpdate = [];
 
             node_ids.forEach(function(node_id) {
-              var nodeData = node_dataset.get(node_id); // Get full node data object
-              // Check if title is a string (our initial HTML string)
+              var nodeData = node_dataset.get(node_id);
               if (nodeData && typeof nodeData.title === 'string' && (nodeData.title.includes('<b') || nodeData.title.includes('<br'))) {
                 var tempDiv = document.createElement('div');
-                tempDiv.innerHTML = nodeData.title; // This parses the HTML string
-                nodesToUpdate.push({id: node_id, title: tempDiv}); // Vis.js expects an Element for HTML tooltips
+                tempDiv.innerHTML = nodeData.title;
+                nodesToUpdate.push({id: node_id, title: tempDiv});
               }
             });
 
             if (nodesToUpdate.length > 0) {
-              node_dataset.update(nodesToUpdate); // Batch update nodes with new title (HTML element)
+              node_dataset.update(nodesToUpdate);
               console.log("Updated " + nodesToUpdate.length + " node titles to use HTML elements for tooltips.");
             }
 
             // Part 2: Click handler to open URLs
             network.on("click", function (params) {
               if (params.nodes.length > 0) {
-                var nodeId = params.nodes[0]; // The ID is the URL
+                var nodeId = params.nodes[0];
                 if (nodeId && typeof nodeId === 'string' && (nodeId.startsWith('http://') || nodeId.startsWith('https://'))) {
-                  console.log('Opening URL: ' + nodeId);
                   window.open(nodeId, '_blank');
-                } else {
-                  console.log('Clicked node does not have a valid URL: ' + nodeId);
                 }
               }
             });
@@ -405,20 +424,20 @@ function highlightFilter(filter) {
               var nodeId = params.node;
               if (nodeId && typeof nodeId === 'string' && (nodeId.startsWith('http://') || nodeId.startsWith('https://'))) {
                 if (network.canvas && network.canvas.body && network.canvas.body.container) {
-                   network.canvas.body.container.style.cursor = 'pointer';
+                  network.canvas.body.container.style.cursor = 'pointer';
                 }
               }
             });
             network.on("blurNode", function (params) {
-               if (network.canvas && network.canvas.body && network.canvas.body.container) {
+              if (network.canvas && network.canvas.body && network.canvas.body.container) {
                   network.canvas.body.container.style.cursor = 'default';
-               }
+              }
             });
 
           } else {
-            console.warn('Pyvis network object or its data structures not fully initialized after delay. Tooltip/click enhancements might not apply.');
+            console.warn('Pyvis network object or its data structures not fully initialized after delay. Enhancements might not apply.');
           }
-        }, 700); // Increased delay slightly to 700ms just in case
+        }, 700); 
       });
     </script>
     </body>
