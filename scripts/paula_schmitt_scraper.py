@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Scrape Paula Schmitt articles and build a self-citation network dataset."""
+"""Scrape Paula Schmitt articles and build a self-citation network dataset enriched with theme metadata."""
 
 from __future__ import annotations
 
@@ -62,6 +62,7 @@ class Article:
     listed_date: Optional[str] = None  # ISO date if available
     published_at: Optional[str] = None  # ISO datetime/date string
     modified_at: Optional[str] = None
+    theme: Optional[str] = None
     citations: Set[str] = field(default_factory=set)
     available: bool = True
     status_code: Optional[int] = None
@@ -148,12 +149,16 @@ def parse_listing_items(html: BeautifulSoup) -> List[Article]:
         title = link.get_text(strip=True)
         date_elem = item.select_one(".archive-list__date")
         listed_date = parse_listing_date(date_elem.get_text(strip=True)) if date_elem else None
+        theme_elems = item.select(".archive-list__tag")
+        themes = [elem.get_text(strip=True) for elem in theme_elems if elem.get_text(strip=True)]
+        theme = ", ".join(dict.fromkeys(themes)) if themes else None
         articles.append(
             Article(
                 title=title,
                 url=canonical,
                 canonical_url=canonical,
                 listed_date=listed_date,
+                theme=theme,
             )
         )
     return articles
@@ -166,7 +171,14 @@ def collect_article_listings(session: Session) -> Dict[str, Article]:
     soup = BeautifulSoup(response.text, "html.parser")
     articles: Dict[str, Article] = {}
     for article in parse_listing_items(soup):
-        articles.setdefault(article.canonical_url, article)
+        existing = articles.get(article.canonical_url)
+        if existing:
+            if article.theme and not existing.theme:
+                existing.theme = article.theme
+            if article.listed_date and not existing.listed_date:
+                existing.listed_date = article.listed_date
+        else:
+            articles[article.canonical_url] = article
     logging.info("Loaded %d articles from initial page", len(articles))
 
     load_more = soup.select_one(".load-more-posts-author")
@@ -204,7 +216,13 @@ def collect_article_listings(session: Session) -> Dict[str, Article]:
             logging.info("No articles returned for page %s; stopping", current_page)
             break
         for article in new_articles:
-            if article.canonical_url not in articles:
+            existing = articles.get(article.canonical_url)
+            if existing:
+                if article.theme and not existing.theme:
+                    existing.theme = article.theme
+                if article.listed_date and not existing.listed_date:
+                    existing.listed_date = article.listed_date
+            else:
                 articles[article.canonical_url] = article
         logging.info("Accumulated %d articles after page %s", len(articles), current_page)
         if payload_flag != "1":
@@ -352,6 +370,7 @@ def build_dataset(articles: Dict[str, Article]) -> Dict[str, object]:
                 "url": article.canonical_url,
                 "published_at": article.published_at,
                 "listed_date": article.listed_date,
+                "theme": article.theme,
                 "modified_at": article.modified_at,
                 "available": article.available,
                 "status_code": article.status_code,
