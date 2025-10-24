@@ -166,18 +166,30 @@ export class GraphManager {
 
   mapNode(node, incomingMap) {
     const citationCount = incomingMap.get(node.id) || 0;
-    const size = clamp(12 + citationCount * 2.2, 12, 38);
+    const baseColor = node.displayColor || node.color || '#94a3b8';
+    const role = node.role || 'default';
+    const borderColor = role === 'context' ? lightenColor(baseColor, 0.2) : lightenColor(baseColor, 0.08);
+    const highlightBorder = role === 'context' ? lightenColor(baseColor, 0.12) : '#111827';
+    const hoverBorder = role === 'context' ? lightenColor(baseColor, 0.18) : '#1f2937';
+    const baseSize = clamp(12 + citationCount * 2.2, 12, 38);
+    const size = role === 'context' ? clamp(baseSize - 2, 10, 34) : baseSize;
+    const borderWidth = role === 'context' ? 1 : 2;
+    const borderWidthSelected = role === 'context' ? 2 : 3;
 
     return {
       id: node.id,
       label: this.labelsVisible ? node.label : '',
       title: this.buildTooltip(node, citationCount),
       color: {
-        background: node.color,
-        border: lightenColor(node.color, 0.08),
+        background: baseColor,
+        border: borderColor,
         highlight: {
-          background: node.color,
-          border: '#111827'
+          background: baseColor,
+          border: highlightBorder
+        },
+        hover: {
+          background: baseColor,
+          border: hoverBorder
         }
       },
       font: {
@@ -187,6 +199,8 @@ export class GraphManager {
       },
       size,
       mass: Math.max(1, citationCount * 0.5),
+      borderWidth,
+      borderWidthSelected,
       group: node.theme
     };
   }

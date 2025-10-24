@@ -104,7 +104,7 @@ async function bootstrapVisualization() {
     const dataset = transformDataset(rawData, themeColors);
 
     const graphManager = new GraphManager('network-container');
-    const filtersManager = new FiltersManager(dataset.nodes);
+    const filtersManager = new FiltersManager(dataset.nodes, dataset.edges);
     const statisticsManager = new StatisticsManager(dataset.nodes, dataset.edges);
 
     const uiController = new UIController({

@@ -59,8 +59,31 @@
             </div>
 
             <div class="control-block">
-              <label>Temas</label>
-              <div id="theme-filters" class="theme-grid"></div>
+              <div class="theme-control-bar">
+                <label id="theme-filters-label">Temas</label>
+                <button
+                  type="button"
+                  id="theme-clear-selection"
+                  class="theme-clear-button"
+                  disabled
+                  aria-disabled="true"
+                >
+                  Limpar seleção
+                </button>
+              </div>
+              <p
+                id="theme-selection-summary"
+                class="theme-selection-summary"
+                aria-live="polite"
+              >
+                Todos os temas visíveis. Clique em um tema para destacar os artigos e as conexões relacionadas.
+              </p>
+              <div
+                id="theme-filters"
+                class="theme-grid"
+                role="group"
+                aria-labelledby="theme-filters-label"
+              ></div>
             </div>
 
             <div class="control-block toggle-row">

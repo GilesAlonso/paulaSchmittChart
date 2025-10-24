@@ -20,6 +20,7 @@ export class UIController {
     this.themeElements = new Map();
     this.legendLabelRefs = new Map();
     this.lastFiltered = { nodes: [], edges: [] };
+    this.currentSmartSelectionMeta = null;
   }
 
   initialize(dataset) {
@@ -46,6 +47,8 @@ export class UIController {
     this.resultsIndicator = document.getElementById('results-indicator');
 
     this.themeFiltersContainer = document.getElementById('theme-filters');
+    this.themeSummary = document.getElementById('theme-selection-summary');
+    this.themeClearButton = document.getElementById('theme-clear-selection');
     this.legendContainer = document.getElementById('legend-items');
 
     this.startYearInput = document.getElementById('start-year-input');
@@ -126,17 +129,18 @@ export class UIController {
     if (this.resetButton) {
       this.resetButton.addEventListener('click', () => {
         this.filtersManager.reset();
-        this.themeElements.forEach((element, theme) => {
-          const checkbox = element.querySelector('input');
-          if (checkbox) {
-            checkbox.checked = true;
-          }
-        });
 
         if (this.startYearInput) this.startYearInput.value = '';
         if (this.endYearInput) this.endYearInput.value = '';
         if (this.searchInput) this.searchInput.value = '';
 
+        this.refreshView();
+      });
+    }
+
+    if (this.themeClearButton) {
+      this.themeClearButton.addEventListener('click', () => {
+        this.filtersManager.clearSmartTheme();
         this.refreshView();
       });
     }
@@ -176,37 +180,58 @@ export class UIController {
     this.themeFiltersContainer.innerHTML = '';
     this.themeElements.clear();
 
-    this.filtersManager.getThemes().forEach((theme) => {
-      const label = document.createElement('label');
-      label.className = 'theme-option';
-      label.dataset.active = this.filtersManager.isThemeActive(theme) ? 'true' : 'false';
+    const themes = this.filtersManager.getThemes();
+    if (!themes.length) {
+      const emptyMessage = document.createElement('p');
+      emptyMessage.className = 'theme-empty-state';
+      emptyMessage.textContent = 'Nenhum tema disponível.';
+      this.themeFiltersContainer.appendChild(emptyMessage);
+      this.updateThemeClearButtonState();
+      this.updateThemeSummary(null);
+      return;
+    }
 
-      const input = document.createElement('input');
-      input.type = 'checkbox';
-      input.checked = this.filtersManager.isThemeActive(theme);
-      input.dataset.theme = theme;
+    themes.forEach((theme) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'theme-chip';
+      button.dataset.theme = theme;
+      button.setAttribute('aria-pressed', 'false');
 
-      input.addEventListener('change', () => {
-        this.filtersManager.setThemeState(theme, input.checked);
-        label.dataset.active = input.checked ? 'true' : 'false';
+      const swatch = document.createElement('span');
+      swatch.className = 'theme-chip__swatch';
+      swatch.style.backgroundColor = this.themeColors[theme] || '#94a3b8';
+
+      const label = document.createElement('span');
+      label.className = 'theme-chip__label';
+      label.textContent = theme;
+
+      const count = document.createElement('span');
+      count.className = 'theme-chip__count';
+      const total = this.themeTotals.get(theme) || 0;
+      count.textContent = toLocaleNumber(total);
+      count.title = `${toLocaleNumber(total)} artigos no total`;
+
+      button.appendChild(swatch);
+      button.appendChild(label);
+      button.appendChild(count);
+
+      button.addEventListener('click', () => {
+        const currentTheme = this.filtersManager.getSmartTheme();
+        if (currentTheme === theme) {
+          this.filtersManager.clearSmartTheme();
+        } else {
+          this.filtersManager.setSmartTheme(theme);
+        }
         this.refreshView();
       });
 
-      const swatch = document.createElement('span');
-      swatch.className = 'theme-swatch';
-      swatch.style.backgroundColor = this.themeColors[theme] || '#94a3b8';
-
-      const span = document.createElement('span');
-      span.className = 'theme-label';
-      span.textContent = theme;
-
-      label.appendChild(input);
-      label.appendChild(swatch);
-      label.appendChild(span);
-
-      this.themeFiltersContainer.appendChild(label);
-      this.themeElements.set(theme, label);
+      this.themeFiltersContainer.appendChild(button);
+      this.themeElements.set(theme, { button, label, count });
     });
+
+    this.updateThemeClearButtonState();
+    this.updateThemeSummary(this.currentSmartSelectionMeta);
   }
 
   renderLegend() {
@@ -238,6 +263,44 @@ export class UIController {
     });
   }
 
+  updateThemeClearButtonState() {
+    if (!this.themeClearButton) {
+      return;
+    }
+
+    const hasSmartSelection = this.filtersManager.hasSmartThemeSelection();
+    this.themeClearButton.disabled = !hasSmartSelection;
+    this.themeClearButton.setAttribute('aria-disabled', hasSmartSelection ? 'false' : 'true');
+  }
+
+  updateThemeSummary(meta) {
+    if (!this.themeSummary) {
+      return;
+    }
+
+    if (meta) {
+      if (!meta.totalCount) {
+        this.themeSummary.textContent = `Tema "${meta.theme}" sem artigos nos filtros atuais.`;
+        return;
+      }
+
+      const contextFragment = meta.contextCount
+        ? ` e ${toLocaleNumber(meta.contextCount)} conexões diretas`
+        : '';
+      const fallbackFragment = meta.fallbackApplied
+        ? ' Alguns artigos fora dos filtros de busca foram mantidos para preservar o contexto.'
+        : '';
+
+      this.themeSummary.textContent = `Tema "${meta.theme}": ${toLocaleNumber(
+        meta.primaryCount
+      )} artigos${contextFragment}. ${toLocaleNumber(meta.totalCount)} nós visíveis.${fallbackFragment}`;
+      return;
+    }
+
+    this.themeSummary.textContent =
+      'Todos os temas visíveis. Clique em um tema para destacar os artigos e as conexões relacionadas.';
+  }
+
   renderDatasetMetadata() {
     if (!this.datasetInfo) {
       return;
@@ -256,12 +319,16 @@ export class UIController {
     const filtered = this.filtersManager.apply(this.allNodes, this.allEdges);
     const stats = this.statisticsManager.compute(filtered.nodes, filtered.edges);
 
-    this.lastFiltered = filtered;
+    this.lastFiltered = { nodes: filtered.nodes, edges: filtered.edges };
+    this.currentSmartSelectionMeta = filtered.meta?.smartSelection || null;
+
     this.graphManager.updateData(filtered.nodes, filtered.edges, stats.incomingMap);
     this.updateResultsIndicator(filtered.nodes.length);
     this.updateThemeCounts(stats.articlesByTheme);
     this.updateLegendCounts(stats.articlesByTheme);
     this.renderStats(stats);
+    this.updateThemeSummary(this.currentSmartSelectionMeta);
+    this.updateThemeClearButtonState();
 
     if (focusFirst && filtered.nodes.length) {
       this.graphManager.focusOnNode(filtered.nodes[0].id);
@@ -277,36 +344,75 @@ export class UIController {
       return;
     }
 
+    const smartMeta = this.currentSmartSelectionMeta;
+    if (smartMeta) {
+      if (!smartMeta.totalCount) {
+        this.resultsIndicator.textContent = `Tema "${smartMeta.theme}" sem resultados combinados para os filtros atuais.`;
+        return;
+      }
+
+      const contextFragment = smartMeta.contextCount
+        ? ` + ${toLocaleNumber(smartMeta.contextCount)} conexões diretas`
+        : '';
+      const fallbackFragment = smartMeta.fallbackApplied
+        ? ' (incluindo artigos fora da busca para preservar o contexto).'
+        : '.';
+
+      this.resultsIndicator.textContent = `Tema "${smartMeta.theme}" ativo: ${toLocaleNumber(
+        smartMeta.primaryCount
+      )} artigos${contextFragment}. ${toLocaleNumber(smartMeta.totalCount)} nós exibidos${fallbackFragment}`;
+      return;
+    }
+
     const total = this.allNodes.length;
     const term = this.filtersManager.getSearchTerm();
     const { start, end } = this.filtersManager.getDateRange();
+    const hasThemeFilter =
+      this.filtersManager.getActiveThemes().length !== this.filtersManager.getThemes().length;
+
     const filtersActive =
       filteredCount !== total ||
       term.length > 0 ||
       (start !== null && start !== undefined) ||
       (end !== null && end !== undefined) ||
-      this.filtersManager.getActiveThemes().length !== this.filtersManager.getThemes().length;
+      hasThemeFilter;
 
     if (!filtersActive) {
       this.resultsIndicator.textContent = `Exibindo ${toLocaleNumber(total)} artigos (visualização completa).`;
       return;
     }
 
-    this.resultsIndicator.textContent = `Exibindo ${toLocaleNumber(filteredCount)} de ${toLocaleNumber(total)} artigos com os filtros aplicados.`;
+    this.resultsIndicator.textContent = `Exibindo ${toLocaleNumber(filteredCount)} de ${toLocaleNumber(
+      total
+    )} artigos com os filtros aplicados.`;
   }
 
   updateThemeCounts(filteredThemeStats) {
     const filteredMap = new Map(filteredThemeStats.map((item) => [item.theme, item.count]));
+    const selectedTheme = this.filtersManager.getSmartTheme();
 
-    this.themeElements.forEach((element, theme) => {
-      const label = element.querySelector('.theme-label');
-      const checkbox = element.querySelector('input');
+    this.themeElements.forEach((elements, theme) => {
+      const { button, label, count } = elements;
       const total = this.themeTotals.get(theme) || 0;
       const filteredCount = filteredMap.get(theme) || 0;
+
       if (label) {
-        label.textContent = `${theme} (${filteredCount}/${total})`;
+        label.textContent = theme;
       }
-      element.dataset.active = checkbox?.checked ? 'true' : 'false';
+
+      if (count) {
+        const formattedFiltered = toLocaleNumber(filteredCount);
+        const formattedTotal = toLocaleNumber(total);
+        count.textContent = `${formattedFiltered}/${formattedTotal}`;
+        count.title = `${formattedFiltered} de ${formattedTotal} artigos visíveis`;
+      }
+
+      if (button) {
+        const isSelected = selectedTheme === theme;
+        button.classList.toggle('is-selected', isSelected);
+        button.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
+        button.classList.toggle('has-results', filteredCount > 0);
+      }
     });
   }
 
@@ -443,13 +549,15 @@ export class UIController {
   }
 
   handleExportJson() {
+    const smartSelection = this.filtersManager.getSmartSelectionMeta();
     const payload = {
       exported_at: new Date().toISOString(),
       metadata: this.datasetMetadata,
       active_filters: {
         themes: this.filtersManager.getActiveThemes(),
         search: this.filtersManager.getSearchTerm(),
-        dateRange: this.filtersManager.getDateRange()
+        dateRange: this.filtersManager.getDateRange(),
+        smartSelection
       },
       nodes: this.lastFiltered.nodes,
       edges: this.lastFiltered.edges
