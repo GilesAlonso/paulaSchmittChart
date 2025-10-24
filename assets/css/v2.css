@@ -13,9 +13,9 @@
   --radius-sm: 8px;
   --safe-area-bottom: env(safe-area-inset-bottom, 0);
   --vh: 1vh;
-  --graph-height-desktop: clamp(28rem, calc(var(--vh, 1vh) * 56), 38rem);
-  --graph-height-tablet: clamp(24rem, calc(var(--vh, 1vh) * 62), 36rem);
-  --graph-height-mobile: clamp(20rem, calc(var(--vh, 1vh) * 65), 32rem);
+  --graph-height-desktop: clamp(24rem, calc(var(--vh, 1vh) * 58), 34rem);
+  --graph-height-tablet: clamp(22rem, calc(var(--vh, 1vh) * 62), 32rem);
+  --graph-height-mobile: clamp(20rem, calc(var(--vh, 1vh) * 70), 30rem);
 }
 
 * {
@@ -83,14 +83,23 @@ a.btn-link:focus {
   flex: 1;
   display: grid;
   grid-template-columns: minmax(280px, 360px) 1fr;
+  grid-template-rows: minmax(0, 1fr);
   gap: 1.75rem;
   padding: 0 2.25rem 2.5rem;
+  min-height: 0;
+  align-items: stretch;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  height: 100%;
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+  scrollbar-gutter: stable;
+  overscroll-behavior: contain;
 }
 
 .panel {
@@ -335,23 +344,24 @@ details[open] > summary::after {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
   gap: 0.75rem;
-  min-height: var(--graph-height-desktop);
+  min-height: 0;
   padding: 0.35rem 0 0.85rem;
-  transition: min-height 0.3s ease;
 }
 
 #network-container {
   width: 100%;
-  height: var(--graph-height-desktop);
-  min-height: 26rem;
+  height: min(var(--graph-height-desktop), calc(var(--vh, 1vh) * 68));
+  min-height: 24rem;
+  max-height: calc(var(--vh, 1vh) * 72);
   background: var(--color-surface);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-soft);
   border: 1px solid rgba(148, 163, 184, 0.18);
   overflow: hidden;
   position: relative;
-  flex: 1 1 auto;
+  flex: 0 0 auto;
   transition: box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
@@ -402,10 +412,10 @@ details[open] > summary::after {
 
 #metadata-panel {
   position: absolute;
-  bottom: 24px;
-  left: 24px;
-  max-width: 340px;
-  max-height: calc(var(--vh, 1vh) * 55);
+  top: clamp(16px, 3vh, 28px);
+  left: clamp(16px, 3vw, 32px);
+  max-width: min(360px, calc(100% - 48px));
+  max-height: min(360px, calc(var(--vh, 1vh) * 55));
   background: rgba(15, 23, 42, 0.78);
   color: #ffffff;
   padding: 1.2rem 1.4rem 1.4rem;
@@ -414,7 +424,8 @@ details[open] > summary::after {
   backdrop-filter: blur(6px);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.2s ease;
+  transform: translateY(12px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-color: rgba(148, 163, 184, 0.6) transparent;
@@ -425,6 +436,7 @@ details[open] > summary::after {
 #metadata-panel.is-visible {
   opacity: 1;
   pointer-events: auto;
+  transform: translateY(0);
 }
 
 #metadata-panel::-webkit-scrollbar {
@@ -645,13 +657,20 @@ details[open] > summary::after {
 @media (max-width: 1024px) {
   .v2-layout {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
     padding: 0 1.5rem 2rem;
     row-gap: 1.5rem;
+    min-height: auto;
   }
 
   .sidebar {
     order: 2;
     gap: 1.15rem;
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+    padding-right: 0;
+    scrollbar-gutter: auto;
   }
 
   .graph-area {
@@ -663,6 +682,7 @@ details[open] > summary::after {
   #network-container {
     height: var(--graph-height-tablet);
     min-height: 22rem;
+    max-height: none;
   }
 
   #legend-panel {
@@ -679,6 +699,7 @@ details[open] > summary::after {
     position: static;
     margin-top: 1.25rem;
     width: 100%;
+    max-width: none;
     opacity: 1;
     pointer-events: auto;
     background: var(--color-surface);
@@ -688,6 +709,7 @@ details[open] > summary::after {
     max-height: none;
     overflow: visible;
     backdrop-filter: none;
+    transform: none;
   }
 
   #metadata-link {
