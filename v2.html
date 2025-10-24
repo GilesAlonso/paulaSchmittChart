@@ -58,9 +58,28 @@
               <small>Filtra artigos pela data de publicação.</small>
             </div>
 
-            <div class="control-block">
-              <label>Temas</label>
-              <div id="theme-filters" class="theme-grid"></div>
+            <div class="control-block control-block--themes">
+              <div class="theme-controls__header">
+                <label for="theme-search-input">Temas</label>
+                <div class="theme-controls__actions">
+                  <button type="button" id="theme-select-all" class="chip-button">Selecionar todos</button>
+                  <button type="button" id="theme-deselect-all" class="chip-button">Limpar</button>
+                </div>
+              </div>
+              <div class="theme-controls__search">
+                <input
+                  type="search"
+                  id="theme-search-input"
+                  placeholder="Filtrar temas"
+                  autocomplete="off"
+                />
+              </div>
+              <div id="theme-focus-indicator" class="theme-focus-indicator" hidden>
+                <span>Foco em <strong id="theme-focus-label"></strong></span>
+                <button type="button" id="theme-focus-clear" class="link-button">Remover foco</button>
+              </div>
+              <div id="theme-filters" class="theme-list" role="group" aria-label="Filtrar por temas"></div>
+              <p id="theme-empty-state" class="theme-empty-state" hidden>Nenhum tema encontrado.</p>
             </div>
 
             <div class="control-block toggle-row">
