@@ -13,8 +13,8 @@
   --radius-sm: 8px;
   --safe-area-bottom: env(safe-area-inset-bottom, 0);
   --vh: 1vh;
-  --graph-height-desktop: clamp(34rem, calc(var(--vh, 1vh) * 72), 48rem);
-  --graph-height-tablet: clamp(26rem, calc(var(--vh, 1vh) * 70), 40rem);
+  --graph-height-desktop: clamp(28rem, calc(var(--vh, 1vh) * 56), 38rem);
+  --graph-height-tablet: clamp(24rem, calc(var(--vh, 1vh) * 62), 36rem);
   --graph-height-mobile: clamp(20rem, calc(var(--vh, 1vh) * 65), 32rem);
 }
 
@@ -640,11 +640,6 @@ details[open] > summary::after {
   .v2-layout {
     grid-template-columns: minmax(240px, 320px) 1fr;
   }
-
-  #network-container {
-    height: var(--graph-height-tablet);
-    min-height: 24rem;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -711,7 +706,7 @@ details[open] > summary::after {
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 767px) {
   .top-bar {
     flex-direction: column;
     align-items: flex-start;
