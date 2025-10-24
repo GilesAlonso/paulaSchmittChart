@@ -28,17 +28,31 @@ export class GraphManager {
     this.onNodeDeselect = null;
 
     this.registerEvents();
+    this.removeFallbackTextNodes();
+
+    if (typeof this.network.once === 'function') {
+      this.network.once('afterDrawing', () => this.removeFallbackTextNodes());
+    }
   }
 
   defaultOptions() {
+    const hasWindow = typeof window !== 'undefined';
+    const canMatchMedia = hasWindow && typeof window.matchMedia === 'function';
+    const prefersFinePointer = !canMatchMedia || window.matchMedia('(pointer: fine)').matches;
+    const prefersCoarsePointer = canMatchMedia && window.matchMedia('(pointer: coarse)').matches;
+
     return {
       autoResize: true,
       interaction: {
-        hover: true,
+        hover: prefersFinePointer,
         zoomView: true,
-        tooltipDelay: 180,
+        dragView: true,
+        dragNodes: true,
+        tooltipDelay: prefersFinePointer ? 180 : 320,
         multiselect: false,
-        navigationButtons: false
+        navigationButtons: false,
+        keyboard: false,
+        zoomSpeed: prefersCoarsePointer ? 0.45 : 0.35
       },
       nodes: {
         shape: 'dot',
@@ -79,7 +93,7 @@ export class GraphManager {
           damping: 0.42,
           avoidOverlap: 0.1
         },
-        minVelocity: 0.7
+        minVelocity: prefersCoarsePointer ? 0.8 : 0.7
       }
     };
   }
@@ -101,10 +115,36 @@ export class GraphManager {
     });
   }
 
+  removeFallbackTextNodes() {
+    if (!this.container || typeof Node === 'undefined') {
+      return;
+    }
+
+    Array.from(this.container.childNodes)
+      .filter((node) => node.nodeType === Node.TEXT_NODE)
+      .forEach((node) => {
+        const content = node.textContent ? node.textContent.trim() : '';
+        if (!content) {
+          if (node.parentNode) {
+            node.parentNode.removeChild(node);
+          }
+          return;
+        }
+
+        if (content.includes(':(') || /canvas/i.test(content) || content.length <= 4) {
+          if (node.parentNode) {
+            node.parentNode.removeChild(node);
+          }
+        }
+      });
+  }
+
   updateData(nodes = [], edges = [], incomingMap = new Map()) {
     this.currentNodes = nodes;
     this.currentEdges = edges;
     this.currentIncoming = incomingMap;
+
+    this.removeFallbackTextNodes();
 
     const visNodes = nodes.map((node) => this.mapNode(node, incomingMap));
 
