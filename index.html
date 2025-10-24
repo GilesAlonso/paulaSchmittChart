@@ -102,56 +102,73 @@
 }
 
 function filterHighlight(params) {
+  params = params || {};
   allNodes = nodes.get({ returnType: "Object" });
-  // if something is selected:
-  if (params.nodes.length > 0) {
-    filterActive = true;
-    let selectedNodes = params.nodes;
+  var selectedNodes = Array.isArray(params.nodes) ? params.nodes.map(String) : [];
+  var mode = params.mode;
+  var updateArray = [];
 
-    // hiding all nodes and saving the label
-    for (let nodeId in allNodes) {
-      allNodes[nodeId].hidden = true;
-      if (allNodes[nodeId].savedLabel === undefined) {
-        allNodes[nodeId].savedLabel = allNodes[nodeId].label;
-        allNodes[nodeId].label = undefined;
-      }
+  if (!mode) {
+    mode = selectedNodes.length > 0 ? "showOnly" : "showAll";
+    if (selectedNodes.length === 0 && !filterActive) {
+      mode = "showAll";
     }
-
-    for (let i=0; i < selectedNodes.length; i++) {
-      allNodes[selectedNodes[i]].hidden = false;
-      if (allNodes[selectedNodes[i]].savedLabel !== undefined) {
-        allNodes[selectedNodes[i]].label = allNodes[selectedNodes[i]].savedLabel;
-        allNodes[selectedNodes[i]].savedLabel = undefined;
-      }
-    }
-
-  } else if (filterActive === true) {
-    // reset all nodes
-    for (let nodeId in allNodes) {
-      allNodes[nodeId].hidden = false;
-      if (allNodes[nodeId].savedLabel !== undefined) {
-        allNodes[nodeId].label = allNodes[nodeId].savedLabel;
-        allNodes[nodeId].savedLabel = undefined;
-      }
-    }
-    filterActive = false;
   }
 
-  // transform the object into an array
-  var updateArray = [];
-  if (params.nodes.length > 0) {
+  if (mode === "showOnly") {
+    filterActive = true;
+    var selectionSet = new Set(selectedNodes);
     for (let nodeId in allNodes) {
-      if (allNodes.hasOwnProperty(nodeId)) {
-        updateArray.push(allNodes[nodeId]);
+      if (!allNodes.hasOwnProperty(nodeId)) {
+        continue;
       }
+      let node = allNodes[nodeId];
+      if (selectionSet.has(nodeId)) {
+        node.hidden = false;
+        if (node.savedLabel !== undefined) {
+          node.label = node.savedLabel;
+          delete node.savedLabel;
+        }
+      } else {
+        node.hidden = true;
+        if (node.savedLabel === undefined && node.label !== undefined) {
+          node.savedLabel = node.label;
+          node.label = undefined;
+        }
+      }
+      updateArray.push(node);
     }
-    nodes.update(updateArray);
+  } else if (mode === "hideAll") {
+    filterActive = true;
+    for (let nodeId in allNodes) {
+      if (!allNodes.hasOwnProperty(nodeId)) {
+        continue;
+      }
+      let node = allNodes[nodeId];
+      node.hidden = true;
+      if (node.savedLabel === undefined && node.label !== undefined) {
+        node.savedLabel = node.label;
+        node.label = undefined;
+      }
+      updateArray.push(node);
+    }
   } else {
+    filterActive = false;
     for (let nodeId in allNodes) {
-      if (allNodes.hasOwnProperty(nodeId)) {
-        updateArray.push(allNodes[nodeId]);
+      if (!allNodes.hasOwnProperty(nodeId)) {
+        continue;
       }
+      let node = allNodes[nodeId];
+      node.hidden = false;
+      if (node.savedLabel !== undefined) {
+        node.label = node.savedLabel;
+        delete node.savedLabel;
+      }
+      updateArray.push(node);
     }
+  }
+
+  if (updateArray.length > 0) {
     nodes.update(updateArray);
   }
 }
@@ -190,7 +207,111 @@ function highlightFilter(filter) {
     }
   }
   selectNodes(selectedNodes)
-}</script>
+}
+
+function setThemeMode(mode, themeName) {
+  if (!nodes || !network) {
+    return;
+  }
+
+  if (mode === 'all') {
+    filterHighlight({ mode: 'showAll' });
+    network.unselectAll();
+    themeState.mode = 'all';
+    themeState.theme = null;
+    updateThemeButtonStates();
+    try {
+      network.fit({
+        animation: {
+          duration: 600,
+          easingFunction: 'easeInOutQuad'
+        }
+      });
+    } catch (error) {
+      console.warn('Unable to refocus network for all themes.', error);
+    }
+    return;
+  }
+
+  if (mode === 'none') {
+    filterHighlight({ mode: 'hideAll' });
+    network.unselectAll();
+    themeState.mode = 'none';
+    themeState.theme = null;
+    updateThemeButtonStates();
+    return;
+  }
+
+  if (mode === 'single' && themeName && themeFilters && themeFilters[themeName]) {
+    var themeNodes = themeFilters[themeName].nodes || [];
+    filterHighlight({ mode: 'showOnly', nodes: themeNodes });
+    themeState.mode = 'single';
+    themeState.theme = themeName;
+    updateThemeButtonStates();
+    if (themeNodes.length > 0) {
+      try {
+        network.selectNodes(themeNodes);
+        network.fit({
+          nodes: themeNodes,
+          animation: {
+            duration: 600,
+            easingFunction: 'easeInOutQuad'
+          }
+        });
+      } catch (error) {
+        console.warn('Unable to focus on the selected theme.', error);
+      }
+    } else {
+      network.unselectAll();
+    }
+  }
+}
+
+function updateThemeButtonStates() {
+  var themePanel = document.getElementById('theme-control-panel');
+  if (!themePanel) {
+    return;
+  }
+
+  var modeButtons = themePanel.querySelectorAll('.theme-mode-btn');
+  Array.prototype.forEach.call(modeButtons, function(button) {
+    var buttonMode = button.getAttribute('data-mode');
+    var isActive = (themeState.mode === 'all' && buttonMode === 'all') ||
+      (themeState.mode === 'none' && buttonMode === 'none');
+    if (isActive) {
+      button.classList.add('active');
+      button.setAttribute('aria-pressed', 'true');
+    } else {
+      button.classList.remove('active');
+      button.setAttribute('aria-pressed', 'false');
+    }
+  });
+
+  var themeButtons = themePanel.querySelectorAll('.theme-filter-btn');
+  Array.prototype.forEach.call(themeButtons, function(button) {
+    var buttonTheme = button.getAttribute('data-theme');
+    var isActive = themeState.mode === 'single' && themeState.theme === buttonTheme;
+    if (isActive) {
+      button.classList.add('active');
+      button.setAttribute('aria-pressed', 'true');
+    } else {
+      button.classList.remove('active');
+      button.setAttribute('aria-pressed', 'false');
+    }
+  });
+
+  var hintElement = themePanel.querySelector('.theme-control-hint');
+  if (hintElement) {
+    if (themeState.mode === 'none') {
+      hintElement.textContent = 'Nenhum tema visível. Clique em "Mostrar todos" ou escolha um tema.';
+    } else if (themeState.mode === 'single' && themeState.theme) {
+      hintElement.textContent = 'Exibindo apenas "' + themeState.theme + '". Clique novamente para ver todos.';
+    } else {
+      hintElement.textContent = 'Clique em um tema para ver apenas ele.';
+    }
+  }
+}
+</script>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
             <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
             
@@ -227,24 +348,137 @@ function highlightFilter(filter) {
 
              #mynetwork {
                  width: 100%;
-                 height: 800px;
+                 height: clamp(480px, 82vh, 900px);
+                 max-height: 90vh;
+                 min-height: 420px;
                  background-color: #ffffff;
                  border: 1px solid lightgray;
                  position: relative;
-                 float: left;
+                 display: block;
+                 border-radius: 8px;
              }
 
-             
-
-             
              #config {
                  float: left;
                  width: 400px;
                  height: 600px;
              }
-             
 
-             
+             .theme-control-panel {
+                 position: fixed;
+                 top: 80px;
+                 right: 16px;
+                 z-index: 11000;
+                 background-color: rgba(255, 255, 255, 0.95);
+                 border: 1px solid #b0b0b0;
+                 border-radius: 10px;
+                 padding: 12px 14px;
+                 font-family: Arial, sans-serif;
+                 font-size: 13px;
+                 width: clamp(220px, 24vw, 280px);
+                 max-height: 75vh;
+                 overflow-y: auto;
+                 box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+             }
+
+             .theme-control-header {
+                 font-weight: bold;
+                 font-size: 13px;
+                 margin-bottom: 8px;
+                 text-transform: uppercase;
+                 letter-spacing: 0.04em;
+                 color: #1f2933;
+             }
+
+             .theme-control-actions {
+                 display: flex;
+                 flex-wrap: wrap;
+                 gap: 8px;
+                 margin-bottom: 10px;
+             }
+
+             .theme-mode-btn,
+             .theme-filter-btn {
+                 border: 1px solid #c4c8ce;
+                 background-color: #f7f8fa;
+                 color: #1f2933;
+                 border-radius: 999px;
+                 padding: 6px 12px;
+                 font-size: 12px;
+                 line-height: 1.3;
+                 cursor: pointer;
+                 transition: all 0.2s ease;
+                 display: inline-flex;
+                 align-items: center;
+                 gap: 6px;
+             }
+
+             .theme-mode-btn:hover,
+             .theme-filter-btn:hover {
+                 background-color: #e1e7ff;
+                 border-color: #8da2fb;
+             }
+
+             .theme-mode-btn.active,
+             .theme-filter-btn.active {
+                 background-color: #4c6ef5;
+                 border-color: #4c6ef5;
+                 color: #ffffff;
+                 box-shadow: 0 3px 6px rgba(76, 110, 245, 0.3);
+             }
+
+             .theme-button-grid {
+                 display: flex;
+                 flex-direction: column;
+                 gap: 6px;
+             }
+
+             .theme-color-dot {
+                 width: 12px;
+                 height: 12px;
+                 border-radius: 50%;
+                 border: 1px solid rgba(0, 0, 0, 0.35);
+                 flex-shrink: 0;
+             }
+
+             .theme-control-hint {
+                 margin-top: 10px;
+                 font-size: 12px;
+                 color: #5f6c7b;
+                 line-height: 1.4;
+             }
+
+             @media (max-width: 992px) {
+                 .theme-control-panel {
+                     position: static;
+                     width: auto;
+                     max-width: none;
+                     margin: 12px 16px;
+                     max-height: none;
+                 }
+
+                 #mynetwork {
+                     height: clamp(380px, 70vh, 780px);
+                     min-height: 320px;
+                 }
+             }
+
+             @media (max-width: 576px) {
+                 .theme-control-actions {
+                     flex-direction: column;
+                 }
+
+                 .theme-button-grid {
+                     flex-direction: row;
+                     flex-wrap: wrap;
+                 }
+
+                 .theme-filter-btn {
+                     flex: 1 1 calc(50% - 8px);
+                     justify-content: center;
+                 }
+             }
+
         </style>
     </head>
 
@@ -254,6 +488,15 @@ function highlightFilter(filter) {
             <a href="v2.html" style="background: rgba(37, 99, 235, 0.92); color: #ffffff; padding: 0.5rem 1rem; border-radius: 999px; font-family: Arial, sans-serif; font-size: 0.85rem; text-decoration: none; box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);">Ver Visualização V2 →</a>
         </div>
         <div id="graph-legend" style="position: absolute; top: 15px; left: 15px; background-color: rgba(255,255,255,0.92); padding: 12px; border: 1px solid #b0b0b0; border-radius: 8px; font-family: Arial, sans-serif; font-size: 13px; max-height: 85vh; overflow-y: auto; z-index: 10000; box-shadow: 0 4px 8px rgba(0,0,0,0.15);"><h4 style="margin-top:0; margin-bottom: 10px; border-bottom: 1px solid #ddd; padding-bottom: 6px; font-weight: bold;">Legenda de Temas</h4><ul style="list-style: none; padding: 0; margin: 0;"><li style="margin-bottom: 5px; display: flex; align-items: center;"><span style="display: inline-block; width: 18px; height: 18px; background-color: #e6194b; border-radius: 50%; margin-right: 8px; border: 1px solid #555; flex-shrink: 0;"></span><span style="word-break: break-word;">Agronegócio</span></li><li style="margin-bottom: 5px; display: flex; align-items: center;"><span style="display: inline-block; width: 18px; height: 18px; background-color: #3cb44b; border-radius: 50%; margin-right: 8px; border: 1px solid #555; flex-shrink: 0;"></span><span style="word-break: break-word;">Brasil</span></li><li style="margin-bottom: 5px; display: flex; align-items: center;"><span style="display: inline-block; width: 18px; height: 18px; background-color: #ffe119; border-radius: 50%; margin-right: 8px; border: 1px solid #555; flex-shrink: 0;"></span><span style="word-break: break-word;">Congresso</span></li><li style="margin-bottom: 5px; display: flex; align-items: center;"><span style="display: inline-block; width: 18px; height: 18px; background-color: #4363d8; border-radius: 50%; margin-right: 8px; border: 1px solid #555; flex-shrink: 0;"></span><span style="word-break: break-word;">Coronavírus</span></li><li style="margin-bottom: 5px; display: flex; align-items: center;"><span style="display: inline-block; width: 18px; height: 18px; background-color: #f58231; border-radius: 50%; margin-right: 8px; border: 1px solid #555; flex-shrink: 0;"></span><span style="word-break: break-word;">Economia</span></li><li style="margin-bottom: 5px; display: flex; align-items: center;"><span style="display: inline-block; width: 18px; height: 18px; background-color: #911eb4; border-radius: 50%; margin-right: 8px; border: 1px solid #555; flex-shrink: 0;"></span><span style="word-break: break-word;">Eleições</span></li><li style="margin-bottom: 5px; display: flex; align-items: center;"><span style="display: inline-block; width: 18px; height: 18px; background-color: #46f0f0; border-radius: 50%; margin-right: 8px; border: 1px solid #555; flex-shrink: 0;"></span><span style="word-break: break-word;">Governo</span></li><li style="margin-bottom: 5px; display: flex; align-items: center;"><span style="display: inline-block; width: 18px; height: 18px; background-color: #f032e6; border-radius: 50%; margin-right: 8px; border: 1px solid #555; flex-shrink: 0;"></span><span style="word-break: break-word;">História</span></li><li style="margin-bottom: 5px; display: flex; align-items: center;"><span style="display: inline-block; width: 18px; height: 18px; background-color: #bcf60c; border-radius: 50%; margin-right: 8px; border: 1px solid #555; flex-shrink: 0;"></span><span style="word-break: break-word;">Internacional</span></li><li style="margin-bottom: 5px; display: flex; align-items: center;"><span style="display: inline-block; width: 18px; height: 18px; background-color: #fabebe; border-radius: 50%; margin-right: 8px; border: 1px solid #555; flex-shrink: 0;"></span><span style="word-break: break-word;">Literatura</span></li><li style="margin-bottom: 5px; display: flex; align-items: center;"><span style="display: inline-block; width: 18px; height: 18px; background-color: #008080; border-radius: 50%; margin-right: 8px; border: 1px solid #555; flex-shrink: 0;"></span><span style="word-break: break-word;">Mídia</span></li><li style="margin-bottom: 5px; display: flex; align-items: center;"><span style="display: inline-block; width: 18px; height: 18px; background-color: #e6beff; border-radius: 50%; margin-right: 8px; border: 1px solid #555; flex-shrink: 0;"></span><span style="word-break: break-word;">Partidos políticos</span></li><li style="margin-bottom: 5px; display: flex; align-items: center;"><span style="display: inline-block; width: 18px; height: 18px; background-color: #9a6324; border-radius: 50%; margin-right: 8px; border: 1px solid #555; flex-shrink: 0;"></span><span style="word-break: break-word;">Poder Brasil</span></li><li style="margin-bottom: 5px; display: flex; align-items: center;"><span style="display: inline-block; width: 18px; height: 18px; background-color: #fffac8; border-radius: 50%; margin-right: 8px; border: 1px solid #555; flex-shrink: 0;"></span><span style="word-break: break-word;">Poder Infra</span></li><li style="margin-bottom: 5px; display: flex; align-items: center;"><span style="display: inline-block; width: 18px; height: 18px; background-color: #800000; border-radius: 50%; margin-right: 8px; border: 1px solid #555; flex-shrink: 0;"></span><span style="word-break: break-word;">Poder Internacional</span></li></ul></div>
+        <div id="theme-control-panel" class="theme-control-panel">
+            <div class="theme-control-header">Temas</div>
+            <div class="theme-control-actions">
+                <button type="button" class="theme-mode-btn active" data-mode="all" aria-pressed="true">Mostrar todos</button>
+                <button type="button" class="theme-mode-btn" data-mode="none" aria-pressed="false">Ocultar todos</button>
+            </div>
+            <div class="theme-button-grid" id="theme-button-grid"></div>
+            <div class="theme-control-hint">Clique em um tema para ver apenas ele.</div>
+        </div>
         <div class="card" style="width: 100%">
             
             
@@ -277,6 +520,9 @@ function highlightFilter(filter) {
               var network;
               var container;
               var options, data;
+              var filterActive = false;
+              var themeFilters = {};
+              var themeState = { mode: 'all', theme: null };
               var filter = {
                   item : '',
                   property : '',
@@ -394,23 +640,117 @@ function highlightFilter(filter) {
               console.error("Error setting physics options for forceAtlas2Based:", e);
             }
 
-            // Part 1: Convert string titles to HTML elements for rich tooltips
+            // Part 1: Prepare node metadata (theme mapping + HTML tooltips)
             var node_dataset = network.body.data.nodes;
             var node_ids = node_dataset.getIds();
             var nodesToUpdate = [];
 
+            themeFilters = {};
+            themeState.mode = 'all';
+            themeState.theme = null;
+
+            var themePanel = document.getElementById('theme-control-panel');
+            var themeButtonGrid = document.getElementById('theme-button-grid');
+
             node_ids.forEach(function(node_id) {
               var nodeData = node_dataset.get(node_id);
-              if (nodeData && typeof nodeData.title === 'string' && (nodeData.title.includes('<b') || nodeData.title.includes('<br'))) {
-                var tempDiv = document.createElement('div');
-                tempDiv.innerHTML = nodeData.title;
-                nodesToUpdate.push({id: node_id, title: tempDiv});
+              if (!nodeData) {
+                return;
               }
+
+              var rawTitle = nodeData.title;
+              var themeName = null;
+
+              if (typeof rawTitle === 'string') {
+                var match = rawTitle.match(/Tema:\s*([^<]+)/i);
+                if (match && match[1]) {
+                  themeName = match[1].trim();
+                }
+              }
+
+              if (themeName) {
+                if (!themeFilters[themeName]) {
+                  themeFilters[themeName] = {
+                    nodes: [],
+                    color: nodeData.color
+                  };
+                }
+                themeFilters[themeName].nodes.push(String(node_id));
+              }
+
+              var updatePayload = { id: node_id, theme: themeName || null };
+
+              if (typeof rawTitle === 'string' && (rawTitle.includes('<b') || rawTitle.includes('<br'))) {
+                var tempDiv = document.createElement('div');
+                tempDiv.innerHTML = rawTitle;
+                updatePayload.title = tempDiv;
+              }
+
+              nodesToUpdate.push(updatePayload);
             });
 
             if (nodesToUpdate.length > 0) {
               node_dataset.update(nodesToUpdate);
-              console.log("Updated " + nodesToUpdate.length + " node titles to use HTML elements for tooltips.");
+              console.log("Updated " + nodesToUpdate.length + " nodes with theme metadata and HTML tooltips.");
+            }
+
+            if (themePanel && themeButtonGrid) {
+              themeButtonGrid.innerHTML = '';
+              var themeNames = Object.keys(themeFilters);
+
+              if (themeNames.length > 0) {
+                themeNames.sort(function(a, b) {
+                  return a.localeCompare(b, 'pt-BR');
+                });
+
+                themeNames.forEach(function(themeName) {
+                  var button = document.createElement('button');
+                  button.type = 'button';
+                  button.className = 'theme-filter-btn';
+                  button.setAttribute('data-theme', themeName);
+                  button.setAttribute('aria-pressed', 'false');
+
+                  var colorDot = document.createElement('span');
+                  colorDot.className = 'theme-color-dot';
+                  colorDot.style.backgroundColor = themeFilters[themeName].color || '#6b7280';
+
+                  var labelSpan = document.createElement('span');
+                  labelSpan.textContent = themeName;
+
+                  button.appendChild(colorDot);
+                  button.appendChild(labelSpan);
+
+                  button.addEventListener('click', function() {
+                    if (themeState.mode === 'single' && themeState.theme === themeName) {
+                      setThemeMode('all');
+                    } else {
+                      setThemeMode('single', themeName);
+                    }
+                  });
+
+                  themeButtonGrid.appendChild(button);
+                });
+              } else {
+                var emptyMessage = document.createElement('div');
+                emptyMessage.style.fontSize = '12px';
+                emptyMessage.style.color = '#5f6c7b';
+                emptyMessage.textContent = 'Nenhum tema encontrado.';
+                themeButtonGrid.appendChild(emptyMessage);
+              }
+
+              var modeButtons = themePanel.querySelectorAll('.theme-mode-btn');
+              Array.prototype.forEach.call(modeButtons, function(button) {
+                button.addEventListener('click', function() {
+                  var targetMode = button.getAttribute('data-mode');
+                  if (targetMode === 'all') {
+                    setThemeMode('all');
+                  } else if (targetMode === 'none') {
+                    setThemeMode('none');
+                  }
+                });
+              });
+
+              updateThemeButtonStates();
             }
 
             // Part 2: Click handler to open URLs
