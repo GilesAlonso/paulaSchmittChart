@@ -115,7 +115,46 @@ function filterHighlight(params) {
     }
   }
 
-  if (mode === "showOnly") {
+  if (mode === "context") {
+    filterActive = true;
+    var visibleSet = new Set(selectedNodes);
+    var primarySet = new Set(Array.isArray(params.primaryNodes) ? params.primaryNodes.map(String) : []);
+    var contextSet = new Set(Array.isArray(params.contextNodes) ? params.contextNodes.map(String) : []);
+
+    for (let nodeId in allNodes) {
+      if (!allNodes.hasOwnProperty(nodeId)) {
+        continue;
+      }
+      let node = allNodes[nodeId];
+      if (visibleSet.has(nodeId)) {
+        node.hidden = false;
+        if (node.savedLabel !== undefined) {
+          node.label = node.savedLabel;
+          delete node.savedLabel;
+        }
+        var baseColor = nodeColors[nodeId];
+        if (primarySet.has(nodeId)) {
+          node.color = createPrimaryColor(baseColor);
+          node.themeRole = 'primary';
+        } else if (contextSet.has(nodeId)) {
+          node.color = createContextColor(baseColor);
+          node.themeRole = 'context';
+        } else {
+          node.color = createMutedColor(baseColor);
+          delete node.themeRole;
+        }
+      } else {
+        node.hidden = true;
+        if (node.savedLabel === undefined && node.label !== undefined) {
+          node.savedLabel = node.label;
+          node.label = undefined;
+        }
+        node.color = createMutedColor(nodeColors[nodeId], 0.65);
+        delete node.themeRole;
+      }
+      updateArray.push(node);
+    }
+  } else if (mode === "showOnly") {
     filterActive = true;
     var selectionSet = new Set(selectedNodes);
     for (let nodeId in allNodes) {
@@ -129,13 +168,16 @@ function filterHighlight(params) {
           node.label = node.savedLabel;
           delete node.savedLabel;
         }
+        node.color = nodeColors[nodeId];
       } else {
         node.hidden = true;
         if (node.savedLabel === undefined && node.label !== undefined) {
           node.savedLabel = node.label;
           node.label = undefined;
         }
+        node.color = createMutedColor(nodeColors[nodeId], 0.65);
       }
+      delete node.themeRole;
       updateArray.push(node);
     }
   } else if (mode === "hideAll") {
@@ -150,6 +192,8 @@ function filterHighlight(params) {
         node.savedLabel = node.label;
         node.label = undefined;
       }
+      node.color = nodeColors[nodeId];
+      delete node.themeRole;
       updateArray.push(node);
     }
   } else {
@@ -164,6 +208,8 @@ function filterHighlight(params) {
         node.label = node.savedLabel;
         delete node.savedLabel;
       }
+      node.color = nodeColors[nodeId];
+      delete node.themeRole;
       updateArray.push(node);
     }
   }
@@ -171,6 +217,171 @@ function filterHighlight(params) {
   if (updateArray.length > 0) {
     nodes.update(updateArray);
   }
+}
+
+function resolveColor(color, fallback) {
+  if (!fallback) {
+    fallback = '#4c6ef5';
+  }
+  if (!color) {
+    return fallback;
+  }
+  if (typeof color === 'string') {
+    return color;
+  }
+  if (typeof color === 'object') {
+    if (color.background) {
+      return color.background;
+    }
+    if (color.color) {
+      return color.color;
+    }
+  }
+  return fallback;
+}
+
+function parseColorToRgb(color) {
+  var value = resolveColor(color, null);
+  if (!value || typeof value !== 'string') {
+    return null;
+  }
+  var trimmed = value.trim();
+  if (trimmed.charAt(0) === '#') {
+    var hex = trimmed.substring(1);
+    if (hex.length === 3) {
+      hex = hex.split('').map(function(character) {
+        return character + character;
+      }).join('');
+    }
+    if (hex.length !== 6) {
+      return null;
+    }
+    var intVal = parseInt(hex, 16);
+    if (isNaN(intVal)) {
+      return null;
+    }
+    return {
+      r: (intVal >> 16) & 255,
+      g: (intVal >> 8) & 255,
+      b: intVal & 255,
+      a: 1
+    };
+  }
+  if (trimmed.startsWith('rgb')) {
+    var match = trimmed.match(/rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*([0-9.]+))?\)/i);
+    if (match) {
+      return {
+        r: parseInt(match[1], 10),
+        g: parseInt(match[2], 10),
+        b: parseInt(match[3], 10),
+        a: match[4] !== undefined ? parseFloat(match[4]) : 1
+      };
+    }
+  }
+  return null;
+}
+
+function lightenColor(color, strength, alpha) {
+  var parsed = parseColorToRgb(color);
+  var amount = typeof strength === 'number' ? Math.min(Math.max(strength, 0), 1) : 0.5;
+  var fallbackAlpha = parsed && parsed.a !== undefined ? parsed.a : 1;
+  var targetAlpha = typeof alpha === 'number' ? alpha : fallbackAlpha;
+  targetAlpha = Math.min(Math.max(targetAlpha, 0), 1);
+
+  if (!parsed) {
+    var fallback = Math.round(226 + (255 - 226) * amount);
+    return 'rgba(' + fallback + ', ' + fallback + ', ' + fallback + ', ' + targetAlpha + ')';
+  }
+
+  var r = Math.round(parsed.r + (255 - parsed.r) * amount);
+  var g = Math.round(parsed.g + (255 - parsed.g) * amount);
+  var b = Math.round(parsed.b + (255 - parsed.b) * amount);
+
+  return 'rgba(' + r + ', ' + g + ', ' + b + ', ' + targetAlpha + ')';
+}
+
+function createPrimaryColor(baseColor) {
+  var resolved = resolveColor(baseColor);
+  return {
+    background: resolved,
+    border: '#1f2933',
+    highlight: {
+      background: resolved,
+      border: '#111827'
+    },
+    hover: {
+      background: resolved,
+      border: '#1f2933'
+    }
+  };
+}
+
+function createContextColor(baseColor) {
+  var resolved = resolveColor(baseColor);
+  var softened = lightenColor(resolved, 0.6, 0.65);
+  return {
+    background: softened,
+    border: '#94a3b8',
+    highlight: {
+      background: softened,
+      border: '#64748b'
+    },
+    hover: {
+      background: softened,
+      border: '#64748b'
+    }
+  };
+}
+
+function createMutedColor(baseColor, strength) {
+  var resolved = resolveColor(baseColor);
+  return lightenColor(resolved, typeof strength === 'number' ? strength : 0.5, 0.35);
+}
+
+function initializeNeighborMap() {
+  nodeNeighbors = {};
+  if (!allNodes || !allEdges) {
+    return;
+  }
+
+  for (let nodeId in allNodes) {
+    if (!allNodes.hasOwnProperty(nodeId)) {
+      continue;
+    }
+    var normalizedId = String(nodeId);
+    if (!nodeNeighbors[normalizedId]) {
+      nodeNeighbors[normalizedId] = new Set();
+    }
+  }
+
+  for (let edgeId in allEdges) {
+    if (!allEdges.hasOwnProperty(edgeId)) {
+      continue;
+    }
+    var edge = allEdges[edgeId];
+    if (!edge) {
+      continue;
+    }
+    var fromId = String(edge.from);
+    var toId = String(edge.to);
+    if (!nodeNeighbors[fromId]) {
+      nodeNeighbors[fromId] = new Set();
+    }
+    if (!nodeNeighbors[toId]) {
+      nodeNeighbors[toId] = new Set();
+    }
+    nodeNeighbors[fromId].add(toId);
+    nodeNeighbors[toId].add(fromId);
+  }
+}
+
+function getNeighborIds(nodeId) {
+  var normalizedId = String(nodeId);
+  var neighborSet = nodeNeighbors[normalizedId];
+  if (!neighborSet || typeof neighborSet.forEach !== 'function') {
+    return [];
+  }
+  return Array.from(neighborSet);
 }
 
 function selectNode(nodes) {
@@ -219,6 +430,8 @@ function setThemeMode(mode, themeName) {
     network.unselectAll();
     themeState.mode = 'all';
     themeState.theme = null;
+    themeState.primaryCount = 0;
+    themeState.contextCount = 0;
     updateThemeButtonStates();
     try {
       network.fit({
@@ -238,33 +451,77 @@ function setThemeMode(mode, themeName) {
     network.unselectAll();
     themeState.mode = 'none';
     themeState.theme = null;
+    themeState.primaryCount = 0;
+    themeState.contextCount = 0;
     updateThemeButtonStates();
     return;
   }
 
   if (mode === 'single' && themeName && themeFilters && themeFilters[themeName]) {
-    var themeNodes = themeFilters[themeName].nodes || [];
-    filterHighlight({ mode: 'showOnly', nodes: themeNodes });
+    var primaryNodes = (themeFilters[themeName].nodes || []).map(String);
+    if (primaryNodes.length === 0) {
+      setThemeMode('all');
+      return;
+    }
+    var primarySet = new Set(primaryNodes);
+    var contextSet = new Set();
+
+    if (!nodeNeighbors || Object.keys(nodeNeighbors).length === 0) {
+      initializeNeighborMap();
+    }
+
+    primaryNodes.forEach(function(nodeId) {
+      var neighborSet = nodeNeighbors[String(nodeId)];
+      if (!neighborSet || typeof neighborSet.forEach !== 'function') {
+        return;
+      }
+      neighborSet.forEach(function(neighborId) {
+        var normalizedNeighbor = String(neighborId);
+        if (!primarySet.has(normalizedNeighbor)) {
+          contextSet.add(normalizedNeighbor);
+        }
+      });
+    });
+
+    var visibleSet = new Set(primaryNodes);
+    contextSet.forEach(function(nodeId) {
+      visibleSet.add(nodeId);
+    });
+
+    filterHighlight({
+      mode: 'context',
+      nodes: Array.from(visibleSet),
+      primaryNodes: primaryNodes,
+      contextNodes: Array.from(contextSet)
+    });
+
     themeState.mode = 'single';
     themeState.theme = themeName;
+    themeState.primaryCount = primaryNodes.length;
+    themeState.contextCount = contextSet.size;
+
     updateThemeButtonStates();
-    if (themeNodes.length > 0) {
+
+    if (visibleSet.size > 0) {
       try {
-        network.selectNodes(themeNodes);
+        network.selectNodes(primaryNodes);
         network.fit({
-          nodes: themeNodes,
+          nodes: Array.from(visibleSet),
           animation: {
             duration: 600,
             easingFunction: 'easeInOutQuad'
           }
         });
       } catch (error) {
-        console.warn('Unable to focus on the selected theme.', error);
+        console.warn('Unable to focus on the selected theme with context nodes.', error);
       }
     } else {
       network.unselectAll();
     }
+    return;
   }
+
+  setThemeMode('all');
 }
 
 function updateThemeButtonStates() {
@@ -287,6 +544,13 @@ function updateThemeButtonStates() {
     }
   });
 
+  var clearButton = themePanel.querySelector('.theme-clear-btn');
+  if (clearButton) {
+    var disableClear = themeState.mode === 'all';
+    clearButton.disabled = disableClear;
+    clearButton.setAttribute('aria-pressed', 'false');
+  }
+
   var themeButtons = themePanel.querySelectorAll('.theme-filter-btn');
   Array.prototype.forEach.call(themeButtons, function(button) {
     var buttonTheme = button.getAttribute('data-theme');
@@ -298,16 +562,38 @@ function updateThemeButtonStates() {
       button.classList.remove('active');
       button.setAttribute('aria-pressed', 'false');
     }
+    var countTarget = button.querySelector('.theme-count');
+    if (countTarget && themeFilters[buttonTheme]) {
+      countTarget.textContent = themeFilters[buttonTheme].nodes.length;
+    }
   });
+
+  var summaryElement = themePanel.querySelector('#theme-filter-summary');
+  if (summaryElement) {
+    if (themeState.mode === 'single' && themeState.theme) {
+      var primaryCount = themeState.primaryCount || 0;
+      var contextCount = themeState.contextCount || 0;
+      var totalCount = primaryCount + contextCount;
+      if (contextCount > 0) {
+        summaryElement.textContent = 'Mostrando ' + primaryCount + ' artigos de "' + themeState.theme + '" e ' + contextCount + ' conexões diretas (' + totalCount + ' nós ao todo).';
+      } else {
+        summaryElement.textContent = 'Mostrando ' + primaryCount + ' artigos de "' + themeState.theme + '".';
+      }
+    } else if (themeState.mode === 'none') {
+      summaryElement.textContent = 'Nenhum tema visível no momento.';
+    } else {
+      summaryElement.textContent = 'Todos os artigos estão visíveis.';
+    }
+  }
 
   var hintElement = themePanel.querySelector('.theme-control-hint');
   if (hintElement) {
     if (themeState.mode === 'none') {
       hintElement.textContent = 'Nenhum tema visível. Clique em "Mostrar todos" ou escolha um tema.';
     } else if (themeState.mode === 'single' && themeState.theme) {
-      hintElement.textContent = 'Exibindo apenas "' + themeState.theme + '". Clique novamente para ver todos.';
+      hintElement.textContent = 'Clique novamente em "' + themeState.theme + '" para limpar ou escolha outro tema para alternar.';
     } else {
-      hintElement.textContent = 'Clique em um tema para ver apenas ele.';
+      hintElement.textContent = 'Clique em um tema para ver os artigos e conexões relacionadas.';
     }
   }
 }
@@ -348,14 +634,15 @@ function updateThemeButtonStates() {
 
              #mynetwork {
                  width: 100%;
-                 height: clamp(480px, 82vh, 900px);
-                 max-height: 90vh;
+                 height: clamp(420px, 84vh, 860px);
+                 max-height: 88vh;
                  min-height: 420px;
                  background-color: #ffffff;
                  border: 1px solid lightgray;
                  position: relative;
                  display: block;
                  border-radius: 8px;
+                 overflow: hidden;
              }
 
              #config {
@@ -394,11 +681,13 @@ function updateThemeButtonStates() {
                  display: flex;
                  flex-wrap: wrap;
                  gap: 8px;
-                 margin-bottom: 10px;
+                 margin-bottom: 12px;
+                 align-items: center;
              }
 
              .theme-mode-btn,
-             .theme-filter-btn {
+             .theme-filter-btn,
+             .theme-clear-btn {
                  border: 1px solid #c4c8ce;
                  background-color: #f7f8fa;
                  color: #1f2933;
@@ -413,8 +702,14 @@ function updateThemeButtonStates() {
                  gap: 6px;
              }
 
+             .theme-clear-btn {
+                 border-style: dashed;
+                 font-weight: 600;
+             }
+
              .theme-mode-btn:hover,
-             .theme-filter-btn:hover {
+             .theme-filter-btn:hover,
+             .theme-clear-btn:hover {
                  background-color: #e1e7ff;
                  border-color: #8da2fb;
              }
@@ -427,10 +722,25 @@ function updateThemeButtonStates() {
                  box-shadow: 0 3px 6px rgba(76, 110, 245, 0.3);
              }
 
+             .theme-filter-btn.active .theme-count {
+                 background-color: rgba(255, 255, 255, 0.25);
+                 color: #ffffff;
+             }
+
+             .theme-clear-btn:disabled {
+                 opacity: 0.6;
+                 cursor: not-allowed;
+                 background-color: #f1f3f8;
+             }
+
              .theme-button-grid {
-                 display: flex;
-                 flex-direction: column;
-                 gap: 6px;
+                 display: grid;
+                 grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+                 gap: 8px;
+             }
+
+             .theme-filter-btn {
+                 justify-content: flex-start;
              }
 
              .theme-color-dot {
@@ -439,6 +749,28 @@ function updateThemeButtonStates() {
                  border-radius: 50%;
                  border: 1px solid rgba(0, 0, 0, 0.35);
                  flex-shrink: 0;
+             }
+
+             .theme-count {
+                 background-color: rgba(76, 110, 245, 0.15);
+                 color: #1f2933;
+                 font-weight: 600;
+                 font-size: 11px;
+                 padding: 2px 6px;
+                 border-radius: 999px;
+                 margin-left: auto;
+                 display: inline-flex;
+                 align-items: center;
+                 justify-content: center;
+                 min-width: 28px;
+             }
+
+             .theme-control-summary {
+                 margin-bottom: 6px;
+                 font-size: 12px;
+                 color: #1f2933;
+                 font-weight: 600;
+                 line-height: 1.4;
              }
 
              .theme-control-hint {
@@ -469,12 +801,10 @@ function updateThemeButtonStates() {
                  }
 
                  .theme-button-grid {
-                     flex-direction: row;
-                     flex-wrap: wrap;
+                     grid-template-columns: repeat(2, minmax(0, 1fr));
                  }
 
                  .theme-filter-btn {
-                     flex: 1 1 calc(50% - 8px);
                      justify-content: center;
                  }
              }
@@ -492,10 +822,12 @@ function updateThemeButtonStates() {
             <div class="theme-control-header">Temas</div>
             <div class="theme-control-actions">
                 <button type="button" class="theme-mode-btn active" data-mode="all" aria-pressed="true">Mostrar todos</button>
+                <button type="button" class="theme-clear-btn" data-action="clear" aria-pressed="false">Limpar filtros</button>
                 <button type="button" class="theme-mode-btn" data-mode="none" aria-pressed="false">Ocultar todos</button>
             </div>
+            <div class="theme-control-summary" id="theme-filter-summary" aria-live="polite"></div>
             <div class="theme-button-grid" id="theme-button-grid"></div>
-            <div class="theme-control-hint">Clique em um tema para ver apenas ele.</div>
+            <div class="theme-control-hint">Clique em um tema para ver os artigos e conexões relacionadas.</div>
         </div>
         <div class="card" style="width: 100%">
             
@@ -522,7 +854,8 @@ function updateThemeButtonStates() {
               var options, data;
               var filterActive = false;
               var themeFilters = {};
-              var themeState = { mode: 'all', theme: null };
+              var nodeNeighbors = {};
+              var themeState = { mode: 'all', theme: null, primaryCount: 0, contextCount: 0 };
               var filter = {
                   item : '',
                   property : '',
@@ -549,6 +882,7 @@ function updateThemeButtonStates() {
                     nodeColors[nodeId] = allNodes[nodeId].color;
                   }
                   allEdges = edges.get({ returnType: "Object" });
+                  initializeNeighborMap();
                   // adding nodes and edges to the graph
                   data = {nodes: nodes, edges: edges};
 
@@ -648,6 +982,8 @@ function updateThemeButtonStates() {
             themeFilters = {};
             themeState.mode = 'all';
             themeState.theme = null;
+            themeState.primaryCount = 0;
+            themeState.contextCount = 0;
 
             var themePanel = document.getElementById('theme-control-panel');
             var themeButtonGrid = document.getElementById('theme-button-grid');
@@ -710,15 +1046,25 @@ function updateThemeButtonStates() {
                   button.setAttribute('data-theme', themeName);
                   button.setAttribute('aria-pressed', 'false');
 
+                  var themeColor = themeFilters[themeName].color || '#6b7280';
+                  var themeCount = Array.isArray(themeFilters[themeName].nodes) ? themeFilters[themeName].nodes.length : 0;
+                  button.setAttribute('aria-label', themeName + ' (' + themeCount + ' artigos)');
+                  button.dataset.count = String(themeCount);
+
                   var colorDot = document.createElement('span');
                   colorDot.className = 'theme-color-dot';
-                  colorDot.style.backgroundColor = themeFilters[themeName].color || '#6b7280';
+                  colorDot.style.backgroundColor = themeColor;
 
                   var labelSpan = document.createElement('span');
                   labelSpan.textContent = themeName;
 
+                  var countSpan = document.createElement('span');
+                  countSpan.className = 'theme-count';
+                  countSpan.textContent = themeCount;
+
                   button.appendChild(colorDot);
                   button.appendChild(labelSpan);
+                  button.appendChild(countSpan);
 
                   button.addEventListener('click', function() {
                     if (themeState.mode === 'single' && themeState.theme === themeName) {
@@ -749,6 +1095,13 @@ function updateThemeButtonStates() {
                   }
                 });
               });
+
+              var clearButton = themePanel.querySelector('.theme-clear-btn');
+              if (clearButton) {
+                clearButton.addEventListener('click', function() {
+                  setThemeMode('all');
+                });
+              }
 
               updateThemeButtonStates();
             }
