@@ -16,18 +16,61 @@ function updateViewportUnit() {
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 
+function updateLayoutMetrics() {
+  if (typeof window === 'undefined') {
+    return;
+  }
+
+  const root = document.documentElement;
+  if (!root) {
+    return;
+  }
+
+  const header = document.querySelector('.top-bar');
+  const layout = document.querySelector('.v2-layout');
+  const graphContainer = document.getElementById('network-container');
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight || 0;
+
+  let availableHeight = viewportHeight;
+
+  if (graphContainer && typeof graphContainer.getBoundingClientRect === 'function') {
+    const rect = graphContainer.getBoundingClientRect();
+    const offsetTop = Math.max(rect.top, 0);
+    availableHeight = Math.max(360, viewportHeight - offsetTop - 32);
+  } else {
+    const headerHeight = header ? header.getBoundingClientRect().height : 0;
+    let layoutPadding = 0;
+    if (layout && typeof window.getComputedStyle === 'function') {
+      const layoutStyles = window.getComputedStyle(layout);
+      layoutPadding += parseFloat(layoutStyles.paddingTop || '0') || 0;
+      layoutPadding += parseFloat(layoutStyles.paddingBottom || '0') || 0;
+    }
+    availableHeight = Math.max(360, viewportHeight - headerHeight - layoutPadding - 24);
+  }
+
+  root.style.setProperty('--graph-available-height', `${availableHeight}px`);
+
+  const themeMaxHeight = Math.max(240, availableHeight - 190);
+  root.style.setProperty('--theme-panel-max-height', `${themeMaxHeight}px`);
+}
+
+function handleViewportMetricsUpdate() {
+  updateViewportUnit();
+  updateLayoutMetrics();
+}
+
 function initializeViewportUnitWatcher() {
   if (typeof window === 'undefined') {
     return;
   }
 
-  updateViewportUnit();
+  handleViewportMetricsUpdate();
 
-  window.addEventListener('resize', updateViewportUnit);
-  window.addEventListener('orientationchange', updateViewportUnit);
+  window.addEventListener('resize', handleViewportMetricsUpdate);
+  window.addEventListener('orientationchange', handleViewportMetricsUpdate);
 
   if (window.visualViewport && typeof window.visualViewport.addEventListener === 'function') {
-    window.visualViewport.addEventListener('resize', updateViewportUnit);
+    window.visualViewport.addEventListener('resize', handleViewportMetricsUpdate);
   }
 }
 
@@ -104,7 +147,7 @@ async function bootstrapVisualization() {
     const dataset = transformDataset(rawData, themeColors);
 
     const graphManager = new GraphManager('network-container');
-    const filtersManager = new FiltersManager(dataset.nodes);
+    const filtersManager = new FiltersManager(dataset.nodes, dataset.edges);
     const statisticsManager = new StatisticsManager(dataset.nodes, dataset.edges);
 
     const uiController = new UIController({
@@ -116,6 +159,7 @@ async function bootstrapVisualization() {
     });
 
     uiController.initialize(dataset);
+    updateLayoutMetrics();
     requestAnimationFrame(() => graphManager.resize());
   } catch (error) {
     console.error('[Visualização V2]', error);

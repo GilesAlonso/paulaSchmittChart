@@ -23,6 +23,7 @@ export class GraphManager {
     this.currentIncoming = new Map();
     this.currentNodes = [];
     this.currentEdges = [];
+    this.currentContext = { focusTheme: null, primaryIds: new Set(), neighborIds: new Set() };
     this.initialized = false;
     this.onNodeSelect = null;
     this.onNodeDeselect = null;
@@ -139,14 +140,37 @@ export class GraphManager {
       });
   }
 
-  updateData(nodes = [], edges = [], incomingMap = new Map()) {
+  updateData(nodes = [], edges = [], incomingMap = new Map(), displayContext = {}) {
     this.currentNodes = nodes;
     this.currentEdges = edges;
     this.currentIncoming = incomingMap;
 
+    const hasContext = displayContext && typeof displayContext === 'object';
+    const focusTheme = hasContext && typeof displayContext.focusTheme !== 'undefined' && displayContext.focusTheme !== null
+      ? displayContext.focusTheme
+      : null;
+
+    const toSet = (value) => {
+      if (value instanceof Set) {
+        return value;
+      }
+      if (Array.isArray(value)) {
+        return new Set(value);
+      }
+      if (value && typeof value[Symbol.iterator] === 'function') {
+        return new Set(value);
+      }
+      return new Set();
+    };
+
+    const primaryIds = hasContext ? toSet(displayContext.primaryIds) : new Set();
+    const neighborIds = hasContext ? toSet(displayContext.neighborIds) : new Set();
+
+    this.currentContext = { focusTheme, primaryIds, neighborIds };
+
     this.removeFallbackTextNodes();
 
-    const visNodes = nodes.map((node) => this.mapNode(node, incomingMap));
+    const visNodes = nodes.map((node) => this.mapNode(node, incomingMap, this.currentContext));
 
     this.nodesDataSet.clear();
     if (visNodes.length) {
@@ -164,28 +188,68 @@ export class GraphManager {
     }
   }
 
-  mapNode(node, incomingMap) {
+  mapNode(node, incomingMap, context = this.currentContext) {
     const citationCount = incomingMap.get(node.id) || 0;
-    const size = clamp(12 + citationCount * 2.2, 12, 38);
+    const baseSize = clamp(12 + citationCount * 2.2, 12, 38);
+
+    const focusTheme = context && typeof context.focusTheme !== 'undefined' && context.focusTheme !== null ? context.focusTheme : null;
+    const primaryIds = context && context.primaryIds instanceof Set
+      ? context.primaryIds
+      : new Set();
+    const neighborIds = context && context.neighborIds instanceof Set
+      ? context.neighborIds
+      : new Set();
+    const focusActive = Boolean(focusTheme);
+    const isPrimary = focusActive && primaryIds.has(node.id);
+    const isNeighbor = focusActive && neighborIds.has(node.id);
+
+    const baseColor = node.color;
+    let background = baseColor;
+    let border = lightenColor(baseColor, 0.08);
+    let highlightBackground = baseColor;
+    let highlightBorder = '#111827';
+    let opacity = 1;
+    let fontColor = '#111827';
+    let size = baseSize;
+
+    if (focusActive) {
+      if (isPrimary) {
+        border = '#0f172a';
+        highlightBorder = '#0f172a';
+        size = clamp(baseSize * 1.05, 12, 40);
+      } else if (isNeighbor) {
+        background = lightenColor(baseColor, 0.32);
+        border = lightenColor(baseColor, 0.45);
+        highlightBackground = background;
+        highlightBorder = border;
+        opacity = 0.78;
+        fontColor = '#334155';
+        size = clamp(baseSize * 0.95, 10, 34);
+      } else {
+        opacity = 0.35;
+        fontColor = '#475569';
+      }
+    }
 
     return {
       id: node.id,
       label: this.labelsVisible ? node.label : '',
       title: this.buildTooltip(node, citationCount),
       color: {
-        background: node.color,
-        border: lightenColor(node.color, 0.08),
+        background,
+        border,
         highlight: {
-          background: node.color,
-          border: '#111827'
+          background: highlightBackground,
+          border: highlightBorder
         }
       },
       font: {
         size: this.labelsVisible ? 14 : 0,
         face: 'Inter',
-        color: '#111827'
+        color: fontColor
       },
       size,
+      opacity,
       mass: Math.max(1, citationCount * 0.5),
       group: node.theme
     };
@@ -217,11 +281,31 @@ export class GraphManager {
     }
     this.labelsVisible = isVisible;
 
-    const updated = this.currentNodes.map((node) => ({
-      id: node.id,
-      label: isVisible ? node.label : '',
-      font: { size: isVisible ? 14 : 0, face: 'Inter', color: '#111827' }
-    }));
+    const context = this.currentContext || {};
+    const focusTheme = typeof context.focusTheme !== 'undefined' && context.focusTheme !== null ? context.focusTheme : null;
+    const primaryIds = context.primaryIds instanceof Set ? context.primaryIds : new Set();
+    const neighborIds = context.neighborIds instanceof Set ? context.neighborIds : new Set();
+    const focusActive = Boolean(focusTheme);
+
+    const updated = this.currentNodes.map((node) => {
+      const isPrimary = focusActive && primaryIds.has(node.id);
+      const isNeighbor = focusActive && neighborIds.has(node.id);
+      let fontColor = '#111827';
+
+      if (focusActive) {
+        if (isNeighbor && !isPrimary) {
+          fontColor = '#334155';
+        } else if (!isPrimary) {
+          fontColor = '#475569';
+        }
+      }
+
+      return {
+        id: node.id,
+        label: isVisible ? node.label : '',
+        font: { size: isVisible ? 14 : 0, face: 'Inter', color: fontColor }
+      };
+    });
 
     this.nodesDataSet.update(updated);
   }
