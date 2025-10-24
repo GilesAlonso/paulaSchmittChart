@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2025-10-24T02:43:59Z",
+    "generated_at": "2025-10-24T04:12:49Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
     "total_nodes": 282,
     "total_edges": 271
@@ -12,6 +12,7 @@
       "url": "https://www.poder360.com.br/opiniao/ha-risco-de-legalizar-o-lobby-e-tambem-a-corrupcao-escreve-paula-schmitt/",
       "published_at": "2018-11-10T19:59:18-03:00",
       "listed_date": "2018-11-10",
+      "theme": "Congresso",
       "modified_at": "2018-11-15T13:03:30-03:00",
       "available": true,
       "status_code": 200
@@ -22,6 +23,7 @@
       "url": "https://www.poder360.com.br/opiniao/pacote-anticrime-flerta-com-o-revolucionario-e-o-inaceitavel-avalia-paula-schmitt/",
       "published_at": "2019-12-05T05:50:59-03:00",
       "listed_date": "2019-12-05",
+      "theme": "Brasil",
       "modified_at": "2019-12-05T05:50:59-03:00",
       "available": true,
       "status_code": 200
@@ -32,6 +34,7 @@
       "url": "https://www.poder360.com.br/opiniao/digressoes-e-impressoes-sobre-o-pacote-anticrime-por-paula-schmitt/",
       "published_at": "2019-12-12T06:00:17-03:00",
       "listed_date": "2019-12-12",
+      "theme": "Congresso",
       "modified_at": "2019-12-12T06:00:17-03:00",
       "available": true,
       "status_code": 200
@@ -42,6 +45,7 @@
       "url": "https://www.poder360.com.br/opiniao/porta-dos-fundos-e-os-moralismos-tosco-e-descolado-escreve-paula-schmitt/",
       "published_at": "2019-12-19T05:50:26-03:00",
       "listed_date": "2019-12-19",
+      "theme": "Brasil",
       "modified_at": "2019-12-19T05:50:26-03:00",
       "available": true,
       "status_code": 200
@@ -52,6 +56,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-politicamente-correto-e-o-intelectualmente-raso-por-paula-schmitt/",
       "published_at": "2019-12-27T06:00:48-03:00",
       "listed_date": "2019-12-27",
+      "theme": "Brasil",
       "modified_at": "2019-12-27T06:00:48-03:00",
       "available": true,
       "status_code": 200
@@ -62,6 +67,7 @@
       "url": "https://www.poder360.com.br/opiniao/as-artes-marciais-e-os-mestres-de-uma-vida-melhor-escreve-paula-schmitt/",
       "published_at": "2020-01-02T05:30:38-03:00",
       "listed_date": "2020-01-02",
+      "theme": "Brasil",
       "modified_at": "2020-01-02T05:30:38-03:00",
       "available": true,
       "status_code": 200
@@ -72,6 +78,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-era-da-manipulacao-e-os-ataques-de-falsa-bandeira-escreve-paula-schmitt/",
       "published_at": "2020-01-09T05:45:54-03:00",
       "listed_date": "2020-01-09",
+      "theme": "Internacional",
       "modified_at": "2020-01-09T05:45:54-03:00",
       "available": true,
       "status_code": 200
@@ -82,6 +89,7 @@
       "url": "https://www.poder360.com.br/opiniao/um-passeio-pela-logica-politica-de-nassim-taleb-parte1-por-paula-schmitt/",
       "published_at": "2020-01-16T05:50:18-03:00",
       "listed_date": "2020-01-16",
+      "theme": "Internacional",
       "modified_at": "2020-01-16T05:50:18-03:00",
       "available": true,
       "status_code": 200
@@ -92,6 +100,7 @@
       "url": "https://www.poder360.com.br/opiniao/um-passeio-pela-logica-politica-de-nassim-taleb-parte-2-por-paula-schmitt/",
       "published_at": "2020-01-23T05:45:38-03:00",
       "listed_date": "2020-01-23",
+      "theme": "Literatura",
       "modified_at": "2020-01-23T09:34:05-03:00",
       "available": true,
       "status_code": 200
@@ -102,6 +111,7 @@
       "url": "https://www.poder360.com.br/opiniao/agrotoxicos-e-transgenicos-quem-conhece-teme-por-paula-schmitt/",
       "published_at": "2020-01-30T05:30:59-03:00",
       "listed_date": "2020-01-30",
+      "theme": "Brasil",
       "modified_at": "2020-01-30T05:30:59-03:00",
       "available": true,
       "status_code": 200
@@ -112,6 +122,7 @@
       "url": "https://www.poder360.com.br/opiniao/vaza-jato-glenn-greenwald-e-uma-coincidencia-intrigante-por-paula-schmitt/",
       "published_at": "2020-02-06T05:50:59-03:00",
       "listed_date": "2020-02-06",
+      "theme": "Brasil",
       "modified_at": "2020-02-06T06:26:32-03:00",
       "available": true,
       "status_code": 200
@@ -122,6 +133,7 @@
       "url": "https://www.poder360.com.br/opiniao/vaza-jato-glenn-greenwald-e-uma-coincidencia-intrigante-parte-2-por-paula-schmitt/",
       "published_at": "2020-02-13T05:30:16-03:00",
       "listed_date": "2020-02-13",
+      "theme": "Brasil",
       "modified_at": "2020-02-13T05:30:16-03:00",
       "available": true,
       "status_code": 200
@@ -132,6 +144,7 @@
       "url": "https://www.poder360.com.br/opiniao/vaza-jato-glenn-greenwald-e-uma-coincidencia-intrigante-parte-3-por-paula-schmitt/",
       "published_at": "2020-02-20T05:50:00-03:00",
       "listed_date": "2020-02-20",
+      "theme": "Internacional",
       "modified_at": "2020-02-20T13:01:15-03:00",
       "available": true,
       "status_code": 200
@@ -142,6 +155,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-longa-viagem-de-yvonne-bezerra-de-mello-conta-paula-schmitt/",
       "published_at": "2020-02-27T11:56:28-03:00",
       "listed_date": "2020-02-27",
+      "theme": "Brasil",
       "modified_at": "2020-02-27T11:56:28-03:00",
       "available": true,
       "status_code": 200
@@ -152,6 +166,7 @@
       "url": "https://www.poder360.com.br/opiniao/desonestidade-intelectual-e-a-cegueira-da-desatencao-por-paula-schmitt/",
       "published_at": "2020-03-05T05:30:58-03:00",
       "listed_date": "2020-03-05",
+      "theme": "Mídia",
       "modified_at": "2020-03-05T09:35:51-03:00",
       "available": true,
       "status_code": 200
@@ -162,6 +177,7 @@
       "url": "https://www.poder360.com.br/opiniao/desonestidade-intelectual-e-o-politicamente-correto-por-paula-schmitt/",
       "published_at": "2020-03-12T05:30:02-03:00",
       "listed_date": "2020-03-12",
+      "theme": "Mídia",
       "modified_at": "2020-03-12T05:30:02-03:00",
       "available": true,
       "status_code": 200
@@ -172,6 +188,7 @@
       "url": "https://www.poder360.com.br/opiniao/os-ignorantes-propositais-e-os-cumplices-involuntarios-por-paula-schmitt/",
       "published_at": "2020-03-19T05:30:34-03:00",
       "listed_date": "2020-03-19",
+      "theme": "Brasil",
       "modified_at": "2020-03-19T05:30:34-03:00",
       "available": true,
       "status_code": 200
@@ -182,6 +199,7 @@
       "url": "https://www.poder360.com.br/opiniao/confinamento-para-rico-e-ferias-para-pobre-e-fome-analisa-paula-schmitt/",
       "published_at": "2020-03-26T06:00:16-03:00",
       "listed_date": "2020-03-26",
+      "theme": "Brasil",
       "modified_at": "2020-03-26T10:30:47-03:00",
       "available": true,
       "status_code": 200
@@ -192,6 +210,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-jornalismo-autoexpurgador-por-paula-schmitt/",
       "published_at": "2020-04-02T06:00:40-03:00",
       "listed_date": "2020-04-02",
+      "theme": "Mídia",
       "modified_at": "2020-04-02T07:28:14-03:00",
       "available": true,
       "status_code": 200
@@ -202,6 +221,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-poder-de-todos-nos-divagacoes-em-tempos-de-covid-19-por-paula-schmitt/",
       "published_at": "2020-04-09T05:50:49-03:00",
       "listed_date": "2020-04-09",
+      "theme": "Brasil",
       "modified_at": "2020-04-09T05:50:49-03:00",
       "available": true,
       "status_code": 200
@@ -212,6 +232,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-valor-de-cada-um-e-a-inversao-de-valores-de-todos-nos-por-paula-schmitt/",
       "published_at": "2020-04-16T12:47:37-03:00",
       "listed_date": "2020-04-16",
+      "theme": "Brasil",
       "modified_at": "2020-04-16T12:47:37-03:00",
       "available": true,
       "status_code": 200
@@ -222,6 +243,7 @@
       "url": "https://www.poder360.com.br/opiniao/cobrar-apenas-e-tudo-o-que-e-devido-por-paula-schmitt/",
       "published_at": "2020-04-23T18:15:02-03:00",
       "listed_date": "2020-04-23",
+      "theme": "Brasil",
       "modified_at": "2020-04-23T18:15:02-03:00",
       "available": true,
       "status_code": 200
@@ -232,6 +254,7 @@
       "url": "https://www.poder360.com.br/opiniao/intervencao-na-natureza-tem-seu-preco-alerta-paula-schmitt/",
       "published_at": "2020-04-30T05:50:02-03:00",
       "listed_date": "2020-04-30",
+      "theme": "Coronavírus",
       "modified_at": "2020-04-30T11:29:39-03:00",
       "available": true,
       "status_code": 200
@@ -242,6 +265,7 @@
       "url": "https://www.poder360.com.br/opiniao/minha-liberdade-termina-quando-comeca-a-sua-escreve-paula-schmitt/",
       "published_at": "2020-05-07T06:00:05-03:00",
       "listed_date": "2020-05-07",
+      "theme": "Coronavírus",
       "modified_at": "2020-05-07T15:59:35-03:00",
       "available": true,
       "status_code": 200
@@ -252,6 +276,7 @@
       "url": "https://www.poder360.com.br/opiniao/consideracoes-sobre-os-limites-do-libertarianismo-parte-2-por-paula-schmitt/",
       "published_at": "2020-05-21T06:00:05-03:00",
       "listed_date": "2020-05-21",
+      "theme": "Literatura",
       "modified_at": "2020-05-21T07:48:51-03:00",
       "available": true,
       "status_code": 200
@@ -262,6 +287,7 @@
       "url": "https://www.poder360.com.br/opiniao/pandemia-da-censura-escreve-paula-schmitt/",
       "published_at": "2020-05-28T10:29:37-03:00",
       "listed_date": "2020-05-28",
+      "theme": "Mídia",
       "modified_at": "2020-05-28T10:29:37-03:00",
       "available": true,
       "status_code": 200
@@ -272,6 +298,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-estudo-da-lancet-e-a-contaminacao-das-noticias-escreve-paula-schmitt/",
       "published_at": "2020-06-04T06:20:42-03:00",
       "listed_date": "2020-06-04",
+      "theme": "Coronavírus",
       "modified_at": "2020-06-04T06:20:42-03:00",
       "available": true,
       "status_code": 200
@@ -282,6 +309,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-jornalismo-correto-e-o-duplo-pensar-analisa-paula-schmitt/",
       "published_at": "2020-06-11T10:23:57-03:00",
       "listed_date": "2020-06-11",
+      "theme": "Internacional",
       "modified_at": "2020-06-11T10:23:57-03:00",
       "available": true,
       "status_code": 200
@@ -292,6 +320,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-violencia-generalizada-e-os-alvos-de-barro-por-paula-schmitt/",
       "published_at": "2020-06-18T17:51:54-03:00",
       "listed_date": "2020-06-18",
+      "theme": "Internacional",
       "modified_at": "2020-06-18T17:51:54-03:00",
       "available": true,
       "status_code": 200
@@ -302,6 +331,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-antirracismo-racista-e-outras-inversoes-de-valores-por-paula-schmitt/",
       "published_at": "2020-06-25T17:14:07-03:00",
       "listed_date": "2020-06-25",
+      "theme": "Brasil",
       "modified_at": "2020-06-26T09:47:41-03:00",
       "available": true,
       "status_code": 200
@@ -312,6 +342,7 @@
       "url": "https://www.poder360.com.br/opiniao/chapeuzinho-lobo-mau-e-o-governo-de-homens-por-paula-schmitt/",
       "published_at": "2020-07-02T17:23:35-03:00",
       "listed_date": "2020-07-02",
+      "theme": "Brasil",
       "modified_at": "2020-07-02T17:23:35-03:00",
       "available": true,
       "status_code": 200
@@ -322,6 +353,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-combate-ao-racismo-que-o-incentiva-por-paula-schmitt/",
       "published_at": "2020-07-09T06:00:33-03:00",
       "listed_date": "2020-07-09",
+      "theme": "Mídia",
       "modified_at": "2020-07-09T07:27:21-03:00",
       "available": true,
       "status_code": 200
@@ -332,6 +364,7 @@
       "url": "https://www.poder360.com.br/opiniao/os-sabios-os-tolos-e-os-covardes-por-paula-schmitt/",
       "published_at": "2020-07-16T06:00:39-03:00",
       "listed_date": "2020-07-16",
+      "theme": "Internacional",
       "modified_at": "2020-07-16T07:22:18-03:00",
       "available": true,
       "status_code": 200
@@ -342,6 +375,7 @@
       "url": "https://www.poder360.com.br/opiniao/antirracismo-inc-e-o-sabao-autossujante-por-paula-schmitt/",
       "published_at": "2020-07-23T17:15:04-03:00",
       "listed_date": "2020-07-23",
+      "theme": "Mídia",
       "modified_at": "2020-07-23T17:15:04-03:00",
       "available": true,
       "status_code": 200
@@ -352,6 +386,7 @@
       "url": "https://www.poder360.com.br/opiniao/as-prisoes-privadas-e-os-riscos-coletivos-por-paula-schmitt/",
       "published_at": "2020-07-30T06:00:09-03:00",
       "listed_date": "2020-07-30",
+      "theme": "Brasil",
       "modified_at": "2020-07-30T17:23:19-03:00",
       "available": true,
       "status_code": 200
@@ -362,6 +397,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-explosao-em-beirute-e-algumas-teorias-por-paula-schmitt/",
       "published_at": "2020-08-06T06:00:10-03:00",
       "listed_date": "2020-08-06",
+      "theme": "Internacional",
       "modified_at": "2020-08-06T07:43:53-03:00",
       "available": true,
       "status_code": 200
@@ -372,6 +408,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-primeira-vitima-da-guerra-e-a-verdade-constata-paula-schmitt/",
       "published_at": "2020-08-13T17:21:44-03:00",
       "listed_date": "2020-08-13",
+      "theme": "Internacional",
       "modified_at": "2020-08-13T17:21:44-03:00",
       "available": true,
       "status_code": 200
@@ -382,6 +419,7 @@
       "url": "https://www.poder360.com.br/opiniao/aborto-em-vida-por-paula-schmitt/",
       "published_at": "2020-08-20T06:00:13-03:00",
       "listed_date": "2020-08-20",
+      "theme": "Brasil",
       "modified_at": "2020-08-20T07:40:24-03:00",
       "available": true,
       "status_code": 200
@@ -392,6 +430,7 @@
       "url": "https://www.poder360.com.br/opiniao/entre-a-paranoia-e-a-inocencia-por-paula-schmitt/",
       "published_at": "2020-08-27T06:00:14-03:00",
       "listed_date": "2020-08-27",
+      "theme": "Mídia",
       "modified_at": "2020-08-27T18:29:13-03:00",
       "available": true,
       "status_code": 200
@@ -402,6 +441,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-vacina-obrigatoria-e-a-certeza-dos-que-nao-sabem-por-paula-schmitt/",
       "published_at": "2020-09-04T06:00:13-03:00",
       "listed_date": "2020-09-04",
+      "theme": "Coronavírus",
       "modified_at": "2020-09-04T06:00:13-03:00",
       "available": true,
       "status_code": 200
@@ -412,6 +452,7 @@
       "url": "https://www.poder360.com.br/opiniao/q-anon-e-a-credulidade-do-cetico-escreve-paulo-schmitt/",
       "published_at": "2020-09-10T07:28:17-03:00",
       "listed_date": "2020-09-10",
+      "theme": "Internacional",
       "modified_at": "2020-09-10T07:28:17-03:00",
       "available": true,
       "status_code": 200
@@ -422,6 +463,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-11-de-setembro-e-a-fe-que-move-as-versoes-oficiais-por-paula-schmitt/",
       "published_at": "2020-09-17T06:00:45-03:00",
       "listed_date": "2020-09-17",
+      "theme": "Internacional",
       "modified_at": "2020-09-17T07:19:59-03:00",
       "available": true,
       "status_code": 200
@@ -432,6 +474,7 @@
       "url": "https://www.poder360.com.br/opiniao/servidao-voluntaria-aos-eua-nao-trara-beneficio-ao-brasil-alerta-paula-schmitt/",
       "published_at": "2020-09-24T05:56:19-03:00",
       "listed_date": "2020-09-24",
+      "theme": "Brasil",
       "modified_at": "2020-09-24T11:09:23-03:00",
       "available": true,
       "status_code": 200
@@ -442,6 +485,7 @@
       "url": "https://www.poder360.com.br/opiniao/q-anon-e-as-figuras-nas-nuvens-por-paula-schmitt/",
       "published_at": "2020-10-01T06:00:46-03:00",
       "listed_date": "2020-10-01",
+      "theme": "Internacional",
       "modified_at": "2020-10-01T06:00:46-03:00",
       "available": true,
       "status_code": 200
@@ -452,6 +496,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-q-anon-as-teorias-conspiratorias-e-os-signos-que-queremos-ver-por-paula-schmitt/",
       "published_at": "2020-10-08T05:50:57-03:00",
       "listed_date": "2020-10-08",
+      "theme": "Brasil",
       "modified_at": "2020-10-08T15:05:12-03:00",
       "available": true,
       "status_code": 200
@@ -462,6 +507,7 @@
       "url": "https://www.poder360.com.br/opiniao/q-anon-o-filme-premonitorio-e-a-vontade-de-estar-certo-por-paula-schmitt/",
       "published_at": "2020-10-15T06:00:07-03:00",
       "listed_date": "2020-10-15",
+      "theme": "Internacional",
       "modified_at": "2020-10-15T06:00:07-03:00",
       "available": true,
       "status_code": 200
@@ -472,6 +518,7 @@
       "url": "https://www.poder360.com.br/opiniao/q-anon-pizzagate-e-as-idiossincrasias-das-teorias-da-conspiracao-por-paula-schmitt/",
       "published_at": "2020-10-22T06:00:30-03:00",
       "listed_date": "2020-10-22",
+      "theme": "Internacional",
       "modified_at": "2020-10-22T06:00:30-03:00",
       "available": true,
       "status_code": 200
@@ -482,6 +529,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-antirracismo-e-a-lei-dos-piores-por-paula-schmitt/",
       "published_at": "2020-10-29T06:00:50-03:00",
       "listed_date": "2020-10-29",
+      "theme": "Mídia",
       "modified_at": "2020-10-29T06:00:50-03:00",
       "available": true,
       "status_code": 200
@@ -492,6 +540,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-queda-de-um-anjo-da-imprensa-nacional-por-paula-schmitt/",
       "published_at": "2020-11-05T06:00:40-03:00",
       "listed_date": "2020-11-05",
+      "theme": "Internacional",
       "modified_at": "2020-11-05T06:00:40-03:00",
       "available": true,
       "status_code": 200
@@ -502,6 +551,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-vaza-jato-e-o-sequestro-de-jornalistas-brasileiros-por-paula-schmitt/",
       "published_at": "2020-11-12T06:00:20-03:00",
       "listed_date": "2020-11-12",
+      "theme": "Mídia",
       "modified_at": "2020-11-12T06:00:20-03:00",
       "available": true,
       "status_code": 200
@@ -512,6 +562,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-ciencia-o-tempo-e-os-remedios-sem-patente-por-paula-schmitt/",
       "published_at": "2020-11-19T12:13:42-03:00",
       "listed_date": "2020-11-19",
+      "theme": "Coronavírus",
       "modified_at": "2020-11-19T12:13:42-03:00",
       "available": true,
       "status_code": 200
@@ -522,6 +573,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-industria-farmaceutica-a-seguranca-da-vacina-e-a-previsibilidade-do-imprevisto-por-paula-schmitt/",
       "published_at": "2020-11-26T06:00:35-03:00",
       "listed_date": "2020-11-26",
+      "theme": "História",
       "modified_at": "2020-11-26T07:43:21-03:00",
       "available": true,
       "status_code": 200
@@ -532,6 +584,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-vacina-da-covid-19-os-riscos-e-a-heuristica-de-quem-sabe-pouco-por-paula-schmitt/",
       "published_at": "2020-12-03T06:00:43-03:00",
       "listed_date": "2020-12-03",
+      "theme": "Coronavírus",
       "modified_at": "2020-12-03T07:48:31-03:00",
       "available": true,
       "status_code": 200
@@ -542,6 +595,7 @@
       "url": "https://www.poder360.com.br/opiniao/dia-de-combate-a-corrupcao-ja-acabou-moro-provavelmente-tambem-por-paula-schmitt/",
       "published_at": "2020-12-10T10:21:02-03:00",
       "listed_date": "2020-12-10",
+      "theme": "Lava Jato",
       "modified_at": "2020-12-10T10:21:02-03:00",
       "available": true,
       "status_code": 200
@@ -552,6 +606,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-politica-nacional-e-o-vira-lata-caramelo-por-paula-schmitt/",
       "published_at": "2020-12-17T06:00:48-03:00",
       "listed_date": "2020-12-17",
+      "theme": "Brasil",
       "modified_at": "2020-12-17T06:00:48-03:00",
       "available": true,
       "status_code": 200
@@ -562,6 +617,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-vacina-o-medo-e-as-explosoes-em-beirute-por-paula-schmitt/",
       "published_at": "2020-12-24T06:00:46-03:00",
       "listed_date": "2020-12-24",
+      "theme": "Brasil",
       "modified_at": "2020-12-24T13:28:34-03:00",
       "available": true,
       "status_code": 200
@@ -572,6 +628,7 @@
       "url": "https://www.poder360.com.br/opiniao/as-armas-biologicas-e-a-defesa-que-mata-por-paula-schmitt/",
       "published_at": "2020-12-31T13:59:09-03:00",
       "listed_date": "2020-12-31",
+      "theme": "Coronavírus",
       "modified_at": "2020-12-31T13:59:09-03:00",
       "available": true,
       "status_code": 200
@@ -582,6 +639,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-pandemia-e-os-homens-de-visao-por-paula-schmitt/",
       "published_at": "2021-01-07T08:59:01-03:00",
       "listed_date": "2021-01-07",
+      "theme": "Coronavírus",
       "modified_at": "2021-01-07T08:59:01-03:00",
       "available": true,
       "status_code": 200
@@ -592,6 +650,7 @@
       "url": "https://www.poder360.com.br/opiniao/censura-pos-trump-parte-1-por-paula-schmitt/",
       "published_at": "2021-01-14T06:00:16-03:00",
       "listed_date": "2021-01-14",
+      "theme": "Internacional",
       "modified_at": "2021-01-14T06:00:16-03:00",
       "available": true,
       "status_code": 200
@@ -602,6 +661,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-privatizacao-da-injuria-e-a-elevacao-dos-fracos-censura-pos-trump-parte-2-por-paula-schmitt/",
       "published_at": "2021-01-21T14:01:58-03:00",
       "listed_date": "2021-01-21",
+      "theme": "Mídia",
       "modified_at": "2021-01-26T12:59:11-03:00",
       "available": true,
       "status_code": 200
@@ -612,6 +672,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-luta-livre-que-todos-perdem-por-paula-schmitt/",
       "published_at": "2021-01-28T06:00:30-03:00",
       "listed_date": "2021-01-28",
+      "theme": "Governo",
       "modified_at": "2021-01-28T06:00:30-03:00",
       "available": true,
       "status_code": 200
@@ -622,6 +683,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-cor-da-virtude-o-valor-que-vem-do-berco-e-o-selo-verificador-por-paula-schmitt/",
       "published_at": "2021-02-04T10:18:50-03:00",
       "listed_date": "2021-02-04",
+      "theme": "Mídia",
       "modified_at": "2021-02-04T10:18:50-03:00",
       "available": true,
       "status_code": 200
@@ -632,6 +694,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-oms-e-a-volta-dos-que-mal-foram-por-paula-schmitt/",
       "published_at": "2021-02-11T09:58:14-03:00",
       "listed_date": "2021-02-11",
+      "theme": "Coronavírus",
       "modified_at": "2021-02-11T09:58:14-03:00",
       "available": true,
       "status_code": 200
@@ -642,6 +705,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-pandemia-das-coincidencias-e-o-vazamento-de-gas-por-paula-schmitt/",
       "published_at": "2021-02-19T06:00:09-03:00",
       "listed_date": "2021-02-19",
+      "theme": "Coronavírus",
       "modified_at": "2021-02-19T06:00:09-03:00",
       "available": true,
       "status_code": 200
@@ -652,6 +716,7 @@
       "url": "https://www.poder360.com.br/opiniao/facebook-x-australia-uma-guerra-sem-armas-por-paula-schmitt/",
       "published_at": "2021-02-25T06:00:17-03:00",
       "listed_date": "2021-02-25",
+      "theme": "Internacional",
       "modified_at": "2021-02-25T06:00:17-03:00",
       "available": true,
       "status_code": 200
@@ -662,6 +727,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-heroi-o-vilao-e-seu-lugar-de-fabula-por-paula-schmitt/",
       "published_at": "2021-03-04T10:12:54-03:00",
       "listed_date": "2021-03-04",
+      "theme": "Coronavírus",
       "modified_at": "2021-03-04T10:12:54-03:00",
       "available": true,
       "status_code": 200
@@ -672,6 +738,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-pfizer-e-a-imunidade-que-ela-nao-promete-mas-que-exige-de-todos-nos-por-paula-schmitt/",
       "published_at": "2021-03-11T05:50:49-03:00",
       "listed_date": "2021-03-11",
+      "theme": "Brasil",
       "modified_at": "2021-03-11T05:50:49-03:00",
       "available": true,
       "status_code": 200
@@ -682,6 +749,7 @@
       "url": "https://www.poder360.com.br/opiniao/as-maos-sujas-de-quem-lava-as-maos-por-paula-schmitt/",
       "published_at": "2021-03-18T09:18:42-03:00",
       "listed_date": "2021-03-18",
+      "theme": "Coronavírus",
       "modified_at": "2021-03-18T09:18:42-03:00",
       "available": true,
       "status_code": 200
@@ -692,6 +760,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-risco-o-beneficio-e-o-que-nao-custa-tentar-por-paula-schmitt/",
       "published_at": "2021-03-25T11:09:42-03:00",
       "listed_date": "2021-03-25",
+      "theme": "Coronavírus",
       "modified_at": "2021-03-25T11:09:42-03:00",
       "available": true,
       "status_code": 200
@@ -702,6 +771,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-hipocrisia-que-homenageia-o-vicio-por-paula-schmitt/",
       "published_at": "2021-04-01T06:00:25-03:00",
       "listed_date": "2021-04-01",
+      "theme": "Mídia",
       "modified_at": "2021-04-01T13:59:10-03:00",
       "available": true,
       "status_code": 200
@@ -712,6 +782,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-palco-o-cadafalso-e-o-interesse-comum-escreve-paula-schmitt/",
       "published_at": "2021-04-08T05:50:11-03:00",
       "listed_date": "2021-04-08",
+      "theme": "Mídia",
       "modified_at": "2021-04-08T05:50:11-03:00",
       "available": true,
       "status_code": 200
@@ -722,6 +793,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-2a-maior-tragedia-por-paula-schmitt/",
       "published_at": "2021-04-15T06:00:22-03:00",
       "listed_date": "2021-04-15",
+      "theme": "Coronavírus",
       "modified_at": "2021-04-17T21:44:02-03:00",
       "available": true,
       "status_code": 200
@@ -732,6 +804,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-gado-o-berrante-e-a-trajetoria-programavel-por-paula-schmitt/",
       "published_at": "2021-04-22T06:00:47-03:00",
       "listed_date": "2021-04-22",
+      "theme": "Coronavírus",
       "modified_at": "2021-04-22T06:00:47-03:00",
       "available": true,
       "status_code": 200
@@ -742,6 +815,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-direito-de-nao-saber-e-o-dever-de-informar-comenta-paula-schmitt/",
       "published_at": "2021-04-29T05:50:37-03:00",
       "listed_date": "2021-04-29",
+      "theme": "Coronavírus",
       "modified_at": "2021-04-29T05:50:37-03:00",
       "available": true,
       "status_code": 200
@@ -752,6 +826,7 @@
       "url": "https://www.poder360.com.br/opiniao/os-testes-da-covid-o-remedio-que-adoece-e-o-capitalismo-da-enfermidade-escreve-paula-schmitt/",
       "published_at": "2021-05-06T05:50:50-03:00",
       "listed_date": "2021-05-06",
+      "theme": "Coronavírus",
       "modified_at": "2021-05-06T05:50:50-03:00",
       "available": true,
       "status_code": 200
@@ -762,6 +837,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-gado-ao-contrario-e-as-mentes-diminutas-comenta-paula-schmitt/",
       "published_at": "2021-05-13T05:50:12-03:00",
       "listed_date": "2021-05-13",
+      "theme": "Coronavírus",
       "modified_at": "2021-05-14T14:38:16-03:00",
       "available": true,
       "status_code": 200
@@ -772,6 +848,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-toxoplasma-gondii-o-controle-das-massas-e-o-suicidio-coletivo-escreve-paula-schmitt/",
       "published_at": "2021-05-20T05:50:29-03:00",
       "listed_date": "2021-05-20",
+      "theme": "Governo",
       "modified_at": "2021-05-20T05:50:29-03:00",
       "available": true,
       "status_code": 200
@@ -782,6 +859,7 @@
       "url": "https://www.poder360.com.br/opiniao/os-erros-os-acertos-e-a-vontade-de-agradar-escreve-paula-schmitt/",
       "published_at": "2021-05-27T05:50:51-03:00",
       "listed_date": "2021-05-27",
+      "theme": "Literatura",
       "modified_at": "2021-05-27T05:50:51-03:00",
       "available": true,
       "status_code": 200
@@ -792,6 +870,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-cpi-da-pandemia-a-adulteracao-da-verdade-e-o-anao-moral-escreve-paula-schmitt/",
       "published_at": "2021-06-03T05:50:18-03:00",
       "listed_date": "2021-06-03",
+      "theme": "Congresso",
       "modified_at": "2021-06-03T09:56:02-03:00",
       "available": true,
       "status_code": 200
@@ -802,6 +881,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-obsolescencia-programada-o-negocio-sustentavel-e-a-vacina-dos-ovos-de-ouro-escreve-paula-schmitt/",
       "published_at": "2021-06-10T05:50:03-03:00",
       "listed_date": "2021-06-10",
+      "theme": "Coronavírus",
       "modified_at": "2021-12-10T10:54:31-03:00",
       "available": true,
       "status_code": 200
@@ -812,6 +892,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-vacina-da-covid-o-capitalismo-de-incentivos-e-a-premiacao-do-erro-analisa-paula-schmitt/",
       "published_at": "2021-06-17T05:50:28-03:00",
       "listed_date": "2021-06-17",
+      "theme": "Internacional",
       "modified_at": "2021-06-17T05:50:28-03:00",
       "available": true,
       "status_code": 200
@@ -822,6 +903,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-ivermectina-a-realidade-nao-mediada-e-os-estudos-bem-projetados-escreve-paula-schmitt-2/",
       "published_at": "2021-06-24T05:50:03-03:00",
       "listed_date": "2021-06-24",
+      "theme": "Coronavírus",
       "modified_at": "2021-06-24T06:04:30-03:00",
       "available": true,
       "status_code": 200
@@ -832,6 +914,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-pandemia-a-tempestade-e-o-arco-iris-escreve-paula-schmitt/",
       "published_at": "2021-07-01T05:50:56-03:00",
       "listed_date": "2021-07-01",
+      "theme": "Coronavírus",
       "modified_at": "2021-07-01T05:50:56-03:00",
       "available": true,
       "status_code": 200
@@ -842,6 +925,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-estudo-de-manaus-as-22-mortes-e-os-resultados-previsiveis-escreve-paula-schmitt/",
       "published_at": "2021-07-08T05:50:35-03:00",
       "listed_date": "2021-07-08",
+      "theme": "Brasil",
       "modified_at": "2021-07-08T06:51:16-03:00",
       "available": true,
       "status_code": 200
@@ -852,6 +936,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-voto-impresso-a-confianca-entre-as-partes-e-a-democracia-verificavel-escreve-paula-schmitt/",
       "published_at": "2021-07-15T05:50:17-03:00",
       "listed_date": "2021-07-15",
+      "theme": "Eleições",
       "modified_at": "2021-07-15T05:50:17-03:00",
       "available": true,
       "status_code": 200
@@ -862,6 +947,7 @@
       "url": "https://www.poder360.com.br/opiniao/direita-esquerda-volver-escreve-paula-schmitt/",
       "published_at": "2021-07-22T05:50:11-03:00",
       "listed_date": "2021-07-22",
+      "theme": "Internacional",
       "modified_at": "2021-07-22T05:50:11-03:00",
       "available": true,
       "status_code": 200
@@ -872,6 +958,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-unanimidade-burra-e-o-controle-inteligente-escreve-paula-schmitt/",
       "published_at": "2021-07-29T05:50:23-03:00",
       "listed_date": "2021-07-29",
+      "theme": "Internacional",
       "modified_at": "2021-07-29T05:50:23-03:00",
       "available": true,
       "status_code": 200
@@ -882,6 +969,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-unanimidade-inocente-e-a-orquestra-afinada-escreve-paula-schmitt/",
       "published_at": "2021-08-05T05:50:21-03:00",
       "listed_date": "2021-08-05",
+      "theme": "Coronavírus",
       "modified_at": "2021-08-05T05:50:21-03:00",
       "available": true,
       "status_code": 200
@@ -892,6 +980,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-unanimidade-verificada-e-a-caca-aos-insubmissos-escreve-paula-schmitt/",
       "published_at": "2021-08-12T05:50:36-03:00",
       "listed_date": "2021-08-12",
+      "theme": "Mídia",
       "modified_at": "2021-12-01T20:48:33-03:00",
       "available": true,
       "status_code": 200
@@ -902,6 +991,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-unanimidade-obrigatoria-e-a-edicao-da-realidade-escreve-paula-schmitt/",
       "published_at": "2021-08-19T05:48:21-03:00",
       "listed_date": "2021-08-19",
+      "theme": "Congresso",
       "modified_at": "2021-08-19T05:48:21-03:00",
       "available": true,
       "status_code": 200
@@ -912,6 +1002,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-vacina-e-a-injecao-na-testa-escreve-paula-schmitt/",
       "published_at": "2021-08-26T05:50:39-03:00",
       "listed_date": "2021-08-26",
+      "theme": "Coronavírus",
       "modified_at": "2021-08-26T05:50:39-03:00",
       "available": true,
       "status_code": 200
@@ -922,6 +1013,7 @@
       "url": "https://www.poder360.com.br/opiniao/os-sinistros-do-supremo-e-o-7-de-setembro-escreve-paula-schmitt/",
       "published_at": "2021-09-02T05:50:11-03:00",
       "listed_date": "2021-09-02",
+      "theme": "Justiça",
       "modified_at": "2021-09-02T05:50:11-03:00",
       "available": true,
       "status_code": 200
@@ -932,6 +1024,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-afeganistao-as-grandes-tragedias-e-a-economia-de-escala-tentando-ver-o-lado-bom-das-coisas-escreve-paula-schmitt/",
       "published_at": "2021-09-09T05:50:24-03:00",
       "listed_date": "2021-09-09",
+      "theme": "Internacional",
       "modified_at": "2021-09-09T07:16:21-03:00",
       "available": true,
       "status_code": 200
@@ -942,6 +1035,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-controle-da-maioria-a-censura-e-o-script-obrigatorio-escreve-paula-schmitt/",
       "published_at": "2021-09-16T05:50:49-03:00",
       "listed_date": "2021-09-16",
+      "theme": "Internacional",
       "modified_at": "2021-09-16T06:58:18-03:00",
       "available": true,
       "status_code": 200
@@ -952,6 +1046,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-ciencia-a-historia-e-o-capitalismo-estatal-escreve-paula-schmitt/",
       "published_at": "2021-09-23T05:50:46-03:00",
       "listed_date": "2021-09-23",
+      "theme": "Economia",
       "modified_at": "2021-09-23T05:50:46-03:00",
       "available": true,
       "status_code": 200
@@ -962,6 +1057,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-sangramento-coletivo-e-a-pobreza-mental-escreve-paula-schmitt/",
       "published_at": "2021-09-30T05:50:10-03:00",
       "listed_date": "2021-09-30",
+      "theme": "Economia",
       "modified_at": "2021-09-30T06:57:37-03:00",
       "available": true,
       "status_code": 200
@@ -972,6 +1068,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-igreja-da-vacina-e-a-fe-que-remove-a-razao-escreve-paula-schmitt/",
       "published_at": "2021-10-07T05:50:26-03:00",
       "listed_date": "2021-10-07",
+      "theme": "Coronavírus",
       "modified_at": "2022-01-20T19:58:00-03:00",
       "available": true,
       "status_code": 200
@@ -982,6 +1079,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-remedio-que-prevenia-as-mortes-por-hemofilia-mas-nao-do-jeito-que-voce-pensa-escreve-paula-schmitt/",
       "published_at": "2021-10-14T05:50:52-03:00",
       "listed_date": "2021-10-14",
+      "theme": "Economia",
       "modified_at": "2021-10-14T05:50:52-03:00",
       "available": true,
       "status_code": 200
@@ -992,6 +1090,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-fabricacao-do-consenso-e-a-mediocracia-escreve-paula-schmitt/",
       "published_at": "2021-10-21T05:50:11-03:00",
       "listed_date": "2021-10-21",
+      "theme": "Mídia",
       "modified_at": "2021-10-21T05:50:11-03:00",
       "available": true,
       "status_code": 200
@@ -1002,6 +1101,7 @@
       "url": "https://www.poder360.com.br/opiniao/fauci-os-caezinhos-os-orfaos-e-os-pretos-pobres-escreve-paula-schmitt/",
       "published_at": "2021-10-28T05:50:17-03:00",
       "listed_date": "2021-10-28",
+      "theme": "Coronavírus",
       "modified_at": "2021-10-28T05:50:17-03:00",
       "available": true,
       "status_code": 200
@@ -1012,6 +1112,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-consenso-inc-os-avalizadores-da-realidade-e-a-midia-alternativa-escreve-paula-schmit/",
       "published_at": "2021-11-04T05:50:25-03:00",
       "listed_date": "2021-11-04",
+      "theme": "Coronavírus",
       "modified_at": "2021-11-04T05:50:25-03:00",
       "available": true,
       "status_code": 200
@@ -1022,6 +1123,7 @@
       "url": "https://www.poder360.com.br/opiniao/reminiscencias-e-digressoes-para-nao-ter-que-falar-da-pandemia-obrigada-por-paula-schmitt/",
       "published_at": "2021-11-11T05:55:48-03:00",
       "listed_date": "2021-11-11",
+      "theme": "Governo",
       "modified_at": "2021-11-11T05:55:48-03:00",
       "available": true,
       "status_code": 200
@@ -1032,6 +1134,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-jornalismo-o-assassino-economico-e-os-donos-do-mundo-escreve-paula-schmitt/",
       "published_at": "2021-11-18T05:55:22-03:00",
       "listed_date": "2021-11-18",
+      "theme": "Economia",
       "modified_at": "2021-11-18T05:55:22-03:00",
       "available": true,
       "status_code": 200
@@ -1042,6 +1145,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-vacina-da-covid-e-o-jornalismo-de-omissao-escreve-paula-schmitt/",
       "published_at": "2021-11-25T05:50:09-03:00",
       "listed_date": "2021-11-25",
+      "theme": "Coronavírus",
       "modified_at": "2021-11-25T05:50:09-03:00",
       "available": true,
       "status_code": 200
@@ -1052,6 +1156,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-portao-e-a-realidade-escreve-paula-schmitt/",
       "published_at": "2021-12-02T05:50:23-03:00",
       "listed_date": "2021-12-02",
+      "theme": "Coronavírus",
       "modified_at": "2021-12-02T05:50:23-03:00",
       "available": true,
       "status_code": 200
@@ -1062,6 +1167,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-operacao-popeye-e-o-senhor-do-tempo-escreve-paula-schmitt/",
       "published_at": "2021-12-09T05:50:46-03:00",
       "listed_date": "2021-12-09",
+      "theme": "Internacional",
       "modified_at": "2021-12-09T05:50:46-03:00",
       "available": true,
       "status_code": 200
@@ -1072,6 +1178,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-industria-americana-e-as-ideologias-atrasadas-escreve-paula-schmitt/",
       "published_at": "2021-12-16T05:50:47-03:00",
       "listed_date": "2021-12-16",
+      "theme": "Economia",
       "modified_at": "2021-12-16T05:50:47-03:00",
       "available": true,
       "status_code": 200
@@ -1082,6 +1189,7 @@
       "url": "https://www.poder360.com.br/opiniao/divagacoes-sobre-a-liberdade-e-a-desonestidade-intelectual/",
       "published_at": "2021-12-23T05:50:53-03:00",
       "listed_date": "2021-12-23",
+      "theme": "Internacional",
       "modified_at": "2021-12-23T05:50:53-03:00",
       "available": true,
       "status_code": 200
@@ -1092,6 +1200,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-novafala-e-o-totalitarismo-introjetado/",
       "published_at": "2021-12-30T06:00:19-03:00",
       "listed_date": "2021-12-30",
+      "theme": "Brasil",
       "modified_at": "2021-12-30T06:00:19-03:00",
       "available": true,
       "status_code": 200
@@ -1102,6 +1211,7 @@
       "url": "https://www.poder360.com.br/opiniao/alerta-a-populacao/",
       "published_at": "2022-01-06T05:50:12-03:00",
       "listed_date": "2022-01-06",
+      "theme": "Coronavírus",
       "modified_at": "2022-01-06T05:50:12-03:00",
       "available": true,
       "status_code": 200
@@ -1112,6 +1222,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-luz-do-sol-e-a-gema-de-ovo/",
       "published_at": "2022-01-13T05:50:23-03:00",
       "listed_date": "2022-01-13",
+      "theme": "Mídia",
       "modified_at": "2022-01-13T05:50:23-03:00",
       "available": true,
       "status_code": 200
@@ -1122,6 +1233,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-morto-esta-estavel-e-outras-verdades/",
       "published_at": "2022-01-20T05:50:03-03:00",
       "listed_date": "2022-01-20",
+      "theme": "Coronavírus",
       "modified_at": "2022-01-20T05:50:03-03:00",
       "available": true,
       "status_code": 200
@@ -1132,6 +1244,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-carvalho-e-a-semente/",
       "published_at": "2022-01-27T05:50:45-03:00",
       "listed_date": "2022-01-27",
+      "theme": "Mídia",
       "modified_at": "2022-01-27T06:15:42-03:00",
       "available": true,
       "status_code": 200
@@ -1142,6 +1255,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-edicao-da-realidade-e-o-passado-que-nao-foi/",
       "published_at": "2022-02-03T05:50:38-03:00",
       "listed_date": "2022-02-03",
+      "theme": "Internacional",
       "modified_at": "2022-02-03T05:50:38-03:00",
       "available": true,
       "status_code": 200
@@ -1152,6 +1266,7 @@
       "url": "https://www.poder360.com.br/opiniao/os-4-cavaleiros-do-apocalipse-eram-3-esao-e-jacu/",
       "published_at": "2022-02-10T05:50:59-03:00",
       "listed_date": "2022-02-10",
+      "theme": "Internacional",
       "modified_at": "2022-02-10T05:50:59-03:00",
       "available": true,
       "status_code": 200
@@ -1162,6 +1277,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-conje-e-o-feminismo/",
       "published_at": "2022-02-17T05:50:51-03:00",
       "listed_date": "2022-02-17",
+      "theme": "Mídia",
       "modified_at": "2022-02-17T05:50:51-03:00",
       "available": true,
       "status_code": 200
@@ -1172,6 +1288,7 @@
       "url": "https://www.poder360.com.br/opiniao/eugenia-made-in-usa/",
       "published_at": "2022-02-24T05:50:23-03:00",
       "listed_date": "2022-02-24",
+      "theme": "História",
       "modified_at": "2022-02-24T06:08:38-03:00",
       "available": true,
       "status_code": 200
@@ -1182,6 +1299,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-roteiro-interativo-e-a-renuncia-a-razao/",
       "published_at": "2022-03-03T05:30:40-03:00",
       "listed_date": "2022-03-03",
+      "theme": "Coronavírus",
       "modified_at": "2022-03-03T05:46:47-03:00",
       "available": true,
       "status_code": 200
@@ -1192,6 +1310,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-natureza-o-homem-e-o-atravessador/",
       "published_at": "2022-03-10T05:50:29-03:00",
       "listed_date": "2022-03-10",
+      "theme": "Economia",
       "modified_at": "2022-03-10T05:50:29-03:00",
       "available": true,
       "status_code": 200
@@ -1202,6 +1321,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-material-genetico-e-a-praga/",
       "published_at": "2022-03-17T05:50:30-03:00",
       "listed_date": "2022-03-17",
+      "theme": "Coronavírus",
       "modified_at": "2022-03-17T05:56:36-03:00",
       "available": true,
       "status_code": 200
@@ -1212,6 +1332,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-simulacao-de-odio-e-o-nariz-de-negro/",
       "published_at": "2022-03-24T05:50:07-03:00",
       "listed_date": "2022-03-24",
+      "theme": "Brasil",
       "modified_at": "2022-03-24T05:50:07-03:00",
       "available": true,
       "status_code": 200
@@ -1222,6 +1343,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-obediencia-contagiante-e-a-blusinha-que-mais-sai/",
       "published_at": "2022-03-31T05:50:43-03:00",
       "listed_date": "2022-03-31",
+      "theme": "Coronavírus",
       "modified_at": "2022-03-31T05:50:43-03:00",
       "available": true,
       "status_code": 200
@@ -1232,6 +1354,7 @@
       "url": "https://www.poder360.com.br/opiniao/mkultra-e-o-balaio-de-besteiras/",
       "published_at": "2022-04-07T05:50:39-03:00",
       "listed_date": "2022-04-07",
+      "theme": "Internacional",
       "modified_at": "2022-04-07T05:50:39-03:00",
       "available": true,
       "status_code": 200
@@ -1242,6 +1365,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-sociocapitalismo-e-a-galinha-dos-ovos-de-aids/",
       "published_at": "2022-04-14T05:50:26-03:00",
       "listed_date": "2022-04-14",
+      "theme": "Economia",
       "modified_at": "2022-04-14T05:50:26-03:00",
       "available": true,
       "status_code": 200
@@ -1252,6 +1376,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-capitalismo-de-estado-e-a-urina-de-midas/",
       "published_at": "2022-04-22T05:50:23-03:00",
       "listed_date": "2022-04-22",
+      "theme": "Economia",
       "modified_at": "2022-04-22T05:50:23-03:00",
       "available": true,
       "status_code": 200
@@ -1262,6 +1387,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-experimento-alemao-e-a-protecao-do-estado/",
       "published_at": "2022-04-28T05:50:47-03:00",
       "listed_date": "2022-04-28",
+      "theme": "Internacional",
       "modified_at": "2022-04-28T05:58:50-03:00",
       "available": true,
       "status_code": 200
@@ -1272,6 +1398,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-dia-das-maes-e-o-amor-que-nao-morre/",
       "published_at": "2022-05-05T05:50:58-03:00",
       "listed_date": "2022-05-05",
+      "theme": "Coronavírus",
       "modified_at": "2022-05-05T05:50:58-03:00",
       "available": true,
       "status_code": 200
@@ -1282,6 +1409,7 @@
       "url": "https://www.poder360.com.br/opiniao/as-duas-mil-mulas-e-meus-2-centavos/",
       "published_at": "2022-05-12T05:50:16-03:00",
       "listed_date": "2022-05-12",
+      "theme": "Eleições",
       "modified_at": "2022-05-12T05:50:16-03:00",
       "available": true,
       "status_code": 200
@@ -1292,6 +1420,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-controle-da-mente-e-o-x-da-persuasao/",
       "published_at": "2022-05-19T05:50:33-03:00",
       "listed_date": "2022-05-19",
+      "theme": "Internacional",
       "modified_at": "2022-05-19T05:50:33-03:00",
       "available": true,
       "status_code": 200
@@ -1302,6 +1431,7 @@
       "url": "https://www.poder360.com.br/opiniao/lula-e-a-revista-de-3-capas/",
       "published_at": "2022-05-26T05:50:51-03:00",
       "listed_date": "2022-05-26",
+      "theme": "Internacional",
       "modified_at": "2022-05-26T05:50:51-03:00",
       "available": true,
       "status_code": 200
@@ -1312,6 +1442,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-pureza-ideologica-e-a-morte-da-razao/",
       "published_at": "2022-06-02T05:50:26-03:00",
       "listed_date": "2022-06-02",
+      "theme": "Mídia",
       "modified_at": "2022-06-02T06:04:09-03:00",
       "available": true,
       "status_code": 200
@@ -1322,6 +1453,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-verdade-nua-e-gorda/",
       "published_at": "2022-06-09T05:50:16-03:00",
       "listed_date": "2022-06-09",
+      "theme": "Internacional",
       "modified_at": "2022-06-09T05:58:46-03:00",
       "available": true,
       "status_code": 200
@@ -1332,6 +1464,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-farmafia-o-valor-da-vida-e-as-oportunidades-imperdiveis/",
       "published_at": "2022-06-16T05:50:17-03:00",
       "listed_date": "2022-06-16",
+      "theme": "Economia",
       "modified_at": "2022-06-16T05:50:17-03:00",
       "available": true,
       "status_code": 200
@@ -1342,6 +1475,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-amazonia-a-suastica-e-o-gene-de-indio/",
       "published_at": "2022-06-23T05:50:52-03:00",
       "listed_date": "2022-06-23",
+      "theme": "Brasil",
       "modified_at": "2022-06-23T05:50:52-03:00",
       "available": true,
       "status_code": 200
@@ -1352,6 +1486,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-caso-nayirah-e-a-realidade-por-encomenda/",
       "published_at": "2022-06-30T05:50:35-03:00",
       "listed_date": "2022-06-30",
+      "theme": "Internacional",
       "modified_at": "2022-06-30T05:50:35-03:00",
       "available": true,
       "status_code": 200
@@ -1362,6 +1497,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-fabrica-de-medo-e-a-ameaca-que-protege/",
       "published_at": "2022-07-07T05:50:47-03:00",
       "listed_date": "2022-07-07",
+      "theme": "Internacional",
       "modified_at": "2022-07-07T05:50:47-03:00",
       "available": true,
       "status_code": 200
@@ -1372,6 +1508,7 @@
       "url": "https://www.poder360.com.br/opiniao/paula-schmitt-morrendo-de-distracao/",
       "published_at": "2022-07-14T05:50:00-03:00",
       "listed_date": "2022-07-14",
+      "theme": "Internacional",
       "modified_at": "2022-07-14T05:50:00-03:00",
       "available": true,
       "status_code": 200
@@ -1382,6 +1519,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-carro-que-explodia-e-a-roleta-russa-economicamente-viavel/",
       "published_at": "2022-07-21T05:50:32-03:00",
       "listed_date": "2022-07-21",
+      "theme": "Economia",
       "modified_at": "2022-07-21T06:02:23-03:00",
       "available": true,
       "status_code": 200
@@ -1392,6 +1530,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-grande-abate-de-bufalos-e-os-500-milhoes-de-humanos/",
       "published_at": "2022-07-28T05:50:37-03:00",
       "listed_date": "2022-07-28",
+      "theme": "História",
       "modified_at": "2022-07-28T05:50:37-03:00",
       "available": true,
       "status_code": 200
@@ -1402,6 +1541,7 @@
       "url": "https://www.poder360.com.br/opiniao/sao-francisco-e-a-brisa-suave-de-bacterias-e-dioxina/",
       "published_at": "2022-08-04T05:50:16-03:00",
       "listed_date": "2022-08-04",
+      "theme": "Internacional",
       "modified_at": "2022-08-04T05:50:16-03:00",
       "available": true,
       "status_code": 200
@@ -1412,6 +1552,7 @@
       "url": "https://www.poder360.com.br/opiniao/edward-bernays-a-manipulacao-das-massas-e-a-manufatura-de-costumes/",
       "published_at": "2022-08-11T05:50:37-03:00",
       "listed_date": "2022-08-11",
+      "theme": "Internacional",
       "modified_at": "2022-08-11T05:50:37-03:00",
       "available": true,
       "status_code": 200
@@ -1422,6 +1563,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-receita-de-bolo-e-o-mosquito-humano/",
       "published_at": "2022-08-25T05:50:57-03:00",
       "listed_date": "2022-08-25",
+      "theme": "Internacional",
       "modified_at": "2022-08-25T05:56:24-03:00",
       "available": true,
       "status_code": 200
@@ -1432,6 +1574,7 @@
       "url": "https://www.poder360.com.br/opiniao/carta-aberta-a-alexandre-o-diminuto/",
       "published_at": "2022-09-02T05:50:48-03:00",
       "listed_date": "2022-09-02",
+      "theme": "Brasil",
       "modified_at": "2022-09-02T06:10:55-03:00",
       "available": true,
       "status_code": 200
@@ -1442,6 +1585,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-obediencia-alema-a-censura-e-o-7-de-setembro/",
       "published_at": "2022-09-10T05:50:21-03:00",
       "listed_date": "2022-09-10",
+      "theme": "Internacional",
       "modified_at": "2022-09-10T05:50:21-03:00",
       "available": true,
       "status_code": 200
@@ -1452,6 +1596,7 @@
       "url": "https://www.poder360.com.br/opiniao/peiter-zatko-o-twitter-e-a-seguranca-nacional/",
       "published_at": "2022-09-15T05:50:33-03:00",
       "listed_date": "2022-09-15",
+      "theme": "Internacional",
       "modified_at": "2022-09-15T05:59:18-03:00",
       "available": true,
       "status_code": 200
@@ -1462,6 +1607,7 @@
       "url": "https://www.poder360.com.br/opiniao/os-donos-do-mundo-e-o-cachorro-do-homem/",
       "published_at": "2022-09-22T05:50:23-03:00",
       "listed_date": "2022-09-22",
+      "theme": "Brasil",
       "modified_at": "2022-09-22T06:06:49-03:00",
       "available": true,
       "status_code": 200
@@ -1472,6 +1618,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-ascensao-da-insignificancia-e-a-perseguicao-desonesta/",
       "published_at": "2022-09-30T05:45:11-03:00",
       "listed_date": "2022-09-30",
+      "theme": "Justiça",
       "modified_at": "2022-09-30T05:45:11-03:00",
       "available": true,
       "status_code": 200
@@ -1482,6 +1629,7 @@
       "url": "https://www.poder360.com.br/opiniao/as-pesquisas-eleitorais-e-a-surpresa-dos-credulos/",
       "published_at": "2022-10-06T05:51:51-03:00",
       "listed_date": "2022-10-06",
+      "theme": "Eleições",
       "modified_at": "2022-10-06T05:51:51-03:00",
       "available": true,
       "status_code": 200
@@ -1492,6 +1640,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-expulsao-dos-alunos-e-a-admissao-da-pfizer/",
       "published_at": "2022-10-13T05:50:00-03:00",
       "listed_date": "2022-10-13",
+      "theme": "Internacional",
       "modified_at": "2022-10-13T05:50:00-03:00",
       "available": true,
       "status_code": 200
@@ -1502,6 +1651,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-genocida-o-vingador-e-a-inversao-dos-papeis/",
       "published_at": "2022-10-20T05:50:10-03:00",
       "listed_date": "2022-10-20",
+      "theme": "Partidos políticos",
       "modified_at": "2022-10-20T05:50:10-03:00",
       "available": true,
       "status_code": 200
@@ -1512,6 +1662,7 @@
       "url": "https://www.poder360.com.br/opiniao/por-que-voto-em-bolsonaro-2/",
       "published_at": "2022-10-27T05:53:14-03:00",
       "listed_date": "2022-10-27",
+      "theme": "Economia",
       "modified_at": "2022-10-27T05:53:14-03:00",
       "available": true,
       "status_code": 200
@@ -1522,6 +1673,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-descanso-de-lula-e-a-corrupcao-relativa/",
       "published_at": "2022-11-04T05:55:02-03:00",
       "listed_date": "2022-11-04",
+      "theme": "Eleições",
       "modified_at": "2022-11-04T05:55:02-03:00",
       "available": true,
       "status_code": 200
@@ -1532,6 +1684,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-verdade-o-tempo-e-a-degluticao-de-sapos/",
       "published_at": "2022-11-12T05:50:35-03:00",
       "listed_date": "2022-11-12",
+      "theme": "Internacional",
       "modified_at": "2025-04-01T18:54:52-03:00",
       "available": true,
       "status_code": 200
@@ -1542,6 +1695,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-eutanasia-canadense-o-ser-e-o-nao-ter/",
       "published_at": "2022-11-18T05:50:53-03:00",
       "listed_date": "2022-11-18",
+      "theme": "Internacional",
       "modified_at": "2022-11-18T05:50:53-03:00",
       "available": true,
       "status_code": 200
@@ -1552,6 +1706,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-bobo-da-corte-e-o-medo/",
       "published_at": "2022-11-28T17:00:16-03:00",
       "listed_date": "2022-11-28",
+      "theme": "Justiça",
       "modified_at": "2022-11-28T17:00:16-03:00",
       "available": true,
       "status_code": 200
@@ -1562,6 +1717,7 @@
       "url": "https://www.poder360.com.br/opiniao/de-volta-por-enquanto/",
       "published_at": "2022-12-02T05:52:22-03:00",
       "listed_date": "2022-12-02",
+      "theme": "Mídia",
       "modified_at": "2022-12-02T06:04:23-03:00",
       "available": true,
       "status_code": 200
@@ -1572,6 +1728,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-algoz-a-vitima-e-o-tempo/",
       "published_at": "2022-12-08T05:54:31-03:00",
       "listed_date": "2022-12-08",
+      "theme": "Mídia",
       "modified_at": "2022-12-08T06:05:46-03:00",
       "available": true,
       "status_code": 200
@@ -1582,6 +1739,7 @@
       "url": "https://www.poder360.com.br/opiniao/as-revelacoes-do-twitter-e-a-imprensa-sem-braco/",
       "published_at": "2022-12-22T05:53:46-03:00",
       "listed_date": "2022-12-22",
+      "theme": "Internacional",
       "modified_at": "2022-12-22T05:53:46-03:00",
       "available": true,
       "status_code": 200
@@ -1592,6 +1750,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-ivermectina-o-cavalo-e-a-inteligencia-sub-animal/",
       "published_at": "2022-12-29T05:55:37-03:00",
       "listed_date": "2022-12-29",
+      "theme": "Coronavírus",
       "modified_at": "2022-12-29T06:08:41-03:00",
       "available": true,
       "status_code": 200
@@ -1602,6 +1761,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-fiocruz-e-o-sigilo-de-15-anos/",
       "published_at": "2023-01-05T05:51:35-03:00",
       "listed_date": "2023-01-05",
+      "theme": "Internacional",
       "modified_at": "2023-01-05T22:05:27-03:00",
       "available": true,
       "status_code": 200
@@ -1612,6 +1772,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-medico-bot-e-os-pacientes-sinteticos/",
       "published_at": "2023-01-12T05:50:38-03:00",
       "listed_date": "2023-01-12",
+      "theme": "Coronavírus",
       "modified_at": "2023-01-12T05:50:38-03:00",
       "available": true,
       "status_code": 200
@@ -1622,6 +1783,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-8-de-janeiro-os-inocentes-e-a-investigacao-visual/",
       "published_at": "2023-01-19T05:52:18-03:00",
       "listed_date": "2023-01-19",
+      "theme": "Brasil",
       "modified_at": "2023-01-19T05:58:56-03:00",
       "available": true,
       "status_code": 200
@@ -1632,6 +1794,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-realidade-as-operacoes-psicologicas-e-o-aperto-de-mao/",
       "published_at": "2023-01-26T05:52:08-03:00",
       "listed_date": "2023-01-26",
+      "theme": "Internacional",
       "modified_at": "2023-01-26T05:52:08-03:00",
       "available": true,
       "status_code": 200
@@ -1642,6 +1805,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-8-de-janeiro-a-reedicao-da-realidade-e-a-arquitetura-das-consequencias/",
       "published_at": "2023-02-02T05:53:20-03:00",
       "listed_date": "2023-02-02",
+      "theme": "Brasil",
       "modified_at": "2023-02-02T05:53:20-03:00",
       "available": true,
       "status_code": 200
@@ -1652,6 +1816,7 @@
       "url": "https://www.poder360.com.br/opiniao/black-cube-e-a-industria-da-mentira/",
       "published_at": "2023-02-16T05:50:48-03:00",
       "listed_date": "2023-02-16",
+      "theme": "Internacional",
       "modified_at": "2023-02-16T05:50:48-03:00",
       "available": true,
       "status_code": 200
@@ -1662,6 +1827,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-piademia-e-seus-incentivos-parte-1/",
       "published_at": "2023-03-02T05:53:59-03:00",
       "listed_date": "2023-03-02",
+      "theme": "Coronavírus",
       "modified_at": "2023-03-02T05:53:59-03:00",
       "available": true,
       "status_code": 200
@@ -1672,6 +1838,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-quarentena-na-inglaterra-e-os-manes-do-mundo/",
       "published_at": "2023-03-16T05:55:55-03:00",
       "listed_date": "2023-03-16",
+      "theme": "Coronavírus",
       "modified_at": "2023-03-16T05:55:55-03:00",
       "available": true,
       "status_code": 200
@@ -1682,6 +1849,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-grande-fraude-e-o-hino-a-justica/",
       "published_at": "2023-03-23T05:54:40-03:00",
       "listed_date": "2023-03-23",
+      "theme": "Coronavírus",
       "modified_at": "2023-03-23T06:00:08-03:00",
       "available": true,
       "status_code": 200
@@ -1692,6 +1860,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-erro-o-ego-e-o-virus-do-homem/",
       "published_at": "2023-03-30T05:52:59-03:00",
       "listed_date": "2023-03-30",
+      "theme": "Coronavírus",
       "modified_at": "2023-03-30T05:52:59-03:00",
       "available": true,
       "status_code": 200
@@ -1702,6 +1871,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-irrelevancia-da-realidade-e-a-queima-de-arquivo/",
       "published_at": "2023-04-06T08:00:46-03:00",
       "listed_date": "2023-04-06",
+      "theme": "Internacional",
       "modified_at": "2023-04-06T08:00:46-03:00",
       "available": true,
       "status_code": 200
@@ -1712,6 +1882,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-massacre-de-blumenau-e-seus-beneficios/",
       "published_at": "2023-04-13T06:00:10-03:00",
       "listed_date": "2023-04-13",
+      "theme": "Brasil",
       "modified_at": "2023-04-13T06:00:10-03:00",
       "available": true,
       "status_code": 200
@@ -1722,6 +1893,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-cacau-a-bruxa-e-os-motivos-nobres/",
       "published_at": "2023-04-28T17:00:59-03:00",
       "listed_date": "2023-04-28",
+      "theme": "Agronegócio",
       "modified_at": "2023-04-28T18:04:26-03:00",
       "available": true,
       "status_code": 200
@@ -1732,6 +1904,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-pl-da-censura-e-o-contraceptivo-permanente/",
       "published_at": "2023-05-04T05:45:06-03:00",
       "listed_date": "2023-05-04",
+      "theme": "Congresso",
       "modified_at": "2023-05-04T05:45:06-03:00",
       "available": true,
       "status_code": 200
@@ -1742,6 +1915,7 @@
       "url": "https://www.poder360.com.br/opiniao/respira-expira/",
       "published_at": "2023-05-11T06:00:23-03:00",
       "listed_date": "2023-05-11",
+      "theme": "Brasil",
       "modified_at": "2023-05-11T06:00:23-03:00",
       "available": true,
       "status_code": 200
@@ -1752,6 +1926,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-infantilizacao-do-adulto/",
       "published_at": "2023-05-18T05:50:53-03:00",
       "listed_date": "2023-05-18",
+      "theme": "Internacional",
       "modified_at": "2023-05-18T05:50:53-03:00",
       "available": true,
       "status_code": 200
@@ -1762,6 +1937,7 @@
       "url": "https://www.poder360.com.br/opiniao/heil-e-a-espera-pelo-pior/",
       "published_at": "2023-05-25T05:50:07-03:00",
       "listed_date": "2023-05-25",
+      "theme": "Mídia",
       "modified_at": "2023-05-25T05:50:07-03:00",
       "available": true,
       "status_code": 200
@@ -1772,6 +1948,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-valor-da-vida-e-a-eficacia-financeira/",
       "published_at": "2023-06-01T05:45:54-03:00",
       "listed_date": "2023-06-01",
+      "theme": "Coronavírus",
       "modified_at": "2023-06-01T05:45:54-03:00",
       "available": true,
       "status_code": 200
@@ -1782,6 +1959,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-labirinto-das-ideias-e-as-conexoes-espurias/",
       "published_at": "2023-06-15T05:57:30-03:00",
       "listed_date": "2023-06-15",
+      "theme": "Coronavírus",
       "modified_at": "2023-06-15T05:57:30-03:00",
       "available": true,
       "status_code": 200
@@ -1792,6 +1970,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-carrapato-o-nazista-e-suas-conexoes/",
       "published_at": "2023-06-22T05:45:16-03:00",
       "listed_date": "2023-06-22",
+      "theme": "Internacional",
       "modified_at": "2023-06-22T05:45:16-03:00",
       "available": true,
       "status_code": 200
@@ -1802,6 +1981,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-submergivel-que-nao-emerge-e-a-vacina-que-boia/",
       "published_at": "2023-06-29T05:40:01-03:00",
       "listed_date": "2023-06-29",
+      "theme": "Internacional",
       "modified_at": "2023-06-29T05:40:01-03:00",
       "available": true,
       "status_code": 200
@@ -1812,6 +1992,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-venezuela-e-o-significado-magico/",
       "published_at": "2023-07-13T07:00:52-03:00",
       "listed_date": "2023-07-13",
+      "theme": "Brasil",
       "modified_at": "2023-07-13T07:00:52-03:00",
       "available": true,
       "status_code": 200
@@ -1822,6 +2003,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-corrupcao-academica-e-o-engano-dos-menores/",
       "published_at": "2023-07-20T06:00:05-03:00",
       "listed_date": "2023-07-20",
+      "theme": "Educação",
       "modified_at": "2023-07-20T06:00:05-03:00",
       "available": true,
       "status_code": 200
@@ -1832,6 +2014,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-origem-do-virus-e-o-jornalismo-de-sicofancia/",
       "published_at": "2023-07-27T06:00:13-03:00",
       "listed_date": "2023-07-27",
+      "theme": "Internacional",
       "modified_at": "2023-07-27T06:00:13-03:00",
       "available": true,
       "status_code": 200
@@ -1842,6 +2025,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-reducao-do-debate-e-a-emojificacao-do-pensamento/",
       "published_at": "2023-08-03T06:00:56-03:00",
       "listed_date": "2023-08-03",
+      "theme": "Brasil",
       "modified_at": "2023-08-03T06:00:56-03:00",
       "available": true,
       "status_code": 200
@@ -1852,6 +2036,7 @@
       "url": "https://www.poder360.com.br/opiniao/digressoes-de-uma-ignodiletante-sobre-o-ornitorrinco-ideologico/",
       "published_at": "2023-08-17T05:45:07-03:00",
       "listed_date": "2023-08-17",
+      "theme": "Brasil",
       "modified_at": "2023-08-17T05:45:07-03:00",
       "available": true,
       "status_code": 200
@@ -1862,6 +2047,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-sectarismo-a-consciencia-individual-e-a-lealdade-cega/",
       "published_at": "2023-08-24T05:51:05-03:00",
       "listed_date": "2023-08-24",
+      "theme": "Internacional",
       "modified_at": "2023-08-24T05:51:05-03:00",
       "available": true,
       "status_code": 200
@@ -1872,6 +2058,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-mercado-de-armas-e-o-combustivel-que-direciona-energia/",
       "published_at": "2023-08-31T05:55:02-03:00",
       "listed_date": "2023-08-31",
+      "theme": "Internacional",
       "modified_at": "2023-08-31T05:55:02-03:00",
       "available": true,
       "status_code": 200
@@ -1882,6 +2069,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-corte-que-condena-a-vitima-e-absolve-o-culpado/",
       "published_at": "2023-09-07T05:50:48-03:00",
       "listed_date": "2023-09-07",
+      "theme": "Coronavírus",
       "modified_at": "2023-09-07T05:50:48-03:00",
       "available": true,
       "status_code": 200
@@ -1892,6 +2080,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-origem-da-covid-e-o-suposto-suborno-da-cia/",
       "published_at": "2023-09-14T05:59:27-03:00",
       "listed_date": "2023-09-14",
+      "theme": "Coronavírus",
       "modified_at": "2023-09-14T05:59:27-03:00",
       "available": true,
       "status_code": 200
@@ -1902,6 +2091,7 @@
       "url": "https://www.poder360.com.br/opiniao/russell-brand-o-timing-das-denuncias-e-o-testemunho-lucrativo/",
       "published_at": "2023-09-21T05:45:27-03:00",
       "listed_date": "2023-09-21",
+      "theme": "Internacional",
       "modified_at": "2023-09-21T05:45:27-03:00",
       "available": true,
       "status_code": 200
@@ -1912,6 +2102,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-governo-global-o-jomo-e-os-nazistas/",
       "published_at": "2023-10-05T05:58:03-03:00",
       "listed_date": "2023-10-05",
+      "theme": "Internacional",
       "modified_at": "2023-10-05T05:58:03-03:00",
       "available": true,
       "status_code": 200
@@ -1922,6 +2113,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-pedofilo-a-onu-e-a-privatizacao-do-mar/",
       "published_at": "2023-10-12T06:15:37-03:00",
       "listed_date": "2023-10-12",
+      "theme": "Internacional",
       "modified_at": "2023-10-12T06:15:37-03:00",
       "available": true,
       "status_code": 200
@@ -1932,6 +2124,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-guerra-o-humanismo-e-o-outro/",
       "published_at": "2023-10-26T05:57:26-03:00",
       "listed_date": "2023-10-26",
+      "theme": "Internacional",
       "modified_at": "2023-10-26T05:57:26-03:00",
       "available": true,
       "status_code": 200
@@ -1942,6 +2135,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-inimigo-o-espelho-e-a-guerra-dos-tolos/",
       "published_at": "2023-11-02T05:55:06-03:00",
       "listed_date": "2023-11-02",
+      "theme": "Internacional",
       "modified_at": "2023-11-02T05:55:06-03:00",
       "available": true,
       "status_code": 200
@@ -1952,6 +2146,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-publicidade-o-gado-marcado-e-o-desenvolvimento-internacional/",
       "published_at": "2023-11-16T05:57:12-03:00",
       "listed_date": "2023-11-16",
+      "theme": "Internacional",
       "modified_at": "2023-11-16T05:57:12-03:00",
       "available": true,
       "status_code": 200
@@ -1962,6 +2157,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-guerra-cultural-e-o-financiamento-da-midia/",
       "published_at": "2023-11-23T05:57:52-03:00",
       "listed_date": "2023-11-23",
+      "theme": "Internacional",
       "modified_at": "2023-11-23T05:57:52-03:00",
       "available": true,
       "status_code": 200
@@ -1972,6 +2168,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-racismo-identitario-e-os-supremacistas-da-corte/",
       "published_at": "2023-12-07T05:58:10-03:00",
       "listed_date": "2023-12-07",
+      "theme": "Brasil",
       "modified_at": "2023-12-07T05:58:10-03:00",
       "available": true,
       "status_code": 200
@@ -1982,6 +2179,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-indicacao-de-dino-a-privatizacao-do-governo-e-a-erosao-da-democracia/",
       "published_at": "2023-12-14T05:53:58-03:00",
       "listed_date": "2023-12-14",
+      "theme": "Brasil",
       "modified_at": "2023-12-14T05:53:58-03:00",
       "available": true,
       "status_code": 200
@@ -1992,6 +2190,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-aquecimento-resfriado-e-o-semsenso-cientifico/",
       "published_at": "2023-12-21T05:58:21-03:00",
       "listed_date": "2023-12-21",
+      "theme": "Internacional",
       "modified_at": "2023-12-21T05:58:21-03:00",
       "available": true,
       "status_code": 200
@@ -2002,6 +2201,7 @@
       "url": "https://www.poder360.com.br/opiniao/feliz-ano-novo/",
       "published_at": "2023-12-28T05:45:38-03:00",
       "listed_date": "2023-12-28",
+      "theme": "Saúde",
       "modified_at": "2023-12-28T05:45:38-03:00",
       "available": true,
       "status_code": 200
@@ -2012,6 +2212,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-caso-choquei-e-o-cartel-de-influencias/",
       "published_at": "2024-01-04T05:55:42-03:00",
       "listed_date": "2024-01-04",
+      "theme": "Economia",
       "modified_at": "2024-01-04T05:55:42-03:00",
       "available": true,
       "status_code": 200
@@ -2022,6 +2223,7 @@
       "url": "https://www.poder360.com.br/opiniao/pra-cima-pra-baixo-pro-lado-pro-outro/",
       "published_at": "2024-01-11T05:58:52-03:00",
       "listed_date": "2024-01-11",
+      "theme": "Brasil",
       "modified_at": "2024-01-11T05:58:52-03:00",
       "available": true,
       "status_code": 200
@@ -2032,6 +2234,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-sindicalista-o-patrao-e-o-resto/",
       "published_at": "2024-01-18T05:57:49-03:00",
       "listed_date": "2024-01-18",
+      "theme": "Brasil",
       "modified_at": "2024-01-18T05:57:49-03:00",
       "available": true,
       "status_code": 200
@@ -2042,6 +2245,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-livre-mercado-e-os-truques-da-concentracao-de-renda/",
       "published_at": "2024-01-25T05:57:20-03:00",
       "listed_date": "2024-01-25",
+      "theme": "Brasil",
       "modified_at": "2024-01-25T05:57:20-03:00",
       "available": true,
       "status_code": 200
@@ -2052,6 +2256,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-forum-economico-mundial-a-nisia-e-o-milei/",
       "published_at": "2024-02-01T05:55:44-03:00",
       "listed_date": "2024-02-01",
+      "theme": "Economia",
       "modified_at": "2024-02-01T05:55:44-03:00",
       "available": true,
       "status_code": 200
@@ -2062,6 +2267,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
       "published_at": "2024-02-08T05:59:00-03:00",
       "listed_date": "2024-02-08",
+      "theme": "Brasil",
       "modified_at": "2024-02-08T05:59:00-03:00",
       "available": true,
       "status_code": 200
@@ -2072,6 +2278,7 @@
       "url": "https://www.poder360.com.br/opiniao/carta-de-cinzas/",
       "published_at": "2024-02-15T06:00:46-03:00",
       "listed_date": "2024-02-15",
+      "theme": "Justiça",
       "modified_at": "2024-02-15T06:00:46-03:00",
       "available": true,
       "status_code": 200
@@ -2082,6 +2289,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-pedofilia-e-o-perdao-inexplicavel-da-esquerda/",
       "published_at": "2024-02-29T05:57:51-03:00",
       "listed_date": "2024-02-29",
+      "theme": "Brasil",
       "modified_at": "2024-02-29T05:57:51-03:00",
       "available": true,
       "status_code": 200
@@ -2092,6 +2300,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-marajo-a-protecao-da-natureza-e-a-desprotecao-da-gente/",
       "published_at": "2024-03-07T05:57:48-03:00",
       "listed_date": "2024-03-07",
+      "theme": "Brasil",
       "modified_at": "2024-03-07T05:57:48-03:00",
       "available": true,
       "status_code": 200
@@ -2102,6 +2311,7 @@
       "url": "https://www.poder360.com.br/opiniao/condenados-ao-nascer-os-refugiados-palestinos-e-o-limbo-dos-sem-pais/",
       "published_at": "2024-03-14T05:58:53-03:00",
       "listed_date": "2024-03-14",
+      "theme": "Internacional",
       "modified_at": "2024-03-14T05:58:53-03:00",
       "available": true,
       "status_code": 200
@@ -2112,6 +2322,7 @@
       "url": "https://www.poder360.com.br/opiniao/na-pratica-a-teoria-da-conspiracao-e-outra/",
       "published_at": "2024-03-21T05:57:31-03:00",
       "listed_date": "2024-03-21",
+      "theme": "Coronavírus",
       "modified_at": "2024-03-21T05:57:31-03:00",
       "available": true,
       "status_code": 200
@@ -2122,6 +2333,7 @@
       "url": "https://www.poder360.com.br/opiniao/pat-garret-billy-the-kid-e-o-lado-certo/",
       "published_at": "2024-03-28T05:58:12-03:00",
       "listed_date": "2024-03-28",
+      "theme": "Governo",
       "modified_at": "2024-03-28T05:58:12-03:00",
       "available": true,
       "status_code": 200
@@ -2132,6 +2344,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-jornalismo-que-esconde/",
       "published_at": "2024-04-04T05:56:08-03:00",
       "listed_date": "2024-04-04",
+      "theme": "Mídia",
       "modified_at": "2024-04-04T05:56:08-03:00",
       "available": true,
       "status_code": 200
@@ -2142,6 +2355,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-surgimento-do-sarscov-e-a-investigacao-do-senado-norte-americano/",
       "published_at": "2024-04-11T05:51:35-03:00",
       "listed_date": "2024-04-11",
+      "theme": "Internacional",
       "modified_at": "2024-04-11T05:51:35-03:00",
       "available": true,
       "status_code": 200
@@ -2152,6 +2366,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-marmita-de-bilionario-e-a-censura-pos-coito/",
       "published_at": "2024-04-18T05:53:23-03:00",
       "listed_date": "2024-04-18",
+      "theme": "Economia",
       "modified_at": "2024-04-18T05:53:23-03:00",
       "available": true,
       "status_code": 200
@@ -2162,6 +2377,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
       "published_at": "2024-04-25T05:52:42-03:00",
       "listed_date": "2024-04-25",
+      "theme": "Coronavírus",
       "modified_at": "2024-04-25T05:52:42-03:00",
       "available": true,
       "status_code": 200
@@ -2172,6 +2388,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-astrazeneca-a-anticiencia-e-o-pensamento-acritico/",
       "published_at": "2024-05-02T05:56:39-03:00",
       "listed_date": "2024-05-02",
+      "theme": "Brasil",
       "modified_at": "2024-05-02T05:56:39-03:00",
       "available": true,
       "status_code": 200
@@ -2182,6 +2399,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-mina-de-ouro-fino/",
       "published_at": "2024-05-09T05:57:04-03:00",
       "listed_date": "2024-05-09",
+      "theme": "Brasil",
       "modified_at": "2024-05-09T05:57:04-03:00",
       "available": true,
       "status_code": 200
@@ -2192,6 +2410,7 @@
       "url": "https://www.poder360.com.br/opiniao/uma-enchente-de-erros/",
       "published_at": "2024-05-16T05:59:14-03:00",
       "listed_date": "2024-05-16",
+      "theme": "Brasil",
       "modified_at": "2024-05-16T05:59:14-03:00",
       "available": true,
       "status_code": 200
@@ -2202,6 +2421,7 @@
       "url": "https://www.poder360.com.br/opiniao/transbordando-coragem/",
       "published_at": "2024-06-06T05:59:36-03:00",
       "listed_date": "2024-06-06",
+      "theme": "Brasil",
       "modified_at": "2024-06-06T05:59:36-03:00",
       "available": true,
       "status_code": 200
@@ -2212,6 +2432,7 @@
       "url": "https://www.poder360.com.br/opiniao/sangue-ruim/",
       "published_at": "2024-06-13T05:51:41-03:00",
       "listed_date": "2024-06-13",
+      "theme": "Internacional",
       "modified_at": "2024-06-13T05:51:41-03:00",
       "available": true,
       "status_code": 200
@@ -2222,6 +2443,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-aborto-da-razao-e-o-monstro/",
       "published_at": "2024-06-20T05:56:52-03:00",
       "listed_date": "2024-06-20",
+      "theme": "Brasil",
       "modified_at": "2024-06-20T05:56:52-03:00",
       "available": true,
       "status_code": 200
@@ -2232,6 +2454,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-corte-inferior-a-gaiola-das-loucas-e-a-degeneracao-moral/",
       "published_at": "2024-06-27T05:59:18-03:00",
       "listed_date": "2024-06-27",
+      "theme": "Justiça",
       "modified_at": "2024-06-27T05:59:18-03:00",
       "available": true,
       "status_code": 200
@@ -2242,6 +2465,7 @@
       "url": "https://www.poder360.com.br/opiniao/bill-gates-a-fruta-impermeavel-e-a-estocagem-de-carbono/",
       "published_at": "2024-07-04T06:00:40-03:00",
       "listed_date": "2024-07-04",
+      "theme": "Internacional",
       "modified_at": "2024-07-04T06:00:40-03:00",
       "available": true,
       "status_code": 200
@@ -2252,6 +2476,7 @@
       "url": "https://www.poder360.com.br/opiniao/pequeno-manual-da-pequena-imprensa-a-nova-logica/",
       "published_at": "2024-07-11T05:55:08-03:00",
       "listed_date": "2024-07-11",
+      "theme": "Brasil",
       "modified_at": "2024-07-11T05:55:08-03:00",
       "available": true,
       "status_code": 200
@@ -2262,6 +2487,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-pombo-espiao-e-o-guarda-sol-assassino/",
       "published_at": "2024-07-18T05:52:30-03:00",
       "listed_date": "2024-07-18",
+      "theme": "Segurança Pública",
       "modified_at": "2024-07-18T05:52:30-03:00",
       "available": true,
       "status_code": 200
@@ -2272,6 +2498,7 @@
       "url": "https://www.poder360.com.br/opiniao/taxad-o-consorcio-de-midia-e-o-capitalismo-de-conveniencia/",
       "published_at": "2024-07-25T05:43:25-03:00",
       "listed_date": "2024-07-25",
+      "theme": "Governo",
       "modified_at": "2024-07-26T20:30:38-03:00",
       "available": true,
       "status_code": 200
@@ -2282,6 +2509,7 @@
       "url": "https://www.poder360.com.br/opiniao/trago-excelentes-noticias-a-proxima-pandemia-ja-esta-no-forno/",
       "published_at": "2024-08-01T05:57:02-03:00",
       "listed_date": "2024-08-01",
+      "theme": "Governo",
       "modified_at": "2024-08-01T05:57:02-03:00",
       "available": true,
       "status_code": 200
@@ -2292,6 +2520,7 @@
       "url": "https://www.poder360.com.br/opiniao/john-money-e-o-menino-que-nao-virou-menina/",
       "published_at": "2024-08-08T05:49:18-03:00",
       "listed_date": "2024-08-08",
+      "theme": "Poder Internacional",
       "modified_at": "2024-08-08T05:49:18-03:00",
       "available": true,
       "status_code": 200
@@ -2302,6 +2531,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-instituto-robert-koch-e-a-perna-curta-da-mentira/",
       "published_at": "2024-08-22T05:50:32-03:00",
       "listed_date": "2024-08-22",
+      "theme": "Poder Internacional",
       "modified_at": "2024-08-22T05:50:32-03:00",
       "available": true,
       "status_code": 200
@@ -2312,6 +2542,7 @@
       "url": "https://www.poder360.com.br/opiniao/wall-street-os-nazistas-e-os-bolcheviques/",
       "published_at": "2024-08-29T05:51:59-03:00",
       "listed_date": "2024-08-29",
+      "theme": "Literatura",
       "modified_at": "2024-08-29T05:51:59-03:00",
       "available": true,
       "status_code": 200
@@ -2322,6 +2553,7 @@
       "url": "https://www.poder360.com.br/opiniao/os-vazamentos-a-midia-e-seus-meios-soldados/",
       "published_at": "2024-09-05T05:58:19-03:00",
       "listed_date": "2024-09-05",
+      "theme": "Poder Justiça",
       "modified_at": "2024-09-05T05:58:19-03:00",
       "available": true,
       "status_code": 200
@@ -2332,6 +2564,7 @@
       "url": "https://www.poder360.com.br/opiniao/os-medicos-pela-vida-e-as-bromelias-da-alma/",
       "published_at": "2024-09-12T06:00:48-03:00",
       "listed_date": "2024-09-12",
+      "theme": "Coronavírus",
       "modified_at": "2024-09-12T12:40:53-03:00",
       "available": true,
       "status_code": 200
@@ -2342,6 +2575,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-jornalismo-da-mediocridade-e-a-censura-de-mercado/",
       "published_at": "2024-09-19T05:53:30-03:00",
       "listed_date": "2024-09-19",
+      "theme": "Infográficos",
       "modified_at": "2024-09-20T12:12:45-03:00",
       "available": true,
       "status_code": 200
@@ -2352,6 +2586,7 @@
       "url": "https://www.poder360.com.br/opiniao/israel-hezbollah-e-o-medo-como-arma-de-contagio/",
       "published_at": "2024-09-26T06:00:21-03:00",
       "listed_date": "2024-09-26",
+      "theme": "Poder Internacional",
       "modified_at": "2024-09-26T06:00:21-03:00",
       "available": true,
       "status_code": 200
@@ -2362,6 +2597,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-guerra-dos-covardes-e-os-escudos-humanos/",
       "published_at": "2024-10-03T05:54:02-03:00",
       "listed_date": "2024-10-03",
+      "theme": "Poder Internacional",
       "modified_at": "2024-10-03T05:54:02-03:00",
       "available": true,
       "status_code": 200
@@ -2372,6 +2608,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-fluor-e-o-porteiro/",
       "published_at": "2024-10-10T05:52:28-03:00",
       "listed_date": "2024-10-10",
+      "theme": "Poder Brasil",
       "modified_at": "2024-10-10T05:52:28-03:00",
       "available": true,
       "status_code": 200
@@ -2382,6 +2619,7 @@
       "url": "https://www.poder360.com.br/opiniao/bem-vindo-ao-libano/",
       "published_at": "2024-10-17T06:13:52-03:00",
       "listed_date": "2024-10-17",
+      "theme": "Poder Internacional",
       "modified_at": "2024-10-17T06:13:52-03:00",
       "available": true,
       "status_code": 200
@@ -2392,6 +2630,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-clube-de-roma-e-o-cacique/",
       "published_at": "2024-10-24T05:58:12-03:00",
       "listed_date": "2024-10-24",
+      "theme": "Poder Internacional",
       "modified_at": "2024-10-24T05:58:12-03:00",
       "available": true,
       "status_code": 200
@@ -2402,6 +2641,7 @@
       "url": "https://www.poder360.com.br/opiniao/os-natimortos-negros-e-o-racismo-da-luz/",
       "published_at": "2024-10-31T05:55:16-03:00",
       "listed_date": "2024-10-31",
+      "theme": "Poder Mídia",
       "modified_at": "2024-10-31T05:55:16-03:00",
       "available": true,
       "status_code": 200
@@ -2412,6 +2652,7 @@
       "url": "https://www.poder360.com.br/opiniao/bitcoin-e-os-ingovernaveis/",
       "published_at": "2024-11-07T05:57:06-03:00",
       "listed_date": "2024-11-07",
+      "theme": "Poder Brasil",
       "modified_at": "2024-11-07T05:57:06-03:00",
       "available": true,
       "status_code": 200
@@ -2422,6 +2663,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-politica-e-os-torcedores-do-gol-contra/",
       "published_at": "2024-11-14T05:46:25-03:00",
       "listed_date": "2024-11-14",
+      "theme": "Poder Eleições",
       "modified_at": "2024-11-14T05:46:25-03:00",
       "available": true,
       "status_code": 200
@@ -2432,6 +2674,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-anarcocapitalismo-e-a-lei-natural/",
       "published_at": "2024-11-21T05:54:39-03:00",
       "listed_date": "2024-11-21",
+      "theme": "Poder Economia",
       "modified_at": "2024-11-21T05:54:39-03:00",
       "available": true,
       "status_code": 200
@@ -2442,6 +2685,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-novo-chefe-da-saude-e-a-surpresa-promissora/",
       "published_at": "2024-11-28T05:48:49-03:00",
       "listed_date": "2024-11-28",
+      "theme": "Poder Internacional",
       "modified_at": "2024-11-28T05:48:49-03:00",
       "available": true,
       "status_code": 200
@@ -2452,6 +2696,7 @@
       "url": "https://www.poder360.com.br/opiniao/os-bracos-abertos-de-nova-york-e-o-banco-mundial/",
       "published_at": "2024-12-05T05:50:12-03:00",
       "listed_date": "2024-12-05",
+      "theme": "Poder Internacional",
       "modified_at": "2024-12-05T05:50:12-03:00",
       "available": true,
       "status_code": 200
@@ -2462,6 +2707,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-gripe-aviaria-e-os-abutres-premonitorios/",
       "published_at": "2024-12-12T05:54:02-03:00",
       "listed_date": "2024-12-12",
+      "theme": "Poder Economia",
       "modified_at": "2024-12-12T05:54:02-03:00",
       "available": true,
       "status_code": 200
@@ -2472,6 +2718,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-ceu-de-nova-jersey-e-nossa-va-filosofia/",
       "published_at": "2024-12-26T05:57:45-03:00",
       "listed_date": "2024-12-26",
+      "theme": "Poder Internacional",
       "modified_at": "2024-12-26T05:57:45-03:00",
       "available": true,
       "status_code": 200
@@ -2482,6 +2729,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-porto-municipal-e-o-judiciario-global/",
       "published_at": "2025-01-02T05:50:48-03:00",
       "listed_date": "2025-01-02",
+      "theme": "Poder Infra",
       "modified_at": "2025-01-02T05:50:48-03:00",
       "available": true,
       "status_code": 200
@@ -2492,6 +2740,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-groenlandia-as-terras-estrangeiras-e-a-fanta-uva/",
       "published_at": "2025-01-09T05:59:45-03:00",
       "listed_date": "2025-01-09",
+      "theme": "Poder Economia",
       "modified_at": "2025-01-09T05:59:45-03:00",
       "available": true,
       "status_code": 200
@@ -2502,6 +2751,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-anuncio-de-zuckerberg-a-multidao-e-a-elite-da-verdade/",
       "published_at": "2025-01-16T05:57:49-03:00",
       "listed_date": "2025-01-16",
+      "theme": "Poder Internacional",
       "modified_at": "2025-01-16T05:57:49-03:00",
       "available": true,
       "status_code": 200
@@ -2512,6 +2762,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-entrega-da-amazonia-a-divisao-do-territorio-e-o-deposito-de-lixo/",
       "published_at": "2025-01-30T05:50:31-03:00",
       "listed_date": "2025-01-30",
+      "theme": "Poder Internacional",
       "modified_at": "2025-01-30T05:50:31-03:00",
       "available": true,
       "status_code": 200
@@ -2522,6 +2773,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-amazonia-e-a-ambiguidade-que-faz-parzinho/",
       "published_at": "2025-02-06T05:56:38-03:00",
       "listed_date": "2025-02-06",
+      "theme": "Poder Economia",
       "modified_at": "2025-02-06T05:56:38-03:00",
       "available": true,
       "status_code": 200
@@ -2532,6 +2784,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-usaid-a-teia-de-ongs-e-a-lavagem-de-intencoes/",
       "published_at": "2025-02-20T05:52:17-03:00",
       "listed_date": "2025-02-20",
+      "theme": "Poder Internacional",
       "modified_at": "2025-02-20T05:52:17-03:00",
       "available": true,
       "status_code": 200
@@ -2542,6 +2795,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-bilionario-a-jornalista-e-o-ladrao-entram-num-bar/",
       "published_at": "2025-02-27T05:54:16-03:00",
       "listed_date": "2025-02-27",
+      "theme": "Poder Governo",
       "modified_at": "2025-02-27T05:54:16-03:00",
       "available": true,
       "status_code": 200
@@ -2552,6 +2806,7 @@
       "url": "https://www.poder360.com.br/opiniao/harlem-o-racismo-e-a-fraqueza-do-bando/",
       "published_at": "2025-03-20T05:54:34-03:00",
       "listed_date": "2025-03-20",
+      "theme": "Poder Internacional",
       "modified_at": "2025-03-20T05:54:34-03:00",
       "available": true,
       "status_code": 200
@@ -2562,6 +2817,7 @@
       "url": "https://www.poder360.com.br/opiniao/tudo-que-move-e-sagrado/",
       "published_at": "2025-04-03T05:55:32-03:00",
       "listed_date": "2025-04-03",
+      "theme": "Poder Brasil",
       "modified_at": "2025-04-03T05:55:32-03:00",
       "available": true,
       "status_code": 200
@@ -2572,6 +2828,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-rei-esta-nu-e-2-2-sempre-sera-igual-a-4/",
       "published_at": "2025-04-10T05:57:14-03:00",
       "listed_date": "2025-04-10",
+      "theme": "Coronavírus",
       "modified_at": "2025-04-10T05:57:14-03:00",
       "available": true,
       "status_code": 200
@@ -2582,6 +2839,7 @@
       "url": "https://www.poder360.com.br/opiniao/heuristica-efeito-cobra-e-a-perversidade-de-longo-prazo/",
       "published_at": "2025-04-17T05:57:33-03:00",
       "listed_date": "2025-04-17",
+      "theme": "Poder Congresso",
       "modified_at": "2025-04-17T05:57:33-03:00",
       "available": true,
       "status_code": 200
@@ -2592,6 +2850,7 @@
       "url": "https://www.poder360.com.br/opiniao/principe-philip-o-excesso-de-humanos-e-o-lado-bom-da-malaria/",
       "published_at": "2025-04-24T05:56:42-03:00",
       "listed_date": "2025-04-24",
+      "theme": "Poder Internacional",
       "modified_at": "2025-04-24T05:56:42-03:00",
       "available": true,
       "status_code": 200
@@ -2602,6 +2861,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-massageador-de-ego-o-roubo-relativo-e-a-morte-do-passarinho/",
       "published_at": "2025-05-08T05:59:27-03:00",
       "listed_date": "2025-05-08",
+      "theme": "Poder Economia",
       "modified_at": "2025-05-08T05:59:27-03:00",
       "available": true,
       "status_code": 200
@@ -2612,6 +2872,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-fascismo-o-comunismo-e-os-idosos/",
       "published_at": "2025-05-15T05:57:56-03:00",
       "listed_date": "2025-05-15",
+      "theme": "Poder Governo",
       "modified_at": "2025-05-15T05:57:56-03:00",
       "available": true,
       "status_code": 200
@@ -2622,6 +2883,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-new-york-times-e-o-dedo-que-aponta-para-o-espelho/",
       "published_at": "2025-05-22T05:57:15-03:00",
       "listed_date": "2025-05-22",
+      "theme": "Coronavírus",
       "modified_at": "2025-05-22T05:57:15-03:00",
       "available": true,
       "status_code": 200
@@ -2632,6 +2894,7 @@
       "url": "https://www.poder360.com.br/opiniao/cameras-chinesas-controle-e-o-silencio-da-direita-em-sao-paulo/",
       "published_at": "2025-05-29T05:51:45-03:00",
       "listed_date": "2025-05-29",
+      "theme": "Poder Brasil",
       "modified_at": "2025-05-29T05:51:45-03:00",
       "available": true,
       "status_code": 200
@@ -2642,6 +2905,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-lei-magnitsky-e-a-perda-do-que-nao-temos/",
       "published_at": "2025-06-05T05:56:16-03:00",
       "listed_date": "2025-06-05",
+      "theme": "Poder Governo",
       "modified_at": "2025-06-05T05:56:16-03:00",
       "available": true,
       "status_code": 200
@@ -2652,6 +2916,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-piada-de-mau-gosto-os-politicos-e-seu-eleitogado/",
       "published_at": "2025-06-12T05:57:16-03:00",
       "listed_date": "2025-06-12",
+      "theme": "Poder Congresso",
       "modified_at": "2025-06-12T05:57:16-03:00",
       "available": true,
       "status_code": 200
@@ -2662,6 +2927,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-comida-o-corante-e-os-adoradores-de-politicos/",
       "published_at": "2025-06-26T05:54:22-03:00",
       "listed_date": "2025-06-26",
+      "theme": "Poder Internacional",
       "modified_at": "2025-06-26T05:54:22-03:00",
       "available": true,
       "status_code": 200
@@ -2672,6 +2938,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-tecnofascismo-e-como-nao-falar-mal-do-governo-nas-redes-sociais/",
       "published_at": "2025-07-03T05:45:03-03:00",
       "listed_date": "2025-07-03",
+      "theme": "Poder Internacional",
       "modified_at": "2025-07-03T05:45:03-03:00",
       "available": true,
       "status_code": 200
@@ -2682,6 +2949,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-arquivo-de-epstein-e-a-volta-dos-que-nao-foram/",
       "published_at": "2025-07-10T05:57:21-03:00",
       "listed_date": "2025-07-10",
+      "theme": "Poder Internacional",
       "modified_at": "2025-07-10T05:57:21-03:00",
       "available": true,
       "status_code": 200
@@ -2692,6 +2960,7 @@
       "url": "https://www.poder360.com.br/opiniao/texas-epstein-e-a-tempestade-em-boa-hora/",
       "published_at": "2025-07-17T05:57:19-03:00",
       "listed_date": "2025-07-17",
+      "theme": "Poder Internacional",
       "modified_at": "2025-07-17T05:57:19-03:00",
       "available": true,
       "status_code": 200
@@ -2702,6 +2971,7 @@
       "url": "https://www.poder360.com.br/opiniao/democracia-entrevista-bolsonaro-censura/",
       "published_at": "2025-07-24T06:00:23-03:00",
       "listed_date": "2025-07-24",
+      "theme": "Poder Justiça",
       "modified_at": "2025-07-24T06:00:23-03:00",
       "available": true,
       "status_code": 200
@@ -2712,6 +2982,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-documentario-que-me-orgulho-de-nao-ter-feito/",
       "published_at": "2025-07-31T06:00:28-03:00",
       "listed_date": "2025-07-31",
+      "theme": "Poder Internacional",
       "modified_at": "2025-07-31T06:00:28-03:00",
       "available": true,
       "status_code": 200
@@ -2722,6 +2993,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-brasileira-invisivel-o-sem-juizo-e-a-sentenca-sem-crime/",
       "published_at": "2025-08-07T05:57:39-03:00",
       "listed_date": "2025-08-07",
+      "theme": "Poder Justiça",
       "modified_at": "2025-08-07T05:57:39-03:00",
       "available": true,
       "status_code": 200
@@ -2732,6 +3004,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-ritmo-do-ministro-e-a-autocensura/",
       "published_at": "2025-08-14T05:47:36-03:00",
       "listed_date": "2025-08-14",
+      "theme": "Poder Mídia",
       "modified_at": "2025-08-19T20:34:08-03:00",
       "available": true,
       "status_code": 200
@@ -2742,6 +3015,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-adultizacao-a-infantilizacao-de-adultos-e-os-brasileiros-de-pavlov/",
       "published_at": "2025-08-21T05:52:02-03:00",
       "listed_date": "2025-08-21",
+      "theme": "Poder Mídia",
       "modified_at": "2025-08-21T05:52:02-03:00",
       "available": true,
       "status_code": 200
@@ -2752,6 +3026,7 @@
       "url": "https://www.poder360.com.br/opiniao/humano-demasiadamente-humano/",
       "published_at": "2025-08-28T05:57:14-03:00",
       "listed_date": "2025-08-28",
+      "theme": "Poder Tech",
       "modified_at": "2025-08-28T05:57:14-03:00",
       "available": true,
       "status_code": 200
@@ -2762,6 +3037,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-circus-maximus-da-desonra-e-o-bruxo-que-enfeiticou-o-brasil/",
       "published_at": "2025-09-04T05:57:24-03:00",
       "listed_date": "2025-09-04",
+      "theme": "Poder Mídia",
       "modified_at": "2025-09-04T05:57:24-03:00",
       "available": true,
       "status_code": 200
@@ -2772,6 +3048,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-operacao-embaracosa-e-o-assassinato-de-1-000-coelhos/",
       "published_at": "2025-09-11T05:57:16-03:00",
       "listed_date": "2025-09-11",
+      "theme": "Poder Internacional",
       "modified_at": "2025-09-11T05:57:16-03:00",
       "available": true,
       "status_code": 200
@@ -2782,6 +3059,7 @@
       "url": "https://www.poder360.com.br/opiniao/charlie-kirk-e-o-direito-de-portar-palavras/",
       "published_at": "2025-09-18T05:57:17-03:00",
       "listed_date": "2025-09-18",
+      "theme": "Poder Internacional",
       "modified_at": "2025-09-18T05:57:17-03:00",
       "available": true,
       "status_code": 200
@@ -2792,6 +3070,7 @@
       "url": "https://www.poder360.com.br/opiniao/charlie-kirk-e-o-chamariz/",
       "published_at": "2025-10-02T05:51:58-03:00",
       "listed_date": "2025-10-02",
+      "theme": "Poder Internacional",
       "modified_at": "2025-10-02T05:51:58-03:00",
       "available": true,
       "status_code": 200
@@ -2802,6 +3081,7 @@
       "url": "https://www.poder360.com.br/opiniao/charlie-kirk-o-lamento-e-a-celebracao/",
       "published_at": "2025-10-09T05:57:51-03:00",
       "listed_date": "2025-10-09",
+      "theme": "Poder Internacional",
       "modified_at": "2025-10-09T05:57:51-03:00",
       "available": true,
       "status_code": 200
@@ -2812,6 +3092,7 @@
       "url": "https://www.poder360.com.br/opiniao/charlie-kirk-e-os-sobrinhos-do-tio-paulo/",
       "published_at": "2025-10-16T05:57:37-03:00",
       "listed_date": "2025-10-16",
+      "theme": "Poder Internacional",
       "modified_at": "2025-10-16T05:57:37-03:00",
       "available": true,
       "status_code": 200
@@ -2822,6 +3103,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-assassinato-de-charlie-kirk-e-as-explicacoes-nao-autorizadas/",
       "published_at": "2025-10-23T05:57:58-03:00",
       "listed_date": "2025-10-23",
+      "theme": "Poder Internacional",
       "modified_at": "2025-10-23T05:57:58-03:00",
       "available": true,
       "status_code": 200
