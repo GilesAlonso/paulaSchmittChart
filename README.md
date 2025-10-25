@@ -1,79 +1,107 @@
 # Paula Schmitt Articles Network
 
 ## Project overview
-This repository hosts an interactive network visualization that maps how Brazilian journalist Paula Schmitt interconnects her opinion pieces. Each article is represented as a node and edges highlight references and thematic relationships between the texts. The goal is to help readers explore recurring topics, discover related essays, and understand how narratives unfold across Schmitt's body of work.
+This repository hosts interactive network visualizations that map how Brazilian journalist Paula Schmitt interconnects her opinion pieces. Each article is represented as a node and edges highlight references and thematic relationships between the texts. The default experience is the second-generation interface (V2) served from `index.html`, while the original HTML-only graph is preserved as `index-v1.html` for archival access.
+
+## Available visualizations
+- `index.html` — Visualização principal (V2) com filtros por tema, busca textual, metadados, exportações e um layout responsivo construído com JavaScript modular.
+- `index-v1.html` — Visualização legada (V1) que mantém o dataset embutido em HTML e a experiência original utilizada nas primeiras versões do projeto.
 
 ## Tech stack
-- **vis-network** – renders the interactive force-directed graph and manages the node/edge datasets.
-- **Bootstrap 5** – provides responsive styling for the layout container and legend.
-- **ForceAtlas2 physics** – selected via `vis-network` to control layout dynamics and stabilize the graph.
-- **Vanilla HTML, CSS, and JavaScript** – the project is delivered as a single static page without build tooling.
+### Front-end
+- **vis-network** (v9.1.2) renderiza os grafos force-directed interativos.
+- **JavaScript moderno (ES modules)** localizado em `assets/js/` para orquestrar carregamento de dados, filtros, estatísticas, UI e rede.
+- **CSS personalizado** (`assets/css/v2.css`) oferece o layout responsivo, controles e melhorias de acessibilidade da V2.
+- **Bootstrap 5** continua presente na visualização legada V1 para o layout da legenda e componentes originais.
+
+### Data collection & automation
+- **Python 3, BeautifulSoup 4 e Requests** alimentam o scraper (`scripts/paula_schmitt_scraper.py`) que constrói o dataset canônico.
+- **GitHub Actions** (`.github/workflows/paula-schmitt-scraper.yml`) executa o scraper toda segunda-feira às 05:00 UTC (e sob demanda), commitando alterações em `data/paula-schmitt-network-v2.json` quando novos artigos ou relações são encontrados.
 
 ## Architecture
-The application is implemented as a single HTML document (`index.html`) that embeds:
-- Helper functions for neighbourhood highlighting, filtering, and node selection.
-- Inline styles for the network canvas and legend.
-- The complete nodes and edges dataset used by vis-network.
-- Runtime enhancements that configure physics, upgrade tooltips to rich HTML, and open article links in new browser tabs.
 
-To support future maintenance, the same dataset is now also published as a standalone JSON file (`articles-network.json`). The visualization currently continues to consume the embedded dataset so the existing behaviour is preserved exactly.
+### V2 (index.html)
+A interface promovida é estruturada como um aplicativo modular:
 
-## Key features
-- **Color-coded legend** – static legend associates node colours with editorial themes.
-- **Neighbourhood highlight** – selecting a node softens unrelated items and reveals labels for first- and second-degree connections.
-- **Filtering helpers** – programmatic utilities make it easy to extend the UI with filters by node or edge properties.
-- **Rich HTML tooltips** – article titles and themes appear in formatted tooltips for improved readability.
-- **Clickable nodes** – clicking a node opens the referenced article in a new tab while cursor feedback signals interactivity.
-- **Physics controls** – ForceAtlas2 parameters are applied automatically, and the built-in configure panel lets maintainers adjust physics live.
+```
+index.html
+assets/
+  css/v2.css
+  js/
+    dataLoader.js      // busca e normaliza o dataset e suas cores
+    graph.js           // encapsula a configuração do vis-network
+    filters.js         // lógica de filtros por tema, busca e período
+    statistics.js      // contadores e métricas derivadas
+    ui.js              // binding de DOM, eventos e acessibilidade
+    utils.js           // utilitários compartilhados (formatação, truncamento, etc.)
+data/
+  paula-schmitt-network-v2.json  // dataset canônico gerado pelo scraper
+```
+
+`index.html` carrega a folha de estilos, inicializa os módulos e requisita o dataset via `fetch`. `GraphManager` aplica a física do vis-network, `FiltersManager` controla filtros e foco temático, `StatisticsManager` deriva contagens, e `UIController` sincroniza o DOM, a legenda, o painel de metadados e as ações de exportação.
+
+### Legacy V1 (index-v1.html)
+O arquivo legado mantém a implementação original em uma única página com arrays embutidos de nós e arestas, funções de destaque de vizinhança/filtragem e inicialização direta do vis-network. Ele permanece funcionalmente inalterado, exceto pelo banner que aponta para a visualização principal.
+
+## Key V2 features
+- Filtros por tema com modo de foco, seleção/limpeza rápidas e busca dentro da lista de temas.
+- Busca textual e filtro por intervalo de anos que podem ser combinados com as seleções de temas.
+- Estatísticas dinâmicas para contagem de artigos, citações, distribuição por tema e linha do tempo de publicações.
+- Painel de metadados com tema, datas de publicação, status de disponibilidade, contagem de citações e link direto para o artigo.
+- Exportação do conjunto filtrado em JSON e captura do grafo como PNG.
+- Layout responsivo com legenda adaptativa, indicações de scroll para dispositivos touch e tamanhos sensíveis ao viewport.
+- Exposição de metadados do dataset (fonte, totais, timestamp de geração) diretamente na interface.
+- Atualização automática semanal dos dados através do workflow do GitHub Actions.
+
+## Legacy V1 capabilities
+A visualização legada preserva:
+- A legenda estática com cores associadas aos temas editoriais.
+- Funções de destaque de vizinhança que esmaecem nós não relacionados e restauram rótulos ao redor do artigo selecionado.
+- Utilitários de filtragem programática e handlers que abrem artigos em novas abas.
+- Configuração do ForceAtlas2 exposta pelo painel de ajustes do vis-network.
 
 ## Dataset reference
-The canonical dataset is stored in [`articles-network.json`](./articles-network.json). It follows this structure:
+O dataset da V2 salvo em `data/paula-schmitt-network-v2.json` segue esta estrutura:
 
 ```json
 {
+  "metadata": {
+    "generated_at": "2025-10-24T04:12:49Z",
+    "source": "https://www.poder360.com.br/author/paula-schmitt/",
+    "total_nodes": 282,
+    "total_edges": 271
+  },
   "nodes": [
     {
-      "id": "<unique article identifier>",
-      "label": "<short label shown in the graph>",
-      "title": "<HTML string used inside the tooltip>",
-      "color": "<hex colour string matching the legend>",
-      "shape": "dot"
+      "id": "https://www.poder360.com.br/opiniao/exemplo/",
+      "title": "Título do artigo",
+      "url": "https://www.poder360.com.br/opiniao/exemplo/",
+      "published_at": "2024-08-14T05:50:00-03:00",
+      "listed_date": "2024-08-14",
+      "theme": "Brasil",
+      "available": true,
+      "status_code": 200
     }
   ],
   "edges": [
     {
-      "from": "<id of the source article>",
-      "to": "<id of the target article>",
-      "arrows": "to"
+      "source": "https://www.poder360.com.br/opiniao/exemplo/",
+      "target": "https://www.poder360.com.br/opiniao/outro-exemplo/"
     }
   ]
 }
 ```
 
-### Nodes
-- `id`: Must be unique. The current network uses the article URL so the click handler can open the correct page.
-- `label`: Shortened title rendered next to the node. Keep it concise for readability.
-- `title`: HTML string that appears in the tooltip (rich formatting is supported).
-- `color`: Matches the theme legend (e.g., `#3cb44b` for “Brasil”).
-- `shape`: Currently `dot` for all nodes to keep a consistent appearance.
+`assets/js/dataLoader.js` transforma o JSON na estrutura esperada pelo vis-network (incluindo cores derivadas, rótulos truncados e extração do ano). A visualização legada V1 continua a consumir seus próprios arrays estáticos embutidos em `index-v1.html`.
 
-### Edges
-- `from`: Source article `id` that cites or relates to another article.
-- `to`: Target article `id` receiving the citation/relationship.
-- `arrows`: Remains `"to"` so arrows point from the referencing article to the referenced one.
+## Updating the dataset manually
+1. Garanta o Python 3.11+ e instale as dependências: `pip install -r requirements.txt`.
+2. Execute o scraper a partir da raiz do repositório: `python scripts/paula_schmitt_scraper.py --log-level INFO`.
+3. Revise o arquivo `data/paula-schmitt-network-v2.json`, faça o staging das mudanças e crie o commit.
 
-## Updating the dataset
-1. **Edit `articles-network.json`:** Add, remove, or update node/edge objects while keeping the JSON structure intact. Preserve the use of valid hex colours and unique node IDs.
-2. **Mirror changes in `index.html`:** Until the visualization is refactored to load the JSON dynamically, the embedded arrays inside `index.html` must be kept in sync so the live network reflects every change. Update both the `nodes = new vis.DataSet([...])` and `edges = new vis.DataSet([...])` sections accordingly.
-3. **Validate tooltips and links:** Ensure each node retains a descriptive `title` string and that `id` values continue to be valid URLs so clicking nodes opens the correct article.
-4. **Test locally:** Open `index.html` in a browser and verify layout stability, colours, and interactions (highlighting, tooltips, link behaviour).
+O workflow agendado repetirá os mesmos passos toda semana e fará push automático quando detectar diferenças.
 
-When the project evolves to consume the JSON file directly, step 2 will no longer be necessary—the JSON will become the single source of truth.
-
-## Visualization configuration
-- **Physics solver:** The script switches vis-network to ForceAtlas2 with customized gravity, damping, and spring constants (`gravitationalConstant: -50`, `centralGravity: 0.01`, `springLength: 100`, `springConstant: 0.08`, `damping: 0.4`, `minVelocity: 0.75`). Adjusting these values changes how tightly clusters form and how fast the layout stabilizes.
-- **Configure panel:** vis-network’s built-in configuration widget is exposed via the `#config` container, enabling real-time physics experimentation.
-- **Highlighting helpers:** The functions `neighbourhoodHighlight`, `filterHighlight`, `selectNode`, `selectNodes`, and `highlightFilter` can be reused if a dedicated UI for filters or search is added in the future.
-
-## Getting started
-No build step is required. Simply open `index.html` in any modern browser to explore the network. Keep both the HTML file and the JSON dataset under version control so updates remain traceable over time.
+## Local development
+- Como a V2 faz `fetch` do dataset, sirva o projeto em um servidor HTTP estático (por exemplo, `python -m http.server 8000`) e abra `http://localhost:8000/index.html` em um navegador moderno.
+- A visualização legada V1 ainda pode ser aberta diretamente via filesystem (`index-v1.html`) se necessário.
+- Não há etapa de build: ambas as visualizações são ativos estáticos que podem ser hospedados no GitHub Pages ou em qualquer serviço de arquivos estáticos.
