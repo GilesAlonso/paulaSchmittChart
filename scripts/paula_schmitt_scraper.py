@@ -51,6 +51,38 @@ CONTENT_SELECTORS = [
     ".post__content",
 ]
 
+THEME_PREFIX_PATTERN = re.compile(r"^poder\b\s+", re.IGNORECASE)
+
+
+def normalize_theme_label(value: Optional[str]) -> Optional[str]:
+    if value is None:
+        return None
+    collapsed = " ".join(value.split())
+    if not collapsed:
+        return None
+    if collapsed.casefold() == "poder":
+        return None
+    normalized = THEME_PREFIX_PATTERN.sub("", collapsed, count=1).strip()
+    return normalized or None
+
+
+def normalize_theme(value: Optional[str]) -> Optional[str]:
+    if value is None:
+        return None
+    parts: List[str] = []
+    seen: Set[str] = set()
+    for raw_part in value.split(","):
+        normalized_part = normalize_theme_label(raw_part)
+        if not normalized_part:
+            continue
+        key = normalized_part.casefold()
+        if key not in seen:
+            seen.add(key)
+            parts.append(normalized_part)
+    if not parts:
+        return None
+    return ", ".join(parts)
+
 
 @dataclass
 class Article:
@@ -66,6 +98,10 @@ class Article:
     citations: Set[str] = field(default_factory=set)
     available: bool = True
     status_code: Optional[int] = None
+
+    def __post_init__(self) -> None:
+        if self.theme is not None:
+            self.theme = normalize_theme(self.theme)
 
 
 def create_session() -> Session:
@@ -150,8 +186,21 @@ def parse_listing_items(html: BeautifulSoup) -> List[Article]:
         date_elem = item.select_one(".archive-list__date")
         listed_date = parse_listing_date(date_elem.get_text(strip=True)) if date_elem else None
         theme_elems = item.select(".archive-list__tag")
-        themes = [elem.get_text(strip=True) for elem in theme_elems if elem.get_text(strip=True)]
-        theme = ", ".join(dict.fromkeys(themes)) if themes else None
+        normalized_themes: List[str] = []
+        seen_themes: Set[str] = set()
+        for elem in theme_elems:
+            raw_text = elem.get_text(strip=True)
+            if not raw_text:
+                continue
+            for part in raw_text.split(","):
+                normalized = normalize_theme_label(part)
+                if not normalized:
+                    continue
+                key = normalized.casefold()
+                if key not in seen_themes:
+                    seen_themes.add(key)
+                    normalized_themes.append(normalized)
+        theme = ", ".join(normalized_themes) if normalized_themes else None
         articles.append(
             Article(
                 title=title,
@@ -173,8 +222,12 @@ def collect_article_listings(session: Session) -> Dict[str, Article]:
     for article in parse_listing_items(soup):
         existing = articles.get(article.canonical_url)
         if existing:
-            if article.theme and not existing.theme:
-                existing.theme = article.theme
+            if existing.theme is not None:
+                existing.theme = normalize_theme(existing.theme)
+            if article.theme is not None:
+                normalized_theme = normalize_theme(article.theme)
+                if normalized_theme and not existing.theme:
+                    existing.theme = normalized_theme
             if article.listed_date and not existing.listed_date:
                 existing.listed_date = article.listed_date
         else:
@@ -218,8 +271,12 @@ def collect_article_listings(session: Session) -> Dict[str, Article]:
         for article in new_articles:
             existing = articles.get(article.canonical_url)
             if existing:
-                if article.theme and not existing.theme:
-                    existing.theme = article.theme
+                if existing.theme is not None:
+                    existing.theme = normalize_theme(existing.theme)
+                if article.theme is not None:
+                    normalized_theme = normalize_theme(article.theme)
+                    if normalized_theme and not existing.theme:
+                        existing.theme = normalized_theme
                 if article.listed_date and not existing.listed_date:
                     existing.listed_date = article.listed_date
             else:
@@ -363,6 +420,7 @@ def build_dataset(articles: Dict[str, Article]) -> Dict[str, object]:
 
     nodes = []
     for article in sorted(articles.values(), key=sort_key):
+        normalized_theme = normalize_theme(article.theme)
         nodes.append(
             {
                 "id": article.canonical_url,
@@ -370,7 +428,7 @@ def build_dataset(articles: Dict[str, Article]) -> Dict[str, object]:
                 "url": article.canonical_url,
                 "published_at": article.published_at,
                 "listed_date": article.listed_date,
-                "theme": article.theme,
+                "theme": normalized_theme,
                 "modified_at": article.modified_at,
                 "available": article.available,
                 "status_code": article.status_code,

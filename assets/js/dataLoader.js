@@ -11,24 +11,16 @@ const PRESET_THEME_COLORS = {
   'Governo': '#118ab2',
   'História': '#9c6644',
   'Infográficos': '#06d6a0',
+  'Infra': '#8d99ae',
   'Internacional': '#1d3557',
   'Justiça': '#8ecae6',
   'Lava Jato': '#ff9f1c',
   'Literatura': '#f72585',
   'Mídia': '#8338ec',
   'Partidos políticos': '#ffd23f',
-  'Poder Brasil': '#4cc9f0',
-  'Poder Congresso': '#ff7f11',
-  'Poder Economia': '#5a189a',
-  'Poder Eleições': '#ff4d6d',
-  'Poder Governo': '#073b4c',
-  'Poder Infra': '#8d99ae',
-  'Poder Internacional': '#4361ee',
-  'Poder Justiça': '#4895ef',
-  'Poder Mídia': '#7c6f64',
-  'Poder Tech': '#3a86ff',
   'Saúde': '#52b788',
-  'Segurança Pública': '#b5179e'
+  'Segurança Pública': '#b5179e',
+  'Tech': '#3a86ff'
 };
 
 const FALLBACK_PALETTE = [
