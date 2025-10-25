@@ -29,6 +29,17 @@ export class UIController {
     this.storageKey = FILTERS_STORAGE_KEY;
     this.themeSearchTerm = '';
     this.isRestoringState = false;
+
+    this.legendCollapsed = false;
+    this.isLegendMobileOpen = false;
+    this.legendPanel = null;
+    this.legendPanelDefaultRole = 'region';
+    this.legendCollapseButton = null;
+    this.legendMobileTrigger = null;
+    this.legendMobileCloseButton = null;
+    this.legendMobileBackdrop = null;
+
+    this.handleLegendKeydown = this.handleLegendKeydown.bind(this);
   }
 
   initialize(dataset) {
@@ -41,18 +52,24 @@ export class UIController {
     if (persistedState) {
       this.isRestoringState = true;
       this.applyPersistedFilters(persistedState);
+      if (typeof persistedState.legendCollapsed === 'boolean') {
+        this.legendCollapsed = persistedState.legendCollapsed;
+      }
     }
 
     this.cacheDomElements();
     this.renderThemeFilters();
     this.renderLegend();
+    this.applyLegendCollapsedState(this.legendCollapsed, { persist: false });
     this.attachEventListeners();
     this.renderDatasetMetadata();
 
     if (persistedState) {
       this.applyPersistedInputs(persistedState);
-      this.isRestoringState = false;
     }
+
+    this.isRestoringState = false;
+    this.updateLegendResponsiveState();
 
     this.graphManager.onNodeSelect = (node) => this.showMetadata(node);
     this.graphManager.onNodeDeselect = () => this.hideMetadata();
@@ -76,6 +93,15 @@ export class UIController {
     this.themeEmptyState = document.getElementById('theme-empty-state');
 
     this.legendContainer = document.getElementById('legend-items');
+    this.legendPanel = document.getElementById('legend-panel');
+    this.legendCollapseButton = document.getElementById('legend-collapse-toggle');
+    this.legendMobileTrigger = document.getElementById('legend-mobile-trigger');
+    this.legendMobileCloseButton = document.getElementById('legend-mobile-close');
+    this.legendMobileBackdrop = document.getElementById('legend-mobile-backdrop');
+    if (this.legendPanel) {
+      const role = this.legendPanel.getAttribute('role');
+      this.legendPanelDefaultRole = role || 'region';
+    }
 
     this.startYearInput = document.getElementById('start-year-input');
     this.endYearInput = document.getElementById('end-year-input');
@@ -254,7 +280,30 @@ export class UIController {
       this.metadataClose.addEventListener('click', () => this.hideMetadata());
     }
 
-    window.addEventListener('resize', () => this.graphManager.resize());
+    if (this.legendCollapseButton) {
+      this.legendCollapseButton.addEventListener('click', () => {
+        this.applyLegendCollapsedState(!this.legendCollapsed, { persist: true });
+      });
+    }
+
+    if (this.legendMobileTrigger) {
+      this.legendMobileTrigger.addEventListener('click', () => this.openLegendMobile());
+    }
+
+    if (this.legendMobileCloseButton) {
+      this.legendMobileCloseButton.addEventListener('click', () => this.closeLegendMobile());
+    }
+
+    if (this.legendMobileBackdrop) {
+      this.legendMobileBackdrop.addEventListener('click', () => this.closeLegendMobile());
+    }
+
+    document.addEventListener('keydown', this.handleLegendKeydown);
+
+    window.addEventListener('resize', () => {
+      this.graphManager.resize();
+      this.updateLegendResponsiveState();
+    });
   }
 
   renderThemeFilters() {
@@ -561,6 +610,152 @@ export class UIController {
     });
   }
 
+  applyLegendCollapsedState(isCollapsed, { persist = false } = {}) {
+    this.legendCollapsed = Boolean(isCollapsed);
+    if (this.legendPanel) {
+      this.legendPanel.dataset.collapsed = this.legendCollapsed ? 'true' : 'false';
+    }
+
+    if (this.legendCollapseButton) {
+      const expanded = !this.legendCollapsed;
+      this.legendCollapseButton.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      this.legendCollapseButton.textContent = expanded ? 'Recolher' : 'Expandir';
+      this.legendCollapseButton.setAttribute(
+        'aria-label',
+        expanded ? 'Recolher legenda de temas' : 'Expandir legenda de temas'
+      );
+    }
+
+    if (persist) {
+      this.persistFilters();
+    }
+  }
+
+  isMobileViewport() {
+    if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
+      return false;
+    }
+    return window.matchMedia('(max-width: 1024px)').matches;
+  }
+
+  openLegendMobile() {
+    if (!this.legendPanel || !this.isMobileViewport()) {
+      return;
+    }
+
+    if (this.isLegendMobileOpen) {
+      return;
+    }
+
+    this.isLegendMobileOpen = true;
+    this.legendPanel.classList.add('is-mobile-open');
+    this.legendPanel.setAttribute('aria-hidden', 'false');
+    this.legendPanel.setAttribute('role', 'dialog');
+    this.legendPanel.setAttribute('aria-modal', 'true');
+
+    if (this.legendMobileTrigger) {
+      this.legendMobileTrigger.setAttribute('aria-expanded', 'true');
+    }
+
+    if (this.legendMobileBackdrop) {
+      this.legendMobileBackdrop.hidden = false;
+      this.legendMobileBackdrop.classList.add('is-visible');
+    }
+
+    if (typeof document !== 'undefined') {
+      document.body.classList.add('legend-mobile-open');
+    }
+
+    const focusTarget = this.legendMobileCloseButton || this.legendPanel;
+    if (focusTarget && typeof focusTarget.focus === 'function') {
+      focusTarget.focus({ preventScroll: true });
+    }
+  }
+
+  closeLegendMobile({ restoreFocus = true } = {}) {
+    if (!this.legendPanel) {
+      return;
+    }
+
+    const wasOpen = this.isLegendMobileOpen;
+    this.isLegendMobileOpen = false;
+    this.legendPanel.classList.remove('is-mobile-open');
+    this.legendPanel.setAttribute('aria-hidden', 'true');
+    this.legendPanel.removeAttribute('aria-modal');
+
+    if (this.legendPanelDefaultRole) {
+      this.legendPanel.setAttribute('role', this.legendPanelDefaultRole);
+    } else {
+      this.legendPanel.removeAttribute('role');
+    }
+
+    if (this.legendMobileTrigger) {
+      this.legendMobileTrigger.setAttribute('aria-expanded', 'false');
+      if (restoreFocus && wasOpen && this.isMobileViewport() && typeof this.legendMobileTrigger.focus === 'function') {
+        this.legendMobileTrigger.focus({ preventScroll: true });
+      }
+    }
+
+    if (this.legendMobileBackdrop) {
+      this.legendMobileBackdrop.classList.remove('is-visible');
+      this.legendMobileBackdrop.hidden = true;
+    }
+
+    if (typeof document !== 'undefined') {
+      document.body.classList.remove('legend-mobile-open');
+    }
+  }
+
+  updateLegendResponsiveState() {
+    if (!this.legendPanel) {
+      return;
+    }
+
+    const isMobile = this.isMobileViewport();
+
+    if (!isMobile) {
+      this.closeLegendMobile({ restoreFocus: false });
+      this.legendPanel.setAttribute('aria-hidden', 'false');
+      this.legendPanel.removeAttribute('aria-modal');
+      if (this.legendPanelDefaultRole) {
+        this.legendPanel.setAttribute('role', this.legendPanelDefaultRole);
+      } else {
+        this.legendPanel.removeAttribute('role');
+      }
+      if (this.legendMobileBackdrop) {
+        this.legendMobileBackdrop.classList.remove('is-visible');
+        this.legendMobileBackdrop.hidden = true;
+      }
+      if (this.legendMobileTrigger) {
+        this.legendMobileTrigger.setAttribute('aria-expanded', 'false');
+      }
+      if (typeof document !== 'undefined') {
+        document.body.classList.remove('legend-mobile-open');
+      }
+      this.applyLegendCollapsedState(this.legendCollapsed, { persist: false });
+      return;
+    }
+
+    if (!this.isLegendMobileOpen) {
+      this.legendPanel.setAttribute('aria-hidden', 'true');
+      this.legendPanel.removeAttribute('aria-modal');
+      if (this.legendPanelDefaultRole) {
+        this.legendPanel.setAttribute('role', this.legendPanelDefaultRole);
+      } else {
+        this.legendPanel.removeAttribute('role');
+      }
+      if (this.legendMobileTrigger) {
+        this.legendMobileTrigger.setAttribute('aria-expanded', 'false');
+      }
+    }
+  }
+
+  handleLegendKeydown(event) {
+    if ((event.key === 'Escape' || event.key === 'Esc') && this.isLegendMobileOpen) {
+      this.closeLegendMobile();
+    }
+  }
+
   renderDatasetMetadata() {
     if (!this.datasetInfo) {
       return;
@@ -768,6 +963,10 @@ export class UIController {
     if (state.focusTheme) {
       this.filtersManager.setFocusedTheme(state.focusTheme);
     }
+
+    if (typeof state.legendCollapsed === 'boolean') {
+      this.legendCollapsed = state.legendCollapsed;
+    }
   }
 
   applyPersistedInputs(state) {
@@ -807,7 +1006,8 @@ export class UIController {
       activeThemes: this.filtersManager.getActiveThemes(),
       focusTheme: this.filtersManager.getFocusedTheme(),
       startYear: Number.isFinite(dateRange.start) ? dateRange.start : null,
-      endYear: Number.isFinite(dateRange.end) ? dateRange.end : null
+      endYear: Number.isFinite(dateRange.end) ? dateRange.end : null,
+      legendCollapsed: this.legendCollapsed
     };
 
     try {

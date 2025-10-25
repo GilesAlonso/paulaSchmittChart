@@ -146,62 +146,109 @@
       </aside>
 
       <section class="graph-area">
-        <div
-          id="network-container"
-          role="application"
-          aria-label="Rede de conexões dos artigos da Paula Schmitt"
-        ></div>
+        <div class="graph-area__canvas">
+          <button
+            type="button"
+            id="legend-mobile-trigger"
+            class="legend-mobile-trigger"
+            aria-haspopup="dialog"
+            aria-expanded="false"
+            aria-controls="legend-panel"
+          >
+            Legenda
+          </button>
 
-        <div id="mobile-scroll-hint" class="scroll-hint" aria-hidden="true">
-          <span class="scroll-hint__icon">⇕</span>
-          <span class="scroll-hint__text">Arraste o grafo para explorar e role para acessar os filtros.</span>
-        </div>
+          <div
+            id="network-container"
+            role="application"
+            aria-label="Rede de conexões dos artigos da Paula Schmitt"
+          ></div>
 
-        <div id="legend-panel">
-          <h3>Temas</h3>
-          <div id="legend-items"></div>
-        </div>
-
-        <div id="metadata-panel" aria-live="polite">
-          <button id="metadata-close" aria-label="Fechar painel">&times;</button>
-          <div id="metadata-placeholder">
-            <h2>Selecione um artigo</h2>
-            <p class="metadata-description">
-              Clique em um nó do grafo para visualizar informações detalhadas, incluindo tema, data e número de citações.
-            </p>
-          </div>
-          <div id="metadata-content" hidden>
-            <h2 id="metadata-title"></h2>
-            <dl class="metadata-list">
-              <div>
-                <dt>Tema</dt>
-                <dd id="metadata-theme"></dd>
-              </div>
-              <div>
-                <dt>Publicado em</dt>
-                <dd id="metadata-date"></dd>
-              </div>
-              <div>
-                <dt>Status</dt>
-                <dd id="metadata-status"></dd>
-              </div>
-              <div>
-                <dt>Citações</dt>
-                <dd id="metadata-citations"></dd>
-              </div>
-              <div>
-                <dt>Descrição</dt>
-                <dd id="metadata-description"></dd>
-              </div>
-              <div>
-                <dt>Link</dt>
-                <dd>
-                  <a id="metadata-link" href="#" target="_blank" rel="noopener noreferrer">Abrir artigo</a>
-                </dd>
-              </div>
-            </dl>
+          <div id="mobile-scroll-hint" class="scroll-hint" aria-hidden="true">
+            <span class="scroll-hint__icon">⇕</span>
+            <span class="scroll-hint__text">Arraste o grafo para explorar e role para acessar os filtros.</span>
           </div>
         </div>
+
+        <div class="graph-area__sidebar">
+          <div class="graph-area__sidebar-inner">
+            <div
+              id="legend-panel"
+              class="legend-panel"
+              role="region"
+              aria-labelledby="legend-panel-title"
+              data-collapsed="false"
+              tabindex="-1"
+            >
+              <header class="legend-panel__header">
+                <h3 id="legend-panel-title" class="legend-panel__title">Temas</h3>
+                <div class="legend-panel__actions">
+                  <button
+                    type="button"
+                    id="legend-collapse-toggle"
+                    class="legend-collapse-button"
+                    aria-expanded="true"
+                    aria-controls="legend-items"
+                  >
+                    Recolher
+                  </button>
+                  <button
+                    type="button"
+                    id="legend-mobile-close"
+                    class="legend-mobile-close"
+                    aria-label="Fechar legenda"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              </header>
+              <div id="legend-items" class="legend-panel__content"></div>
+            </div>
+
+            <div id="metadata-panel" aria-live="polite">
+              <button id="metadata-close" aria-label="Fechar painel">&times;</button>
+              <div id="metadata-placeholder">
+                <h2>Selecione um artigo</h2>
+                <p class="metadata-description">
+                  Clique em um nó do grafo para visualizar informações detalhadas, incluindo tema, data e número de citações.
+                </p>
+              </div>
+              <div id="metadata-content" hidden>
+                <h2 id="metadata-title"></h2>
+                <dl class="metadata-list">
+                  <div>
+                    <dt>Tema</dt>
+                    <dd id="metadata-theme"></dd>
+                  </div>
+                  <div>
+                    <dt>Publicado em</dt>
+                    <dd id="metadata-date"></dd>
+                  </div>
+                  <div>
+                    <dt>Status</dt>
+                    <dd id="metadata-status"></dd>
+                  </div>
+                  <div>
+                    <dt>Citações</dt>
+                    <dd id="metadata-citations"></dd>
+                  </div>
+                  <div>
+                    <dt>Descrição</dt>
+                    <dd id="metadata-description"></dd>
+                  </div>
+                  <div>
+                    <dt>Link</dt>
+                    <dd>
+                      <a id="metadata-link" href="#" target="_blank" rel="noopener noreferrer">Abrir artigo</a>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="legend-mobile-backdrop" class="legend-mobile-backdrop" hidden></div>
       </section>
     </main>
 
