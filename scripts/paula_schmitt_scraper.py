@@ -95,6 +95,7 @@ class Article:
     published_at: Optional[str] = None  # ISO datetime/date string
     modified_at: Optional[str] = None
     theme: Optional[str] = None
+    summary: Optional[str] = None
     citations: Set[str] = field(default_factory=set)
     available: bool = True
     status_code: Optional[int] = None
@@ -102,6 +103,9 @@ class Article:
     def __post_init__(self) -> None:
         if self.theme is not None:
             self.theme = normalize_theme(self.theme)
+        if self.summary is not None:
+            cleaned_summary = " ".join(self.summary.split())
+            self.summary = cleaned_summary or None
 
 
 def create_session() -> Session:
@@ -201,6 +205,20 @@ def parse_listing_items(html: BeautifulSoup) -> List[Article]:
                     seen_themes.add(key)
                     normalized_themes.append(normalized)
         theme = ", ".join(normalized_themes) if normalized_themes else None
+
+        summary: Optional[str] = None
+        text_container = item.select_one(".archive-list__text")
+        if text_container:
+            summary_elem = text_container.select_one(".archive-list__box-tag ~ p")
+            if summary_elem:
+                summary = " ".join(summary_elem.stripped_strings)
+            else:
+                for paragraph in text_container.find_all("p"):
+                    candidate_text = " ".join(paragraph.stripped_strings)
+                    if candidate_text:
+                        summary = candidate_text
+                        break
+
         articles.append(
             Article(
                 title=title,
@@ -208,6 +226,7 @@ def parse_listing_items(html: BeautifulSoup) -> List[Article]:
                 canonical_url=canonical,
                 listed_date=listed_date,
                 theme=theme,
+                summary=summary,
             )
         )
     return articles
@@ -230,6 +249,8 @@ def collect_article_listings(session: Session) -> Dict[str, Article]:
                     existing.theme = normalized_theme
             if article.listed_date and not existing.listed_date:
                 existing.listed_date = article.listed_date
+            if article.summary and not existing.summary:
+                existing.summary = article.summary
         else:
             articles[article.canonical_url] = article
     logging.info("Loaded %d articles from initial page", len(articles))
@@ -279,6 +300,8 @@ def collect_article_listings(session: Session) -> Dict[str, Article]:
                         existing.theme = normalized_theme
                 if article.listed_date and not existing.listed_date:
                     existing.listed_date = article.listed_date
+                if article.summary and not existing.summary:
+                    existing.summary = article.summary
             else:
                 articles[article.canonical_url] = article
         logging.info("Accumulated %d articles after page %s", len(articles), current_page)
@@ -429,6 +452,7 @@ def build_dataset(articles: Dict[str, Article]) -> Dict[str, object]:
                 "published_at": article.published_at,
                 "listed_date": article.listed_date,
                 "theme": normalized_theme,
+                "summary": article.summary,
                 "modified_at": article.modified_at,
                 "available": article.available,
                 "status_code": article.status_code,

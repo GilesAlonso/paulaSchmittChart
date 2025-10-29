@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2025-10-25T15:28:08Z",
+    "generated_at": "2025-10-29T14:45:14Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
     "total_nodes": 282,
     "total_edges": 271
@@ -13,6 +13,7 @@
       "published_at": "2018-11-10T19:59:18-03:00",
       "listed_date": "2018-11-10",
       "theme": "Congresso",
+      "summary": "Dinheiro desequilibra a atividade Proposta de Moro é equivocada",
       "modified_at": "2018-11-15T13:03:30-03:00",
       "available": true,
       "status_code": 200
@@ -24,6 +25,7 @@
       "published_at": "2019-12-05T05:50:59-03:00",
       "listed_date": "2019-12-05",
       "theme": "Brasil",
+      "summary": "Grupos impedem o debate produtivo Parece só haver esquerda ou direita Excludente de ilicitude é desonroso Oposição não discute revista íntima Paula Schmitt escreve às quintas",
       "modified_at": "2019-12-05T05:50:59-03:00",
       "available": true,
       "status_code": 200
@@ -35,6 +37,7 @@
       "published_at": "2019-12-12T06:00:17-03:00",
       "listed_date": "2019-12-12",
       "theme": "Congresso",
+      "summary": "EUA estão longe de ser exemplo Visão ideológica distorce diagnóstico Excludente de ilicitude era atrocidade Sua retirada foi vitória da sanidade",
       "modified_at": "2019-12-12T06:00:17-03:00",
       "available": true,
       "status_code": 200
@@ -46,6 +49,7 @@
       "published_at": "2019-12-19T05:50:26-03:00",
       "listed_date": "2019-12-19",
       "theme": "Brasil",
+      "summary": "Religião não é fruto de sabedoria inerente",
       "modified_at": "2019-12-19T05:50:26-03:00",
       "available": true,
       "status_code": 200
@@ -57,6 +61,7 @@
       "published_at": "2019-12-27T06:00:48-03:00",
       "listed_date": "2019-12-27",
       "theme": "Brasil",
+      "summary": "Identidade de gênero beneficia canalhas Politicamente correto está elegendo a direita Agora, as mulheres também manipulam Grande vítima da prática é o bom senso",
       "modified_at": "2019-12-27T06:00:48-03:00",
       "available": true,
       "status_code": 200
@@ -68,6 +73,7 @@
       "published_at": "2020-01-02T05:30:38-03:00",
       "listed_date": "2020-01-02",
       "theme": "Brasil",
+      "summary": "Conheça projetos inspiradores Focam esporte e lutas invisíveis",
       "modified_at": "2020-01-02T05:30:38-03:00",
       "available": true,
       "status_code": 200
@@ -79,6 +85,7 @@
       "published_at": "2020-01-09T05:45:54-03:00",
       "listed_date": "2020-01-09",
       "theme": "Internacional",
+      "summary": "Autora conta experiência com TV russa Narra decepção com agência estatal ‘Rússia e os EUA não são antitéticos, diz",
       "modified_at": "2020-01-09T05:45:54-03:00",
       "available": true,
       "status_code": 200
@@ -90,6 +97,7 @@
       "published_at": "2020-01-16T05:50:18-03:00",
       "listed_date": "2020-01-16",
       "theme": "Internacional",
+      "summary": "Ensaísta supera pecha de arrogante Contesta bolha dos acadêmicos Defende descentralização política",
       "modified_at": "2020-01-16T05:50:18-03:00",
       "available": true,
       "status_code": 200
@@ -101,6 +109,7 @@
       "published_at": "2020-01-23T05:45:38-03:00",
       "listed_date": "2020-01-23",
       "theme": "Literatura",
+      "summary": "Alerta para ‘ditadura das minorias’ Defende conceito de localismo",
       "modified_at": "2020-01-23T09:34:05-03:00",
       "available": true,
       "status_code": 200
@@ -112,6 +121,7 @@
       "published_at": "2020-01-30T05:30:59-03:00",
       "listed_date": "2020-01-30",
       "theme": "Brasil",
+      "summary": "Brasileiros ignoram precaução Bolsonaro repete padrão de Lula",
       "modified_at": "2020-01-30T05:30:59-03:00",
       "available": true,
       "status_code": 200
@@ -123,6 +133,7 @@
       "published_at": "2020-02-06T05:50:59-03:00",
       "listed_date": "2020-02-06",
       "theme": "Brasil",
+      "summary": "Jornalista apagou tweets Citava Brasil e caso Snowden Ninguém está acima de suspeitas",
       "modified_at": "2020-02-06T06:26:32-03:00",
       "available": true,
       "status_code": 200
@@ -134,6 +145,7 @@
       "published_at": "2020-02-13T05:30:16-03:00",
       "listed_date": "2020-02-13",
       "theme": "Brasil",
+      "summary": "Jornalista poupou ministros Deu peso diferente a revelações Vaza Jato não embaraçou PT",
       "modified_at": "2020-02-13T05:30:16-03:00",
       "available": true,
       "status_code": 200
@@ -145,6 +157,7 @@
       "published_at": "2020-02-20T05:50:00-03:00",
       "listed_date": "2020-02-20",
       "theme": "Internacional",
+      "summary": "Fundador do Intercept traiu Snowden Acervo hoje está sob um mecenas Por que no Brasil seria diferente?",
       "modified_at": "2020-02-20T13:01:15-03:00",
       "available": true,
       "status_code": 200
@@ -156,6 +169,7 @@
       "published_at": "2020-02-27T11:56:28-03:00",
       "listed_date": "2020-02-27",
       "theme": "Brasil",
+      "summary": "Yvonne fundou a escola Uerê, no Rio Projeto fica no Complexo da Maré Ensino é focado em áreas violentas 7 mil crianças já foram beneficiadas",
       "modified_at": "2020-02-27T11:56:28-03:00",
       "available": true,
       "status_code": 200
@@ -167,6 +181,7 @@
       "published_at": "2020-03-05T05:30:58-03:00",
       "listed_date": "2020-03-05",
       "theme": "Mídia",
+      "summary": "Para meus amigos a decência… … para os inimigos o achincalhe",
       "modified_at": "2020-03-05T09:35:51-03:00",
       "available": true,
       "status_code": 200
@@ -178,6 +193,7 @@
       "published_at": "2020-03-12T05:30:02-03:00",
       "listed_date": "2020-03-12",
       "theme": "Mídia",
+      "summary": "Convicções afetam discernimento Aceitamos ‘generalizações do bem’",
       "modified_at": "2020-03-12T05:30:02-03:00",
       "available": true,
       "status_code": 200
@@ -189,6 +205,7 @@
       "published_at": "2020-03-19T05:30:34-03:00",
       "listed_date": "2020-03-19",
       "theme": "Brasil",
+      "summary": "A importância do feedback honesto E a aversão doentia ao contraditório",
       "modified_at": "2020-03-19T05:30:34-03:00",
       "available": true,
       "status_code": 200
@@ -200,6 +217,7 @@
       "published_at": "2020-03-26T06:00:16-03:00",
       "listed_date": "2020-03-26",
       "theme": "Brasil",
+      "summary": "Quarentena expõe desigualdade social Governo deve agir para reduzir impacto",
       "modified_at": "2020-03-26T10:30:47-03:00",
       "available": true,
       "status_code": 200
@@ -211,6 +229,7 @@
       "published_at": "2020-04-02T06:00:40-03:00",
       "listed_date": "2020-04-02",
       "theme": "Mídia",
+      "summary": "Corporativismo faz mal à imprensa Faz-se presente em tempos de corona",
       "modified_at": "2020-04-02T07:28:14-03:00",
       "available": true,
       "status_code": 200
@@ -222,6 +241,7 @@
       "published_at": "2020-04-09T05:50:49-03:00",
       "listed_date": "2020-04-09",
       "theme": "Brasil",
+      "summary": "Por que não exaltar solidariedade? O que podemos fazer pelo outro?",
       "modified_at": "2020-04-09T05:50:49-03:00",
       "available": true,
       "status_code": 200
@@ -233,6 +253,7 @@
       "published_at": "2020-04-16T12:47:37-03:00",
       "listed_date": "2020-04-16",
       "theme": "Brasil",
+      "summary": "Seres humanos valem mais do que salário Valores invertidos se imiscuíram na vida Divagações ressurgem no isolamento",
       "modified_at": "2020-04-16T12:47:37-03:00",
       "available": true,
       "status_code": 200
@@ -244,6 +265,7 @@
       "published_at": "2020-04-23T18:15:02-03:00",
       "listed_date": "2020-04-23",
       "theme": "Brasil",
+      "summary": "Bolsonaro é criticado por sua personalidade Atos do governo são mais importantes Transforma política em ciência Jornalistas fazem o mesmo",
       "modified_at": "2020-04-23T18:15:02-03:00",
       "available": true,
       "status_code": 200
@@ -255,6 +277,7 @@
       "published_at": "2020-04-30T05:50:02-03:00",
       "listed_date": "2020-04-30",
       "theme": "Coronavírus",
+      "summary": "Teorias da conspiração em alta Não apagam riscos de experimentos Acidentes são questão estatística",
       "modified_at": "2020-04-30T11:29:39-03:00",
       "available": true,
       "status_code": 200
@@ -266,6 +289,7 @@
       "published_at": "2020-05-07T06:00:05-03:00",
       "listed_date": "2020-05-07",
       "theme": "Coronavírus",
+      "summary": "Liberdade é diferente de libertinagem",
       "modified_at": "2020-05-07T15:59:35-03:00",
       "available": true,
       "status_code": 200
@@ -277,6 +301,7 @@
       "published_at": "2020-05-21T06:00:05-03:00",
       "listed_date": "2020-05-21",
       "theme": "Literatura",
+      "summary": "Autora discute deveres e direitos E impacto do individual no coletivo",
       "modified_at": "2020-05-21T07:48:51-03:00",
       "available": true,
       "status_code": 200
@@ -288,6 +313,7 @@
       "published_at": "2020-05-28T10:29:37-03:00",
       "listed_date": "2020-05-28",
       "theme": "Mídia",
+      "summary": "Temas deixam de ser abordados Também deixam de ser contestados",
       "modified_at": "2020-05-28T10:29:37-03:00",
       "available": true,
       "status_code": 200
@@ -299,6 +325,7 @@
       "published_at": "2020-06-04T06:20:42-03:00",
       "listed_date": "2020-06-04",
       "theme": "Coronavírus",
+      "summary": "Revista publicou pesquisa Foi ‘feita’ com 96 mil pessoas É questionada por cientistas",
       "modified_at": "2020-06-04T06:20:42-03:00",
       "available": true,
       "status_code": 200
@@ -310,6 +337,7 @@
       "published_at": "2020-06-11T10:23:57-03:00",
       "listed_date": "2020-06-11",
       "theme": "Internacional",
+      "summary": "O caso de Tom Cotton no NY Times Jornal foi criticado ao expor ‘outro lado’ Problemas mudaram com novas mídias Bolhas ideológicas representam 1 risco",
       "modified_at": "2020-06-11T10:23:57-03:00",
       "available": true,
       "status_code": 200
@@ -321,6 +349,7 @@
       "published_at": "2020-06-18T17:51:54-03:00",
       "listed_date": "2020-06-18",
       "theme": "Internacional",
+      "summary": "Julga-se o passado em tribunal atual O presente está sendo vigiado",
       "modified_at": "2020-06-18T17:51:54-03:00",
       "available": true,
       "status_code": 200
@@ -332,6 +361,7 @@
       "published_at": "2020-06-25T17:14:07-03:00",
       "listed_date": "2020-06-25",
       "theme": "Brasil",
+      "summary": "Atribui-se racismo a uma raça inteira Em nome de luta por igualdade",
       "modified_at": "2020-06-26T09:47:41-03:00",
       "available": true,
       "status_code": 200
@@ -343,6 +373,7 @@
       "published_at": "2020-07-02T17:23:35-03:00",
       "listed_date": "2020-07-02",
       "theme": "Brasil",
+      "summary": "Judiciário esboça Estado de exceção Pode ser o início de uma tirania",
       "modified_at": "2020-07-02T17:23:35-03:00",
       "available": true,
       "status_code": 200
@@ -354,6 +385,7 @@
       "published_at": "2020-07-09T06:00:33-03:00",
       "listed_date": "2020-07-09",
       "theme": "Mídia",
+      "summary": "Há incentivo à vitimização Criam-se gerações de monstros Em nome de 1 racismo do bem",
       "modified_at": "2020-07-09T07:27:21-03:00",
       "available": true,
       "status_code": 200
@@ -365,6 +397,7 @@
       "published_at": "2020-07-16T06:00:39-03:00",
       "listed_date": "2020-07-16",
       "theme": "Internacional",
+      "summary": "A carta contra Steven Pinker E a ditadura da maioria",
       "modified_at": "2020-07-16T07:22:18-03:00",
       "available": true,
       "status_code": 200
@@ -376,6 +409,7 @@
       "published_at": "2020-07-23T17:15:04-03:00",
       "listed_date": "2020-07-23",
       "theme": "Mídia",
+      "summary": "Indústria torna a todos racistas Leva à desconfiança e segregação",
       "modified_at": "2020-07-23T17:15:04-03:00",
       "available": true,
       "status_code": 200
@@ -387,6 +421,7 @@
       "published_at": "2020-07-30T06:00:09-03:00",
       "listed_date": "2020-07-30",
       "theme": "Brasil",
+      "summary": "Exemplos dos EUA servem de alerta Brasil precisa de discussão séria",
       "modified_at": "2020-07-30T17:23:19-03:00",
       "available": true,
       "status_code": 200
@@ -398,6 +433,7 @@
       "published_at": "2020-08-06T06:00:10-03:00",
       "listed_date": "2020-08-06",
       "theme": "Internacional",
+      "summary": "Tragédia deixou ao menos 100 mortos Contexto libanês dificulta respostas",
       "modified_at": "2020-08-06T07:43:53-03:00",
       "available": true,
       "status_code": 200
@@ -409,6 +445,7 @@
       "published_at": "2020-08-13T17:21:44-03:00",
       "listed_date": "2020-08-13",
       "theme": "Internacional",
+      "summary": "Tragédia no Líbano traz o inusitado Hezbollah e Israel não se acusam Diferentes interesses convergem",
       "modified_at": "2020-08-13T17:21:44-03:00",
       "available": true,
       "status_code": 200
@@ -420,6 +457,7 @@
       "published_at": "2020-08-20T06:00:13-03:00",
       "listed_date": "2020-08-20",
       "theme": "Brasil",
+      "summary": "Sobre direitos e violência Sobre o amor e o perdão",
       "modified_at": "2020-08-20T07:40:24-03:00",
       "available": true,
       "status_code": 200
@@ -431,6 +469,7 @@
       "published_at": "2020-08-27T06:00:14-03:00",
       "listed_date": "2020-08-27",
       "theme": "Mídia",
+      "summary": "O surgimento do Q-Anon E a cumplicidade do silêncio",
       "modified_at": "2020-08-27T18:29:13-03:00",
       "available": true,
       "status_code": 200
@@ -442,6 +481,7 @@
       "published_at": "2020-09-04T06:00:13-03:00",
       "listed_date": "2020-09-04",
       "theme": "Coronavírus",
+      "summary": "Aversão ao debate desinforma História justifica desconfiança Produtores admitem haver risco",
       "modified_at": "2020-09-04T06:00:13-03:00",
       "available": true,
       "status_code": 200
@@ -453,6 +493,7 @@
       "published_at": "2020-09-10T07:28:17-03:00",
       "listed_date": "2020-09-10",
       "theme": "Internacional",
+      "summary": "Usa de crenças para ter seguidores Apresenta verdades ‘incontestáveis’ É popular entre apoiadores de Trump Presidente norte-americano faz citações",
       "modified_at": "2020-09-10T07:28:17-03:00",
       "available": true,
       "status_code": 200
@@ -464,6 +505,7 @@
       "published_at": "2020-09-17T06:00:45-03:00",
       "listed_date": "2020-09-17",
       "theme": "Internacional",
+      "summary": "Crença leva à cegueira e à mudez Faz imprensa escolher não ver E também deixar de perguntar",
       "modified_at": "2020-09-17T07:19:59-03:00",
       "available": true,
       "status_code": 200
@@ -475,6 +517,7 @@
       "published_at": "2020-09-24T05:56:19-03:00",
       "listed_date": "2020-09-24",
       "theme": "Brasil",
+      "summary": "Visita de Pompeo revela sobre nós E sobre papel escolhido para nós",
       "modified_at": "2020-09-24T11:09:23-03:00",
       "available": true,
       "status_code": 200
@@ -486,6 +529,7 @@
       "published_at": "2020-10-01T06:00:46-03:00",
       "listed_date": "2020-10-01",
       "theme": "Internacional",
+      "summary": "Grupo cria teorias da conspiração Argumentos absurdos conquistam likes",
       "modified_at": "2020-10-01T06:00:46-03:00",
       "available": true,
       "status_code": 200
@@ -497,6 +541,7 @@
       "published_at": "2020-10-08T05:50:57-03:00",
       "listed_date": "2020-10-08",
       "theme": "Brasil",
+      "summary": "Elite e mídia: anon não confia Teorias se valem de conexões Q-anon edita os fatos Congresso dos EUA repudia Q-anon",
       "modified_at": "2020-10-08T15:05:12-03:00",
       "available": true,
       "status_code": 200
@@ -508,6 +553,7 @@
       "published_at": "2020-10-15T06:00:07-03:00",
       "listed_date": "2020-10-15",
       "theme": "Internacional",
+      "summary": "Primeiras impressões realmente ficam Fatos não mudam opiniões",
       "modified_at": "2020-10-15T06:00:07-03:00",
       "available": true,
       "status_code": 200
@@ -519,6 +565,7 @@
       "published_at": "2020-10-22T06:00:30-03:00",
       "listed_date": "2020-10-22",
       "theme": "Internacional",
+      "summary": "Pedofilia é 1 dos medos do grupo ‘Elegeram’ Trump para combater Mas ignoram cenas comprometedoras",
       "modified_at": "2020-10-22T06:00:30-03:00",
       "available": true,
       "status_code": 200
@@ -530,6 +577,7 @@
       "published_at": "2020-10-29T06:00:50-03:00",
       "listed_date": "2020-10-29",
       "theme": "Mídia",
+      "summary": "Símbolos se sobrepõem à mensagem Que é ignorada em nome de histeria",
       "modified_at": "2020-10-29T06:00:50-03:00",
       "available": true,
       "status_code": 200
@@ -541,6 +589,7 @@
       "published_at": "2020-11-05T06:00:40-03:00",
       "listed_date": "2020-11-05",
       "theme": "Internacional",
+      "summary": "Greenwald encontra seu ocaso Leva a sumiço de seus guardiões",
       "modified_at": "2020-11-05T06:00:40-03:00",
       "available": true,
       "status_code": 200
@@ -552,6 +601,7 @@
       "published_at": "2020-11-12T06:00:20-03:00",
       "listed_date": "2020-11-12",
       "theme": "Mídia",
+      "summary": "Vazamentos empoderaram Intercept Podem ser ameaça aos seus pares",
       "modified_at": "2020-11-12T06:00:20-03:00",
       "available": true,
       "status_code": 200
@@ -563,6 +613,7 @@
       "published_at": "2020-11-19T12:13:42-03:00",
       "listed_date": "2020-11-19",
       "theme": "Coronavírus",
+      "summary": "Soberba nos aproxima da ignorância Bom-senso é vitimado na pandemia",
       "modified_at": "2020-11-19T12:13:42-03:00",
       "available": true,
       "status_code": 200
@@ -574,6 +625,7 @@
       "published_at": "2020-11-26T06:00:35-03:00",
       "listed_date": "2020-11-26",
       "theme": "História",
+      "summary": "Tempo é teste incontornável Ciência também tem limitações Negligência pode ampliá-las",
       "modified_at": "2020-11-26T07:43:21-03:00",
       "available": true,
       "status_code": 200
@@ -585,6 +637,7 @@
       "published_at": "2020-12-03T06:00:43-03:00",
       "listed_date": "2020-12-03",
       "theme": "Coronavírus",
+      "summary": "A verdade sobre o vírus está mudando Se vacina der errado, empresas sairão impunes",
       "modified_at": "2020-12-03T07:48:31-03:00",
       "available": true,
       "status_code": 200
@@ -596,6 +649,7 @@
       "published_at": "2020-12-10T10:21:02-03:00",
       "listed_date": "2020-12-10",
       "theme": "Lava Jato",
+      "summary": "Ex-juiz dá guinada biográfica Sobreviveria a tudo; não a isso",
       "modified_at": "2020-12-10T10:21:02-03:00",
       "available": true,
       "status_code": 200
@@ -607,6 +661,7 @@
       "published_at": "2020-12-17T06:00:48-03:00",
       "listed_date": "2020-12-17",
       "theme": "Brasil",
+      "summary": "FDA não é agência dos sonhos Há casos de corrupção no órgão",
       "modified_at": "2020-12-17T06:00:48-03:00",
       "available": true,
       "status_code": 200
@@ -618,6 +673,7 @@
       "published_at": "2020-12-24T06:00:46-03:00",
       "listed_date": "2020-12-24",
       "theme": "Brasil",
+      "summary": "Medo é arma poderosa contra nós mesmos",
       "modified_at": "2020-12-24T13:28:34-03:00",
       "available": true,
       "status_code": 200
@@ -629,6 +685,7 @@
       "published_at": "2020-12-31T13:59:09-03:00",
       "listed_date": "2020-12-31",
       "theme": "Coronavírus",
+      "summary": "Consórcio ocidental desenvolve ameaça Mira proteção, mas tem potencial ofensivo",
       "modified_at": "2020-12-31T13:59:09-03:00",
       "available": true,
       "status_code": 200
@@ -640,6 +697,7 @@
       "published_at": "2021-01-07T08:59:01-03:00",
       "listed_date": "2021-01-07",
       "theme": "Coronavírus",
+      "summary": "Agências protegem laboratórios Pulverizam riscos entre cidadãos",
       "modified_at": "2021-01-07T08:59:01-03:00",
       "available": true,
       "status_code": 200
@@ -651,6 +709,7 @@
       "published_at": "2021-01-14T06:00:16-03:00",
       "listed_date": "2021-01-14",
       "theme": "Internacional",
+      "summary": "Abre-se precedente perigoso Redes formam conluio corporativo",
       "modified_at": "2021-01-14T06:00:16-03:00",
       "available": true,
       "status_code": 200
@@ -662,6 +721,7 @@
       "published_at": "2021-01-21T14:01:58-03:00",
       "listed_date": "2021-01-21",
       "theme": "Mídia",
+      "summary": "Twitter constitui Estado-nação Permite controle sobre passado",
       "modified_at": "2021-01-26T12:59:11-03:00",
       "available": true,
       "status_code": 200
@@ -673,6 +733,7 @@
       "published_at": "2021-01-28T06:00:30-03:00",
       "listed_date": "2021-01-28",
       "theme": "Governo",
+      "summary": "Críticas construtivas são importantes Mesmo apoiadores devem fazê-las Por honestidade intelectual",
       "modified_at": "2021-01-28T06:00:30-03:00",
       "available": true,
       "status_code": 200
@@ -684,6 +745,7 @@
       "published_at": "2021-02-04T10:18:50-03:00",
       "listed_date": "2021-02-04",
       "theme": "Mídia",
+      "summary": "Autora dá dicas de sobrevivência É possível fugir do cancelamento",
       "modified_at": "2021-02-04T10:18:50-03:00",
       "available": true,
       "status_code": 200
@@ -695,6 +757,7 @@
       "published_at": "2021-02-11T09:58:14-03:00",
       "listed_date": "2021-02-11",
       "theme": "Coronavírus",
+      "summary": "Grupo volta de Wuhan sem respostas Internamente, sabe mais do que diz",
       "modified_at": "2021-02-11T09:58:14-03:00",
       "available": true,
       "status_code": 200
@@ -706,6 +769,7 @@
       "published_at": "2021-02-19T06:00:09-03:00",
       "listed_date": "2021-02-19",
       "theme": "Coronavírus",
+      "summary": "Covid: 1º caso pode ter sido em outubro EUA poderiam estar cientes em novembro",
       "modified_at": "2021-02-19T06:00:09-03:00",
       "available": true,
       "status_code": 200
@@ -717,6 +781,7 @@
       "published_at": "2021-02-25T06:00:17-03:00",
       "listed_date": "2021-02-25",
       "theme": "Internacional",
+      "summary": "Pressão popular precisaria de medida Arrecadações necessitam ser debatidas",
       "modified_at": "2021-02-25T06:00:17-03:00",
       "available": true,
       "status_code": 200
@@ -728,6 +793,7 @@
       "published_at": "2021-03-04T10:12:54-03:00",
       "listed_date": "2021-03-04",
       "theme": "Coronavírus",
+      "summary": "Questionar leva a julgamentos Quando debate seria bem-vindo",
       "modified_at": "2021-03-04T10:12:54-03:00",
       "available": true,
       "status_code": 200
@@ -739,6 +805,7 @@
       "published_at": "2021-03-11T05:50:49-03:00",
       "listed_date": "2021-03-11",
       "theme": "Brasil",
+      "summary": "Crise de covid trouxe incertezas Há estudos com diversas versões Jornais defendem vacina da Pfizer Pfizer exigiu isenção de processos",
       "modified_at": "2021-03-11T05:50:49-03:00",
       "available": true,
       "status_code": 200
@@ -750,6 +817,7 @@
       "published_at": "2021-03-18T09:18:42-03:00",
       "listed_date": "2021-03-18",
       "theme": "Coronavírus",
+      "summary": "Sobre censura e tratamento precoce E sobre desconfiança com o mRNA",
       "modified_at": "2021-03-18T09:18:42-03:00",
       "available": true,
       "status_code": 200
@@ -761,6 +829,7 @@
       "published_at": "2021-03-25T11:09:42-03:00",
       "listed_date": "2021-03-25",
       "theme": "Coronavírus",
+      "summary": "Ciência ainda estuda combate à covid Testes indicam resultados positivos",
       "modified_at": "2021-03-25T11:09:42-03:00",
       "available": true,
       "status_code": 200
@@ -772,6 +841,7 @@
       "published_at": "2021-04-01T06:00:25-03:00",
       "listed_date": "2021-04-01",
       "theme": "Mídia",
+      "summary": "Sobre Felipe Neto e honestidade",
       "modified_at": "2021-04-01T13:59:10-03:00",
       "available": true,
       "status_code": 200
@@ -783,6 +853,7 @@
       "published_at": "2021-04-08T05:50:11-03:00",
       "listed_date": "2021-04-08",
       "theme": "Mídia",
+      "summary": "A conciliação como ato de coragem Eduardo Jorge é um exemplo positivo Como Daryl Davis enfrentou a KKK O valor da política do convencimento",
       "modified_at": "2021-04-08T05:50:11-03:00",
       "available": true,
       "status_code": 200
@@ -794,6 +865,7 @@
       "published_at": "2021-04-15T06:00:22-03:00",
       "listed_date": "2021-04-15",
       "theme": "Coronavírus",
+      "summary": "Ciência e jornalismo estão unidos Resultado é a desinformação",
       "modified_at": "2021-04-17T21:44:02-03:00",
       "available": true,
       "status_code": 200
@@ -805,6 +877,7 @@
       "published_at": "2021-04-22T06:00:47-03:00",
       "listed_date": "2021-04-22",
       "theme": "Coronavírus",
+      "summary": "Apoio incondicional é tiro no pé Pensamento sempre contrário Também pode ser manipulado",
       "modified_at": "2021-04-22T06:00:47-03:00",
       "available": true,
       "status_code": 200
@@ -816,6 +889,7 @@
       "published_at": "2021-04-29T05:50:37-03:00",
       "listed_date": "2021-04-29",
       "theme": "Coronavírus",
+      "summary": "Medo coletivo inibe a verdade A censura não muda os fatos",
       "modified_at": "2021-04-29T05:50:37-03:00",
       "available": true,
       "status_code": 200
@@ -827,6 +901,7 @@
       "published_at": "2021-05-06T05:50:50-03:00",
       "listed_date": "2021-05-06",
       "theme": "Coronavírus",
+      "summary": "Doença é uma indústria lucrativa Remédio ruim cria sub-indústrias",
       "modified_at": "2021-05-06T05:50:50-03:00",
       "available": true,
       "status_code": 200
@@ -838,6 +913,7 @@
       "published_at": "2021-05-13T05:50:12-03:00",
       "listed_date": "2021-05-13",
       "theme": "Coronavírus",
+      "summary": "Vírus pode ter escapado de laboratório Informações são omitidas do público Urna eletrônica pode ser manipulada Grupos e líderes mudam de discurso",
       "modified_at": "2021-05-14T14:38:16-03:00",
       "available": true,
       "status_code": 200
@@ -849,6 +925,7 @@
       "published_at": "2021-05-20T05:50:29-03:00",
       "listed_date": "2021-05-20",
       "theme": "Governo",
+      "summary": "Oposição manipulada pelo dissenso Resultado final é a homogeneidade",
       "modified_at": "2021-05-20T05:50:29-03:00",
       "available": true,
       "status_code": 200
@@ -860,6 +937,7 @@
       "published_at": "2021-05-27T05:50:51-03:00",
       "listed_date": "2021-05-27",
       "theme": "Literatura",
+      "summary": "É preciso aceitar e reconhecer o erro O importante é se pautar em ideias",
       "modified_at": "2021-05-27T05:50:51-03:00",
       "available": true,
       "status_code": 200
@@ -871,6 +949,7 @@
       "published_at": "2021-06-03T05:50:18-03:00",
       "listed_date": "2021-06-03",
       "theme": "Congresso",
+      "summary": "Senador faz jogo duplo na comissão Realidade é falsificada à nossa frente",
       "modified_at": "2021-06-03T09:56:02-03:00",
       "available": true,
       "status_code": 200
@@ -882,6 +961,7 @@
       "published_at": "2021-06-10T05:50:03-03:00",
       "listed_date": "2021-06-10",
       "theme": "Coronavírus",
+      "summary": "‘Lâmpada eterna’ atrapalharia vendas Curar nem sempre é o mais lucrativo Consensos podem ser terraplanistas Slogans importam mais do que fatos",
       "modified_at": "2021-12-10T10:54:31-03:00",
       "available": true,
       "status_code": 200
@@ -893,6 +973,7 @@
       "published_at": "2021-06-17T05:50:28-03:00",
       "listed_date": "2021-06-17",
       "theme": "Internacional",
+      "summary": "Corporações estimulam os problemas que em tese combatem –e ampliam os lucros ao vender o remédio",
       "modified_at": "2021-06-17T05:50:28-03:00",
       "available": true,
       "status_code": 200
@@ -904,6 +985,7 @@
       "published_at": "2021-06-24T05:50:03-03:00",
       "listed_date": "2021-06-24",
       "theme": "Coronavírus",
+      "summary": "A mediação da verdade é aquela brincadeira de telefone sem fio: o que você recebe é diferente do que foi enviado",
       "modified_at": "2021-06-24T06:04:30-03:00",
       "available": true,
       "status_code": 200
@@ -915,6 +997,7 @@
       "published_at": "2021-07-01T05:50:56-03:00",
       "listed_date": "2021-07-01",
       "theme": "Coronavírus",
+      "summary": "Grandes tragédias têm impactos na transferência de renda",
       "modified_at": "2021-07-01T05:50:56-03:00",
       "available": true,
       "status_code": 200
@@ -926,6 +1009,7 @@
       "published_at": "2021-07-08T05:50:35-03:00",
       "listed_date": "2021-07-08",
       "theme": "Brasil",
+      "summary": "Em vez de testar segurança e eficácia, estudo apenas procurou a ‘dose letal’",
       "modified_at": "2021-07-08T06:51:16-03:00",
       "available": true,
       "status_code": 200
@@ -937,6 +1021,7 @@
       "published_at": "2021-07-15T05:50:17-03:00",
       "listed_date": "2021-07-15",
       "theme": "Eleições",
+      "summary": "Voto com comprovante desestimularia os derrotados nas eleições a questionar os resultados",
       "modified_at": "2021-07-15T05:50:17-03:00",
       "available": true,
       "status_code": 200
@@ -948,6 +1033,7 @@
       "published_at": "2021-07-22T05:50:11-03:00",
       "listed_date": "2021-07-22",
       "theme": "Internacional",
+      "summary": "Como a esquerda se dobrou às corporações e a direita, ao Estado",
       "modified_at": "2021-07-22T05:50:11-03:00",
       "available": true,
       "status_code": 200
@@ -959,6 +1045,7 @@
       "published_at": "2021-07-29T05:50:23-03:00",
       "listed_date": "2021-07-29",
       "theme": "Internacional",
+      "summary": "Verdades são alteradas e criam realidade que não existe",
       "modified_at": "2021-07-29T05:50:23-03:00",
       "available": true,
       "status_code": 200
@@ -970,6 +1057,7 @@
       "published_at": "2021-08-05T05:50:21-03:00",
       "listed_date": "2021-08-05",
       "theme": "Coronavírus",
+      "summary": "Divulgação de dados é controlada para manipular sociedade",
       "modified_at": "2021-08-05T05:50:21-03:00",
       "available": true,
       "status_code": 200
@@ -981,6 +1069,7 @@
       "published_at": "2021-08-12T05:50:36-03:00",
       "listed_date": "2021-08-12",
       "theme": "Mídia",
+      "summary": "Imprensa é usada como ferramenta na construção de consensos equivocados",
       "modified_at": "2021-12-01T20:48:33-03:00",
       "available": true,
       "status_code": 200
@@ -992,6 +1081,7 @@
       "published_at": "2021-08-19T05:48:21-03:00",
       "listed_date": "2021-08-19",
       "theme": "Congresso",
+      "summary": "Realidade com frequência é editada em tempo real, sob as vistas de todos",
       "modified_at": "2021-08-19T05:48:21-03:00",
       "available": true,
       "status_code": 200
@@ -1003,6 +1093,7 @@
       "published_at": "2021-08-26T05:50:39-03:00",
       "listed_date": "2021-08-26",
       "theme": "Coronavírus",
+      "summary": "Covid-19 tornou-se a doença de Schrödinger",
       "modified_at": "2021-08-26T05:50:39-03:00",
       "available": true,
       "status_code": 200
@@ -1014,6 +1105,7 @@
       "published_at": "2021-09-02T05:50:11-03:00",
       "listed_date": "2021-09-02",
       "theme": "Justiça",
+      "summary": "Resolução orwelliana do STF veio acompanhada do silêncio da mídia",
       "modified_at": "2021-09-02T05:50:11-03:00",
       "available": true,
       "status_code": 200
@@ -1025,6 +1117,7 @@
       "published_at": "2021-09-09T05:50:24-03:00",
       "listed_date": "2021-09-09",
       "theme": "Internacional",
+      "summary": "Guerra transfere o dinheiro de uma multidão de pagadores de impostos para um pequeno grupo de privilegiados",
       "modified_at": "2021-09-09T07:16:21-03:00",
       "available": true,
       "status_code": 200
@@ -1036,6 +1129,7 @@
       "published_at": "2021-09-16T05:50:49-03:00",
       "listed_date": "2021-09-16",
       "theme": "Internacional",
+      "summary": "Internet é a mais recente e poderosa ferramenta para o controle da maioria por uma minoria cada vez menor e mais poderosa",
       "modified_at": "2021-09-16T06:58:18-03:00",
       "available": true,
       "status_code": 200
@@ -1047,6 +1141,7 @@
       "published_at": "2021-09-23T05:50:46-03:00",
       "listed_date": "2021-09-23",
       "theme": "Economia",
+      "summary": "“Frankenstein” com o pior do Estado e da iniciativa privada beneficia um grupo econômico cada vez menor",
       "modified_at": "2021-09-23T05:50:46-03:00",
       "available": true,
       "status_code": 200
@@ -1058,6 +1153,7 @@
       "published_at": "2021-09-30T05:50:10-03:00",
       "listed_date": "2021-09-30",
       "theme": "Economia",
+      "summary": "No capitalismo de Estado, corporações disfarçam os próprios interesses adotando uma causa “nobre”",
       "modified_at": "2021-09-30T06:57:37-03:00",
       "available": true,
       "status_code": 200
@@ -1069,6 +1165,7 @@
       "published_at": "2021-10-07T05:50:26-03:00",
       "listed_date": "2021-10-07",
       "theme": "Coronavírus",
+      "summary": "Morreram mais norte-americanos de covid este ano do que em todo 2020. Eficácia cai para 3 meses.",
       "modified_at": "2022-01-20T19:58:00-03:00",
       "available": true,
       "status_code": 200
@@ -1080,6 +1177,7 @@
       "published_at": "2021-10-14T05:50:52-03:00",
       "listed_date": "2021-10-14",
       "theme": "Economia",
+      "summary": "Detalhes sobre caso envolvendo a Bayer só vieram à tona quase duas décadas depois",
       "modified_at": "2021-10-14T05:50:52-03:00",
       "available": true,
       "status_code": 200
@@ -1091,6 +1189,7 @@
       "published_at": "2021-10-21T05:50:11-03:00",
       "listed_date": "2021-10-21",
       "theme": "Mídia",
+      "summary": "Sistema usa sensação de pertencimento para diluir indivíduos na supremacia do coletivo –um exemplo do “dividir para conquistar”",
       "modified_at": "2021-10-21T05:50:11-03:00",
       "available": true,
       "status_code": 200
@@ -1102,6 +1201,7 @@
       "published_at": "2021-10-28T05:50:17-03:00",
       "listed_date": "2021-10-28",
       "theme": "Coronavírus",
+      "summary": "Imagem do infectologista começa a ruir com revelação de experimentos financiados por seu instituto",
       "modified_at": "2021-10-28T05:50:17-03:00",
       "available": true,
       "status_code": 200
@@ -1113,6 +1213,7 @@
       "published_at": "2021-11-04T05:50:25-03:00",
       "listed_date": "2021-11-04",
       "theme": "Coronavírus",
+      "summary": "Fontes alternativas de notícia pressionam a mídia tradicional ao publicar verdades que não convém ao establishment",
       "modified_at": "2021-11-04T05:50:25-03:00",
       "available": true,
       "status_code": 200
@@ -1124,6 +1225,7 @@
       "published_at": "2021-11-11T05:55:48-03:00",
       "listed_date": "2021-11-11",
       "theme": "Governo",
+      "summary": "O que uma história envolvendo Paulo Maluf me revelou sobre o jornalismo e a produção de notícias",
       "modified_at": "2021-11-11T05:55:48-03:00",
       "available": true,
       "status_code": 200
@@ -1135,6 +1237,7 @@
       "published_at": "2021-11-18T05:55:22-03:00",
       "listed_date": "2021-11-18",
       "theme": "Economia",
+      "summary": "Como poderosos driblam as leis, cometem crimes diversos e saem impunes",
       "modified_at": "2021-11-18T05:55:22-03:00",
       "available": true,
       "status_code": 200
@@ -1146,6 +1249,7 @@
       "published_at": "2021-11-25T05:50:09-03:00",
       "listed_date": "2021-11-25",
       "theme": "Coronavírus",
+      "summary": "“Atualização” de relatório da Pfizer exemplifica como as empresas capturam a mídia e as instituições",
       "modified_at": "2021-11-25T05:50:09-03:00",
       "available": true,
       "status_code": 200
@@ -1157,6 +1261,7 @@
       "published_at": "2021-12-02T05:50:23-03:00",
       "listed_date": "2021-12-02",
       "theme": "Coronavírus",
+      "summary": "Gatekeeping permite a criação de unanimidades completamente artificiais",
       "modified_at": "2021-12-02T05:50:23-03:00",
       "available": true,
       "status_code": 200
@@ -1168,6 +1273,7 @@
       "published_at": "2021-12-09T05:50:46-03:00",
       "listed_date": "2021-12-09",
       "theme": "Internacional",
+      "summary": "Programa dos EUA para intervenção climática na Guerra do Vietnã foi exposta por jornalistas investigativos no início dos anos 70",
       "modified_at": "2021-12-09T05:50:46-03:00",
       "available": true,
       "status_code": 200
@@ -1179,6 +1285,7 @@
       "published_at": "2021-12-16T05:50:47-03:00",
       "listed_date": "2021-12-16",
       "theme": "Economia",
+      "summary": "Digressões pela metade de alguns conceitos ultrapassados",
       "modified_at": "2021-12-16T05:50:47-03:00",
       "available": true,
       "status_code": 200
@@ -1190,6 +1297,7 @@
       "published_at": "2021-12-23T05:50:53-03:00",
       "listed_date": "2021-12-23",
       "theme": "Internacional",
+      "summary": "Honestidade intelectual pressupõe a coragem de se indispor com aliados e defender ideias em vez de grupos",
       "modified_at": "2021-12-23T05:50:53-03:00",
       "available": true,
       "status_code": 200
@@ -1201,6 +1309,7 @@
       "published_at": "2021-12-30T06:00:19-03:00",
       "listed_date": "2021-12-30",
       "theme": "Brasil",
+      "summary": "Temática aparece no livro “1984”, de George Orwell, em que vizinho vigia vizinho e todos temem uns aos outros",
       "modified_at": "2021-12-30T06:00:19-03:00",
       "available": true,
       "status_code": 200
@@ -1212,6 +1321,7 @@
       "published_at": "2022-01-06T05:50:12-03:00",
       "listed_date": "2022-01-06",
       "theme": "Coronavírus",
+      "summary": "Vídeo negacionista espalha “verdiras” e “mentades”",
       "modified_at": "2022-01-06T05:50:12-03:00",
       "available": true,
       "status_code": 200
@@ -1223,6 +1333,7 @@
       "published_at": "2022-01-13T05:50:23-03:00",
       "listed_date": "2022-01-13",
       "theme": "Mídia",
+      "summary": "Informações contraditórias criam realidade com fins lucrativos",
       "modified_at": "2022-01-13T05:50:23-03:00",
       "available": true,
       "status_code": 200
@@ -1234,6 +1345,7 @@
       "published_at": "2022-01-20T05:50:03-03:00",
       "listed_date": "2022-01-20",
       "theme": "Coronavírus",
+      "summary": "Sobre o declínio explícito da vergonha na cara (de quem fala) e do conhecimento (de quem lê)",
       "modified_at": "2022-01-20T05:50:03-03:00",
       "available": true,
       "status_code": 200
@@ -1245,6 +1357,7 @@
       "published_at": "2022-01-27T05:50:45-03:00",
       "listed_date": "2022-01-27",
       "theme": "Mídia",
+      "summary": "Como a frase de Olavo sobre células de fetos abortados usadas como adoçante pela Pepsi rendeu frutos",
       "modified_at": "2022-01-27T06:15:42-03:00",
       "available": true,
       "status_code": 200
@@ -1256,6 +1369,7 @@
       "published_at": "2022-02-03T05:50:38-03:00",
       "listed_date": "2022-02-03",
       "theme": "Internacional",
+      "summary": "Se houve manipulação no passado, não há motivo para achar que não há no presente",
       "modified_at": "2022-02-03T05:50:38-03:00",
       "available": true,
       "status_code": 200
@@ -1267,6 +1381,7 @@
       "published_at": "2022-02-10T05:50:59-03:00",
       "listed_date": "2022-02-10",
       "theme": "Internacional",
+      "summary": "Dados ligados à pandemia de covid-19 são imprecisos; propostas para o fim da crise, duvidosas",
       "modified_at": "2022-02-10T05:50:59-03:00",
       "available": true,
       "status_code": 200
@@ -1278,6 +1393,7 @@
       "published_at": "2022-02-17T05:50:51-03:00",
       "listed_date": "2022-02-17",
       "theme": "Mídia",
+      "summary": "Reflexões sobre algo que não me diz respeito",
       "modified_at": "2022-02-17T05:50:51-03:00",
       "available": true,
       "status_code": 200
@@ -1289,6 +1405,7 @@
       "published_at": "2022-02-24T05:50:23-03:00",
       "listed_date": "2022-02-24",
       "theme": "História",
+      "summary": "Ideia de “raça ideal” e seres humanos “unfits” teve epicentro na Califórnia e ganhou apoio financeiro de fundações filantrópicas",
       "modified_at": "2022-02-24T06:08:38-03:00",
       "available": true,
       "status_code": 200
@@ -1300,6 +1417,7 @@
       "published_at": "2022-03-03T05:30:40-03:00",
       "listed_date": "2022-03-03",
       "theme": "Coronavírus",
+      "summary": "Mentiras são empurradas de cima para baixo de maneiras diferentes, com diferentes tipos de incentivo e punições",
       "modified_at": "2022-03-03T05:46:47-03:00",
       "available": true,
       "status_code": 200
@@ -1311,6 +1429,7 @@
       "published_at": "2022-03-10T05:50:29-03:00",
       "listed_date": "2022-03-10",
       "theme": "Economia",
+      "summary": "Multiplicação de intervenções distancia o ser humano da natureza para multiplicar oportunidades de lucro",
       "modified_at": "2022-03-10T05:50:29-03:00",
       "available": true,
       "status_code": 200
@@ -1322,6 +1441,7 @@
       "published_at": "2022-03-17T05:50:30-03:00",
       "listed_date": "2022-03-17",
       "theme": "Coronavírus",
+      "summary": "Sequenciamento genômico pode ser o passo seguinte ao teste PCR para a covid-19 –e quem diz isso são as autoridadae",
       "modified_at": "2022-03-17T05:56:36-03:00",
       "available": true,
       "status_code": 200
@@ -1333,6 +1453,7 @@
       "published_at": "2022-03-24T05:50:07-03:00",
       "listed_date": "2022-03-24",
       "theme": "Brasil",
+      "summary": "A contradição das cotas raciais: usam lógica preconizada no racismo para definir mérito",
       "modified_at": "2022-03-24T05:50:07-03:00",
       "available": true,
       "status_code": 200
@@ -1344,6 +1465,7 @@
       "published_at": "2022-03-31T05:50:43-03:00",
       "listed_date": "2022-03-31",
       "theme": "Coronavírus",
+      "summary": "Comportamentos mimetizados em grupo são caminho para a tirania",
       "modified_at": "2022-03-31T05:50:43-03:00",
       "available": true,
       "status_code": 200
@@ -1355,6 +1477,7 @@
       "published_at": "2022-04-07T05:50:39-03:00",
       "listed_date": "2022-04-07",
       "theme": "Internacional",
+      "summary": "Mídia tradicional praticamente ignora experimentos infames realizados com humanos sem notificá-los",
       "modified_at": "2022-04-07T05:50:39-03:00",
       "available": true,
       "status_code": 200
@@ -1366,6 +1489,7 @@
       "published_at": "2022-04-14T05:50:26-03:00",
       "listed_date": "2022-04-14",
       "theme": "Economia",
+      "summary": "Algumas políticas públicas transformam-se em economia de escala e priorizam lucros ao bem-social",
       "modified_at": "2022-04-14T05:50:26-03:00",
       "available": true,
       "status_code": 200
@@ -1377,6 +1501,7 @@
       "published_at": "2022-04-22T05:50:23-03:00",
       "listed_date": "2022-04-22",
       "theme": "Economia",
+      "summary": "Urina passou a ter valor estratosférico porque o Estado começou a pagar por exames de urina de dependentes químicos",
       "modified_at": "2022-04-22T05:50:23-03:00",
       "available": true,
       "status_code": 200
@@ -1388,6 +1513,7 @@
       "published_at": "2022-04-28T05:50:47-03:00",
       "listed_date": "2022-04-28",
       "theme": "Internacional",
+      "summary": "Estudo Kentler colocou crianças que viviam sob custódia do Estado aos cuidados de pedófilos",
       "modified_at": "2022-04-28T05:58:50-03:00",
       "available": true,
       "status_code": 200
@@ -1399,6 +1525,7 @@
       "published_at": "2022-05-05T05:50:58-03:00",
       "listed_date": "2022-05-05",
       "theme": "Coronavírus",
+      "summary": "Caso de Arlene Graff, que perdeu o filho depois de tomar vacina contra o coronavírus, teve cobertura desastrosa",
       "modified_at": "2022-05-05T05:50:58-03:00",
       "available": true,
       "status_code": 200
@@ -1410,6 +1537,7 @@
       "published_at": "2022-05-12T05:50:16-03:00",
       "listed_date": "2022-05-12",
       "theme": "Eleições",
+      "summary": "“Documentário” diz ter provas de fraude nos votos por postagem em eleições dos EUA de 2020",
       "modified_at": "2022-05-12T05:50:16-03:00",
       "available": true,
       "status_code": 200
@@ -1421,6 +1549,7 @@
       "published_at": "2022-05-19T05:50:33-03:00",
       "listed_date": "2022-05-19",
       "theme": "Internacional",
+      "summary": "Desejo de não destoar da maioria e vontade de acreditar em quem se admira provocam subserviência",
       "modified_at": "2022-05-19T05:50:33-03:00",
       "available": true,
       "status_code": 200
@@ -1432,6 +1561,7 @@
       "published_at": "2022-05-26T05:50:51-03:00",
       "listed_date": "2022-05-26",
       "theme": "Internacional",
+      "summary": "Profusão de capas em única edição não é novidade na Time, mas critérios para distribuição não são claros",
       "modified_at": "2022-05-26T05:50:51-03:00",
       "available": true,
       "status_code": 200
@@ -1443,6 +1573,7 @@
       "published_at": "2022-06-02T05:50:26-03:00",
       "listed_date": "2022-06-02",
       "theme": "Mídia",
+      "summary": "Cena de julgamento pela linguagem ao vivo na TV é constrangedora e dotada de discrepância lógica, critica Paula Schmitt",
       "modified_at": "2022-06-02T06:04:09-03:00",
       "available": true,
       "status_code": 200
@@ -1454,6 +1585,7 @@
       "published_at": "2022-06-09T05:50:16-03:00",
       "listed_date": "2022-06-09",
       "theme": "Internacional",
+      "summary": "Transparência é essencial para combater eventuais conflitos de interesse entre a ciência e a indústria, escreve Paula Schmitt",
       "modified_at": "2022-06-09T05:58:46-03:00",
       "available": true,
       "status_code": 200
@@ -1465,6 +1597,7 @@
       "published_at": "2022-06-16T05:50:17-03:00",
       "listed_date": "2022-06-16",
       "theme": "Economia",
+      "summary": "Caso da Purdue e o analgésico Oxycontin é exemplo de captura regulatória –e de como bem-intencionados alimentam uma fraude",
       "modified_at": "2022-06-16T05:50:17-03:00",
       "available": true,
       "status_code": 200
@@ -1476,6 +1609,7 @@
       "published_at": "2022-06-23T05:50:52-03:00",
       "listed_date": "2022-06-23",
       "theme": "Brasil",
+      "summary": "Falsos discursos são construídos por grandes potências para disfarçar interesses perversos na riqueza da floresta",
       "modified_at": "2022-06-23T05:50:52-03:00",
       "available": true,
       "status_code": 200
@@ -1487,6 +1621,7 @@
       "published_at": "2022-06-30T05:50:35-03:00",
       "listed_date": "2022-06-30",
       "theme": "Internacional",
+      "summary": "Como governos, ONGS e empresas encenam e impulsionam narrativas falsas para atingir seus objetivos, escreve Paula Schmitt",
       "modified_at": "2022-06-30T05:50:35-03:00",
       "available": true,
       "status_code": 200
@@ -1498,6 +1633,7 @@
       "published_at": "2022-07-07T05:50:47-03:00",
       "listed_date": "2022-07-07",
       "theme": "Internacional",
+      "summary": "Monopólio da força explica guerra a um terrorismo criado e financiado pelo próprio Estado, escreve Paula Schmitt",
       "modified_at": "2022-07-07T05:50:47-03:00",
       "available": true,
       "status_code": 200
@@ -1509,6 +1645,7 @@
       "published_at": "2022-07-14T05:50:00-03:00",
       "listed_date": "2022-07-14",
       "theme": "Internacional",
+      "summary": "Tecnofascismo usa a técnica de fazer pessoas obedecerem sem precisar ser mandadas, escreve Paula Schmitt",
       "modified_at": "2022-07-14T05:50:00-03:00",
       "available": true,
       "status_code": 200
@@ -1520,6 +1657,7 @@
       "published_at": "2022-07-21T05:50:32-03:00",
       "listed_date": "2022-07-21",
       "theme": "Economia",
+      "summary": "Caso do modelo Pinto da Ford explicita problemas da teoria do utilitarismo, escreve Paula Schmitt",
       "modified_at": "2022-07-21T06:02:23-03:00",
       "available": true,
       "status_code": 200
@@ -1531,6 +1669,7 @@
       "published_at": "2022-07-28T05:50:37-03:00",
       "listed_date": "2022-07-28",
       "theme": "História",
+      "summary": "Como a retórica do controle populacional vai da história ao Fórum Econômico Mundial, escreve Paula Schmitt",
       "modified_at": "2022-07-28T05:50:37-03:00",
       "available": true,
       "status_code": 200
@@ -1542,6 +1681,7 @@
       "published_at": "2022-08-04T05:50:16-03:00",
       "listed_date": "2022-08-04",
       "theme": "Internacional",
+      "summary": "Relatórios oficiais de operações militares nos EUA não permitem diferenciar entre pesquisa de defesa e ataque, escreve Paula Schmitt",
       "modified_at": "2022-08-04T05:50:16-03:00",
       "available": true,
       "status_code": 200
@@ -1553,6 +1693,7 @@
       "published_at": "2022-08-11T05:50:37-03:00",
       "listed_date": "2022-08-11",
       "theme": "Internacional",
+      "summary": "Com venda de produtos de forma enviesada, Bernays mudou hábitos sociais sem que a sociedade se desse conta da manipulação, escreve Paula Schmitt",
       "modified_at": "2022-08-11T05:50:37-03:00",
       "available": true,
       "status_code": 200
@@ -1564,6 +1705,7 @@
       "published_at": "2022-08-25T05:50:57-03:00",
       "listed_date": "2022-08-25",
       "theme": "Internacional",
+      "summary": "Uma pancetta com mel e shoyu de fermentação natural em homenagem ao STF e aos eventos dessa semana, segundo Paula Schmitt",
       "modified_at": "2022-08-25T05:56:24-03:00",
       "available": true,
       "status_code": 200
@@ -1575,6 +1717,7 @@
       "published_at": "2022-09-02T05:50:48-03:00",
       "listed_date": "2022-09-02",
       "theme": "Brasil",
+      "summary": "Algozes conseguem virar heróis quando são desonestamente acusados por pessoas ainda mais vis e execráveis, escreve Paula Schmitt",
       "modified_at": "2022-09-02T06:10:55-03:00",
       "available": true,
       "status_code": 200
@@ -1586,6 +1729,7 @@
       "published_at": "2022-09-10T05:50:21-03:00",
       "listed_date": "2022-09-10",
       "theme": "Internacional",
+      "summary": "O “grande derrotado” pela censura é quem está sendo privado dessa informação, escreve Paula Schmitt",
       "modified_at": "2022-09-10T05:50:21-03:00",
       "available": true,
       "status_code": 200
@@ -1597,6 +1741,7 @@
       "published_at": "2022-09-15T05:50:33-03:00",
       "listed_date": "2022-09-15",
       "theme": "Internacional",
+      "summary": "Depoimento de ex-funcionário não deve diminuir censura no Twitter, mas servir para reforçá-la, escreve Paula Schmitt",
       "modified_at": "2022-09-15T05:59:18-03:00",
       "available": true,
       "status_code": 200
@@ -1608,6 +1753,7 @@
       "published_at": "2022-09-22T05:50:23-03:00",
       "listed_date": "2022-09-22",
       "theme": "Brasil",
+      "summary": "Ações executadas no cotidiano reproduzem atos de supervilões em menor escala, escreve Paula Schmitt",
       "modified_at": "2022-09-22T06:06:49-03:00",
       "available": true,
       "status_code": 200
@@ -1619,6 +1765,7 @@
       "published_at": "2022-09-30T05:45:11-03:00",
       "listed_date": "2022-09-30",
       "theme": "Justiça",
+      "summary": "Brasil corre sérios riscos de receber o fascismo com os braços abertos, mas essa ameaça vem do mocinho",
       "modified_at": "2022-09-30T05:45:11-03:00",
       "available": true,
       "status_code": 200
@@ -1630,6 +1777,7 @@
       "published_at": "2022-10-06T05:51:51-03:00",
       "listed_date": "2022-10-06",
       "theme": "Eleições",
+      "summary": "Similaridade dos erros e invariabilidade do lado político beneficiado são o mais notável nas pesquisas eleitorais de 2022",
       "modified_at": "2022-10-06T05:51:51-03:00",
       "available": true,
       "status_code": 200
@@ -1641,6 +1789,7 @@
       "published_at": "2022-10-13T05:50:00-03:00",
       "listed_date": "2022-10-13",
       "theme": "Internacional",
+      "summary": "As palavras têm poder: enquanto a vacina é ressignificada, empresa se esconde na “velocidade da ciência”, escreve Paula Schmitt",
       "modified_at": "2022-10-13T05:50:00-03:00",
       "available": true,
       "status_code": 200
@@ -1652,6 +1801,7 @@
       "published_at": "2022-10-20T05:50:10-03:00",
       "listed_date": "2022-10-20",
       "theme": "Partidos políticos",
+      "summary": "Proposta de “Tribunal de Manaus” é justificada com termos de novilíngua e emite veredicto antes do julgamento, escreve Paula Schmitt",
       "modified_at": "2022-10-20T05:50:10-03:00",
       "available": true,
       "status_code": 200
@@ -1663,6 +1813,7 @@
       "published_at": "2022-10-27T05:53:14-03:00",
       "listed_date": "2022-10-27",
       "theme": "Economia",
+      "summary": "Articulista do Poder360, Paula Schmitt diz que esquerda de Lula e a corporatocracia se tornaram inseparáveis no capitalismo de Estado",
       "modified_at": "2022-10-27T05:53:14-03:00",
       "available": true,
       "status_code": 200
@@ -1674,6 +1825,7 @@
       "published_at": "2022-11-04T05:55:02-03:00",
       "listed_date": "2022-11-04",
       "theme": "Eleições",
+      "summary": "Paula Schmitt escreve sobre a diferenciação de quem rouba 8 e quem rouba 80 –e que isso deveria importar para o jornalismo",
       "modified_at": "2022-11-04T05:55:02-03:00",
       "available": true,
       "status_code": 200
@@ -1685,6 +1837,7 @@
       "published_at": "2022-11-12T05:50:35-03:00",
       "listed_date": "2022-11-12",
       "theme": "Internacional",
+      "summary": "Os fins raramente justificam os meios; na maioria das vezes, é o meio que determina o fim, escreve Paula Schmitt",
       "modified_at": "2025-04-01T18:54:52-03:00",
       "available": true,
       "status_code": 200
@@ -1696,6 +1849,7 @@
       "published_at": "2022-11-18T05:50:53-03:00",
       "listed_date": "2022-11-18",
       "theme": "Internacional",
+      "summary": "Dificuldades econômicas faz canadenses usarem programa social para eutanásia sem terem nenhum problema de saúde, escreve Paula Schmitt",
       "modified_at": "2022-11-18T05:50:53-03:00",
       "available": true,
       "status_code": 200
@@ -1707,6 +1861,7 @@
       "published_at": "2022-11-28T17:00:16-03:00",
       "listed_date": "2022-11-28",
       "theme": "Justiça",
+      "summary": "Uma teoria sobre como a posse de informações comprometedoras pode reorganizar a política –mesmo sem ameaça explícita. Por Paula Schmitt",
       "modified_at": "2022-11-28T17:00:16-03:00",
       "available": true,
       "status_code": 200
@@ -1718,6 +1873,7 @@
       "published_at": "2022-12-02T05:52:22-03:00",
       "listed_date": "2022-12-02",
       "theme": "Mídia",
+      "summary": "Articulista relata o próprio retorno ao Twitter e defende o livre debate",
       "modified_at": "2022-12-02T06:04:23-03:00",
       "available": true,
       "status_code": 200
@@ -1729,6 +1885,7 @@
       "published_at": "2022-12-08T05:54:31-03:00",
       "listed_date": "2022-12-08",
       "theme": "Mídia",
+      "summary": "Caso Melhem e retratação do jornalista Ricado Feltrin são uma aula sobre a natureza humana, escreve Paula Schmitt",
       "modified_at": "2022-12-08T06:05:46-03:00",
       "available": true,
       "status_code": 200
@@ -1740,6 +1897,7 @@
       "published_at": "2022-12-22T05:53:46-03:00",
       "listed_date": "2022-12-22",
       "theme": "Internacional",
+      "summary": "Jornalistas que investigam documentos da rede social têm sido descredibilizados por mídia oficializada, escreve Paula Schmitt",
       "modified_at": "2022-12-22T05:53:46-03:00",
       "available": true,
       "status_code": 200
@@ -1751,6 +1909,7 @@
       "published_at": "2022-12-29T05:55:37-03:00",
       "listed_date": "2022-12-29",
       "theme": "Coronavírus",
+      "summary": "A coisa mais importante sobre o medicamento é o seguinte: na dose correta, não mata, não causa miocardite e AVC",
       "modified_at": "2022-12-29T06:08:41-03:00",
       "available": true,
       "status_code": 200
@@ -1762,6 +1921,7 @@
       "published_at": "2023-01-05T05:51:35-03:00",
       "listed_date": "2023-01-05",
       "theme": "Internacional",
+      "summary": "Fundação atenta contra a transparência e contribui para apagão da história recente, escreve Paula Schmitt",
       "modified_at": "2023-01-05T22:05:27-03:00",
       "available": true,
       "status_code": 200
@@ -1773,6 +1933,7 @@
       "published_at": "2023-01-12T05:50:38-03:00",
       "listed_date": "2023-01-12",
       "theme": "Coronavírus",
+      "summary": "Perfis fictícios interagem para validar uns aos outros no Twitter em estranha tentativa de inflar pandemia, escreve Paula Schmitt",
       "modified_at": "2023-01-12T05:50:38-03:00",
       "available": true,
       "status_code": 200
@@ -1784,6 +1945,7 @@
       "published_at": "2023-01-19T05:52:18-03:00",
       "listed_date": "2023-01-19",
       "theme": "Brasil",
+      "summary": "No calor dos eventos, é prudente especular e irresponsável afirmar, escreve Paula Schmitt",
       "modified_at": "2023-01-19T05:58:56-03:00",
       "available": true,
       "status_code": 200
@@ -1795,6 +1957,7 @@
       "published_at": "2023-01-26T05:52:08-03:00",
       "listed_date": "2023-01-26",
       "theme": "Internacional",
+      "summary": "Falsificação da realidade tornou-se um mercado profissionalizado, escreve Paula Schmitt",
       "modified_at": "2023-01-26T05:52:08-03:00",
       "available": true,
       "status_code": 200
@@ -1806,6 +1969,7 @@
       "published_at": "2023-02-02T05:53:20-03:00",
       "listed_date": "2023-02-02",
       "theme": "Brasil",
+      "summary": "A pergunta “cui bono” pode trazer respostas desagradáveis –e justamente por isso é tão importante, escreve Paula Schmitt",
       "modified_at": "2023-02-02T05:53:20-03:00",
       "available": true,
       "status_code": 200
@@ -1817,6 +1981,7 @@
       "published_at": "2023-02-16T05:50:48-03:00",
       "listed_date": "2023-02-16",
       "theme": "Internacional",
+      "summary": "Empresas privadas são pagas para fazer espionagem e fabricar realidades, escreve Paula Schmitt",
       "modified_at": "2023-02-16T05:50:48-03:00",
       "available": true,
       "status_code": 200
@@ -1828,6 +1993,7 @@
       "published_at": "2023-03-02T05:53:59-03:00",
       "listed_date": "2023-03-02",
       "theme": "Coronavírus",
+      "summary": "Sistema de premiação serviu como incentivo para possíveis registros duvidosos da doença em hospitais e atestados de óbito, escreve Paula Schmitt",
       "modified_at": "2023-03-02T05:53:59-03:00",
       "available": true,
       "status_code": 200
@@ -1839,6 +2005,7 @@
       "published_at": "2023-03-16T05:55:55-03:00",
       "listed_date": "2023-03-16",
       "theme": "Coronavírus",
+      "summary": "Mensagens vazadas mostram que motivador de decisões draconianas não foi a ciência, escreve Paula Schmitt",
       "modified_at": "2023-03-16T05:55:55-03:00",
       "available": true,
       "status_code": 200
@@ -1850,6 +2017,7 @@
       "published_at": "2023-03-23T05:54:40-03:00",
       "listed_date": "2023-03-23",
       "theme": "Coronavírus",
+      "summary": "Erros da pandemia não foram por engano, escreve Paula Schmitt",
       "modified_at": "2023-03-23T06:00:08-03:00",
       "available": true,
       "status_code": 200
@@ -1861,6 +2029,7 @@
       "published_at": "2023-03-30T05:52:59-03:00",
       "listed_date": "2023-03-30",
       "theme": "Coronavírus",
+      "summary": "Se antigamente pessoas defendiam o errado por ignorância ou corrupção, hoje existe um 3º elemento: o ego, escreve Paula Schmitt",
       "modified_at": "2023-03-30T05:52:59-03:00",
       "available": true,
       "status_code": 200
@@ -1872,6 +2041,7 @@
       "published_at": "2023-04-06T08:00:46-03:00",
       "listed_date": "2023-04-06",
       "theme": "Internacional",
+      "summary": "Esquerda e direita favorecem uma mesma classe dominante; apagamento de informações mostra quem está de cada lado, escreve Paula Schmitt",
       "modified_at": "2023-04-06T08:00:46-03:00",
       "available": true,
       "status_code": 200
@@ -1883,6 +2053,7 @@
       "published_at": "2023-04-13T06:00:10-03:00",
       "listed_date": "2023-04-13",
       "theme": "Brasil",
+      "summary": "Grupos se favorecem pelo uso político de tragédias inomináveis, escreve Paula Schmitt",
       "modified_at": "2023-04-13T06:00:10-03:00",
       "available": true,
       "status_code": 200
@@ -1894,6 +2065,7 @@
       "published_at": "2023-04-28T17:00:59-03:00",
       "listed_date": "2023-04-28",
       "theme": "Agronegócio",
+      "summary": "Praga que dizimou produção de cacau no país foi ataque bioterrorista, mas investigação foi encerrada sem apontar culpados, escreve Paula Schmitt",
       "modified_at": "2023-04-28T18:04:26-03:00",
       "available": true,
       "status_code": 200
@@ -1905,6 +2077,7 @@
       "published_at": "2023-05-04T05:45:06-03:00",
       "listed_date": "2023-05-04",
       "theme": "Congresso",
+      "summary": "Proposta para regulamentar redes sociais no Brasil retira liberdade da internet e pode intensificar controle de massas, escreve Paula Schmitt",
       "modified_at": "2023-05-04T05:45:06-03:00",
       "available": true,
       "status_code": 200
@@ -1916,6 +2089,7 @@
       "published_at": "2023-05-11T06:00:23-03:00",
       "listed_date": "2023-05-11",
       "theme": "Brasil",
+      "summary": "Como os respiradores mecânicos, alardeados como salvação, mataram mais do que salvaram, escreve Paula Schmitt",
       "modified_at": "2023-05-11T06:00:23-03:00",
       "available": true,
       "status_code": 200
@@ -1927,6 +2101,7 @@
       "published_at": "2023-05-18T05:50:53-03:00",
       "listed_date": "2023-05-18",
       "theme": "Internacional",
+      "summary": "Países devem assegurar direitos de crianças e protegê-las de situações de violência, escreve Paula Schmitt",
       "modified_at": "2023-05-18T05:50:53-03:00",
       "available": true,
       "status_code": 200
@@ -1938,6 +2113,7 @@
       "published_at": "2023-05-25T05:50:07-03:00",
       "listed_date": "2023-05-25",
       "theme": "Mídia",
+      "summary": "Artigo com acusação sobre possível saudação nazista em SC escancara o recrudescimento do viés de confirmação, escreve Paula Schmitt",
       "modified_at": "2023-05-25T05:50:07-03:00",
       "available": true,
       "status_code": 200
@@ -1949,6 +2125,7 @@
       "published_at": "2023-06-01T05:45:54-03:00",
       "listed_date": "2023-06-01",
       "theme": "Coronavírus",
+      "summary": "Farmacêuticas motivadas pelo lucro são auxiliadas por instituições públicas, escreve Paula Schmitt",
       "modified_at": "2023-06-01T05:45:54-03:00",
       "available": true,
       "status_code": 200
@@ -1960,6 +2137,7 @@
       "published_at": "2023-06-15T05:57:30-03:00",
       "listed_date": "2023-06-15",
       "theme": "Coronavírus",
+      "summary": "Assunto obscuro, governos vêm produzindo patógenos e fomentando guerra biológica há tempos, escreve Paula Schmitt",
       "modified_at": "2023-06-15T05:57:30-03:00",
       "available": true,
       "status_code": 200
@@ -1971,6 +2149,7 @@
       "published_at": "2023-06-22T05:45:16-03:00",
       "listed_date": "2023-06-22",
       "theme": "Internacional",
+      "summary": "Laboratório dos EUA utilizou cientistas nazistas para desenvolvimento de vírus que seriam utilizados como armas biológicas, escreve Paula Schmitt",
       "modified_at": "2023-06-22T05:45:16-03:00",
       "available": true,
       "status_code": 200
@@ -1982,6 +2161,7 @@
       "published_at": "2023-06-29T05:40:01-03:00",
       "listed_date": "2023-06-29",
       "theme": "Internacional",
+      "summary": "Ao adicionar variáveis a um sistema complexo, as variações dos resultados possíveis aumentam exponencialmente, escreve Paula Schmitt",
       "modified_at": "2023-06-29T05:40:01-03:00",
       "available": true,
       "status_code": 200
@@ -1993,6 +2173,7 @@
       "published_at": "2023-07-13T07:00:52-03:00",
       "listed_date": "2023-07-13",
       "theme": "Brasil",
+      "summary": "A vida de quem fugiu do regime em que a lei tem muito menos poder que a fidelidade política, por Paula Schmitt",
       "modified_at": "2023-07-13T07:00:52-03:00",
       "available": true,
       "status_code": 200
@@ -2004,6 +2185,7 @@
       "published_at": "2023-07-20T06:00:05-03:00",
       "listed_date": "2023-07-20",
       "theme": "Educação",
+      "summary": "Acadêmicos vêm há tempos sendo contratados para legitimar e justificar ações que pouco ou nada têm a ver com o bem público, escreve Paula Schmitt",
       "modified_at": "2023-07-20T06:00:05-03:00",
       "available": true,
       "status_code": 200
@@ -2015,6 +2197,7 @@
       "published_at": "2023-07-27T06:00:13-03:00",
       "listed_date": "2023-07-27",
       "theme": "Internacional",
+      "summary": "Para quem passou a pandemia sendo alvo de desinformação, deve ser difícil acompanhar a verdade e atualizar uma realidade manipulada por tanto tempo, escreve Paula Schmitt",
       "modified_at": "2023-07-27T06:00:13-03:00",
       "available": true,
       "status_code": 200
@@ -2026,6 +2209,7 @@
       "published_at": "2023-08-03T06:00:56-03:00",
       "listed_date": "2023-08-03",
       "theme": "Brasil",
+      "summary": "Como direita e esquerda se entregaram aos símbolos e os elevaram à condição de realidade, escreve Paula Schmitt",
       "modified_at": "2023-08-03T06:00:56-03:00",
       "available": true,
       "status_code": 200
@@ -2037,6 +2221,7 @@
       "published_at": "2023-08-17T05:45:07-03:00",
       "listed_date": "2023-08-17",
       "theme": "Brasil",
+      "summary": "Resumir ideologias inteiras a uma palavra leva ao reducionismo que ignora as nuances que formam a política cotidiana, escreve Paula Schmitt",
       "modified_at": "2023-08-17T05:45:07-03:00",
       "available": true,
       "status_code": 200
@@ -2048,6 +2233,7 @@
       "published_at": "2023-08-24T05:51:05-03:00",
       "listed_date": "2023-08-24",
       "theme": "Internacional",
+      "summary": "Fidelidade ideológica desconsidera variáveis inerentes à existência humana e resulta na validação de atrocidades e injustiças, escreve Paula Schmitt",
       "modified_at": "2023-08-24T05:51:05-03:00",
       "available": true,
       "status_code": 200
@@ -2059,6 +2245,7 @@
       "published_at": "2023-08-31T05:55:02-03:00",
       "listed_date": "2023-08-31",
       "theme": "Internacional",
+      "summary": "Corrida para armamento é infinita e ninguém reclama porque esse mercado gira dinheiro para comprar unanimidade em qualquer governo, escreve Paula Schmitt",
       "modified_at": "2023-08-31T05:55:02-03:00",
       "available": true,
       "status_code": 200
@@ -2070,6 +2257,7 @@
       "published_at": "2023-09-07T05:50:48-03:00",
       "listed_date": "2023-09-07",
       "theme": "Coronavírus",
+      "summary": "Política de compensação por efeitos adversos de vacinas dos EUA subverte lógica jurídica, escreve Paula Schmitt",
       "modified_at": "2023-09-07T05:50:48-03:00",
       "available": true,
       "status_code": 200
@@ -2081,6 +2269,7 @@
       "published_at": "2023-09-14T05:59:27-03:00",
       "listed_date": "2023-09-14",
       "theme": "Coronavírus",
+      "summary": "Comitê do Congresso norte-americano acionou a agência de inteligência depois de denúncias de suborno em pesquisas sobre a origem do vírus, escreve Paula Schmitt",
       "modified_at": "2023-09-14T05:59:27-03:00",
       "available": true,
       "status_code": 200
@@ -2092,6 +2281,7 @@
       "published_at": "2023-09-21T05:45:27-03:00",
       "listed_date": "2023-09-21",
       "theme": "Internacional",
+      "summary": "O momento das revelações sempre revela mais do que o que é revelado, escreve Paula Schmitt",
       "modified_at": "2023-09-21T05:45:27-03:00",
       "available": true,
       "status_code": 200
@@ -2103,6 +2293,7 @@
       "published_at": "2023-10-05T05:58:03-03:00",
       "listed_date": "2023-10-05",
       "theme": "Internacional",
+      "summary": "Apatia da imprensa com as conexões nas relações de poder globais mantém o mundo desinformado, escreve Paula Schmitt",
       "modified_at": "2023-10-05T05:58:03-03:00",
       "available": true,
       "status_code": 200
@@ -2114,6 +2305,7 @@
       "published_at": "2023-10-12T06:15:37-03:00",
       "listed_date": "2023-10-12",
       "theme": "Internacional",
+      "summary": "Organização continua nomeando os piores, que chegam ao topo com a facilidade de um nazista, escreve Paula Schmitt",
       "modified_at": "2023-10-12T06:15:37-03:00",
       "available": true,
       "status_code": 200
@@ -2125,6 +2317,7 @@
       "published_at": "2023-10-26T05:57:26-03:00",
       "listed_date": "2023-10-26",
       "theme": "Internacional",
+      "summary": "Para analisar conflitos bélicos é essencial partir do entendimento de que somos quase todos produtos do nosso meio, escreve Paula Schmitt",
       "modified_at": "2023-10-26T05:57:26-03:00",
       "available": true,
       "status_code": 200
@@ -2136,6 +2329,7 @@
       "published_at": "2023-11-02T05:55:06-03:00",
       "listed_date": "2023-11-02",
       "theme": "Internacional",
+      "summary": "Guerra em Gaza mostra que o Hamas do antigo estatuto encontrou em Israel de Netanyahu um inimigo à altura, escreve Paula Schmitt",
       "modified_at": "2023-11-02T05:55:06-03:00",
       "available": true,
       "status_code": 200
@@ -2147,6 +2341,7 @@
       "published_at": "2023-11-16T05:57:12-03:00",
       "listed_date": "2023-11-16",
       "theme": "Internacional",
+      "summary": "Globalismo precisa do Estado comunista e totalitário e usa do marketing para assegurar a manutenção do grande capital, escreve Paula Schmitt",
       "modified_at": "2023-11-16T05:57:12-03:00",
       "available": true,
       "status_code": 200
@@ -2158,6 +2353,7 @@
       "published_at": "2023-11-23T05:57:52-03:00",
       "listed_date": "2023-11-23",
       "theme": "Internacional",
+      "summary": "Governos usam dinheiro público para patrocinar obras e artistas que propagam suas ideologias, escreve Paula Schmitt",
       "modified_at": "2023-11-23T05:57:52-03:00",
       "available": true,
       "status_code": 200
@@ -2169,6 +2365,7 @@
       "published_at": "2023-12-07T05:58:10-03:00",
       "listed_date": "2023-12-07",
       "theme": "Brasil",
+      "summary": "Discussão racial em torno de indicação de Dino ao STF é só exercício de cinismo, politicagem e psicopatia no topo do poder, escreve Paula Schmitt",
       "modified_at": "2023-12-07T05:58:10-03:00",
       "available": true,
       "status_code": 200
@@ -2180,6 +2377,7 @@
       "published_at": "2023-12-14T05:53:58-03:00",
       "listed_date": "2023-12-14",
       "theme": "Brasil",
+      "summary": "Governo do povo, contra o povo, a despeito do povo, escreve Paula Schmitt",
       "modified_at": "2023-12-14T05:53:58-03:00",
       "available": true,
       "status_code": 200
@@ -2191,6 +2389,7 @@
       "published_at": "2023-12-21T05:58:21-03:00",
       "listed_date": "2023-12-21",
       "theme": "Internacional",
+      "summary": "Elite que defende a eugenia é a mesma que vem há décadas dizendo que as mudanças climá-ticas vão destruir o mundo, escreve Paula Schmitt",
       "modified_at": "2023-12-21T05:58:21-03:00",
       "available": true,
       "status_code": 200
@@ -2202,6 +2401,7 @@
       "published_at": "2023-12-28T05:45:38-03:00",
       "listed_date": "2023-12-28",
       "theme": "Saúde",
+      "summary": "Em artigo “atrasado” de Natal, ou assim quero crer, repasso uma experiência de anos atrás em uma farmácia na Jordânia que me transformou",
       "modified_at": "2023-12-28T05:45:38-03:00",
       "available": true,
       "status_code": 200
@@ -2213,6 +2413,7 @@
       "published_at": "2024-01-04T05:55:42-03:00",
       "listed_date": "2024-01-04",
       "theme": "Economia",
+      "summary": "Rede de fofocas é disfarce para instrumentos de extorsão e favorecimento político, escreve Paula Schmitt",
       "modified_at": "2024-01-04T05:55:42-03:00",
       "available": true,
       "status_code": 200
@@ -2224,6 +2425,7 @@
       "published_at": "2024-01-11T05:58:52-03:00",
       "listed_date": "2024-01-11",
       "theme": "Brasil",
+      "summary": "A grande diferença ideológica não está num eixo horizontal, mas na intensidade vertical que vai da tirania à liberdade, escreve Paula Schmitt",
       "modified_at": "2024-01-11T05:58:52-03:00",
       "available": true,
       "status_code": 200
@@ -2235,6 +2437,7 @@
       "published_at": "2024-01-18T05:57:49-03:00",
       "listed_date": "2024-01-18",
       "theme": "Brasil",
+      "summary": "Ocupa o topo da pirâmide quem é permitido e não ameaça a fidalguia, escreve Paula Schmitt",
       "modified_at": "2024-01-18T05:57:49-03:00",
       "available": true,
       "status_code": 200
@@ -2246,6 +2449,7 @@
       "published_at": "2024-01-25T05:57:20-03:00",
       "listed_date": "2024-01-25",
       "theme": "Brasil",
+      "summary": "Destino do mundo é um lugar onde o empreendimento dos pequenos é impossibilitado de competir com os grandes, escreve Paula Schmitt",
       "modified_at": "2024-01-25T05:57:20-03:00",
       "available": true,
       "status_code": 200
@@ -2257,6 +2461,7 @@
       "published_at": "2024-02-01T05:55:44-03:00",
       "listed_date": "2024-02-01",
       "theme": "Economia",
+      "summary": "Controle e centralização de poder não definem ideologias porque as 2 mais defendidas acreditam que esses itens são a recompensa de seu trabalho bem-feito, escreve Paula Schmitt",
       "modified_at": "2024-02-01T05:55:44-03:00",
       "available": true,
       "status_code": 200
@@ -2268,6 +2473,7 @@
       "published_at": "2024-02-08T05:59:00-03:00",
       "listed_date": "2024-02-08",
       "theme": "Brasil",
+      "summary": "A cloroquina, remédio que causou discórdia na pandemia, foi uma das armas mais eficientes na dominação da África, escreve Paula Schmitt",
       "modified_at": "2024-02-08T05:59:00-03:00",
       "available": true,
       "status_code": 200
@@ -2279,6 +2485,7 @@
       "published_at": "2024-02-15T06:00:46-03:00",
       "listed_date": "2024-02-15",
       "theme": "Justiça",
+      "summary": "Caríssimo Ilustríssimo Digníssimo Alexandríssimo de Imorais, escreve Paula Schmitt",
       "modified_at": "2024-02-15T06:00:46-03:00",
       "available": true,
       "status_code": 200
@@ -2290,6 +2497,7 @@
       "published_at": "2024-02-29T05:57:51-03:00",
       "listed_date": "2024-02-29",
       "theme": "Brasil",
+      "summary": "É curioso que ala política seja defensora ardente de um padre que, tudo sugere, cometeu um dos atos mais obscenos que se pode imaginar, escreve Paula Schmitt",
       "modified_at": "2024-02-29T05:57:51-03:00",
       "available": true,
       "status_code": 200
@@ -2301,6 +2509,7 @@
       "published_at": "2024-03-07T05:57:48-03:00",
       "listed_date": "2024-03-07",
       "theme": "Brasil",
+      "summary": "Interesses convergentes podem não ser o que parecem, escreve Paula Schmitt",
       "modified_at": "2024-03-07T05:57:48-03:00",
       "available": true,
       "status_code": 200
@@ -2312,6 +2521,7 @@
       "published_at": "2024-03-14T05:58:53-03:00",
       "listed_date": "2024-03-14",
       "theme": "Internacional",
+      "summary": "Refugiados palestinos, que eram 700 mil na criação de Israel, hoje, passam de 5 milhões, escreve Paula Schmitt",
       "modified_at": "2024-03-14T05:58:53-03:00",
       "available": true,
       "status_code": 200
@@ -2323,6 +2533,7 @@
       "published_at": "2024-03-21T05:57:31-03:00",
       "listed_date": "2024-03-21",
       "theme": "Coronavírus",
+      "summary": "A verdade precisa do tempo para emergir; pouco saber é muito acreditar, escreve Paula Schmitt",
       "modified_at": "2024-03-21T05:57:31-03:00",
       "available": true,
       "status_code": 200
@@ -2334,6 +2545,7 @@
       "published_at": "2024-03-28T05:58:12-03:00",
       "listed_date": "2024-03-28",
       "theme": "Governo",
+      "summary": "Democracia é debate de visões de mundo, mas as visões são majoritariamente iguais, disfarça-das em suas diferenças, escreve Paula Schmitt",
       "modified_at": "2024-03-28T05:58:12-03:00",
       "available": true,
       "status_code": 200
@@ -2345,6 +2557,7 @@
       "published_at": "2024-04-04T05:56:08-03:00",
       "listed_date": "2024-04-04",
       "theme": "Mídia",
+      "summary": "Trecho em que jornalista alinhado às ideias da esquerda critica vacinas contra covid foi removido de vídeo na internet, escreve Paula Schmitt",
       "modified_at": "2024-04-04T05:56:08-03:00",
       "available": true,
       "status_code": 200
@@ -2356,6 +2569,7 @@
       "published_at": "2024-04-11T05:51:35-03:00",
       "listed_date": "2024-04-11",
       "theme": "Internacional",
+      "summary": "Grande parte dos segredos já foi revelada, mas falta esperteza para entendê-los, escreve Paula Schmitt",
       "modified_at": "2024-04-11T05:51:35-03:00",
       "available": true,
       "status_code": 200
@@ -2367,6 +2581,7 @@
       "published_at": "2024-04-18T05:53:23-03:00",
       "listed_date": "2024-04-18",
       "theme": "Economia",
+      "summary": "Exercício intelectual de “ligar os pontos” é vilipendiado pela imprensa por um motivo, escreve Paula Schmitt",
       "modified_at": "2024-04-18T05:53:23-03:00",
       "available": true,
       "status_code": 200
@@ -2378,6 +2593,7 @@
       "published_at": "2024-04-25T05:52:42-03:00",
       "listed_date": "2024-04-25",
       "theme": "Coronavírus",
+      "summary": "Censura escondeu da maioria um possível agente causador de câncer na vacina, escreve Paula Schmitt",
       "modified_at": "2024-04-25T05:52:42-03:00",
       "available": true,
       "status_code": 200
@@ -2389,6 +2605,7 @@
       "published_at": "2024-05-02T05:56:39-03:00",
       "listed_date": "2024-05-02",
       "theme": "Brasil",
+      "summary": "1 ano e inúmeras vítimas depois, a farmacêutica interrompeu seu gaslighting global para admitir que, de fato, sua vacina pode causar a formação de coágulos de sangue, escreve Paula Schmitt",
       "modified_at": "2024-05-02T05:56:39-03:00",
       "available": true,
       "status_code": 200
@@ -2400,6 +2617,7 @@
       "published_at": "2024-05-09T05:57:04-03:00",
       "listed_date": "2024-05-09",
       "theme": "Brasil",
+      "summary": "Relatos de cobranças indevidas em contas bancárias de idosos em uma agência do Itaú se amontoam e evidenciam a vulnerabilidade dos mais velhos nas relações com os bancos",
       "modified_at": "2024-05-09T05:57:04-03:00",
       "available": true,
       "status_code": 200
@@ -2411,6 +2629,7 @@
       "published_at": "2024-05-16T05:59:14-03:00",
       "listed_date": "2024-05-16",
       "theme": "Brasil",
+      "summary": "Tragédia no Rio Grande do Sul é resultado de uma sucessão de equívocos políticos coordenados, e não de “mudanças climáticas”, escreve Paula Schmitt",
       "modified_at": "2024-05-16T05:59:14-03:00",
       "available": true,
       "status_code": 200
@@ -2422,6 +2641,7 @@
       "published_at": "2024-06-06T05:59:36-03:00",
       "listed_date": "2024-06-06",
       "theme": "Brasil",
+      "summary": "Pessoas involuntariamente transformadas em vítimas pelas enchentes no RS, voluntariamente rejeitaram a categorização e escolheram ser heróis numa tragédia que não poupou quase ninguém, escreve Paula Schmitt",
       "modified_at": "2024-06-06T05:59:36-03:00",
       "available": true,
       "status_code": 200
@@ -2433,6 +2653,7 @@
       "published_at": "2024-06-13T05:51:41-03:00",
       "listed_date": "2024-06-13",
       "theme": "Internacional",
+      "summary": "Como médicos, especialistas, ministros e funcionários públicos permitiram a contaminação de inocentes com o vírus da aids e da hepatite, escreve Paula Schmitt",
       "modified_at": "2024-06-13T05:51:41-03:00",
       "available": true,
       "status_code": 200
@@ -2444,6 +2665,7 @@
       "published_at": "2024-06-20T05:56:52-03:00",
       "listed_date": "2024-06-20",
       "theme": "Brasil",
+      "summary": "Atual debate sobre a interrupção da gravidez é uma farsa e o slogan publicitário “meu corpo, minhas regras” é sintomático de um vácuo moral notável, escreve Paula Schmitt",
       "modified_at": "2024-06-20T05:56:52-03:00",
       "available": true,
       "status_code": 200
@@ -2455,6 +2677,7 @@
       "published_at": "2024-06-27T05:59:18-03:00",
       "listed_date": "2024-06-27",
       "theme": "Justiça",
+      "summary": "Todos nós estamos num pesadelo em que não é necessário crime para que haja prisão ou evidência para que se cheque uma mentira, escreve Paula Schmitt",
       "modified_at": "2024-06-27T05:59:18-03:00",
       "available": true,
       "status_code": 200
@@ -2466,6 +2689,7 @@
       "published_at": "2024-07-04T06:00:40-03:00",
       "listed_date": "2024-07-04",
       "theme": "Internacional",
+      "summary": "Com a bandeira de salvar o planeta, bilionário rejeita plantar árvores e prefere interferir no ciclo biológico dos alimentos naturais, escreve Paula Schmitt",
       "modified_at": "2024-07-04T06:00:40-03:00",
       "available": true,
       "status_code": 200
@@ -2477,6 +2701,7 @@
       "published_at": "2024-07-11T05:55:08-03:00",
       "listed_date": "2024-07-11",
       "theme": "Brasil",
+      "summary": "Seguir a cartilha do consenso é peremptório se você não quiser ter o rótulo de extremista, escreve Paula Schmitt",
       "modified_at": "2024-07-11T05:55:08-03:00",
       "available": true,
       "status_code": 200
@@ -2488,6 +2713,7 @@
       "published_at": "2024-07-18T05:52:30-03:00",
       "listed_date": "2024-07-18",
       "theme": "Segurança Pública",
+      "summary": "Animais e aparelhos usados em espionagem parecem coisa de ficção, mas são reais, escreve Paula Schmitt",
       "modified_at": "2024-07-18T05:52:30-03:00",
       "available": true,
       "status_code": 200
@@ -2499,6 +2725,7 @@
       "published_at": "2024-07-25T05:43:25-03:00",
       "listed_date": "2024-07-25",
       "theme": "Governo",
+      "summary": "Memes criticando Haddad incomodam por evidenciar que muitos dizem de graça a verdade que alguns jornalistas são pagos para esconder, escreve Paula Schmitt",
       "modified_at": "2024-07-26T20:30:38-03:00",
       "available": true,
       "status_code": 200
@@ -2510,6 +2737,7 @@
       "published_at": "2024-08-01T05:57:02-03:00",
       "listed_date": "2024-08-01",
       "theme": "Governo",
+      "summary": "Evento no Rio reuniu empresas, pesquisadores e autoridades sanitárias para discutir um mecanismo para identificar um vírus, desenvolver sua vacina e aplicar em massa em até 100 dias",
       "modified_at": "2024-08-01T05:57:02-03:00",
       "available": true,
       "status_code": 200
@@ -2521,6 +2749,7 @@
       "published_at": "2024-08-08T05:49:18-03:00",
       "listed_date": "2024-08-08",
       "theme": "Internacional",
+      "summary": "Experimento controverso serviu como base para política de gênero, mas terapia e seus arrependidos não fazem parte do debate",
       "modified_at": "2024-08-08T05:49:18-03:00",
       "available": true,
       "status_code": 200
@@ -2532,6 +2761,7 @@
       "published_at": "2024-08-22T05:50:32-03:00",
       "listed_date": "2024-08-22",
       "theme": "Internacional",
+      "summary": "Autoridades alemãs usaram do medo da população para adotar medidas ineficazes durante a pandemia de covid-19",
       "modified_at": "2024-08-22T05:50:32-03:00",
       "available": true,
       "status_code": 200
@@ -2543,6 +2773,7 @@
       "published_at": "2024-08-29T05:51:59-03:00",
       "listed_date": "2024-08-29",
       "theme": "Literatura",
+      "summary": "As obras do historiador Antony Sutton explicam por que as guerras são, geralmente, feitas por banqueiros",
       "modified_at": "2024-08-29T05:51:59-03:00",
       "available": true,
       "status_code": 200
@@ -2554,6 +2785,7 @@
       "published_at": "2024-09-05T05:58:19-03:00",
       "listed_date": "2024-09-05",
       "theme": "Justiça",
+      "summary": "A grande diferença entre o homem e o animal é a capacidade de racionalizar, de dar um aspecto lógico e verossímil a uma ação que a moral jamais justificaria",
       "modified_at": "2024-09-05T05:58:19-03:00",
       "available": true,
       "status_code": 200
@@ -2565,6 +2797,7 @@
       "published_at": "2024-09-12T06:00:48-03:00",
       "listed_date": "2024-09-12",
       "theme": "Coronavírus",
+      "summary": "Como indivíduos munidos de coragem e humanidade desafiaram a pandemídia para salvar vidas e transformar seu entorno",
       "modified_at": "2024-09-12T12:40:53-03:00",
       "available": true,
       "status_code": 200
@@ -2576,6 +2809,7 @@
       "published_at": "2024-09-19T05:53:30-03:00",
       "listed_date": "2024-09-19",
       "theme": "Infográficos",
+      "summary": "Suspensão do X chegou em boa hora para encobrir a perda de audiência de grandes jornais e prejudicar a ascensão da mídia alternativa",
       "modified_at": "2024-09-20T12:12:45-03:00",
       "available": true,
       "status_code": 200
@@ -2587,6 +2821,7 @@
       "published_at": "2024-09-26T06:00:21-03:00",
       "listed_date": "2024-09-26",
       "theme": "Internacional",
+      "summary": "Ataque com pagers no Líbano trará consequências trágicas, até mesmo o indício de que a tirania pode controlar a sociedade de forma mais contundente",
       "modified_at": "2024-09-26T06:00:21-03:00",
       "available": true,
       "status_code": 200
@@ -2598,6 +2833,7 @@
       "published_at": "2024-10-03T05:54:02-03:00",
       "listed_date": "2024-10-03",
       "theme": "Internacional",
+      "summary": "Intenções são importantes, mas nada supera as consequências",
       "modified_at": "2024-10-03T05:54:02-03:00",
       "available": true,
       "status_code": 200
@@ -2609,6 +2845,7 @@
       "published_at": "2024-10-10T05:52:28-03:00",
       "listed_date": "2024-10-10",
       "theme": "Brasil",
+      "summary": "Como a realidade é frequentemente transformada em teoria da conspiração para atrasar a verdade",
       "modified_at": "2024-10-10T05:52:28-03:00",
       "available": true,
       "status_code": 200
@@ -2620,6 +2857,7 @@
       "published_at": "2024-10-17T06:13:52-03:00",
       "listed_date": "2024-10-17",
       "theme": "Internacional",
+      "summary": "A lista dos países diretamente envolvidos na guerra do Líbano mostra a importância estratégica deste país, e como ele serviu de campo para outras batalhas",
       "modified_at": "2024-10-17T06:13:52-03:00",
       "available": true,
       "status_code": 200
@@ -2631,6 +2869,7 @@
       "published_at": "2024-10-24T05:58:12-03:00",
       "listed_date": "2024-10-24",
       "theme": "Internacional",
+      "summary": "Interferência intencional no clima pode produzir as ditas emergências climáticas e o aquecimento global; o medo é a maior arma dos integrantes do topo da pirâmide",
       "modified_at": "2024-10-24T05:58:12-03:00",
       "available": true,
       "status_code": 200
@@ -2642,6 +2881,7 @@
       "published_at": "2024-10-31T05:55:16-03:00",
       "listed_date": "2024-10-31",
       "theme": "Mídia",
+      "summary": "Estudo que identificou suposto racismo contra bebês negros ignorou dado crucial, o peso dos recém-nascidos",
       "modified_at": "2024-10-31T05:55:16-03:00",
       "available": true,
       "status_code": 200
@@ -2653,6 +2893,7 @@
       "published_at": "2024-11-07T05:57:06-03:00",
       "listed_date": "2024-11-07",
       "theme": "Brasil",
+      "summary": "Parte da vila de Jericoacoara (CE) implementou uma moeda digital própria que tem auxiliado no desenvolvimento da população e alavancado projetos sociais",
       "modified_at": "2024-11-07T05:57:06-03:00",
       "available": true,
       "status_code": 200
@@ -2664,6 +2905,7 @@
       "published_at": "2024-11-14T05:46:25-03:00",
       "listed_date": "2024-11-14",
       "theme": "Eleições",
+      "summary": "Vigilância das ações de políticos eleitos deve ser constante, mas requer honestidade intelectual e a libertação do indivíduo para além da tribo",
       "modified_at": "2024-11-14T05:46:25-03:00",
       "available": true,
       "status_code": 200
@@ -2675,6 +2917,7 @@
       "published_at": "2024-11-21T05:54:39-03:00",
       "listed_date": "2024-11-21",
       "theme": "Economia",
+      "summary": "Congresso em Santa Catarina debate a defesa da soberania individual num mundo Estadualizado",
       "modified_at": "2024-11-21T05:54:39-03:00",
       "available": true,
       "status_code": 200
@@ -2686,6 +2929,7 @@
       "published_at": "2024-11-28T05:48:49-03:00",
       "listed_date": "2024-11-28",
       "theme": "Internacional",
+      "summary": "Nomeação de Donald Trump para a área da saúde nos EUA traz esperança, por enquanto",
       "modified_at": "2024-11-28T05:48:49-03:00",
       "available": true,
       "status_code": 200
@@ -2697,6 +2941,7 @@
       "published_at": "2024-12-05T05:50:12-03:00",
       "listed_date": "2024-12-05",
       "theme": "Internacional",
+      "summary": "Pagador de impostos novaiorquino banca hotel para imigrantes ilegais por propósitos escusos que nunca lhe beneficiam",
       "modified_at": "2024-12-05T05:50:12-03:00",
       "available": true,
       "status_code": 200
@@ -2708,6 +2953,7 @@
       "published_at": "2024-12-12T05:54:02-03:00",
       "listed_date": "2024-12-12",
       "theme": "Economia",
+      "summary": "Corporatocracia já anuncia uma nova pandemia, que promete inflar lucros de farmacêuticas com dinheiro público",
       "modified_at": "2024-12-12T05:54:02-03:00",
       "available": true,
       "status_code": 200
@@ -2719,6 +2965,7 @@
       "published_at": "2024-12-26T05:57:45-03:00",
       "listed_date": "2024-12-26",
       "theme": "Internacional",
+      "summary": "Drones e objetos não-identificados vêm sobrevoando o espaço aéreo norte-americano e ninguém sabe explicar sua origem",
       "modified_at": "2024-12-26T05:57:45-03:00",
       "available": true,
       "status_code": 200
@@ -2730,6 +2977,7 @@
       "published_at": "2025-01-02T05:50:48-03:00",
       "listed_date": "2025-01-02",
       "theme": "Infra",
+      "summary": "Entrega do comando do porto de Itajaí (SC) para o porto de Santos (SP) foi questionada, mas STJ derrubou liminar",
       "modified_at": "2025-01-02T05:50:48-03:00",
       "available": true,
       "status_code": 200
@@ -2741,6 +2989,7 @@
       "published_at": "2025-01-09T05:59:45-03:00",
       "listed_date": "2025-01-09",
       "theme": "Economia",
+      "summary": "Pessoas estão pensando em slogans e deixando de ver o que é feito por empresas e governos sob suas próprias vistas",
       "modified_at": "2025-01-09T05:59:45-03:00",
       "available": true,
       "status_code": 200
@@ -2752,6 +3001,7 @@
       "published_at": "2025-01-16T05:57:49-03:00",
       "listed_date": "2025-01-16",
       "theme": "Internacional",
+      "summary": "Mudança de política de checagem da Meta promete pluralizar o debate, combatendo o monopólio da elite sobre a verdade",
       "modified_at": "2025-01-16T05:57:49-03:00",
       "available": true,
       "status_code": 200
@@ -2763,6 +3013,7 @@
       "published_at": "2025-01-30T05:50:31-03:00",
       "listed_date": "2025-01-30",
       "theme": "Internacional",
+      "summary": "Acordo entre governo e empresa de gestão de resíduos é a materialização da confluência de interesses privados e da apropriação de vítimas",
       "modified_at": "2025-01-30T05:50:31-03:00",
       "available": true,
       "status_code": 200
@@ -2774,6 +3025,7 @@
       "published_at": "2025-02-06T05:56:38-03:00",
       "listed_date": "2025-02-06",
       "theme": "Economia",
+      "summary": "Política foi transformada em jogo de futebol e quem ganha com isso são os donos do mundo sem ideologia, mas cheios de interesses",
       "modified_at": "2025-02-06T05:56:38-03:00",
       "available": true,
       "status_code": 200
@@ -2785,6 +3037,7 @@
       "published_at": "2025-02-20T05:52:17-03:00",
       "listed_date": "2025-02-20",
       "theme": "Internacional",
+      "summary": "Agência norte-americana é só um de incontáveis instrumentos canalizando dinheiro público e privado para a engenharia social",
       "modified_at": "2025-02-20T05:52:17-03:00",
       "available": true,
       "status_code": 200
@@ -2796,6 +3049,7 @@
       "published_at": "2025-02-27T05:54:16-03:00",
       "listed_date": "2025-02-27",
       "theme": "Governo",
+      "summary": "USaid pagou influenciadores no Brasil e ajudou a borrar a separação entre o interesse público e o privado",
       "modified_at": "2025-02-27T05:54:16-03:00",
       "available": true,
       "status_code": 200
@@ -2807,6 +3061,7 @@
       "published_at": "2025-03-20T05:54:34-03:00",
       "listed_date": "2025-03-20",
       "theme": "Internacional",
+      "summary": "A eterna lembrança do racismo não existe para evitar que ele renasça, mas para garantir que ele nunca morra",
       "modified_at": "2025-03-20T05:54:34-03:00",
       "available": true,
       "status_code": 200
@@ -2818,6 +3073,7 @@
       "published_at": "2025-04-03T05:55:32-03:00",
       "listed_date": "2025-04-03",
       "theme": "Brasil",
+      "summary": "Embate entre investidores acabou criando uma felicidade inesperada",
       "modified_at": "2025-04-03T05:55:32-03:00",
       "available": true,
       "status_code": 200
@@ -2829,6 +3085,7 @@
       "published_at": "2025-04-10T05:57:14-03:00",
       "listed_date": "2025-04-10",
       "theme": "Coronavírus",
+      "summary": "Assim como na fábula, todos já sabem que a vacina que não imuniza está despida",
       "modified_at": "2025-04-10T05:57:14-03:00",
       "available": true,
       "status_code": 200
@@ -2840,6 +3097,7 @@
       "published_at": "2025-04-17T05:57:33-03:00",
       "listed_date": "2025-04-17",
       "theme": "Congresso",
+      "summary": "Projetos de lei disfarçados de boa intenção provocam resultados nefastos minuciosamente calculados",
       "modified_at": "2025-04-17T05:57:33-03:00",
       "available": true,
       "status_code": 200
@@ -2851,6 +3109,7 @@
       "published_at": "2025-04-24T05:56:42-03:00",
       "listed_date": "2025-04-24",
       "theme": "Internacional",
+      "summary": "Monarca pregou, há tempos, a redução populacional por meio de vírus mortais",
       "modified_at": "2025-04-24T05:56:42-03:00",
       "available": true,
       "status_code": 200
@@ -2862,6 +3121,7 @@
       "published_at": "2025-05-08T05:59:27-03:00",
       "listed_date": "2025-05-08",
       "theme": "Economia",
+      "summary": "Depois de ser enganado, só nos sobra o consolo de não saber que fomos enganados",
       "modified_at": "2025-05-08T05:59:27-03:00",
       "available": true,
       "status_code": 200
@@ -2873,6 +3133,7 @@
       "published_at": "2025-05-15T05:57:56-03:00",
       "listed_date": "2025-05-15",
       "theme": "Governo",
+      "summary": "Da utopia à bolsa Hermès: a revolução virou grife e esqueceu a sopa quente da velhinha na feira",
       "modified_at": "2025-05-15T05:57:56-03:00",
       "available": true,
       "status_code": 200
@@ -2884,6 +3145,7 @@
       "published_at": "2025-05-22T05:57:15-03:00",
       "listed_date": "2025-05-22",
       "theme": "Coronavírus",
+      "summary": "Cinco anos depois, o jornal de referência publica o que tentou negar: a origem laboratorial do vírus e a farsa do consenso científico",
       "modified_at": "2025-05-22T05:57:15-03:00",
       "available": true,
       "status_code": 200
@@ -2895,6 +3157,7 @@
       "published_at": "2025-05-29T05:51:45-03:00",
       "listed_date": "2025-05-29",
       "theme": "Brasil",
+      "summary": "O prefeito Ricardo Nunes entrega a segurança de SP à ditadura chinesa e os críticos da “censura inteligente” se calam",
       "modified_at": "2025-05-29T05:51:45-03:00",
       "available": true,
       "status_code": 200
@@ -2906,6 +3169,7 @@
       "published_at": "2025-06-05T05:56:16-03:00",
       "listed_date": "2025-06-05",
       "theme": "Governo",
+      "summary": "Críticas sobre ingerência na soberania só são válidas em país soberano; lei pune indivíduos, e não países",
       "modified_at": "2025-06-05T05:56:16-03:00",
       "available": true,
       "status_code": 200
@@ -2917,6 +3181,7 @@
       "published_at": "2025-06-12T05:57:16-03:00",
       "listed_date": "2025-06-12",
       "theme": "Congresso",
+      "summary": "O Brasil está virando uma ditadura com o trabalho deliberado da esquerda e a conivência acovardada da direita",
       "modified_at": "2025-06-12T05:57:16-03:00",
       "available": true,
       "status_code": 200
@@ -2928,6 +3193,7 @@
       "published_at": "2025-06-26T05:54:22-03:00",
       "listed_date": "2025-06-26",
       "theme": "Internacional",
+      "summary": "O homem pode não ser a medida de todas as coisas, mas ele certamente define a medida de como é tratado",
       "modified_at": "2025-06-26T05:54:22-03:00",
       "available": true,
       "status_code": 200
@@ -2939,6 +3205,7 @@
       "published_at": "2025-07-03T05:45:03-03:00",
       "listed_date": "2025-07-03",
       "theme": "Internacional",
+      "summary": "Afunilamento da democracia transforma intelectuais ungidos e organizações permitidas em atravessadores autorizados da vontade popular",
       "modified_at": "2025-07-03T05:45:03-03:00",
       "available": true,
       "status_code": 200
@@ -2950,6 +3217,7 @@
       "published_at": "2025-07-10T05:57:21-03:00",
       "listed_date": "2025-07-10",
       "theme": "Internacional",
+      "summary": "Lista de envolvidos deixa de existir, mas kompromat deve seguir fora de controle",
       "modified_at": "2025-07-10T05:57:21-03:00",
       "available": true,
       "status_code": 200
@@ -2961,6 +3229,7 @@
       "published_at": "2025-07-17T05:57:19-03:00",
       "listed_date": "2025-07-17",
       "theme": "Internacional",
+      "summary": "Mortes no Texas expõem uso político da tragédia e criam dúvidas sobre atuação de empresa de modificação climática",
       "modified_at": "2025-07-17T05:57:19-03:00",
       "available": true,
       "status_code": 200
@@ -2972,6 +3241,7 @@
       "published_at": "2025-07-24T06:00:23-03:00",
       "listed_date": "2025-07-24",
       "theme": "Justiça",
+      "summary": "A censura não é só a usurpação do direito de falar; acima de tudo, é uma usurpação do direito de ouvir",
       "modified_at": "2025-07-24T06:00:23-03:00",
       "available": true,
       "status_code": 200
@@ -2983,6 +3253,7 @@
       "published_at": "2025-07-31T06:00:28-03:00",
       "listed_date": "2025-07-31",
       "theme": "Internacional",
+      "summary": "Em vez de registrar pedras e urina, escolhi ouvir nomes; Ibrahim e Avraham, 2 lados de um muro",
       "modified_at": "2025-07-31T06:00:28-03:00",
       "available": true,
       "status_code": 200
@@ -2994,6 +3265,7 @@
       "published_at": "2025-08-07T05:57:39-03:00",
       "listed_date": "2025-08-07",
       "theme": "Justiça",
+      "summary": "Flavia Magalhães perdeu sua vida livre e seu sustento sem nem saber do que é acusada –num processo kafkiano e sem número",
       "modified_at": "2025-08-07T05:57:39-03:00",
       "available": true,
       "status_code": 200
@@ -3005,6 +3277,7 @@
       "published_at": "2025-08-14T05:47:36-03:00",
       "listed_date": "2025-08-14",
       "theme": "Mídia",
+      "summary": "Conversas expõem excessos políticos cometidos pela Corte nas investigações do 8 de Janeiro, consolidando um regime de medo e censura",
       "modified_at": "2025-08-19T20:34:08-03:00",
       "available": true,
       "status_code": 200
@@ -3016,6 +3289,7 @@
       "published_at": "2025-08-21T05:52:02-03:00",
       "listed_date": "2025-08-21",
       "theme": "Mídia",
+      "summary": "Entre exageros e hipocrisia, o debate sobre “adultização” virou instrumento contra pais e cortina de fumaça para a censura",
       "modified_at": "2025-08-21T05:52:02-03:00",
       "available": true,
       "status_code": 200
@@ -3027,6 +3301,7 @@
       "published_at": "2025-08-28T05:57:14-03:00",
       "listed_date": "2025-08-28",
       "theme": "Tech",
+      "summary": "Meu teste com a IA do X mostrou que ela serve para coisas bem humanas: humilhar paulista, exaltar mineiros e tirar sarro da comida da minha mãe",
       "modified_at": "2025-08-28T05:57:14-03:00",
       "available": true,
       "status_code": 200
@@ -3038,6 +3313,7 @@
       "published_at": "2025-09-04T05:57:24-03:00",
       "listed_date": "2025-09-04",
       "theme": "Mídia",
+      "summary": "O Brasil assiste a um espetáculo em que a lei caça primeiro o homem e depois acha o crime",
       "modified_at": "2025-09-04T05:57:24-03:00",
       "available": true,
       "status_code": 200
@@ -3049,6 +3325,7 @@
       "published_at": "2025-09-11T05:57:16-03:00",
       "listed_date": "2025-09-11",
       "theme": "Internacional",
+      "summary": "Ações de governos nunca têm só o objetivo declarado; o MI6 mostrou como é possível sabotar refugiados, enganar aliados e inflamar inimigos ao mesmo tempo",
       "modified_at": "2025-09-11T05:57:16-03:00",
       "available": true,
       "status_code": 200
@@ -3060,6 +3337,7 @@
       "published_at": "2025-09-18T05:57:17-03:00",
       "listed_date": "2025-09-18",
       "theme": "Internacional",
+      "summary": "Assassinato do ativista mostra que, em tempos de guerra semântica, argumentos podem soar mais letais que armas",
       "modified_at": "2025-09-18T05:57:17-03:00",
       "available": true,
       "status_code": 200
@@ -3071,6 +3349,7 @@
       "published_at": "2025-10-02T05:51:58-03:00",
       "listed_date": "2025-10-02",
       "theme": "Internacional",
+      "summary": "Quando a cena do crime vira espetáculo, a bala que matou o ativista atinge também a razão e a confiança pública",
       "modified_at": "2025-10-02T05:51:58-03:00",
       "available": true,
       "status_code": 200
@@ -3082,6 +3361,7 @@
       "published_at": "2025-10-09T05:57:51-03:00",
       "listed_date": "2025-10-09",
       "theme": "Internacional",
+      "summary": "Memorial mistura luto e festa, enquanto seguidores de Charlie temem que a organização fundada por ele tenha seu rumo alterado sob a nova direção",
       "modified_at": "2025-10-09T05:57:51-03:00",
       "available": true,
       "status_code": 200
@@ -3093,6 +3373,7 @@
       "published_at": "2025-10-16T05:57:37-03:00",
       "listed_date": "2025-10-16",
       "theme": "Internacional",
+      "summary": "Assassinato teve objetivos ainda não revelados, mas prototiranos já estão tirando proveito",
       "modified_at": "2025-10-16T05:57:37-03:00",
       "available": true,
       "status_code": 200
@@ -3104,6 +3385,7 @@
       "published_at": "2025-10-23T05:57:58-03:00",
       "listed_date": "2025-10-23",
       "theme": "Internacional",
+      "summary": "Vídeos do assassinato do ativista permitem mapear falhas forenses e decisões controversas de segurança no caso",
       "modified_at": "2025-10-23T05:57:58-03:00",
       "available": true,
       "status_code": 200
