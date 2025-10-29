@@ -124,7 +124,7 @@ export class UIController {
     this.metadataTitle = document.getElementById('metadata-title');
     this.metadataTheme = document.getElementById('metadata-theme');
     this.metadataDate = document.getElementById('metadata-date');
-    this.metadataDescription = document.getElementById('metadata-description');
+    this.metadataSummary = document.getElementById('metadata-summary');
     this.metadataCitations = document.getElementById('metadata-citations');
     this.metadataStatus = document.getElementById('metadata-status');
     this.metadataLink = document.getElementById('metadata-link');
@@ -867,8 +867,14 @@ export class UIController {
       this.metadataStatus.textContent = `${availability}${statusCode}`;
     }
 
-    if (this.metadataDescription) {
-      this.metadataDescription.textContent = 'Descrição não fornecida no dataset. Consulte o artigo para mais detalhes.';
+    if (this.metadataSummary) {
+      if (node.summary) {
+        this.metadataSummary.textContent = node.summary;
+        this.metadataSummary.dataset.empty = 'false';
+      } else {
+        this.metadataSummary.textContent = 'Resumo não disponível para este artigo.';
+        this.metadataSummary.dataset.empty = 'true';
+      }
     }
 
     if (this.metadataLink) {

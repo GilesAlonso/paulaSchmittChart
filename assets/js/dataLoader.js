@@ -76,6 +76,7 @@ export function transformDataset(rawData, themeColors) {
       title: node.title,
       url: node.url,
       theme,
+      summary: typeof node.summary === 'string' && node.summary.trim().length > 0 ? node.summary.trim() : null,
       publishedAt: node.published_at || null,
       listedDate: node.listed_date || null,
       year,
