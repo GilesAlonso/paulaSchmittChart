@@ -9,33 +9,40 @@ export class StatisticsManager {
   compute(nodes = [], edges = []) {
     const incomingMap = this.buildIncomingMap(edges);
 
-    const totalArticles = nodes.length;
+    const articleNodes = nodes.filter((node) => node.type !== 'external_source');
+    const externalNodes = nodes.filter((node) => node.type === 'external_source');
+
+    const totalArticles = articleNodes.length;
+    const totalExternalSources = externalNodes.length;
     const totalCitations = edges.length;
 
-    const mostCited = [...nodes]
-      .map((node) => ({
-        id: node.id,
-        title: node.title,
-        theme: node.theme,
-        year: node.year,
-        count: incomingMap.get(node.id) || 0
-      }))
-      .sort((a, b) => {
-        if (b.count === a.count) {
-          return (b.year || 0) - (a.year || 0);
-        }
-        return b.count - a.count;
-      })
-      .slice(0, 5);
+    const mostCitedArticles = this.rankNodesByIncoming(articleNodes, incomingMap, (node, count) => ({
+      id: node.id,
+      title: node.title,
+      theme: node.theme,
+      year: node.year,
+      count
+    })).slice(0, 5);
 
-    const articlesByTheme = this.countByTheme(nodes);
-    const timeline = this.countByYear(nodes);
+    const topExternalSources = this.rankNodesByIncoming(externalNodes, incomingMap, (node, count) => ({
+      id: node.id,
+      title: node.title,
+      sourceName: node.sourceName || node.domain || node.rawHost || 'Fonte externa',
+      domain: node.domain || null,
+      count,
+      coverage: typeof node.coverage === 'number' ? node.coverage : null
+    })).slice(0, 5);
+
+    const articlesByTheme = this.countByTheme(articleNodes);
+    const timeline = this.countByYear(articleNodes);
 
     return {
       totalArticles,
+      totalExternalSources,
       totalCitations,
       incomingMap,
-      mostCited,
+      mostCitedArticles,
+      topExternalSources,
       articlesByTheme,
       timeline
     };
@@ -48,6 +55,25 @@ export class StatisticsManager {
       map.set(edge.to, current + 1);
     });
     return map;
+  }
+
+  rankNodesByIncoming(nodes = [], incomingMap, formatter) {
+    return [...nodes]
+      .map((node) => ({ node, count: incomingMap.get(node.id) || 0 }))
+      .sort((a, b) => {
+        if (b.count === a.count) {
+          const yearA = Number.isFinite(a.node.year) ? a.node.year : 0;
+          const yearB = Number.isFinite(b.node.year) ? b.node.year : 0;
+          if (yearB !== yearA) {
+            return yearB - yearA;
+          }
+          const titleA = a.node.title || '';
+          const titleB = b.node.title || '';
+          return titleA.localeCompare(titleB);
+        }
+        return b.count - a.count;
+      })
+      .map(({ node, count }) => formatter(node, count));
   }
 
   countByTheme(nodes = []) {

@@ -14,6 +14,9 @@ export class FiltersManager {
   computeThemeTotals(nodes = []) {
     const totals = new Map();
     nodes.forEach((node) => {
+      if (node.type === 'external_source') {
+        return;
+      }
       const theme = node.theme || 'Sem tema';
       totals.set(theme, (totals.get(theme) || 0) + 1);
     });
@@ -195,12 +198,13 @@ export class FiltersManager {
   }
 
   apply(nodes = [], edges = []) {
-    const matchingNodes = [];
+    const articles = [];
 
     nodes.forEach((node) => {
-      if (this.matchesCommonFilters(node)) {
-        matchingNodes.push(node);
+      if (node.type === 'external_source') {
+        return;
       }
+      articles.push(node);
     });
 
     const primaryIds = new Set();
@@ -208,7 +212,10 @@ export class FiltersManager {
     const visibleIds = new Set();
 
     if (this.focusedTheme) {
-      matchingNodes.forEach((node) => {
+      articles.forEach((node) => {
+        if (!this.matchesCommonFilters(node)) {
+          return;
+        }
         if (node.theme !== this.focusedTheme) {
           return;
         }
@@ -229,11 +236,29 @@ export class FiltersManager {
         });
       });
     } else {
-      matchingNodes.forEach((node) => {
-        if (this.activeThemes.has(node.theme)) {
-          primaryIds.add(node.id);
-          visibleIds.add(node.id);
+      articles.forEach((node) => {
+        if (!this.matchesCommonFilters(node)) {
+          return;
         }
+        if (!this.activeThemes.has(node.theme)) {
+          return;
+        }
+
+        primaryIds.add(node.id);
+        visibleIds.add(node.id);
+      });
+
+      primaryIds.forEach((articleId) => {
+        const neighbors = this.adjacencyByNode.get(articleId);
+        if (!neighbors) {
+          return;
+        }
+        neighbors.forEach((neighborId) => {
+          if (!visibleIds.has(neighborId)) {
+            neighborIds.add(neighborId);
+            visibleIds.add(neighborId);
+          }
+        });
       });
     }
 

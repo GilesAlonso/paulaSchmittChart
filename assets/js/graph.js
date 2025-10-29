@@ -1,5 +1,10 @@
 import { clamp, formatDate, lightenColor } from './utils.js';
 
+const EXTERNAL_NODE_FONT_COLOR = '#f8fafc';
+const EXTERNAL_NODE_NEIGHBOR_FONT = '#e2e8f0';
+const EXTERNAL_NODE_BORDER_COLOR = '#0f172a';
+const EXTERNAL_NODE_HIGHLIGHT_BORDER = '#38bdf8';
+
 export class GraphManager {
   constructor(containerId) {
     this.container = document.getElementById(containerId);
@@ -190,48 +195,62 @@ export class GraphManager {
 
   mapNode(node, incomingMap, context = this.currentContext) {
     const citationCount = incomingMap.get(node.id) || 0;
-    const baseSize = clamp(12 + citationCount * 2.2, 12, 38);
+    const isExternal = node.type === 'external_source';
+    const baseSize = isExternal
+      ? clamp(16 + citationCount * 2, 16, 34)
+      : clamp(12 + citationCount * 2.2, 12, 38);
 
     const focusTheme = context && typeof context.focusTheme !== 'undefined' && context.focusTheme !== null ? context.focusTheme : null;
-    const primaryIds = context && context.primaryIds instanceof Set
-      ? context.primaryIds
-      : new Set();
-    const neighborIds = context && context.neighborIds instanceof Set
-      ? context.neighborIds
-      : new Set();
+    const primaryIds = context && context.primaryIds instanceof Set ? context.primaryIds : new Set();
+    const neighborIds = context && context.neighborIds instanceof Set ? context.neighborIds : new Set();
     const focusActive = Boolean(focusTheme);
     const isPrimary = focusActive && primaryIds.has(node.id);
     const isNeighbor = focusActive && neighborIds.has(node.id);
 
-    const baseColor = node.color;
+    const baseColor = node.color || (isExternal ? EXTERNAL_NODE_BORDER_COLOR : '#64748b');
     let background = baseColor;
-    let border = lightenColor(baseColor, 0.08);
-    let highlightBackground = baseColor;
-    let highlightBorder = '#111827';
+    let border = isExternal ? EXTERNAL_NODE_BORDER_COLOR : lightenColor(baseColor, 0.08);
+    let highlightBackground = isExternal ? lightenColor(baseColor, 0.12) : baseColor;
+    let highlightBorder = isExternal ? EXTERNAL_NODE_HIGHLIGHT_BORDER : '#111827';
     let opacity = 1;
-    let fontColor = '#111827';
+    let fontColor = isExternal ? EXTERNAL_NODE_FONT_COLOR : '#111827';
     let size = baseSize;
+    let mass = Math.max(1, citationCount * (isExternal ? 0.4 : 0.5));
 
     if (focusActive) {
       if (isPrimary) {
-        border = '#0f172a';
-        highlightBorder = '#0f172a';
-        size = clamp(baseSize * 1.05, 12, 40);
+        if (isExternal) {
+          border = EXTERNAL_NODE_HIGHLIGHT_BORDER;
+          highlightBorder = EXTERNAL_NODE_HIGHLIGHT_BORDER;
+          highlightBackground = lightenColor(baseColor, 0.18);
+        } else {
+          border = '#0f172a';
+          highlightBorder = '#0f172a';
+        }
+        size = clamp(baseSize * 1.1, isExternal ? 18 : 12, isExternal ? 38 : 40);
       } else if (isNeighbor) {
-        background = lightenColor(baseColor, 0.32);
-        border = lightenColor(baseColor, 0.45);
-        highlightBackground = background;
-        highlightBorder = border;
+        if (isExternal) {
+          background = lightenColor(baseColor, 0.22);
+          border = lightenColor(baseColor, 0.3);
+          highlightBackground = background;
+          highlightBorder = border;
+          fontColor = EXTERNAL_NODE_NEIGHBOR_FONT;
+        } else {
+          background = lightenColor(baseColor, 0.32);
+          border = lightenColor(baseColor, 0.45);
+          highlightBackground = background;
+          highlightBorder = border;
+          fontColor = '#334155';
+        }
         opacity = 0.78;
-        fontColor = '#334155';
-        size = clamp(baseSize * 0.95, 10, 34);
+        size = clamp(baseSize * 0.95, isExternal ? 14 : 10, isExternal ? 34 : 34);
       } else {
         opacity = 0.35;
-        fontColor = '#475569';
+        fontColor = isExternal ? '#94a3b8' : '#475569';
       }
     }
 
-    return {
+    const visNode = {
       id: node.id,
       label: this.labelsVisible ? node.label : '',
       title: this.buildTooltip(node, citationCount),
@@ -250,12 +269,41 @@ export class GraphManager {
       },
       size,
       opacity,
-      mass: Math.max(1, citationCount * 0.5),
-      group: node.theme
+      mass,
+      group: isExternal ? node.type : node.theme,
+      shape: isExternal ? 'box' : 'dot'
     };
+
+    if (isExternal) {
+      visNode.shapeProperties = { borderRadius: 4 };
+    }
+
+    return visNode;
   }
 
   buildTooltip(node, citationCount) {
+    if (node.type === 'external_source') {
+      const sourceLabel = node.sourceName || node.domain || node.rawHost || 'Fonte externa';
+      const coveragePercent = typeof node.coverage === 'number'
+        ? Math.round(node.coverage * 100)
+        : null;
+      const anchorPreview = node.anchorText && node.anchorText.length > 80
+        ? `${node.anchorText.slice(0, 77)}…`
+        : node.anchorText;
+
+      return `
+        <div style="padding: 0.45rem 0.55rem; max-width: 260px;">
+          <div style="font-weight:600; margin-bottom:0.35rem;">${node.title}</div>
+          <div style="display:inline-flex; align-items:center; padding:0.12rem 0.45rem; font-size:0.72rem; border-radius:999px; background:#1e293b; color:#e2e8f0; margin-bottom:0.35rem;">
+            ${sourceLabel}
+          </div>
+          <div style="font-size:0.75rem; color:#475569;">Citado por ${citationCount} artigos de Paula Schmitt</div>
+          ${coveragePercent !== null ? `<div style="font-size:0.75rem; color:#64748b; margin-top:0.25rem;">Cobertura: ${coveragePercent}% dos artigos</div>` : ''}
+          ${anchorPreview ? `<div style="font-size:0.72rem; color:#475569; margin-top:0.35rem;">Texto frequente: “${anchorPreview}”</div>` : ''}
+        </div>
+      `;
+    }
+
     const year = Number.isFinite(node.year) ? node.year : '—';
     const published = node.publishedAt ? formatDate(node.publishedAt) : 'Data indisponível';
 
@@ -288,15 +336,16 @@ export class GraphManager {
     const focusActive = Boolean(focusTheme);
 
     const updated = this.currentNodes.map((node) => {
+      const isExternal = node.type === 'external_source';
       const isPrimary = focusActive && primaryIds.has(node.id);
       const isNeighbor = focusActive && neighborIds.has(node.id);
-      let fontColor = '#111827';
+      let fontColor = isExternal ? EXTERNAL_NODE_FONT_COLOR : '#111827';
 
       if (focusActive) {
         if (isNeighbor && !isPrimary) {
-          fontColor = '#334155';
+          fontColor = isExternal ? EXTERNAL_NODE_NEIGHBOR_FONT : '#334155';
         } else if (!isPrimary) {
-          fontColor = '#475569';
+          fontColor = isExternal ? '#94a3b8' : '#475569';
         }
       }
 
