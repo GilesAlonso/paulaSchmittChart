@@ -19,6 +19,8 @@ export class UIController {
     this.allNodes = [];
     this.allEdges = [];
     this.nodeThemeMap = new Map();
+    this.totalArticleCount = 0;
+    this.totalExternalCount = 0;
 
     this.themeTotals = new Map();
     this.themeOptionRefs = new Map();
@@ -46,6 +48,8 @@ export class UIController {
     this.allNodes = dataset.nodes || [];
     this.allEdges = dataset.edges || [];
     this.nodeThemeMap = new Map(this.allNodes.map((node) => [node.id, node.theme]));
+    this.totalArticleCount = this.allNodes.filter((node) => node.type !== 'external_source').length;
+    this.totalExternalCount = this.allNodes.filter((node) => node.type === 'external_source').length;
     this.themeTotals = this.filtersManager.getThemeTotals();
 
     const persistedState = this.loadPersistedFilters();
@@ -111,8 +115,10 @@ export class UIController {
     this.toggleLabels = document.getElementById('toggle-labels');
 
     this.statTotalArticles = document.getElementById('stat-total-articles');
+    this.statTotalExternal = document.getElementById('stat-total-external');
     this.statTotalCitations = document.getElementById('stat-total-citations');
-    this.statMostCited = document.getElementById('stat-most-cited');
+    this.statMostCitedArticles = document.getElementById('stat-most-cited-articles');
+    this.statMostCitedExternal = document.getElementById('stat-most-cited-external');
     this.statByTheme = document.getElementById('stat-by-theme');
     this.statTimeline = document.getElementById('stat-timeline');
 
@@ -128,6 +134,18 @@ export class UIController {
     this.metadataCitations = document.getElementById('metadata-citations');
     this.metadataStatus = document.getElementById('metadata-status');
     this.metadataLink = document.getElementById('metadata-link');
+    this.metadataThemeLabel = document.getElementById('metadata-theme-label');
+    this.metadataDateLabel = document.getElementById('metadata-date-label');
+    this.metadataStatusLabel = document.getElementById('metadata-status-label');
+    this.metadataCitationsLabel = document.getElementById('metadata-citations-label');
+    this.metadataLinkLabel = document.getElementById('metadata-link-label');
+    this.metadataLabelDefaults = {
+      theme: this.metadataThemeLabel ? this.metadataThemeLabel.textContent : 'Tema',
+      date: this.metadataDateLabel ? this.metadataDateLabel.textContent : 'Publicado em',
+      status: this.metadataStatusLabel ? this.metadataStatusLabel.textContent : 'Status',
+      citations: this.metadataCitationsLabel ? this.metadataCitationsLabel.textContent : 'Citações',
+      link: this.metadataLinkLabel ? this.metadataLinkLabel.textContent : 'Link'
+    };
     this.metadataClose = document.getElementById('metadata-close');
     this.metadataPlaceholder = document.getElementById('metadata-placeholder');
 
@@ -481,7 +499,7 @@ export class UIController {
       stats.incomingMap,
       filtered.context
     );
-    this.updateResultsIndicator(filtered.nodes.length);
+    this.updateResultsIndicator(stats);
     this.updateThemeCounts(stats.articlesByTheme);
     this.updateLegendCounts(stats.articlesByTheme);
     this.updateThemeListVisualState(filtered.context);
@@ -496,17 +514,22 @@ export class UIController {
     }
   }
 
-  updateResultsIndicator(filteredCount) {
+  updateResultsIndicator(stats) {
     if (!this.resultsIndicator) {
       return;
     }
 
-    const total = this.allNodes.length;
+    const filteredArticles = stats.totalArticles ?? 0;
+    const filteredExternal = stats.totalExternalSources ?? 0;
+    const totalArticles = this.totalArticleCount;
+    const totalExternal = this.totalExternalCount;
+
     const term = this.filtersManager.getSearchTerm();
     const { start, end } = this.filtersManager.getDateRange();
     const focusTheme = this.filtersManager.getFocusedTheme();
     const filtersActive =
-      filteredCount !== total ||
+      filteredArticles !== totalArticles ||
+      filteredExternal !== totalExternal ||
       term.length > 0 ||
       focusTheme !== null ||
       (start !== null && start !== undefined) ||
@@ -514,12 +537,12 @@ export class UIController {
       this.filtersManager.getActiveThemes().length !== this.filtersManager.getThemes().length;
 
     if (!filtersActive) {
-      this.resultsIndicator.textContent = `Exibindo ${toLocaleNumber(total)} artigos (visualização completa).`;
+      this.resultsIndicator.textContent = `Exibindo ${toLocaleNumber(totalArticles)} artigos e ${toLocaleNumber(totalExternal)} fontes externas (visualização completa).`;
       return;
     }
 
     const focusSuffix = focusTheme ? ` com foco em ${focusTheme}` : '';
-    this.resultsIndicator.textContent = `Exibindo ${toLocaleNumber(filteredCount)} de ${toLocaleNumber(total)} artigos com os filtros aplicados${focusSuffix}.`;
+    this.resultsIndicator.textContent = `Exibindo ${toLocaleNumber(filteredArticles)} de ${toLocaleNumber(totalArticles)} artigos e ${toLocaleNumber(filteredExternal)} de ${toLocaleNumber(totalExternal)} fontes externas com os filtros aplicados${focusSuffix}.`;
   }
 
   updateThemeCounts(filteredThemeStats) {
@@ -589,13 +612,26 @@ export class UIController {
     this.legendContainer.innerHTML = '';
     this.legendLabelRefs.clear();
 
+    const typesSection = document.createElement('div');
+    typesSection.className = 'legend-section legend-section--types';
+    typesSection.appendChild(this.createNodeTypeLegendItem('Artigos de Paula Schmitt', 'article'));
+    typesSection.appendChild(this.createNodeTypeLegendItem('Fontes externas frequentes', 'external'));
+    this.legendContainer.appendChild(typesSection);
+
+    const divider = document.createElement('div');
+    divider.className = 'legend-divider';
+    this.legendContainer.appendChild(divider);
+
+    const themesSection = document.createElement('div');
+    themesSection.className = 'legend-section legend-section--themes';
+
     const themes = Object.keys(this.themeColors).sort((a, b) => a.localeCompare(b));
     themes.forEach((theme) => {
       const item = document.createElement('div');
       item.className = 'legend-item';
 
       const swatch = document.createElement('span');
-      swatch.className = 'legend-swatch';
+      swatch.className = 'legend-swatch legend-swatch--dot';
       swatch.style.backgroundColor = this.themeColors[theme];
 
       const label = document.createElement('span');
@@ -605,9 +641,27 @@ export class UIController {
       item.appendChild(swatch);
       item.appendChild(label);
 
-      this.legendContainer.appendChild(item);
+      themesSection.appendChild(item);
       this.legendLabelRefs.set(theme, label);
     });
+
+    this.legendContainer.appendChild(themesSection);
+  }
+
+  createNodeTypeLegendItem(label, type) {
+    const item = document.createElement('div');
+    item.className = 'legend-item legend-item--type';
+
+    const swatch = document.createElement('span');
+    swatch.className = `legend-swatch legend-swatch--${type}`;
+    item.appendChild(swatch);
+
+    const text = document.createElement('span');
+    text.className = 'legend-label';
+    text.textContent = label;
+    item.appendChild(text);
+
+    return item;
   }
 
   applyLegendCollapsedState(isCollapsed, { persist = false } = {}) {
@@ -775,12 +829,20 @@ export class UIController {
       this.statTotalArticles.textContent = toLocaleNumber(stats.totalArticles);
     }
 
+    if (this.statTotalExternal) {
+      this.statTotalExternal.textContent = toLocaleNumber(stats.totalExternalSources);
+    }
+
     if (this.statTotalCitations) {
       this.statTotalCitations.textContent = toLocaleNumber(stats.totalCitations);
     }
 
-    if (this.statMostCited) {
-      this.renderMostCited(stats.mostCited);
+    if (this.statMostCitedArticles) {
+      this.renderMostCitedArticles(stats.mostCitedArticles);
+    }
+
+    if (this.statMostCitedExternal) {
+      this.renderTopExternalSources(stats.topExternalSources);
     }
 
     if (this.statByTheme) {
@@ -792,12 +854,12 @@ export class UIController {
     }
   }
 
-  renderMostCited(items = []) {
-    this.statMostCited.innerHTML = '';
+  renderMostCitedArticles(items = []) {
+    this.statMostCitedArticles.innerHTML = '';
     if (!items.length) {
       const li = document.createElement('li');
       li.textContent = 'Sem citações disponíveis no filtro atual.';
-      this.statMostCited.appendChild(li);
+      this.statMostCitedArticles.appendChild(li);
       return;
     }
 
@@ -805,7 +867,26 @@ export class UIController {
       const li = document.createElement('li');
       const year = item.year ? ` · ${item.year}` : '';
       li.textContent = `${item.title}${year} — ${toLocaleNumber(item.count)} citações`;
-      this.statMostCited.appendChild(li);
+      this.statMostCitedArticles.appendChild(li);
+    });
+  }
+
+  renderTopExternalSources(items = []) {
+    this.statMostCitedExternal.innerHTML = '';
+    if (!items.length) {
+      const li = document.createElement('li');
+      li.textContent = 'Sem fontes externas para os filtros selecionados.';
+      this.statMostCitedExternal.appendChild(li);
+      return;
+    }
+
+    items.forEach((item) => {
+      const li = document.createElement('li');
+      const label = item.sourceName || item.title;
+      const domainSuffix = item.domain && item.sourceName && item.sourceName !== item.domain ? ` (${item.domain})` : item.domain && !item.sourceName ? ` (${item.domain})` : '';
+      const coverageText = typeof item.coverage === 'number' ? ` · ${Math.round(item.coverage * 100)}% dos artigos` : '';
+      li.textContent = `${label}${domainSuffix} — ${toLocaleNumber(item.count)} citações${coverageText}`;
+      this.statMostCitedExternal.appendChild(li);
     });
   }
 
@@ -841,6 +922,27 @@ export class UIController {
     });
   }
 
+  applyMetadataLabels(overrides = {}) {
+    const defaults = this.metadataLabelDefaults || {};
+    const labels = { ...defaults, ...overrides };
+
+    if (this.metadataThemeLabel) {
+      this.metadataThemeLabel.textContent = labels.theme || defaults.theme || 'Tema';
+    }
+    if (this.metadataDateLabel) {
+      this.metadataDateLabel.textContent = labels.date || defaults.date || 'Publicado em';
+    }
+    if (this.metadataStatusLabel) {
+      this.metadataStatusLabel.textContent = labels.status || defaults.status || 'Status';
+    }
+    if (this.metadataCitationsLabel) {
+      this.metadataCitationsLabel.textContent = labels.citations || defaults.citations || 'Citações';
+    }
+    if (this.metadataLinkLabel) {
+      this.metadataLinkLabel.textContent = labels.link || defaults.link || 'Link';
+    }
+  }
+
   showMetadata(node) {
     if (!this.metadataPanel) {
       return;
@@ -854,32 +956,95 @@ export class UIController {
       this.metadataContent.hidden = false;
     }
 
-    if (this.metadataTitle) this.metadataTitle.textContent = node.title;
-    if (this.metadataTheme) this.metadataTheme.textContent = node.theme;
-    if (this.metadataDate)
-      this.metadataDate.textContent = formatDate(node.publishedAt || node.listedDate);
-    if (this.metadataCitations)
-      this.metadataCitations.textContent = `${toLocaleNumber(node.citations || 0)} citações recebidas`;
-
-    if (this.metadataStatus) {
-      const availability = node.available === false ? 'Indisponível' : 'Disponível';
-      const statusCode = node.statusCode ? ` · HTTP ${node.statusCode}` : '';
-      this.metadataStatus.textContent = `${availability}${statusCode}`;
+    if (this.metadataTitle) {
+      this.metadataTitle.textContent = node.title;
     }
 
-    if (this.metadataSummary) {
-      if (node.summary) {
-        this.metadataSummary.textContent = node.summary;
-        this.metadataSummary.dataset.empty = 'false';
-      } else {
-        this.metadataSummary.textContent = 'Resumo não disponível para este artigo.';
-        this.metadataSummary.dataset.empty = 'true';
+    const isExternal = node.type === 'external_source';
+
+    if (isExternal) {
+      this.applyMetadataLabels({
+        theme: 'Fonte',
+        date: 'Tipo',
+        status: 'Cobertura',
+        citations: 'Citações de Paula',
+        link: 'Recurso'
+      });
+
+      const domain = node.domain || node.rawHost || null;
+      const sourceName = node.sourceName || domain || 'Fonte externa';
+      const themeValue = domain && sourceName && sourceName !== domain ? `${sourceName} (${domain})` : sourceName;
+      if (this.metadataTheme) {
+        this.metadataTheme.textContent = themeValue;
       }
-    }
 
-    if (this.metadataLink) {
-      this.metadataLink.href = node.url;
-      this.metadataLink.textContent = 'Abrir artigo no Poder360';
+      if (this.metadataDate) {
+        this.metadataDate.textContent = 'Fonte externa';
+      }
+
+      if (this.metadataCitations) {
+        const citationValue = toLocaleNumber(node.citations || node.citationCount || 0);
+        this.metadataCitations.textContent = `${citationValue} artigos conectados`;
+      }
+
+      if (this.metadataStatus) {
+        const coveragePercent = typeof node.coverage === 'number' ? Math.round(node.coverage * 100) : null;
+        this.metadataStatus.textContent = coveragePercent !== null
+          ? `Presente em ${coveragePercent}% dos artigos analisados.`
+          : 'Cobertura não disponível.';
+      }
+
+      if (this.metadataSummary) {
+        let summaryText = node.summary;
+        if (!summaryText && node.anchorText) {
+          summaryText = `Texto frequente utilizado nas citações: “${node.anchorText}”`;
+        }
+        if (summaryText) {
+          this.metadataSummary.textContent = summaryText;
+          this.metadataSummary.dataset.empty = 'false';
+        } else {
+          this.metadataSummary.textContent = 'Descrição não disponível para esta fonte externa.';
+          this.metadataSummary.dataset.empty = 'true';
+        }
+      }
+
+      if (this.metadataLink) {
+        this.metadataLink.href = node.url;
+        this.metadataLink.textContent = 'Abrir fonte externa';
+      }
+    } else {
+      this.applyMetadataLabels();
+
+      if (this.metadataTheme) {
+        this.metadataTheme.textContent = node.theme || 'Sem tema';
+      }
+      if (this.metadataDate) {
+        this.metadataDate.textContent = formatDate(node.publishedAt || node.listedDate);
+      }
+      if (this.metadataCitations) {
+        this.metadataCitations.textContent = `${toLocaleNumber(node.citations || 0)} citações recebidas`;
+      }
+
+      if (this.metadataStatus) {
+        const availability = node.available === false ? 'Indisponível' : 'Disponível';
+        const statusCode = node.statusCode ? ` · HTTP ${node.statusCode}` : '';
+        this.metadataStatus.textContent = `${availability}${statusCode}`;
+      }
+
+      if (this.metadataSummary) {
+        if (node.summary) {
+          this.metadataSummary.textContent = node.summary;
+          this.metadataSummary.dataset.empty = 'false';
+        } else {
+          this.metadataSummary.textContent = 'Resumo não disponível para este artigo.';
+          this.metadataSummary.dataset.empty = 'true';
+        }
+      }
+
+      if (this.metadataLink) {
+        this.metadataLink.href = node.url;
+        this.metadataLink.textContent = 'Abrir artigo no Poder360';
+      }
     }
   }
 

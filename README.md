@@ -47,6 +47,7 @@ O arquivo legado mantém a implementação original em uma única página com ar
 - Filtros por tema com modo de foco, seleção/limpeza rápidas e busca dentro da lista de temas.
 - Busca textual e filtro por intervalo de anos que podem ser combinados com as seleções de temas.
 - Estatísticas dinâmicas para contagem de artigos, citações, distribuição por tema e linha do tempo de publicações.
+- Visualização das fontes externas mais citadas pela autora como nós quadrados, com estatísticas dedicadas e painel informativo.
 - Painel de metadados com tema, datas de publicação, status de disponibilidade, contagem de citações e link direto para o artigo.
 - Exportação do conjunto filtrado em JSON e captura do grafo como PNG.
 - Layout responsivo com legenda adaptativa, indicações de scroll para dispositivos touch e tamanhos sensíveis ao viewport.
@@ -68,12 +69,17 @@ O dataset da V2 salvo em `data/paula-schmitt-network-v2.json` segue esta estrutu
   "metadata": {
     "generated_at": "2025-10-24T04:12:49Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 282,
-    "total_edges": 271
+    "total_nodes": 298,
+    "total_edges": 312,
+    "total_articles": 214,
+    "total_external_sources": 84,
+    "min_external_citation_threshold": 2,
+    "max_external_coverage_threshold": 0.8
   },
   "nodes": [
     {
       "id": "https://www.poder360.com.br/opiniao/exemplo/",
+      "type": "article",
       "title": "Título do artigo",
       "url": "https://www.poder360.com.br/opiniao/exemplo/",
       "published_at": "2024-08-14T05:50:00-03:00",
@@ -81,6 +87,17 @@ O dataset da V2 salvo em `data/paula-schmitt-network-v2.json` segue esta estrutu
       "theme": "Brasil",
       "available": true,
       "status_code": 200
+    },
+    {
+      "id": "https://www.youtube.com/watch?v=abcd1234",
+      "type": "external_source",
+      "title": "Entrevista com XYZ",
+      "domain": "youtube.com",
+      "source_name": "YouTube",
+      "citation_count": 5,
+      "coverage": 0.18,
+      "summary": "Texto frequente utilizado nas citações: “Assista à íntegra”",
+      "url": "https://www.youtube.com/watch?v=abcd1234"
     }
   ],
   "edges": [
@@ -92,11 +109,14 @@ O dataset da V2 salvo em `data/paula-schmitt-network-v2.json` segue esta estrutu
 }
 ```
 
+- Artigos (`type: "article"`) preservam os campos clássicos de tema, datas, disponibilidade e URL canônico.
+- Fontes externas (`type: "external_source"`) incluem o domínio normalizado, um rótulo amigável (`source_name`), o número de artigos que a citam (`citation_count`), a cobertura percentual no corpus (`coverage`), além de `anchor_text` e a lista `cited_by` com os artigos associados.
+
 `assets/js/dataLoader.js` transforma o JSON na estrutura esperada pelo vis-network (incluindo cores derivadas, rótulos truncados e extração do ano). A visualização legada V1 continua a consumir seus próprios arrays estáticos embutidos em `index-v1.html`.
 
 ## Updating the dataset manually
 1. Garanta o Python 3.11+ e instale as dependências: `pip install -r requirements.txt`.
-2. Execute o scraper a partir da raiz do repositório: `python scripts/paula_schmitt_scraper.py --log-level INFO`.
+2. Execute o scraper a partir da raiz do repositório: `python scripts/paula_schmitt_scraper.py --log-level INFO --min-external-citations 2 --max-external-coverage 0.8` (os parâmetros adicionais são opcionais e permitem ajustar os filtros de fontes externas).
 3. Revise o arquivo `data/paula-schmitt-network-v2.json`, faça o staging das mudanças e crie o commit.
 
 O workflow agendado repetirá os mesmos passos toda semana e fará push automático quando detectar diferenças.

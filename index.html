@@ -112,14 +112,23 @@
                 <span class="stat-value" id="stat-total-articles">0</span>
               </div>
               <div class="stat-card">
+                <span class="stat-label">Fontes externas</span>
+                <span class="stat-value" id="stat-total-external">0</span>
+              </div>
+              <div class="stat-card">
                 <span class="stat-label">Citações</span>
                 <span class="stat-value" id="stat-total-citations">0</span>
               </div>
             </div>
 
             <div class="stat-section">
-              <h3>Mais citados</h3>
-              <ol id="stat-most-cited" class="stat-list-ordered"></ol>
+              <h3>Artigos mais citados</h3>
+              <ol id="stat-most-cited-articles" class="stat-list-ordered"></ol>
+            </div>
+
+            <div class="stat-section">
+              <h3>Fontes externas mais citadas</h3>
+              <ol id="stat-most-cited-external" class="stat-list-ordered"></ol>
             </div>
 
             <div class="stat-section">
@@ -181,7 +190,7 @@
               tabindex="-1"
             >
               <header class="legend-panel__header">
-                <h3 id="legend-panel-title" class="legend-panel__title">Temas</h3>
+                <h3 id="legend-panel-title" class="legend-panel__title">Tipos e temas</h3>
                 <div class="legend-panel__actions">
                   <button
                     type="button"
@@ -218,23 +227,23 @@
                 <p id="metadata-summary" class="metadata-summary"></p>
                 <dl class="metadata-list">
                   <div>
-                    <dt>Tema</dt>
+                    <dt id="metadata-theme-label">Tema</dt>
                     <dd id="metadata-theme"></dd>
                   </div>
                   <div>
-                    <dt>Publicado em</dt>
+                    <dt id="metadata-date-label">Publicado em</dt>
                     <dd id="metadata-date"></dd>
                   </div>
                   <div>
-                    <dt>Status</dt>
+                    <dt id="metadata-status-label">Status</dt>
                     <dd id="metadata-status"></dd>
                   </div>
                   <div>
-                    <dt>Citações</dt>
+                    <dt id="metadata-citations-label">Citações</dt>
                     <dd id="metadata-citations"></dd>
                   </div>
                   <div>
-                    <dt>Link</dt>
+                    <dt id="metadata-link-label">Link</dt>
                     <dd>
                       <a id="metadata-link" href="#" target="_blank" rel="noopener noreferrer">Abrir artigo</a>
                     </dd>

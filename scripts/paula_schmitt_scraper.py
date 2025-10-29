@@ -7,11 +7,13 @@ import argparse
 import json
 import logging
 import re
+from collections import Counter
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Dict, Iterable, List, Optional, Set
-from urllib.parse import urljoin, urlparse, urlunparse
+from typing import Dict, Iterable, List, Optional, Set, Tuple
+from urllib.parse import parse_qsl, urljoin, urlencode, urlparse, urlunparse
+from urllib.parse import unquote
 
 import requests
 from bs4 import BeautifulSoup
@@ -50,6 +52,119 @@ CONTENT_SELECTORS = [
     ".single-post__content",
     ".post__content",
 ]
+
+MIN_EXTERNAL_CITATIONS_DEFAULT = 2
+MAX_EXTERNAL_COVERAGE_DEFAULT = 0.8
+
+EXTERNAL_SCHEME_BLACKLIST = {"mailto", "javascript", "tel", "ftp", "news", "file", "whatsapp"}
+
+TRACKING_QUERY_PREFIXES = (
+    "utm_",
+    "mc_",
+    "mkt_",
+    "xtor",
+    "icid",
+    "oly_",
+    "vero_id",
+)
+
+TRACKING_QUERY_KEYS = {
+    "fbclid",
+    "gclid",
+    "igshid",
+    "mkt_tok",
+    "trk",
+    "source",
+    "ref",
+    "ref_",
+    "referrer",
+    "cmpid",
+    "cmp",
+    "ncid",
+    "sc_cid",
+    "spm",
+    "sr",
+    "sc_src",
+    "ndg",
+}
+
+GENERIC_LINK_TEXTS = {
+    "clique aqui",
+    "clique aqui.",
+    "clique aqui!",
+    "aqui",
+    "leia mais",
+    "saiba mais",
+    "acesse aqui",
+    "veja mais",
+    "confira aqui",
+    "link",
+    "veja aqui",
+    "clique",
+}
+
+GENERIC_LINK_PATTERN = re.compile(r"^(clique|acesse|veja|confira|leia)\b", re.IGNORECASE)
+
+HOST_NORMALIZATION_MAP = {
+    "m.youtube.com": "youtube.com",
+    "youtu.be": "youtube.com",
+    "mobile.twitter.com": "twitter.com",
+    "m.facebook.com": "facebook.com",
+    "lm.facebook.com": "facebook.com",
+    "l.facebook.com": "facebook.com",
+    "m.imgur.com": "imgur.com",
+    "x.com": "twitter.com",
+}
+
+DOMAIN_LABEL_OVERRIDES = {
+    "youtube.com": "YouTube",
+    "wikipedia.org": "Wikipedia",
+    "twitter.com": "Twitter / X",
+    "facebook.com": "Facebook",
+    "instagram.com": "Instagram",
+    "medium.com": "Medium",
+    "substack.com": "Substack",
+    "rumble.com": "Rumble",
+    "bitchute.com": "BitChute",
+    "nytimes.com": "The New York Times",
+    "washingtonpost.com": "The Washington Post",
+    "wsj.com": "The Wall Street Journal",
+    "bbc.com": "BBC",
+    "bbc.co.uk": "BBC",
+    "theguardian.com": "The Guardian",
+    "reuters.com": "Reuters",
+    "apnews.com": "Associated Press",
+    "ft.com": "Financial Times",
+    "soundcloud.com": "SoundCloud",
+    "open.spotify.com": "Spotify",
+    "spotify.com": "Spotify",
+    "patreon.com": "Patreon",
+}
+
+TWO_LEVEL_TLD_SUFFIXES = {
+    "co.uk",
+    "org.uk",
+    "gov.uk",
+    "ac.uk",
+    "co.jp",
+    "co.kr",
+    "co.il",
+    "co.in",
+    "co.nz",
+    "co.za",
+    "com.br",
+    "com.ar",
+    "com.au",
+    "com.mx",
+    "com.tr",
+    "com.cn",
+    "com.hk",
+    "com.co",
+    "com.ec",
+    "org.br",
+    "gov.br",
+    "com.pt",
+}
 
 THEME_PREFIX_PATTERN = re.compile(r"^poder\b\s+", re.IGNORECASE)
 
@@ -97,6 +212,7 @@ class Article:
     theme: Optional[str] = None
     summary: Optional[str] = None
     citations: Set[str] = field(default_factory=set)
+    external_references: Dict[str, "ExternalReference"] = field(default_factory=dict)
     available: bool = True
     status_code: Optional[int] = None
 
@@ -106,6 +222,259 @@ class Article:
         if self.summary is not None:
             cleaned_summary = " ".join(self.summary.split())
             self.summary = cleaned_summary or None
+
+
+@dataclass
+class ExternalReference:
+    url: str
+    raw_host: str
+    domain: str
+    source_name: str
+    candidates: Set[str] = field(default_factory=set)
+    anchor_texts: Set[str] = field(default_factory=set)
+
+    def add_anchor_text(self, value: Optional[str]) -> None:
+        normalized = normalize_link_text(value)
+        if normalized:
+            self.anchor_texts.add(normalized)
+            self.candidates.add(normalized)
+
+    def add_candidate(self, value: Optional[str]) -> None:
+        normalized = normalize_link_text(value)
+        if normalized:
+            self.candidates.add(normalized)
+
+    def primary_example(self) -> Optional[str]:
+        if self.anchor_texts:
+            return sorted(self.anchor_texts, key=lambda item: (-len(item), item))[0]
+        if self.candidates:
+            return sorted(self.candidates, key=lambda item: (-len(item), item))[0]
+        return None
+
+
+@dataclass
+class ExternalSourceAggregate:
+    url: str
+    domain: str
+    source_name: str
+    raw_host: str
+    article_ids: Set[str] = field(default_factory=set)
+    label_counter: Counter[str] = field(default_factory=Counter)
+    anchor_counter: Counter[str] = field(default_factory=Counter)
+
+    def register(self, article_id: str, reference: ExternalReference) -> None:
+        self.article_ids.add(article_id)
+        added_candidate = False
+        for candidate in reference.candidates:
+            self.label_counter[candidate] += 1
+            added_candidate = True
+        for anchor in reference.anchor_texts:
+            self.anchor_counter[anchor] += 1
+            if anchor not in reference.candidates:
+                self.label_counter[anchor] += 1
+                added_candidate = True
+        if not added_candidate:
+            fallback = derive_title_from_url(self.url)
+            if fallback:
+                self.label_counter[fallback] += 1
+
+    def citation_count(self) -> int:
+        return len(self.article_ids)
+
+    def choose_title(self) -> str:
+        for candidate, _ in self.label_counter.most_common():
+            if is_meaningful_label(candidate):
+                return candidate
+        fallback = derive_title_from_url(self.url)
+        if fallback:
+            return fallback
+        return self.source_name or self.domain or self.raw_host
+
+    def choose_summary(self) -> Optional[str]:
+        for anchor, _ in self.anchor_counter.most_common():
+            if is_meaningful_label(anchor):
+                return f"Texto do link frequente: “{anchor}”"
+        return None
+
+
+def normalize_link_text(value: Optional[str]) -> Optional[str]:
+    if not value:
+        return None
+    cleaned = " ".join(value.split())
+    cleaned = cleaned.strip("«»“”'\"‘’[]()")
+    if not cleaned:
+        return None
+    cleaned = re.sub(r"\s+", " ", cleaned).strip()
+    if not cleaned:
+        return None
+    lowered = cleaned.casefold()
+    if lowered in GENERIC_LINK_TEXTS:
+        return None
+    if GENERIC_LINK_PATTERN.match(cleaned) and len(cleaned.split()) <= 3:
+        return None
+    if lowered.startswith("http://") or lowered.startswith("https://"):
+        return None
+    alpha_count = sum(1 for char in cleaned if char.isalpha())
+    if alpha_count < 3 and len(cleaned) <= 4:
+        return None
+    return cleaned
+
+
+def is_meaningful_label(value: Optional[str]) -> bool:
+    if not value:
+        return False
+    cleaned = re.sub(r"\s+", " ", value).strip()
+    if not cleaned:
+        return False
+    lowered = cleaned.casefold()
+    if lowered in GENERIC_LINK_TEXTS:
+        return False
+    if GENERIC_LINK_PATTERN.match(cleaned) and len(cleaned.split()) <= 3:
+        return False
+    if lowered.startswith("http://") or lowered.startswith("https://"):
+        return False
+    alpha_count = sum(1 for char in cleaned if char.isalpha())
+    return alpha_count >= 3 or len(cleaned) >= 6
+
+
+def filter_tracking_query(_host: str, query: str) -> str:
+    if not query:
+        return ""
+    filtered: List[Tuple[str, str]] = []
+    for key, value in parse_qsl(query, keep_blank_values=False):
+        if not key:
+            continue
+        key_lower = key.lower()
+        if any(key_lower.startswith(prefix) for prefix in TRACKING_QUERY_PREFIXES):
+            continue
+        if key_lower in TRACKING_QUERY_KEYS:
+            continue
+        filtered.append((key, value))
+    if not filtered:
+        return ""
+    unique: List[Tuple[str, str]] = []
+    seen: Set[Tuple[str, str]] = set()
+    for key, value in filtered:
+        signature = (key.lower(), value)
+        if signature in seen:
+            continue
+        seen.add(signature)
+        unique.append((key, value))
+    unique.sort(key=lambda item: item[0].lower())
+    return urlencode(unique, doseq=True)
+
+
+def extract_registered_domain(host: str) -> str:
+    if not host:
+        return ""
+    host = host.split(":", 1)[0].lower()
+    host = host.lstrip("www.")
+    parts = [part for part in host.split(".") if part]
+    if len(parts) <= 2:
+        return host
+    suffix = ".".join(parts[-2:])
+    if suffix in TWO_LEVEL_TLD_SUFFIXES and len(parts) >= 3:
+        return ".".join(parts[-3:])
+    return suffix
+
+
+def derive_domain_and_label(raw_host: str) -> Tuple[str, str]:
+    if not raw_host:
+        return "", ""
+    host = raw_host.split(":", 1)[0].lower()
+    host = HOST_NORMALIZATION_MAP.get(host, host)
+    host = host.lstrip("www.")
+    base_domain = extract_registered_domain(host)
+    source_name = None
+    for suffix, label in DOMAIN_LABEL_OVERRIDES.items():
+        if base_domain.endswith(suffix):
+            source_name = label
+            break
+    if not source_name:
+        primary = base_domain.split(".")[0] if base_domain else host
+        source_name = primary.replace("-", " ").title()
+    return base_domain, source_name
+
+
+def derive_title_from_url(url: str) -> Optional[str]:
+    if not url:
+        return None
+    parsed = urlparse(url)
+    path = unquote(parsed.path or "").strip("/")
+    if not path:
+        return None
+    segments = [segment for segment in path.split("/") if segment]
+    if not segments:
+        return None
+    candidate = segments[-1]
+    candidate = re.sub(r"\.[a-z0-9]{1,6}$", "", candidate, flags=re.IGNORECASE)
+    candidate = candidate.replace("-", " ").replace("_", " ")
+    candidate = re.sub(r"\s+", " ", candidate).strip()
+    if not candidate:
+        return None
+    if candidate.isupper() and len(candidate) <= 12:
+        return candidate
+    if candidate.lower() == parsed.netloc.lower():
+        return None
+    words = candidate.split()
+    if len(words) == 1:
+        word = words[0]
+        if len(word) <= 2:
+            return None
+        if word.isupper():
+            return word
+        return word.capitalize()
+    formatted = []
+    for word in words:
+        if word.isupper():
+            formatted.append(word)
+        else:
+            formatted.append(word.capitalize())
+    return " ".join(formatted)
+
+
+def normalize_external_url(url: str, base_url: str) -> Optional[str]:
+    if not url:
+        return None
+    href = url.strip()
+    if not href or href.startswith("#"):
+        return None
+    preliminary = urlparse(href)
+    if preliminary.scheme and preliminary.scheme.lower() in EXTERNAL_SCHEME_BLACKLIST:
+        return None
+    parsed = preliminary
+    if not parsed.scheme or not parsed.netloc:
+        parsed = urlparse(urljoin(base_url, href))
+    if parsed.scheme and parsed.scheme.lower() in EXTERNAL_SCHEME_BLACKLIST:
+        return None
+    scheme = (parsed.scheme or "https").lower()
+    if scheme not in {"http", "https"}:
+        return None
+    netloc = parsed.netloc
+    if not netloc:
+        return None
+    if "@" in netloc:
+        netloc = netloc.split("@", 1)[1]
+    host_part, _, port = netloc.partition(":")
+    host_part = host_part.lower()
+    host_part = HOST_NORMALIZATION_MAP.get(host_part, host_part)
+    host_part = host_part.lstrip("www.")
+    if host_part.endswith("poder360.com.br"):
+        return None
+    if port:
+        if (scheme == "http" and port == "80") or (scheme == "https" and port == "443"):
+            port = ""
+    netloc_normalized = f"{host_part}:{port}" if port else host_part
+    path = parsed.path or "/"
+    path = re.sub(r"/+", "/", path)
+    if not path.startswith("/"):
+        path = f"/{path}"
+    path = unquote(path)
+    if path != "/" and path.endswith("/"):
+        path = path.rstrip("/")
+    query = filter_tracking_query(host_part, parsed.query)
+    normalized = urlunparse((scheme, netloc_normalized, path or "/", "", query, ""))
+    return normalized
 
 
 def create_session() -> Session:
@@ -368,20 +737,53 @@ def find_content_container(soup: BeautifulSoup) -> Optional[BeautifulSoup]:
     return None
 
 
-def extract_citations(
+def extract_references(
     container: BeautifulSoup, known_urls: Set[str], article_url: str
-) -> Set[str]:
+) -> Tuple[Set[str], Dict[str, ExternalReference]]:
     citations: Set[str] = set()
+    external_refs: Dict[str, ExternalReference] = {}
+
     for link in container.select("a[href]"):
-        href = link.get("href")
-        normalized = canonicalize_url(href) if href else None
-        if not normalized:
+        href = (link.get("href") or "").strip()
+        if not href:
             continue
-        if normalized == article_url:
+
+        internal = canonicalize_url(href)
+        if internal:
+            if internal != article_url and internal in known_urls:
+                citations.add(internal)
             continue
-        if normalized in known_urls:
-            citations.add(normalized)
-    return citations
+
+        normalized_external = normalize_external_url(href, article_url)
+        if not normalized_external:
+            continue
+
+        parsed_external = urlparse(normalized_external)
+        raw_host = parsed_external.netloc
+        domain, source_name = derive_domain_and_label(raw_host)
+
+        reference = external_refs.get(normalized_external)
+        if not reference:
+            reference = ExternalReference(
+                url=normalized_external,
+                raw_host=raw_host,
+                domain=domain or raw_host,
+                source_name=source_name,
+            )
+            external_refs[normalized_external] = reference
+
+        link_text = " ".join(link.stripped_strings)
+        reference.add_anchor_text(link_text)
+
+        title_attr = link.get("title")
+        if title_attr:
+            reference.add_candidate(title_attr)
+
+        aria_label = link.get("aria-label")
+        if aria_label:
+            reference.add_candidate(aria_label)
+
+    return citations, external_refs
 
 
 def enrich_articles(session: Session, articles: Dict[str, Article]) -> None:
@@ -398,12 +800,14 @@ def enrich_articles(session: Session, articles: Dict[str, Article]) -> None:
             logging.warning("Skipping article due to HTTP error (%s): %s", exc, url)
             article.published_at = article.listed_date
             article.citations = set()
+            article.external_references = {}
             continue
         except requests.RequestException as exc:
             article.available = False
             logging.warning("Skipping article due to request error (%s): %s", exc, url)
             article.published_at = article.listed_date
             article.citations = set()
+            article.external_references = {}
             continue
 
         final_url = canonicalize_url(response.url)
@@ -432,19 +836,68 @@ def enrich_articles(session: Session, articles: Dict[str, Article]) -> None:
         if not container:
             logging.warning("Content container not found for %s", url)
             article.citations = set()
+            article.external_references = {}
             continue
-        article.citations = extract_citations(container, known_urls, url)
+        citations, external_refs = extract_references(container, known_urls, url)
+        article.citations = citations
+        article.external_references = external_refs
 
 
-def build_dataset(articles: Dict[str, Article]) -> Dict[str, object]:
+def aggregate_external_sources(
+    articles: Dict[str, Article],
+    min_threshold: int,
+    max_coverage: float,
+) -> Dict[str, ExternalSourceAggregate]:
+    total_articles = len(articles)
+    if total_articles == 0:
+        return {}
+
+    aggregates: Dict[str, ExternalSourceAggregate] = {}
+
+    for article in articles.values():
+        for url, reference in article.external_references.items():
+            aggregate = aggregates.get(url)
+            if not aggregate:
+                aggregate = ExternalSourceAggregate(
+                    url=url,
+                    domain=reference.domain,
+                    source_name=reference.source_name,
+                    raw_host=reference.raw_host,
+                )
+                aggregates[url] = aggregate
+            aggregate.register(article.canonical_url, reference)
+
+    filtered: Dict[str, ExternalSourceAggregate] = {}
+    max_coverage = max(0.0, min(1.0, max_coverage))
+    for url, aggregate in aggregates.items():
+        count = aggregate.citation_count()
+        if count < max(1, min_threshold):
+            continue
+        coverage = count / total_articles
+        if max_coverage > 0 and coverage > max_coverage:
+            continue
+        filtered[url] = aggregate
+
+    return filtered
+
+
+def build_dataset(
+    articles: Dict[str, Article],
+    *,
+    min_external_citations: int,
+    max_external_coverage: float,
+) -> Dict[str, object]:
     def sort_key(item: Article) -> tuple:
         published = item.published_at or item.listed_date or "9999-12-31"
         return (published, item.title)
 
-    nodes = []
+    min_threshold = max(1, min_external_citations)
+    coverage_threshold = max(0.0, min(1.0, max_external_coverage))
+
+    article_nodes: List[Dict[str, object]] = []
     for article in sorted(articles.values(), key=sort_key):
         normalized_theme = normalize_theme(article.theme)
-        nodes.append(
+        article_nodes.append(
             {
                 "id": article.canonical_url,
                 "title": article.title,
@@ -456,13 +909,63 @@ def build_dataset(articles: Dict[str, Article]) -> Dict[str, object]:
                 "modified_at": article.modified_at,
                 "available": article.available,
                 "status_code": article.status_code,
+                "type": "article",
             }
         )
 
-    edges = set()
+    total_articles = len(article_nodes)
+    external_aggregates = aggregate_external_sources(
+        articles, min_threshold, coverage_threshold
+    )
+
+    external_nodes: List[Dict[str, object]] = []
+    for aggregate in sorted(
+        external_aggregates.values(),
+        key=lambda item: (
+            -item.citation_count(),
+            item.source_name.lower(),
+            item.domain.lower(),
+            item.url,
+        ),
+    ):
+        count = aggregate.citation_count()
+        coverage = count / total_articles if total_articles else 0.0
+        title = aggregate.choose_title()
+        summary = aggregate.choose_summary()
+        top_anchor = aggregate.anchor_counter.most_common(1)
+        anchor_text = top_anchor[0][0] if top_anchor else None
+
+        external_nodes.append(
+            {
+                "id": aggregate.url,
+                "title": title,
+                "url": aggregate.url,
+                "domain": aggregate.domain,
+                "source_name": aggregate.source_name,
+                "summary": summary,
+                "type": "external_source",
+                "theme": None,
+                "citation_count": count,
+                "coverage": round(coverage, 4),
+                "cited_by": sorted(aggregate.article_ids),
+                "anchor_text": anchor_text,
+                "raw_host": aggregate.raw_host,
+                "available": True,
+                "status_code": None,
+            }
+        )
+
+    nodes = article_nodes + external_nodes
+
+    edges: Set[Tuple[str, str]] = set()
+    allowed_external_urls = set(external_aggregates.keys())
     for article in articles.values():
+        source_id = article.canonical_url
         for target in article.citations:
-            edges.add((article.canonical_url, target))
+            edges.add((source_id, target))
+        for external_url in article.external_references.keys():
+            if external_url in allowed_external_urls:
+                edges.add((source_id, external_url))
 
     edge_list = [
         {"source": source, "target": target}
@@ -478,6 +981,10 @@ def build_dataset(articles: Dict[str, Article]) -> Dict[str, object]:
         "source": AUTHOR_PAGE,
         "total_nodes": len(nodes),
         "total_edges": len(edge_list),
+        "total_articles": total_articles,
+        "total_external_sources": len(external_nodes),
+        "min_external_citation_threshold": min_threshold,
+        "max_external_coverage_threshold": round(coverage_threshold, 4),
     }
 
     return {"metadata": metadata, "nodes": nodes, "edges": edge_list}
@@ -497,6 +1004,24 @@ def parse_args(argv: Optional[Iterable[str]] = None) -> argparse.Namespace:
         choices=["DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL"],
         help="Set the logging level",
     )
+    parser.add_argument(
+        "--min-external-citations",
+        type=int,
+        default=MIN_EXTERNAL_CITATIONS_DEFAULT,
+        help=(
+            "Minimum number of Paula Schmitt articles that must cite an external URL "
+            "for it to be included in the dataset (default: %(default)s)."
+        ),
+    )
+    parser.add_argument(
+        "--max-external-coverage",
+        type=float,
+        default=MAX_EXTERNAL_COVERAGE_DEFAULT,
+        help=(
+            "Maximum proportion (0-1) of articles that may cite an external URL before "
+            "it is considered structural noise (default: %(default)s)."
+        ),
+    )
     return parser.parse_args(list(argv) if argv is not None else None)
 
 
@@ -506,6 +1031,23 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
         level=getattr(logging, args.log_level.upper()),
         format="[%(levelname)s] %(message)s",
     )
+
+    min_external_citations = max(1, args.min_external_citations)
+    max_external_coverage = args.max_external_coverage
+    if max_external_coverage > 1:
+        logging.info(
+            "Interpreting max external coverage %.2f as percentage; using %.4f",
+            max_external_coverage,
+            max_external_coverage / 100.0,
+        )
+        max_external_coverage = max_external_coverage / 100.0
+    if max_external_coverage <= 0:
+        logging.warning(
+            "Max external coverage %.2f is non-positive; reverting to default %.2f",
+            max_external_coverage,
+            MAX_EXTERNAL_COVERAGE_DEFAULT,
+        )
+        max_external_coverage = MAX_EXTERNAL_COVERAGE_DEFAULT
 
     with create_session() as session:
         try:
@@ -520,17 +1062,26 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
 
         enrich_articles(session, articles)
 
-    dataset = build_dataset(articles)
+    dataset = build_dataset(
+        articles,
+        min_external_citations=min_external_citations,
+        max_external_coverage=max_external_coverage,
+    )
 
     output_path = Path(args.output)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     with output_path.open("w", encoding="utf-8") as handle:
         json.dump(dataset, handle, ensure_ascii=False, indent=2)
         handle.write("\n")
+
+    total_nodes = len(dataset["nodes"])
+    total_edges = len(dataset["edges"])
+    external_sources = sum(1 for node in dataset["nodes"] if node.get("type") == "external_source")
     logging.info(
-        "Wrote dataset with %d nodes and %d edges to %s",
-        len(dataset["nodes"]),
-        len(dataset["edges"]),
+        "Wrote dataset with %d nodes (%d external sources) and %d edges to %s",
+        total_nodes,
+        external_sources,
+        total_edges,
         output_path.resolve(),
     )
     return 0
