@@ -1,5 +1,8 @@
 name: Update Paula Schmitt dataset
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "0 5 * * 1"
