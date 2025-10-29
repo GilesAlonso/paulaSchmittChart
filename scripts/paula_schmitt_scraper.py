@@ -79,6 +79,7 @@ TRACKING_QUERY_KEYS = {
     "source",
     "ref",
     "ref_",
+    "ref_src",
     "referrer",
     "cmpid",
     "cmp",
@@ -931,7 +932,11 @@ def aggregate_external_sources(
     aggregates: Dict[str, ExternalSourceAggregate] = {}
 
     for article in articles.values():
+        seen_external_urls: Set[str] = set()
         for url, reference in article.external_references.items():
+            if url in seen_external_urls:
+                continue
+            seen_external_urls.add(url)
             aggregate = aggregates.get(url)
             if not aggregate:
                 aggregate = ExternalSourceAggregate(
@@ -1039,9 +1044,11 @@ def build_dataset(
         source_id = article.canonical_url
         for target in article.citations:
             edges.add((source_id, target))
-        for external_url in article.external_references.keys():
-            if external_url in allowed_external_urls:
-                edges.add((source_id, external_url))
+        external_targets = {
+            url for url in article.external_references.keys() if url in allowed_external_urls
+        }
+        for external_url in external_targets:
+            edges.add((source_id, external_url))
 
     edge_list = [
         {"source": source, "target": target}

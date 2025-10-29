@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generated_at": "2025-10-29T19:45:55Z",
+    "generated_at": "2025-10-29T20:32:40Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 396,
-    "total_edges": 534,
+    "total_nodes": 398,
+    "total_edges": 539,
     "total_articles": 282,
-    "total_external_sources": 114,
+    "total_external_sources": 116,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
   },
@@ -4130,6 +4130,27 @@
       "status_code": null
     },
     {
+      "id": "https://twitter.com/schmittpaula/status/1263134005010075648",
+      "title": "contou",
+      "url": "https://twitter.com/schmittpaula/status/1263134005010075648",
+      "domain": "twitter.com",
+      "source_name": "Twitter / X",
+      "summary": "Texto do link frequente: “contou”",
+      "type": "external_source",
+      "theme": null,
+      "citation_count": 3,
+      "coverage": 0.0106,
+      "cited_by": [
+        "https://www.poder360.com.br/opiniao/o-estudo-da-lancet-e-a-contaminacao-das-noticias-escreve-paula-schmitt/",
+        "https://www.poder360.com.br/opiniao/o-racismo-identitario-e-os-supremacistas-da-corte/",
+        "https://www.poder360.com.br/opiniao/os-medicos-pela-vida-e-as-bromelias-da-alma/"
+      ],
+      "anchor_text": "contou",
+      "raw_host": "twitter.com",
+      "available": true,
+      "status_code": null
+    },
+    {
       "id": "https://brasil.un.org/pt-br",
       "title": "ONU",
       "url": "https://brasil.un.org/pt-br",
@@ -5512,6 +5533,26 @@
       "status_code": null
     },
     {
+      "id": "https://twitter.com/jeanwyllys_real/status/964202084722671622",
+      "title": "tweet",
+      "url": "https://twitter.com/jeanwyllys_real/status/964202084722671622",
+      "domain": "twitter.com",
+      "source_name": "Twitter / X",
+      "summary": "Texto do link frequente: “tweet”",
+      "type": "external_source",
+      "theme": null,
+      "citation_count": 2,
+      "coverage": 0.0071,
+      "cited_by": [
+        "https://www.poder360.com.br/opiniao/a-queda-de-um-anjo-da-imprensa-nacional-por-paula-schmitt/",
+        "https://www.poder360.com.br/opiniao/vaza-jato-glenn-greenwald-e-uma-coincidencia-intrigante-parte-2-por-paula-schmitt/"
+      ],
+      "anchor_text": "tweet",
+      "raw_host": "twitter.com",
+      "available": true,
+      "status_code": null
+    },
+    {
       "id": "https://twitter.com/joebiden",
       "title": "Joe Biden",
       "url": "https://twitter.com/joebiden",
@@ -5572,21 +5613,41 @@
       "status_code": null
     },
     {
-      "id": "https://twitter.com/schmittpaula/status/1263134005010075648",
-      "title": "contou",
-      "url": "https://twitter.com/schmittpaula/status/1263134005010075648",
+      "id": "https://twitter.com/schmittpaula",
+      "title": "@schmittpaula",
+      "url": "https://twitter.com/schmittpaula",
       "domain": "twitter.com",
       "source_name": "Twitter / X",
-      "summary": "Texto do link frequente: “contou”",
+      "summary": "Texto do link frequente: “@schmittpaula”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
       "coverage": 0.0071,
       "cited_by": [
-        "https://www.poder360.com.br/opiniao/o-racismo-identitario-e-os-supremacistas-da-corte/",
-        "https://www.poder360.com.br/opiniao/os-medicos-pela-vida-e-as-bromelias-da-alma/"
+        "https://www.poder360.com.br/opiniao/o-clube-de-roma-e-o-cacique/",
+        "https://www.poder360.com.br/opiniao/os-vazamentos-a-midia-e-seus-meios-soldados/"
       ],
-      "anchor_text": "contou",
+      "anchor_text": "@schmittpaula",
+      "raw_host": "twitter.com",
+      "available": true,
+      "status_code": null
+    },
+    {
+      "id": "https://twitter.com/schmittpaula/status/1169067745184559106",
+      "title": "fiz publicamente",
+      "url": "https://twitter.com/schmittpaula/status/1169067745184559106",
+      "domain": "twitter.com",
+      "source_name": "Twitter / X",
+      "summary": "Texto do link frequente: “fiz publicamente”",
+      "type": "external_source",
+      "theme": null,
+      "citation_count": 2,
+      "coverage": 0.0071,
+      "cited_by": [
+        "https://www.poder360.com.br/opiniao/a-vaza-jato-e-o-sequestro-de-jornalistas-brasileiros-por-paula-schmitt/",
+        "https://www.poder360.com.br/opiniao/vaza-jato-glenn-greenwald-e-uma-coincidencia-intrigante-parte-2-por-paula-schmitt/"
+      ],
+      "anchor_text": "fiz publicamente",
       "raw_host": "twitter.com",
       "available": true,
       "status_code": null
@@ -5693,28 +5754,8 @@
     },
     {
       "id": "https://twitter.com/schmittpaula/status/1497991935461580807",
-      "title": "1497991935461580807",
-      "url": "https://twitter.com/schmittpaula/status/1497991935461580807",
-      "domain": "twitter.com",
-      "source_name": "Twitter / X",
-      "summary": "Texto do link frequente: “este vídeo”",
-      "type": "external_source",
-      "theme": null,
-      "citation_count": 2,
-      "coverage": 0.0071,
-      "cited_by": [
-        "https://www.poder360.com.br/opiniao/o-ceu-de-nova-jersey-e-nossa-va-filosofia/",
-        "https://www.poder360.com.br/opiniao/o-circus-maximus-da-desonra-e-o-bruxo-que-enfeiticou-o-brasil/"
-      ],
-      "anchor_text": "este vídeo",
-      "raw_host": "twitter.com",
-      "available": true,
-      "status_code": null
-    },
-    {
-      "id": "https://twitter.com/schmittpaula/status/1497991935461580807?ref_src=twsrc%5Etfw",
       "title": "February 27, 2022",
-      "url": "https://twitter.com/schmittpaula/status/1497991935461580807?ref_src=twsrc%5Etfw",
+      "url": "https://twitter.com/schmittpaula/status/1497991935461580807",
       "domain": "twitter.com",
       "source_name": "Twitter / X",
       "summary": "Texto do link frequente: “February 27, 2022”",
@@ -5773,11 +5814,11 @@
     },
     {
       "id": "https://twitter.com/tabataamaralsp",
-      "title": "seu perfil no X",
+      "title": "@tabataamaralsp",
       "url": "https://twitter.com/tabataamaralsp",
       "domain": "twitter.com",
       "source_name": "Twitter / X",
-      "summary": "Texto do link frequente: “seu perfil no X”",
+      "summary": "Texto do link frequente: “@tabataamaralsp”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -5786,7 +5827,7 @@
         "https://www.poder360.com.br/opiniao/o-marajo-a-protecao-da-natureza-e-a-desprotecao-da-gente/",
         "https://www.poder360.com.br/opiniao/o-sangramento-coletivo-e-a-pobreza-mental-escreve-paula-schmitt/"
       ],
-      "anchor_text": "seu perfil no X",
+      "anchor_text": "@tabataamaralsp",
       "raw_host": "twitter.com",
       "available": true,
       "status_code": null
@@ -6662,6 +6703,10 @@
       "target": "https://www.poder360.com.br/opiniao/o-genocida-o-vingador-e-a-inversao-dos-papeis/"
     },
     {
+      "source": "https://www.poder360.com.br/opiniao/a-queda-de-um-anjo-da-imprensa-nacional-por-paula-schmitt/",
+      "target": "https://twitter.com/jeanwyllys_real/status/964202084722671622"
+    },
+    {
       "source": "https://www.poder360.com.br/opiniao/a-receita-de-bolo-e-o-mosquito-humano/",
       "target": "https://www.poder360.com.br/opiniao/a-luz-do-sol-e-a-gema-de-ovo/"
     },
@@ -6764,6 +6809,10 @@
     {
       "source": "https://www.poder360.com.br/opiniao/a-vacina-obrigatoria-e-a-certeza-dos-que-nao-sabem-por-paula-schmitt/",
       "target": "https://paulaschmitt.blogspot.com/2014/04/interview-with-michael-shermer-founder.html"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-vaza-jato-e-o-sequestro-de-jornalistas-brasileiros-por-paula-schmitt/",
+      "target": "https://twitter.com/schmittpaula/status/1169067745184559106"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/a-venezuela-e-o-significado-magico/",
@@ -7218,10 +7267,6 @@
       "target": "https://twitter.com/schmittpaula/status/1497991935461580807"
     },
     {
-      "source": "https://www.poder360.com.br/opiniao/o-ceu-de-nova-jersey-e-nossa-va-filosofia/",
-      "target": "https://twitter.com/schmittpaula/status/1497991935461580807?ref_src=twsrc%5Etfw"
-    },
-    {
       "source": "https://www.poder360.com.br/opiniao/o-circus-maximus-da-desonra-e-o-bruxo-que-enfeiticou-o-brasil/",
       "target": "https://2.camara.leg.br/atividade-legislativa/plenario/chamadaExterna.html?link=http%3A%2F%2Fwww.camara.gov.br%2Finternet%2Fvotacao%2FmostraVotacao.asp%3FideVotacao%3D10360"
     },
@@ -7232,10 +7277,6 @@
     {
       "source": "https://www.poder360.com.br/opiniao/o-circus-maximus-da-desonra-e-o-bruxo-que-enfeiticou-o-brasil/",
       "target": "https://twitter.com/schmittpaula/status/1497991935461580807"
-    },
-    {
-      "source": "https://www.poder360.com.br/opiniao/o-circus-maximus-da-desonra-e-o-bruxo-que-enfeiticou-o-brasil/",
-      "target": "https://twitter.com/schmittpaula/status/1497991935461580807?ref_src=twsrc%5Etfw"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/o-circus-maximus-da-desonra-e-o-bruxo-que-enfeiticou-o-brasil/",
@@ -7256,6 +7297,10 @@
     {
       "source": "https://www.poder360.com.br/opiniao/o-clube-de-roma-e-o-cacique/",
       "target": "https://eforum.org/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-clube-de-roma-e-o-cacique/",
+      "target": "https://twitter.com/schmittpaula"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/o-clube-de-roma-e-o-cacique/",
@@ -7332,6 +7377,10 @@
     {
       "source": "https://www.poder360.com.br/opiniao/o-erro-o-ego-e-o-virus-do-homem/",
       "target": "https://www.poder360.com.br/opiniao/minha-liberdade-termina-quando-comeca-a-sua-escreve-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-estudo-da-lancet-e-a-contaminacao-das-noticias-escreve-paula-schmitt/",
+      "target": "https://twitter.com/schmittpaula/status/1263134005010075648"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/o-estudo-de-manaus-as-22-mortes-e-os-resultados-previsiveis-escreve-paula-schmitt/",
@@ -7930,6 +7979,10 @@
       "target": "https://nytimes.com/2020/08/29/health/coronavirus-testing.html"
     },
     {
+      "source": "https://www.poder360.com.br/opiniao/os-vazamentos-a-midia-e-seus-meios-soldados/",
+      "target": "https://twitter.com/schmittpaula"
+    },
+    {
       "source": "https://www.poder360.com.br/opiniao/pat-garret-billy-the-kid-e-o-lado-certo/",
       "target": "https://cia.gov/"
     },
@@ -8124,6 +8177,14 @@
     {
       "source": "https://www.poder360.com.br/opiniao/uma-enchente-de-erros/",
       "target": "https://www.poder360.com.br/opiniao/o-aquecimento-resfriado-e-o-semsenso-cientifico/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/vaza-jato-glenn-greenwald-e-uma-coincidencia-intrigante-parte-2-por-paula-schmitt/",
+      "target": "https://twitter.com/jeanwyllys_real/status/964202084722671622"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/vaza-jato-glenn-greenwald-e-uma-coincidencia-intrigante-parte-2-por-paula-schmitt/",
+      "target": "https://twitter.com/schmittpaula/status/1169067745184559106"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/vaza-jato-glenn-greenwald-e-uma-coincidencia-intrigante-parte-3-por-paula-schmitt/",
