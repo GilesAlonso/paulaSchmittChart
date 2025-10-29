@@ -110,17 +110,38 @@ export function transformDataset(rawData, themeColors) {
       : domain
       ? domain.replace(/^www\./i, '')
       : null;
+    const rawHost = typeof node.raw_host === 'string' && node.raw_host.length > 0 ? node.raw_host : null;
     const citationCount = typeof node.citation_count === 'number' ? node.citation_count : null;
     const coverage = typeof node.coverage === 'number' ? node.coverage : null;
     const anchorText = typeof node.anchor_text === 'string' && node.anchor_text.length > 0 ? node.anchor_text : null;
     const citedBy = Array.isArray(node.cited_by) ? node.cited_by : [];
-    const rawHost = typeof node.raw_host === 'string' && node.raw_host.length > 0 ? node.raw_host : null;
+
+    const baseDisplayCandidate = nodeType === 'external_source'
+      ? (sourceName || rawTitle || domain || rawHost || 'Fonte externa')
+      : rawTitle;
+
+    const baseDisplayName = String(baseDisplayCandidate || '').trim()
+      || String(domain || rawHost || rawTitle || node.id || '').trim();
+
+    const includesDomain = domain
+      ? baseDisplayName.toLowerCase().includes(domain.toLowerCase())
+      : false;
+    const displayName = nodeType === 'external_source' && domain && !includesDomain
+      ? `${baseDisplayName} (${domain})`
+      : baseDisplayName;
+
+    const labelText = truncateText(
+      nodeType === 'external_source' ? baseDisplayName : rawTitle,
+      labelLimit
+    );
+    const nodeTitle = nodeType === 'external_source' ? displayName : rawTitle;
 
     return {
       id: node.id,
       type: nodeType,
-      label: truncateText(rawTitle, labelLimit),
-      title: rawTitle,
+      label: labelText,
+      title: nodeTitle,
+      displayName,
       url: node.url,
       theme,
       summary,

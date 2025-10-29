@@ -27,6 +27,7 @@ export class StatisticsManager {
     const topExternalSources = this.rankNodesByIncoming(externalNodes, incomingMap, (node, count) => ({
       id: node.id,
       title: node.title,
+      displayName: node.displayName || node.title,
       sourceName: node.sourceName || node.domain || node.rawHost || 'Fonte externa',
       domain: node.domain || null,
       count,

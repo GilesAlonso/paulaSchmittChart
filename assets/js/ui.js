@@ -882,10 +882,12 @@ export class UIController {
 
     items.forEach((item) => {
       const li = document.createElement('li');
-      const label = item.sourceName || item.title;
-      const domainSuffix = item.domain && item.sourceName && item.sourceName !== item.domain ? ` (${item.domain})` : item.domain && !item.sourceName ? ` (${item.domain})` : '';
-      const coverageText = typeof item.coverage === 'number' ? ` · ${Math.round(item.coverage * 100)}% dos artigos` : '';
-      li.textContent = `${label}${domainSuffix} — ${toLocaleNumber(item.count)} citações${coverageText}`;
+      const label = item.displayName || item.sourceName || item.title;
+      const percent = typeof item.coverage === 'number'
+        ? Math.round(item.coverage * 1000) / 10
+        : null;
+      const coverageText = percent !== null ? ` · ${toLocaleNumber(percent)}% dos artigos` : '';
+      li.textContent = `${label} — ${toLocaleNumber(item.count)} citações${coverageText}`;
       this.statMostCitedExternal.appendChild(li);
     });
   }
@@ -957,7 +959,10 @@ export class UIController {
     }
 
     if (this.metadataTitle) {
-      this.metadataTitle.textContent = node.title;
+      const displayTitle = node.type === 'external_source'
+        ? node.displayName || node.title
+        : node.title;
+      this.metadataTitle.textContent = displayTitle;
     }
 
     const isExternal = node.type === 'external_source';
@@ -988,9 +993,11 @@ export class UIController {
       }
 
       if (this.metadataStatus) {
-        const coveragePercent = typeof node.coverage === 'number' ? Math.round(node.coverage * 100) : null;
+        const coveragePercent = typeof node.coverage === 'number'
+          ? Math.round(node.coverage * 1000) / 10
+          : null;
         this.metadataStatus.textContent = coveragePercent !== null
-          ? `Presente em ${coveragePercent}% dos artigos analisados.`
+          ? `Presente em ${toLocaleNumber(coveragePercent)}% dos artigos analisados.`
           : 'Cobertura não disponível.';
       }
 

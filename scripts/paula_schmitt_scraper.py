@@ -54,7 +54,9 @@ CONTENT_SELECTORS = [
 ]
 
 MIN_EXTERNAL_CITATIONS_DEFAULT = 2
-MAX_EXTERNAL_COVERAGE_DEFAULT = 0.8
+# Links cited by more than 20% of Paula Schmitt's articles are considered structural noise
+# (e.g., site-wide share buttons, subscription prompts) and are filtered out by default.
+MAX_EXTERNAL_COVERAGE_DEFAULT = 0.2
 
 EXTERNAL_SCHEME_BLACKLIST = {"mailto", "javascript", "tel", "ftp", "news", "file", "whatsapp"}
 
@@ -113,6 +115,9 @@ HOST_NORMALIZATION_MAP = {
     "lm.facebook.com": "facebook.com",
     "l.facebook.com": "facebook.com",
     "m.imgur.com": "imgur.com",
+    "wa.me": "whatsapp.com",
+    "hatsapp.com": "whatsapp.com",
+    "telegram.me": "t.me",
     "x.com": "twitter.com",
 }
 
@@ -122,6 +127,10 @@ DOMAIN_LABEL_OVERRIDES = {
     "twitter.com": "Twitter / X",
     "facebook.com": "Facebook",
     "instagram.com": "Instagram",
+    "t.me": "Telegram",
+    "telegram.me": "Telegram",
+    "whatsapp.com": "WhatsApp",
+    "wa.me": "WhatsApp",
     "medium.com": "Medium",
     "substack.com": "Substack",
     "rumble.com": "Rumble",
@@ -139,6 +148,40 @@ DOMAIN_LABEL_OVERRIDES = {
     "open.spotify.com": "Spotify",
     "spotify.com": "Spotify",
     "patreon.com": "Patreon",
+}
+
+EXTERNAL_DOMAIN_EXCLUSIONS = {
+    "doubleclick.net",
+    "googletagmanager.com",
+    "google-analytics.com",
+    "googlesyndication.com",
+    "googletagservices.com",
+    "scorecardresearch.com",
+    "demdex.net",
+    "quantserve.com",
+    "krxd.net",
+    "adsrvr.org",
+    "branch.io",
+    "outbrain.com",
+    "taboola.com",
+}
+
+SOCIAL_SHARE_PATH_RULES = {
+    "facebook.com": (
+        re.compile(r"^/(?:sharer|share)\\.php", re.IGNORECASE),
+        re.compile(r"^/dialog/share", re.IGNORECASE),
+        re.compile(r"^/plugins/(?:share_button|like)", re.IGNORECASE),
+    ),
+    "facebook.net": (
+        re.compile(r"^/plugins/", re.IGNORECASE),
+    ),
+    "twitter.com": (
+        re.compile(r"^/(?:intent|share)(?:/|$)", re.IGNORECASE),
+    ),
+    "linkedin.com": (
+        re.compile(r"^/(?:share|sharing)", re.IGNORECASE),
+        re.compile(r"^/feed/share", re.IGNORECASE),
+    ),
 }
 
 TWO_LEVEL_TLD_SUFFIXES = {
@@ -165,6 +208,34 @@ TWO_LEVEL_TLD_SUFFIXES = {
     "gov.br",
     "com.pt",
 }
+
+def is_structural_share_link(base_domain: str, path: str) -> bool:
+    if not base_domain:
+        return False
+
+    normalized_domain = base_domain.lower()
+    normalized_path = (path or "/").lower()
+    path_segments = [segment for segment in normalized_path.split("/") if segment]
+
+    if normalized_domain in {"whatsapp.com"}:
+        return True
+
+    if normalized_domain in {"t.me", "telegram.me"}:
+        if not path_segments:
+            return True
+        first_segment = path_segments[0]
+        if first_segment in {"joinchat", "addstickers"}:
+            return True
+        if first_segment == "s":
+            return len(path_segments) <= 2
+        if len(path_segments) == 1:
+            return True
+
+    for pattern in SOCIAL_SHARE_PATH_RULES.get(normalized_domain, ()):
+        if pattern.match(normalized_path):
+            return True
+
+    return False
 
 THEME_PREFIX_PATTERN = re.compile(r"^poder\b\s+", re.IGNORECASE)
 
@@ -459,7 +530,10 @@ def normalize_external_url(url: str, base_url: str) -> Optional[str]:
     host_part = host_part.lower()
     host_part = HOST_NORMALIZATION_MAP.get(host_part, host_part)
     host_part = host_part.lstrip("www.")
+    base_domain = extract_registered_domain(host_part)
     if host_part.endswith("poder360.com.br"):
+        return None
+    if base_domain in EXTERNAL_DOMAIN_EXCLUSIONS:
         return None
     if port:
         if (scheme == "http" and port == "80") or (scheme == "https" and port == "443"):
@@ -472,6 +546,8 @@ def normalize_external_url(url: str, base_url: str) -> Optional[str]:
     path = unquote(path)
     if path != "/" and path.endswith("/"):
         path = path.rstrip("/")
+    if is_structural_share_link(base_domain, path):
+        return None
     query = filter_tracking_query(host_part, parsed.query)
     normalized = urlunparse((scheme, netloc_normalized, path or "/", "", query, ""))
     return normalized

@@ -1,4 +1,4 @@
-import { clamp, formatDate, lightenColor } from './utils.js';
+import { clamp, formatDate, lightenColor, toLocaleNumber } from './utils.js';
 
 const EXTERNAL_NODE_FONT_COLOR = '#f8fafc';
 const EXTERNAL_NODE_NEIGHBOR_FONT = '#e2e8f0';
@@ -283,23 +283,31 @@ export class GraphManager {
 
   buildTooltip(node, citationCount) {
     if (node.type === 'external_source') {
-      const sourceLabel = node.sourceName || node.domain || node.rawHost || 'Fonte externa';
+      const displayName = node.displayName || node.title || node.sourceName || node.domain || node.rawHost || 'Fonte externa';
+      const sourceLabel = node.sourceName && node.domain && node.sourceName !== node.domain
+        ? `${node.sourceName} · ${node.domain}`
+        : node.sourceName || node.domain || node.rawHost || 'Fonte externa';
       const coveragePercent = typeof node.coverage === 'number'
-        ? Math.round(node.coverage * 100)
+        ? Math.round(node.coverage * 1000) / 10
         : null;
       const anchorPreview = node.anchorText && node.anchorText.length > 80
         ? `${node.anchorText.slice(0, 77)}…`
         : node.anchorText;
+      const summaryText = typeof node.summary === 'string' && node.summary.trim().length > 0 ? node.summary.trim() : null;
+      const anchorDescription = summaryText || (anchorPreview ? `Texto frequente: “${anchorPreview}”` : null);
+      const formattedCoverage = coveragePercent !== null
+        ? toLocaleNumber(coveragePercent)
+        : null;
 
       return `
         <div style="padding: 0.45rem 0.55rem; max-width: 260px;">
-          <div style="font-weight:600; margin-bottom:0.35rem;">${node.title}</div>
+          <div style="font-weight:600; margin-bottom:0.35rem;">${displayName}</div>
           <div style="display:inline-flex; align-items:center; padding:0.12rem 0.45rem; font-size:0.72rem; border-radius:999px; background:#1e293b; color:#e2e8f0; margin-bottom:0.35rem;">
             ${sourceLabel}
           </div>
-          <div style="font-size:0.75rem; color:#475569;">Citado por ${citationCount} artigos de Paula Schmitt</div>
-          ${coveragePercent !== null ? `<div style="font-size:0.75rem; color:#64748b; margin-top:0.25rem;">Cobertura: ${coveragePercent}% dos artigos</div>` : ''}
-          ${anchorPreview ? `<div style="font-size:0.72rem; color:#475569; margin-top:0.35rem;">Texto frequente: “${anchorPreview}”</div>` : ''}
+          <div style="font-size:0.75rem; color:#475569;">Citado por ${toLocaleNumber(citationCount)} artigos de Paula Schmitt</div>
+          ${formattedCoverage ? `<div style="font-size:0.75rem; color:#64748b; margin-top:0.25rem;">Cobertura: ${formattedCoverage}% dos artigos</div>` : ''}
+          ${anchorDescription ? `<div style="font-size:0.72rem; color:#475569; margin-top:0.35rem;">${anchorDescription}</div>` : ''}
         </div>
       `;
     }
