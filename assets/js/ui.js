@@ -613,9 +613,18 @@ export class UIController {
     this.legendLabelRefs.clear();
 
     const typesSection = document.createElement('div');
-    typesSection.className = 'legend-section legend-section--types';
-    typesSection.appendChild(this.createNodeTypeLegendItem('Artigos de Paula Schmitt', 'article'));
-    typesSection.appendChild(this.createNodeTypeLegendItem('Fontes externas frequentes', 'external'));
+    typesSection.className = 'legend-section';
+
+    const typesTitle = document.createElement('h4');
+    typesTitle.className = 'legend-section__title';
+    typesTitle.textContent = 'Tipos';
+    typesSection.appendChild(typesTitle);
+
+    const typesList = document.createElement('div');
+    typesList.className = 'legend-section__items legend-section__items--types';
+    typesList.appendChild(this.createNodeTypeLegendItem('Artigos de Paula Schmitt', 'article'));
+    typesList.appendChild(this.createNodeTypeLegendItem('Fontes externas frequentes', 'external'));
+    typesSection.appendChild(typesList);
     this.legendContainer.appendChild(typesSection);
 
     const divider = document.createElement('div');
@@ -623,7 +632,15 @@ export class UIController {
     this.legendContainer.appendChild(divider);
 
     const themesSection = document.createElement('div');
-    themesSection.className = 'legend-section legend-section--themes';
+    themesSection.className = 'legend-section';
+
+    const themesTitle = document.createElement('h4');
+    themesTitle.className = 'legend-section__title';
+    themesTitle.textContent = 'Temas';
+    themesSection.appendChild(themesTitle);
+
+    const themesList = document.createElement('div');
+    themesList.className = 'legend-section__items legend-section__items--themes';
 
     const themes = Object.keys(this.themeColors).sort((a, b) => a.localeCompare(b));
     themes.forEach((theme) => {
@@ -641,10 +658,11 @@ export class UIController {
       item.appendChild(swatch);
       item.appendChild(label);
 
-      themesSection.appendChild(item);
+      themesList.appendChild(item);
       this.legendLabelRefs.set(theme, label);
     });
 
+    themesSection.appendChild(themesList);
     this.legendContainer.appendChild(themesSection);
   }
 
@@ -652,9 +670,11 @@ export class UIController {
     const item = document.createElement('div');
     item.className = 'legend-item legend-item--type';
 
-    const swatch = document.createElement('span');
-    swatch.className = `legend-swatch legend-swatch--${type}`;
-    item.appendChild(swatch);
+    const icon = document.createElement('span');
+    icon.className = `legend-icon legend-icon--${type}`;
+    icon.setAttribute('aria-hidden', 'true');
+    icon.textContent = type === 'external' ? '□' : '○';
+    item.appendChild(icon);
 
     const text = document.createElement('span');
     text.className = 'legend-label';

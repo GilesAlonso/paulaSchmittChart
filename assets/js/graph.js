@@ -1,7 +1,6 @@
 import { clamp, formatDate, lightenColor, toLocaleNumber } from './utils.js';
 
 const EXTERNAL_NODE_FONT_COLOR = '#f8fafc';
-const EXTERNAL_NODE_NEIGHBOR_FONT = '#e2e8f0';
 const EXTERNAL_NODE_BORDER_COLOR = '#0f172a';
 const EXTERNAL_NODE_HIGHLIGHT_BORDER = '#38bdf8';
 
@@ -208,10 +207,14 @@ export class GraphManager {
     const isNeighbor = focusActive && neighborIds.has(node.id);
 
     const baseColor = node.color || (isExternal ? EXTERNAL_NODE_BORDER_COLOR : '#64748b');
+    const baseBorder = isExternal ? EXTERNAL_NODE_BORDER_COLOR : lightenColor(baseColor, 0.08);
+    const baseHighlightBackground = isExternal ? lightenColor(baseColor, 0.12) : baseColor;
+    const baseHighlightBorder = isExternal ? EXTERNAL_NODE_HIGHLIGHT_BORDER : '#111827';
+
     let background = baseColor;
-    let border = isExternal ? EXTERNAL_NODE_BORDER_COLOR : lightenColor(baseColor, 0.08);
-    let highlightBackground = isExternal ? lightenColor(baseColor, 0.12) : baseColor;
-    let highlightBorder = isExternal ? EXTERNAL_NODE_HIGHLIGHT_BORDER : '#111827';
+    let border = baseBorder;
+    let highlightBackground = baseHighlightBackground;
+    let highlightBorder = baseHighlightBorder;
     let opacity = 1;
     let fontColor = isExternal ? EXTERNAL_NODE_FONT_COLOR : '#111827';
     let size = baseSize;
@@ -219,34 +222,11 @@ export class GraphManager {
 
     if (focusActive) {
       if (isPrimary) {
-        if (isExternal) {
-          border = EXTERNAL_NODE_HIGHLIGHT_BORDER;
-          highlightBorder = EXTERNAL_NODE_HIGHLIGHT_BORDER;
-          highlightBackground = lightenColor(baseColor, 0.18);
-        } else {
-          border = '#0f172a';
-          highlightBorder = '#0f172a';
-        }
         size = clamp(baseSize * 1.1, isExternal ? 18 : 12, isExternal ? 38 : 40);
       } else if (isNeighbor) {
-        if (isExternal) {
-          background = lightenColor(baseColor, 0.22);
-          border = lightenColor(baseColor, 0.3);
-          highlightBackground = background;
-          highlightBorder = border;
-          fontColor = EXTERNAL_NODE_NEIGHBOR_FONT;
-        } else {
-          background = lightenColor(baseColor, 0.32);
-          border = lightenColor(baseColor, 0.45);
-          highlightBackground = background;
-          highlightBorder = border;
-          fontColor = '#334155';
-        }
-        opacity = 0.78;
         size = clamp(baseSize * 0.95, isExternal ? 14 : 10, isExternal ? 34 : 34);
       } else {
         opacity = 0.35;
-        fontColor = isExternal ? '#94a3b8' : '#475569';
       }
     }
 
@@ -337,30 +317,17 @@ export class GraphManager {
     }
     this.labelsVisible = isVisible;
 
-    const context = this.currentContext || {};
-    const focusTheme = typeof context.focusTheme !== 'undefined' && context.focusTheme !== null ? context.focusTheme : null;
-    const primaryIds = context.primaryIds instanceof Set ? context.primaryIds : new Set();
-    const neighborIds = context.neighborIds instanceof Set ? context.neighborIds : new Set();
-    const focusActive = Boolean(focusTheme);
-
     const updated = this.currentNodes.map((node) => {
       const isExternal = node.type === 'external_source';
-      const isPrimary = focusActive && primaryIds.has(node.id);
-      const isNeighbor = focusActive && neighborIds.has(node.id);
-      let fontColor = isExternal ? EXTERNAL_NODE_FONT_COLOR : '#111827';
-
-      if (focusActive) {
-        if (isNeighbor && !isPrimary) {
-          fontColor = isExternal ? EXTERNAL_NODE_NEIGHBOR_FONT : '#334155';
-        } else if (!isPrimary) {
-          fontColor = isExternal ? '#94a3b8' : '#475569';
-        }
-      }
 
       return {
         id: node.id,
         label: isVisible ? node.label : '',
-        font: { size: isVisible ? 14 : 0, face: 'Inter', color: fontColor }
+        font: {
+          size: isVisible ? 14 : 0,
+          face: 'Inter',
+          color: isExternal ? EXTERNAL_NODE_FONT_COLOR : '#111827'
+        }
       };
     });
 
