@@ -627,10 +627,6 @@ export class UIController {
     typesSection.appendChild(typesList);
     this.legendContainer.appendChild(typesSection);
 
-    const divider = document.createElement('div');
-    divider.className = 'legend-divider';
-    this.legendContainer.appendChild(divider);
-
     const themesSection = document.createElement('div');
     themesSection.className = 'legend-section';
 
@@ -645,7 +641,9 @@ export class UIController {
     const themes = Object.keys(this.themeColors).sort((a, b) => a.localeCompare(b));
     themes.forEach((theme) => {
       const item = document.createElement('div');
-      item.className = 'legend-item';
+      item.className = 'legend-item legend-item--theme';
+      item.dataset.theme = theme;
+      item.title = theme;
 
       const swatch = document.createElement('span');
       swatch.className = 'legend-swatch legend-swatch--dot';
@@ -654,6 +652,7 @@ export class UIController {
       const label = document.createElement('span');
       label.className = 'legend-label';
       label.textContent = theme;
+      label.title = theme;
 
       item.appendChild(swatch);
       item.appendChild(label);
