@@ -2,6 +2,7 @@ name: Update Paula Schmitt dataset
 
 permissions:
   contents: write
+  pull-requests: write
 
 on:
   schedule:
@@ -28,14 +29,42 @@ jobs:
       - name: Run Paula Schmitt scraper
         run: python scripts/paula_schmitt_scraper.py --log-level WARNING
 
-      - name: Commit dataset updates
+      - name: Check for dataset changes
+        id: changes
         run: |
           if git diff --quiet -- data/paula-schmitt-network-v2.json; then
+            echo "changes=false" >> $GITHUB_OUTPUT
             echo "No dataset changes detected."
           else
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/paula-schmitt-network-v2.json
-            git commit -m "chore: update Paula Schmitt dataset"
-            git push
+            echo "changes=true" >> $GITHUB_OUTPUT
+            echo "Dataset changes detected."
           fi
+
+      - name: Create Pull Request
+        if: steps.changes.outputs.changes == 'true'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          branch: scraper-update-${{ github.run_number }}-${{ github.run_attempt }}
+          delete-branch: true
+          title: 'chore: update Paula Schmitt dataset [automated]'
+          body: |
+            Automated dataset update from weekly scraper run.
+            
+            **Run details:**
+            - Workflow: ${{ github.workflow }}
+            - Run ID: ${{ github.run_id }}
+            - Triggered by: ${{ github.event_name }}
+            
+            **Changes:**
+            - Updated Paula Schmitt citation network dataset
+            - File: `data/paula-schmitt-network-v2.json`
+            
+            This PR was created automatically by the scheduled scraper workflow.
+          labels: automated, data-update
+          commit-message: 'chore: update Paula Schmitt dataset'
+          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+
+      - name: No changes detected
+        if: steps.changes.outputs.changes == 'false'
+        run: |
+          echo "✅ No dataset changes detected. Skipping pull request creation."
