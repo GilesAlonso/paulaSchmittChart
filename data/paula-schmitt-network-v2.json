@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated_at": "2025-12-29T05:31:29Z",
+    "generated_at": "2026-01-05T05:39:44Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 407,
-    "total_edges": 549,
-    "total_articles": 288,
+    "total_nodes": 408,
+    "total_edges": 550,
+    "total_articles": 289,
     "total_external_sources": 119,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
@@ -3591,7 +3591,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-circus-maximus-da-desonra-e-o-bruxo-que-enfeiticou-o-brasil/",
       "published_at": "2025-09-04T05:57:24-03:00",
       "listed_date": "2025-09-04",
-      "theme": "Mídia",
+      "theme": "Congresso",
       "summary": "O Brasil assiste a um espetáculo em que a lei caça primeiro o homem e depois acha o crime",
       "modified_at": "2025-09-04T05:57:24-03:00",
       "available": true,
@@ -3755,6 +3755,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/ameaca-eficaz-nunca-e-cumprida/",
+      "title": "Ameaça eficaz nunca é cumprida",
+      "url": "https://www.poder360.com.br/opiniao/ameaca-eficaz-nunca-e-cumprida/",
+      "published_at": "2026-01-01T06:00:44-03:00",
+      "listed_date": "2026-01-01",
+      "theme": "Mídia",
+      "summary": "Greenwald prometeu ao público revelar material de jornalistas corruptos e comprometidos com a Lava Jato, mas ele nunca cumpriu sua promessa",
+      "modified_at": "2026-01-01T06:00:44-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://twitter.com/realdonaldtrump",
       "title": "Donald Trump",
       "url": "https://twitter.com/realdonaldtrump",
@@ -3764,7 +3777,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 8,
-      "coverage": 0.0278,
+      "coverage": 0.0277,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-comida-o-corante-e-os-adoradores-de-politicos/",
         "https://www.poder360.com.br/opiniao/a-groenlandia-as-terras-estrangeiras-e-a-fanta-uva/",
@@ -3790,7 +3803,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 7,
-      "coverage": 0.0243,
+      "coverage": 0.0242,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
@@ -3815,7 +3828,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0139,
+      "coverage": 0.0138,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/o-aborto-da-razao-e-o-monstro/",
@@ -3837,7 +3850,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0139,
+      "coverage": 0.0138,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-entrega-da-amazonia-a-divisao-do-territorio-e-o-deposito-de-lixo/",
         "https://www.poder360.com.br/opiniao/o-clube-de-roma-e-o-cacique/",
@@ -3859,7 +3872,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0139,
+      "coverage": 0.0138,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-indicacao-de-dino-a-privatizacao-do-governo-e-a-erosao-da-democracia/",
         "https://www.poder360.com.br/opiniao/a-publicidade-o-gado-marcado-e-o-desenvolvimento-internacional/",
@@ -4752,11 +4765,11 @@
     },
     {
       "id": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
-      "title": "esta reportagem",
+      "title": "afirma",
       "url": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
       "domain": "globo.com",
       "source_name": "Globo",
-      "summary": "Texto do link frequente: “esta reportagem”",
+      "summary": "Texto do link frequente: “afirma”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -4765,7 +4778,7 @@
         "https://www.poder360.com.br/opiniao/a-pedofilia-e-o-perdao-inexplicavel-da-esquerda/",
         "https://www.poder360.com.br/opiniao/o-pedofilo-a-onu-e-a-privatizacao-do-mar/"
       ],
-      "anchor_text": "esta reportagem",
+      "anchor_text": "afirma",
       "raw_host": "g1.globo.com",
       "available": true,
       "status_code": null
@@ -6967,6 +6980,10 @@
     {
       "source": "https://www.poder360.com.br/opiniao/alerta-a-populacao/",
       "target": "https://twitter.com/schmittpaula/status/1420717549889675266"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/ameaca-eficaz-nunca-e-cumprida/",
+      "target": "https://www.poder360.com.br/opiniao/a-vaza-jato-e-o-sequestro-de-jornalistas-brasileiros-por-paula-schmitt/"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/as-armas-biologicas-e-a-defesa-que-mata-por-paula-schmitt/",
