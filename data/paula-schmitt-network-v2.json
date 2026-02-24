@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-02-23T06:08:41Z",
+    "generated_at": "2026-01-12T05:32:42Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
     "total_nodes": 418,
     "total_edges": 561,
@@ -4843,11 +4843,11 @@
     },
     {
       "id": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
-      "title": "afirma",
+      "title": "esta reportagem",
       "url": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
       "domain": "globo.com",
       "source_name": "Globo",
-      "summary": "Texto do link frequente: “afirma”",
+      "summary": "Texto do link frequente: “esta reportagem”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -4856,7 +4856,7 @@
         "https://www.poder360.com.br/opiniao/a-pedofilia-e-o-perdao-inexplicavel-da-esquerda/",
         "https://www.poder360.com.br/opiniao/o-pedofilo-a-onu-e-a-privatizacao-do-mar/"
       ],
-      "anchor_text": "afirma",
+      "anchor_text": "esta reportagem",
       "raw_host": "g1.globo.com",
       "available": true,
       "status_code": null
