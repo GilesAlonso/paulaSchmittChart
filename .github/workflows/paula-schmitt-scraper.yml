@@ -2,7 +2,6 @@ name: Update Paula Schmitt dataset
 
 permissions:
   contents: write
-  pull-requests: write
 
 on:
   schedule:
@@ -15,6 +14,9 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          ref: main
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -40,31 +42,16 @@ jobs:
             echo "Dataset changes detected."
           fi
 
-      - name: Create Pull Request
+      - name: Commit and push changes
         if: steps.changes.outputs.changes == 'true'
-        uses: peter-evans/create-pull-request@v5
-        with:
-          branch: scraper-update-${{ github.run_number }}-${{ github.run_attempt }}
-          delete-branch: true
-          title: 'chore: update Paula Schmitt dataset [automated]'
-          body: |
-            Automated dataset update from weekly scraper run.
-            
-            **Run details:**
-            - Workflow: ${{ github.workflow }}
-            - Run ID: ${{ github.run_id }}
-            - Triggered by: ${{ github.event_name }}
-            
-            **Changes:**
-            - Updated Paula Schmitt citation network dataset
-            - File: `data/paula-schmitt-network-v2.json`
-            
-            This PR was created automatically by the scheduled scraper workflow.
-          labels: automated, data-update
-          commit-message: 'chore: update Paula Schmitt dataset'
-          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "chore: update Paula Schmitt dataset [automated]"
+          git push
 
       - name: No changes detected
         if: steps.changes.outputs.changes == 'false'
         run: |
-          echo "✅ No dataset changes detected. Skipping pull request creation."
+          echo "✅ No dataset changes detected. Skipping commit."
