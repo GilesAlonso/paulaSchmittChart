@@ -45,8 +45,8 @@ jobs:
       - name: Commit and push changes
         if: steps.changes.outputs.changes == 'true'
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GilesAlonso"
+          git config --global user.email "giles.g.alonso@gmail.com"
           git add .
           git commit -m "chore: update Paula Schmitt dataset [automated]"
           git push
