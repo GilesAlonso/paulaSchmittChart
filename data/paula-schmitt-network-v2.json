@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated_at": "2026-03-09T06:00:46Z",
+    "generated_at": "2026-03-16T06:24:12Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 420,
-    "total_edges": 563,
-    "total_articles": 297,
+    "total_nodes": 421,
+    "total_edges": 565,
+    "total_articles": 298,
     "total_external_sources": 123,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
@@ -3708,7 +3708,7 @@
       "url": "https://www.poder360.com.br/opiniao/lula-chomsky-e-um-pedofilo-entram-num-bar/",
       "published_at": "2025-11-20T05:57:20-03:00",
       "listed_date": "2025-11-20",
-      "theme": "Internacional",
+      "theme": "Governo",
       "summary": "As conexões do caso Epstein desnudam alianças improváveis e mostram como figuras rivais dividem o mesmo subterrâneo de poder e conveniência",
       "modified_at": "2025-11-20T05:57:20-03:00",
       "available": true,
@@ -3872,6 +3872,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/gilmar-voce-deixou-cair-isso-aqui/",
+      "title": "Gilmar, você deixou cair isso aqui",
+      "url": "https://www.poder360.com.br/opiniao/gilmar-voce-deixou-cair-isso-aqui/",
+      "published_at": "2026-03-12T05:56:43-03:00",
+      "listed_date": "2026-03-12",
+      "theme": "Justiça",
+      "summary": "Defesa da intimidade evocada pelo ministro contrasta com suas posições anteriores e sugere técnica diversionista",
+      "modified_at": "2026-03-12T05:56:43-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://twitter.com/realdonaldtrump",
       "title": "Donald Trump",
       "url": "https://twitter.com/realdonaldtrump",
@@ -3881,7 +3894,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 8,
-      "coverage": 0.0269,
+      "coverage": 0.0268,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-comida-o-corante-e-os-adoradores-de-politicos/",
         "https://www.poder360.com.br/opiniao/a-groenlandia-as-terras-estrangeiras-e-a-fanta-uva/",
@@ -3907,7 +3920,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 7,
-      "coverage": 0.0236,
+      "coverage": 0.0235,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
@@ -3932,7 +3945,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0135,
+      "coverage": 0.0134,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/o-aborto-da-razao-e-o-monstro/",
@@ -3954,7 +3967,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0135,
+      "coverage": 0.0134,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-entrega-da-amazonia-a-divisao-do-territorio-e-o-deposito-de-lixo/",
         "https://www.poder360.com.br/opiniao/o-clube-de-roma-e-o-cacique/",
@@ -3976,7 +3989,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0135,
+      "coverage": 0.0134,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-indicacao-de-dino-a-privatizacao-do-governo-e-a-erosao-da-democracia/",
         "https://www.poder360.com.br/opiniao/a-publicidade-o-gado-marcado-e-o-desenvolvimento-internacional/",
@@ -4258,6 +4271,48 @@
       ],
       "anchor_text": "New York Magazine",
       "raw_host": "nymag.com",
+      "available": true,
+      "status_code": null
+    },
+    {
+      "id": "https://planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+      "title": "Constituição",
+      "url": "https://planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
+      "domain": "planalto.gov.br",
+      "source_name": "Planalto",
+      "summary": "Texto do link frequente: “Constituição”",
+      "type": "external_source",
+      "theme": null,
+      "citation_count": 3,
+      "coverage": 0.0101,
+      "cited_by": [
+        "https://www.poder360.com.br/opiniao/a-venezuela-e-o-significado-magico/",
+        "https://www.poder360.com.br/opiniao/gilmar-voce-deixou-cair-isso-aqui/",
+        "https://www.poder360.com.br/opiniao/nem-tudo-por-dinheiro/"
+      ],
+      "anchor_text": "Constituição",
+      "raw_host": "planalto.gov.br",
+      "available": true,
+      "status_code": null
+    },
+    {
+      "id": "https://planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm",
+      "title": "Código Penal",
+      "url": "https://planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm",
+      "domain": "planalto.gov.br",
+      "source_name": "Planalto",
+      "summary": "Texto do link frequente: “Código Penal”",
+      "type": "external_source",
+      "theme": null,
+      "citation_count": 3,
+      "coverage": 0.0101,
+      "cited_by": [
+        "https://www.poder360.com.br/opiniao/a-venezuela-e-o-significado-magico/",
+        "https://www.poder360.com.br/opiniao/gilmar-voce-deixou-cair-isso-aqui/",
+        "https://www.poder360.com.br/opiniao/o-jornalismo-que-esconde/"
+      ],
+      "anchor_text": "Código Penal",
+      "raw_host": "planalto.gov.br",
       "available": true,
       "status_code": null
     },
@@ -4869,11 +4924,11 @@
     },
     {
       "id": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
-      "title": "afirma",
+      "title": "esta reportagem",
       "url": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
       "domain": "globo.com",
       "source_name": "Globo",
-      "summary": "Texto do link frequente: “afirma”",
+      "summary": "Texto do link frequente: “esta reportagem”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -4882,7 +4937,7 @@
         "https://www.poder360.com.br/opiniao/a-pedofilia-e-o-perdao-inexplicavel-da-esquerda/",
         "https://www.poder360.com.br/opiniao/o-pedofilo-a-onu-e-a-privatizacao-do-mar/"
       ],
-      "anchor_text": "afirma",
+      "anchor_text": "esta reportagem",
       "raw_host": "g1.globo.com",
       "available": true,
       "status_code": null
@@ -5508,46 +5563,6 @@
       "status_code": null
     },
     {
-      "id": "https://planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
-      "title": "Constituição",
-      "url": "https://planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
-      "domain": "planalto.gov.br",
-      "source_name": "Planalto",
-      "summary": "Texto do link frequente: “Constituição”",
-      "type": "external_source",
-      "theme": null,
-      "citation_count": 2,
-      "coverage": 0.0067,
-      "cited_by": [
-        "https://www.poder360.com.br/opiniao/a-venezuela-e-o-significado-magico/",
-        "https://www.poder360.com.br/opiniao/nem-tudo-por-dinheiro/"
-      ],
-      "anchor_text": "Constituição",
-      "raw_host": "planalto.gov.br",
-      "available": true,
-      "status_code": null
-    },
-    {
-      "id": "https://planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm",
-      "title": "Código Penal",
-      "url": "https://planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm",
-      "domain": "planalto.gov.br",
-      "source_name": "Planalto",
-      "summary": "Texto do link frequente: “Código Penal”",
-      "type": "external_source",
-      "theme": null,
-      "citation_count": 2,
-      "coverage": 0.0067,
-      "cited_by": [
-        "https://www.poder360.com.br/opiniao/a-venezuela-e-o-significado-magico/",
-        "https://www.poder360.com.br/opiniao/o-jornalismo-que-esconde/"
-      ],
-      "anchor_text": "Código Penal",
-      "raw_host": "planalto.gov.br",
-      "available": true,
-      "status_code": null
-    },
-    {
       "id": "https://plannedparenthood.org/",
       "title": "Planned Parenthood",
       "url": "https://plannedparenthood.org/",
@@ -6149,11 +6164,11 @@
     },
     {
       "id": "https://twitter.com/tabataamaralsp",
-      "title": "seu perfil no X",
+      "title": "@tabataamaralsp",
       "url": "https://twitter.com/tabataamaralsp",
       "domain": "twitter.com",
       "source_name": "Twitter / X",
-      "summary": "Texto do link frequente: “seu perfil no X”",
+      "summary": "Texto do link frequente: “@tabataamaralsp”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -6162,7 +6177,7 @@
         "https://www.poder360.com.br/opiniao/o-marajo-a-protecao-da-natureza-e-a-desprotecao-da-gente/",
         "https://www.poder360.com.br/opiniao/o-sangramento-coletivo-e-a-pobreza-mental-escreve-paula-schmitt/"
       ],
-      "anchor_text": "seu perfil no X",
+      "anchor_text": "@tabataamaralsp",
       "raw_host": "twitter.com",
       "available": true,
       "status_code": null
@@ -7396,6 +7411,14 @@
     {
       "source": "https://www.poder360.com.br/opiniao/fauci-os-caezinhos-os-orfaos-e-os-pretos-pobres-escreve-paula-schmitt/",
       "target": "https://twitter.com/USATODAY/status/1263709928604045312"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/gilmar-voce-deixou-cair-isso-aqui/",
+      "target": "https://planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/gilmar-voce-deixou-cair-isso-aqui/",
+      "target": "https://planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/ha-risco-de-legalizar-o-lobby-e-tambem-a-corrupcao-escreve-paula-schmitt/",
