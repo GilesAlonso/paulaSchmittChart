@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "generated_at": "2026-03-23T06:14:15Z",
+    "generated_at": "2026-03-30T06:34:05Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
     "total_nodes": 422,
     "total_edges": 570,
@@ -4436,11 +4436,11 @@
     },
     {
       "id": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
-      "title": "O Médico (e o) Político",
+      "title": "revista",
       "url": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
       "domain": "uol.com.br",
       "source_name": "Uol",
-      "summary": "Texto do link frequente: “O Médico (e o) Político”",
+      "summary": "Texto do link frequente: “revista”",
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
@@ -4450,7 +4450,7 @@
         "https://www.poder360.com.br/opiniao/o-genocida-o-vingador-e-a-inversao-dos-papeis/",
         "https://www.poder360.com.br/opiniao/os-medicos-pela-vida-e-as-bromelias-da-alma/"
       ],
-      "anchor_text": "O Médico (e o) Político",
+      "anchor_text": "revista",
       "raw_host": "piaui.folha.uol.com.br",
       "available": true,
       "status_code": null
@@ -4937,11 +4937,11 @@
     },
     {
       "id": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
-      "title": "esta reportagem",
+      "title": "afirma",
       "url": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
       "domain": "globo.com",
       "source_name": "Globo",
-      "summary": "Texto do link frequente: “esta reportagem”",
+      "summary": "Texto do link frequente: “afirma”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -4950,7 +4950,7 @@
         "https://www.poder360.com.br/opiniao/a-pedofilia-e-o-perdao-inexplicavel-da-esquerda/",
         "https://www.poder360.com.br/opiniao/o-pedofilo-a-onu-e-a-privatizacao-do-mar/"
       ],
-      "anchor_text": "esta reportagem",
+      "anchor_text": "afirma",
       "raw_host": "g1.globo.com",
       "available": true,
       "status_code": null
@@ -6177,11 +6177,11 @@
     },
     {
       "id": "https://twitter.com/tabataamaralsp",
-      "title": "seu perfil no X",
+      "title": "@tabataamaralsp",
       "url": "https://twitter.com/tabataamaralsp",
       "domain": "twitter.com",
       "source_name": "Twitter / X",
-      "summary": "Texto do link frequente: “seu perfil no X”",
+      "summary": "Texto do link frequente: “@tabataamaralsp”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -6190,7 +6190,7 @@
         "https://www.poder360.com.br/opiniao/o-marajo-a-protecao-da-natureza-e-a-desprotecao-da-gente/",
         "https://www.poder360.com.br/opiniao/o-sangramento-coletivo-e-a-pobreza-mental-escreve-paula-schmitt/"
       ],
-      "anchor_text": "seu perfil no X",
+      "anchor_text": "@tabataamaralsp",
       "raw_host": "twitter.com",
       "available": true,
       "status_code": null
