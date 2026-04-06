@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generated_at": "2026-03-30T06:34:05Z",
+    "generated_at": "2026-04-06T06:58:48Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 422,
-    "total_edges": 570,
-    "total_articles": 299,
-    "total_external_sources": 123,
+    "total_nodes": 424,
+    "total_edges": 573,
+    "total_articles": 300,
+    "total_external_sources": 124,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
   },
@@ -3898,6 +3898,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/o-virus-furtivo-e-a-certeza-do-caos/",
+      "title": "O vírus furtivo e a certeza do caos",
+      "url": "https://www.poder360.com.br/opiniao/o-virus-furtivo-e-a-certeza-do-caos/",
+      "published_at": "2026-04-02T05:54:54-03:00",
+      "listed_date": "2026-04-02",
+      "theme": "Saúde",
+      "summary": "Caso da Unicamp expõe conexões inquietantes, omissões da mídia e riscos ignorados na manipulação viral global",
+      "modified_at": "2026-04-02T05:54:54-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://twitter.com/realdonaldtrump",
       "title": "Donald Trump",
       "url": "https://twitter.com/realdonaldtrump",
@@ -3907,7 +3920,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 8,
-      "coverage": 0.0268,
+      "coverage": 0.0267,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-comida-o-corante-e-os-adoradores-de-politicos/",
         "https://www.poder360.com.br/opiniao/a-groenlandia-as-terras-estrangeiras-e-a-fanta-uva/",
@@ -3933,7 +3946,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 7,
-      "coverage": 0.0234,
+      "coverage": 0.0233,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
@@ -3958,7 +3971,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0134,
+      "coverage": 0.0133,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/o-aborto-da-razao-e-o-monstro/",
@@ -3980,7 +3993,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0134,
+      "coverage": 0.0133,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-entrega-da-amazonia-a-divisao-do-territorio-e-o-deposito-de-lixo/",
         "https://www.poder360.com.br/opiniao/o-clube-de-roma-e-o-cacique/",
@@ -4002,7 +4015,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0134,
+      "coverage": 0.0133,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-indicacao-de-dino-a-privatizacao-do-governo-e-a-erosao-da-democracia/",
         "https://www.poder360.com.br/opiniao/a-publicidade-o-gado-marcado-e-o-desenvolvimento-internacional/",
@@ -4572,6 +4585,26 @@
       ],
       "anchor_text": "By Way of Deception",
       "raw_host": "amazon.com.br",
+      "available": true,
+      "status_code": null
+    },
+    {
+      "id": "https://obamawhitehouse.archives.gov/blog/2014/10/17/doing-diligence-assess-risks-and-benefits-life-sciences-gain-function-research",
+      "title": "suspendeu",
+      "url": "https://obamawhitehouse.archives.gov/blog/2014/10/17/doing-diligence-assess-risks-and-benefits-life-sciences-gain-function-research",
+      "domain": "archives.gov",
+      "source_name": "Archives",
+      "summary": "Texto do link frequente: “suspendeu”",
+      "type": "external_source",
+      "theme": null,
+      "citation_count": 2,
+      "coverage": 0.0067,
+      "cited_by": [
+        "https://www.poder360.com.br/opiniao/a-pandemia-das-coincidencias-e-o-vazamento-de-gas-por-paula-schmitt/",
+        "https://www.poder360.com.br/opiniao/o-virus-furtivo-e-a-certeza-do-caos/"
+      ],
+      "anchor_text": "suspendeu",
+      "raw_host": "obamawhitehouse.archives.gov",
       "available": true,
       "status_code": null
     },
@@ -6177,11 +6210,11 @@
     },
     {
       "id": "https://twitter.com/tabataamaralsp",
-      "title": "@tabataamaralsp",
+      "title": "seu perfil no X",
       "url": "https://twitter.com/tabataamaralsp",
       "domain": "twitter.com",
       "source_name": "Twitter / X",
-      "summary": "Texto do link frequente: “@tabataamaralsp”",
+      "summary": "Texto do link frequente: “seu perfil no X”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -6190,7 +6223,7 @@
         "https://www.poder360.com.br/opiniao/o-marajo-a-protecao-da-natureza-e-a-desprotecao-da-gente/",
         "https://www.poder360.com.br/opiniao/o-sangramento-coletivo-e-a-pobreza-mental-escreve-paula-schmitt/"
       ],
-      "anchor_text": "@tabataamaralsp",
+      "anchor_text": "seu perfil no X",
       "raw_host": "twitter.com",
       "available": true,
       "status_code": null
@@ -6992,6 +7025,10 @@
     {
       "source": "https://www.poder360.com.br/opiniao/a-pandemia-das-coincidencias-e-o-vazamento-de-gas-por-paula-schmitt/",
       "target": "https://nymag.com/intelligencer/article/coronavirus-lab-escape-theory.html"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-pandemia-das-coincidencias-e-o-vazamento-de-gas-por-paula-schmitt/",
+      "target": "https://obamawhitehouse.archives.gov/blog/2014/10/17/doing-diligence-assess-risks-and-benefits-life-sciences-gain-function-research"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/a-pandemia-e-os-homens-de-visao-por-paula-schmitt/",
@@ -8376,6 +8413,14 @@
     {
       "source": "https://www.poder360.com.br/opiniao/o-valor-da-vida-e-a-eficacia-financeira/",
       "target": "https://www.poder360.com.br/opiniao/o-genocida-o-vingador-e-a-inversao-dos-papeis/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-virus-furtivo-e-a-certeza-do-caos/",
+      "target": "https://obamawhitehouse.archives.gov/blog/2014/10/17/doing-diligence-assess-risks-and-benefits-life-sciences-gain-function-research"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-virus-furtivo-e-a-certeza-do-caos/",
+      "target": "https://www.poder360.com.br/opiniao/intervencao-na-natureza-tem-seu-preco-alerta-paula-schmitt/"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/o-viva-rio-e-a-morte-do-morro/",
