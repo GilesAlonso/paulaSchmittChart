@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generated_at": "2026-04-20T07:20:59Z",
+    "generated_at": "2026-04-27T07:39:32Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 426,
-    "total_edges": 573,
-    "total_articles": 302,
-    "total_external_sources": 124,
+    "total_nodes": 430,
+    "total_edges": 579,
+    "total_articles": 303,
+    "total_external_sources": 127,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
   },
@@ -3773,7 +3773,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-milagre-da-vida-e-o-cego-que-ve/",
       "published_at": "2026-01-15T05:57:39-03:00",
       "listed_date": "2026-01-15",
-      "theme": "Gente",
+      "theme": "Brasil",
       "summary": "Empatia, humor e tecnologia transformam limites físicos em pontes de dignidade, criação e afeto; Paulo Ramos, programador surdo-cego, cria jogos inclusivos e inspira nas redes",
       "modified_at": "2026-01-15T05:57:39-03:00",
       "available": true,
@@ -3937,6 +3937,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/o-processo-da-bayer-as-terapias-genicas-e-o-jornalismo-de-compadrio/",
+      "title": "O processo da Bayer, as terapias gênicas e o jornalismo de compadrio",
+      "url": "https://www.poder360.com.br/opiniao/o-processo-da-bayer-as-terapias-genicas-e-o-jornalismo-de-compadrio/",
+      "published_at": "2026-04-23T05:57:08-03:00",
+      "listed_date": "2026-04-23",
+      "theme": "Mídia",
+      "summary": "Como um processo de patente questiona a imprensa e sua afirmação de que as injeções da covid não são uma terapia genética",
+      "modified_at": "2026-04-23T05:57:08-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://twitter.com/realdonaldtrump",
       "title": "Donald Trump",
       "url": "https://twitter.com/realdonaldtrump",
@@ -3946,7 +3959,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 8,
-      "coverage": 0.0265,
+      "coverage": 0.0264,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-comida-o-corante-e-os-adoradores-de-politicos/",
         "https://www.poder360.com.br/opiniao/a-groenlandia-as-terras-estrangeiras-e-a-fanta-uva/",
@@ -3972,7 +3985,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 7,
-      "coverage": 0.0232,
+      "coverage": 0.0231,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
@@ -4475,11 +4488,11 @@
     },
     {
       "id": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
-      "title": "O Médico (e o) Político",
+      "title": "revista",
       "url": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
       "domain": "uol.com.br",
       "source_name": "Uol",
-      "summary": "Texto do link frequente: “O Médico (e o) Político”",
+      "summary": "Texto do link frequente: “revista”",
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
@@ -4489,7 +4502,7 @@
         "https://www.poder360.com.br/opiniao/o-genocida-o-vingador-e-a-inversao-dos-papeis/",
         "https://www.poder360.com.br/opiniao/os-medicos-pela-vida-e-as-bromelias-da-alma/"
       ],
-      "anchor_text": "O Médico (e o) Político",
+      "anchor_text": "revista",
       "raw_host": "piaui.folha.uol.com.br",
       "available": true,
       "status_code": null
@@ -4531,6 +4544,26 @@
       ],
       "anchor_text": "revista israelense 972mag",
       "raw_host": "972mag.com",
+      "available": true,
+      "status_code": null
+    },
+    {
+      "id": "https://abraji.org.br/",
+      "title": "Abraji",
+      "url": "https://abraji.org.br/",
+      "domain": "abraji.org.br",
+      "source_name": "Abraji",
+      "summary": "Texto do link frequente: “Abraji”",
+      "type": "external_source",
+      "theme": null,
+      "citation_count": 2,
+      "coverage": 0.0066,
+      "cited_by": [
+        "https://www.poder360.com.br/opiniao/o-bilionario-a-jornalista-e-o-ladrao-entram-num-bar/",
+        "https://www.poder360.com.br/opiniao/o-processo-da-bayer-as-terapias-genicas-e-o-jornalismo-de-compadrio/"
+      ],
+      "anchor_text": "Abraji",
+      "raw_host": "abraji.org.br",
       "available": true,
       "status_code": null
     },
@@ -4611,6 +4644,26 @@
       ],
       "anchor_text": "By Way of Deception",
       "raw_host": "amazon.com.br",
+      "available": true,
+      "status_code": null
+    },
+    {
+      "id": "https://eb.archive.org/web/20230209224842/https:/agrosaber.com.br/sabia-que-o-sal-e-mais-perigoso-a-saude-que-o-glifosato",
+      "title": "Sabia que o sal é mais perigoso à saúde que o glifosato?",
+      "url": "https://eb.archive.org/web/20230209224842/https:/agrosaber.com.br/sabia-que-o-sal-e-mais-perigoso-a-saude-que-o-glifosato",
+      "domain": "archive.org",
+      "source_name": "Archive",
+      "summary": "Texto do link frequente: “Sabia que o sal é mais perigoso à saúde que o glifosato?”",
+      "type": "external_source",
+      "theme": null,
+      "citation_count": 2,
+      "coverage": 0.0066,
+      "cited_by": [
+        "https://www.poder360.com.br/opiniao/a-gripe-aviaria-e-os-abutres-premonitorios/",
+        "https://www.poder360.com.br/opiniao/o-processo-da-bayer-as-terapias-genicas-e-o-jornalismo-de-compadrio/"
+      ],
+      "anchor_text": "Sabia que o sal é mais perigoso à saúde que o glifosato?",
+      "raw_host": "eb.archive.org",
       "available": true,
       "status_code": null
     },
@@ -5695,6 +5748,26 @@
       "status_code": null
     },
     {
+      "id": "https://prefeitura.sp.gov.br/w/veja-a-lista-dos-maiores-devedores-de-impostos-municipais-de-são-paulo-1",
+      "title": "deve R$ 19,8 bilhões",
+      "url": "https://prefeitura.sp.gov.br/w/veja-a-lista-dos-maiores-devedores-de-impostos-municipais-de-são-paulo-1",
+      "domain": "sp.gov.br",
+      "source_name": "Sp",
+      "summary": "Texto do link frequente: “deve R$ 19,8 bilhões”",
+      "type": "external_source",
+      "theme": null,
+      "citation_count": 2,
+      "coverage": 0.0066,
+      "cited_by": [
+        "https://www.poder360.com.br/opiniao/o-processo-da-bayer-as-terapias-genicas-e-o-jornalismo-de-compadrio/",
+        "https://www.poder360.com.br/opiniao/sam-altman-o-poder-injustificado-e-a-lei-da-misoginia/"
+      ],
+      "anchor_text": "deve R$ 19,8 bilhões",
+      "raw_host": "prefeitura.sp.gov.br",
+      "available": true,
+      "status_code": null
+    },
+    {
       "id": "https://static1.squarespace.com/static/660c4b59c109b8233a98392b/t/68960e4b747bba0a2c946065/1754664523489/CW+-+PTBR_+Jan-8-Big-Report-pt-BR.docx.pdf",
       "title": "extensa reportagem",
       "url": "https://static1.squarespace.com/static/660c4b59c109b8233a98392b/t/68960e4b747bba0a2c946065/1754664523489/CW+-+PTBR_+Jan-8-Big-Report-pt-BR.docx.pdf",
@@ -6236,11 +6309,11 @@
     },
     {
       "id": "https://twitter.com/tabataamaralsp",
-      "title": "@tabataamaralsp",
+      "title": "seu perfil no X",
       "url": "https://twitter.com/tabataamaralsp",
       "domain": "twitter.com",
       "source_name": "Twitter / X",
-      "summary": "Texto do link frequente: “@tabataamaralsp”",
+      "summary": "Texto do link frequente: “seu perfil no X”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -6249,7 +6322,7 @@
         "https://www.poder360.com.br/opiniao/o-marajo-a-protecao-da-natureza-e-a-desprotecao-da-gente/",
         "https://www.poder360.com.br/opiniao/o-sangramento-coletivo-e-a-pobreza-mental-escreve-paula-schmitt/"
       ],
-      "anchor_text": "@tabataamaralsp",
+      "anchor_text": "seu perfil no X",
       "raw_host": "twitter.com",
       "available": true,
       "status_code": null
@@ -6775,6 +6848,10 @@
     {
       "source": "https://www.poder360.com.br/opiniao/a-gripe-aviaria-e-os-abutres-premonitorios/",
       "target": "http://archive.is/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-gripe-aviaria-e-os-abutres-premonitorios/",
+      "target": "https://eb.archive.org/web/20230209224842/https:/agrosaber.com.br/sabia-que-o-sal-e-mais-perigoso-a-saude-que-o-glifosato"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/a-gripe-aviaria-e-os-abutres-premonitorios/",
@@ -7698,6 +7775,10 @@
     },
     {
       "source": "https://www.poder360.com.br/opiniao/o-bilionario-a-jornalista-e-o-ladrao-entram-num-bar/",
+      "target": "https://abraji.org.br/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-bilionario-a-jornalista-e-o-ladrao-entram-num-bar/",
       "target": "https://nonprofitquarterly.org/the-role-of-pierre-omidyar-and-big-charity-in-the-ukraine"
     },
     {
@@ -8277,6 +8358,18 @@
       "target": "https://www.poder360.com.br/opiniao/o-pedofilo-a-onu-e-a-privatizacao-do-mar/"
     },
     {
+      "source": "https://www.poder360.com.br/opiniao/o-processo-da-bayer-as-terapias-genicas-e-o-jornalismo-de-compadrio/",
+      "target": "https://abraji.org.br/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-processo-da-bayer-as-terapias-genicas-e-o-jornalismo-de-compadrio/",
+      "target": "https://eb.archive.org/web/20230209224842/https:/agrosaber.com.br/sabia-que-o-sal-e-mais-perigoso-a-saude-que-o-glifosato"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-processo-da-bayer-as-terapias-genicas-e-o-jornalismo-de-compadrio/",
+      "target": "https://prefeitura.sp.gov.br/w/veja-a-lista-dos-maiores-devedores-de-impostos-municipais-de-são-paulo-1"
+    },
+    {
       "source": "https://www.poder360.com.br/opiniao/o-q-anon-as-teorias-conspiratorias-e-os-signos-que-queremos-ver-por-paula-schmitt/",
       "target": "https://amazon.com/Three-Trillion-Dollar-War-Conflict/dp/0393067017"
     },
@@ -8647,6 +8740,10 @@
     {
       "source": "https://www.poder360.com.br/opiniao/respira-expira/",
       "target": "https://www.poder360.com.br/opiniao/um-passeio-pela-logica-politica-de-nassim-taleb-parte1-por-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/sam-altman-o-poder-injustificado-e-a-lei-da-misoginia/",
+      "target": "https://prefeitura.sp.gov.br/w/veja-a-lista-dos-maiores-devedores-de-impostos-municipais-de-são-paulo-1"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/sangue-ruim/",
