@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated_at": "2026-04-27T07:39:32Z",
+    "generated_at": "2026-05-04T07:54:27Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 430,
-    "total_edges": 579,
-    "total_articles": 303,
+    "total_nodes": 431,
+    "total_edges": 581,
+    "total_articles": 304,
     "total_external_sources": 127,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
@@ -3786,7 +3786,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-navio-hospital-e-o-brasil-doente/",
       "published_at": "2026-01-22T05:57:54-03:00",
       "listed_date": "2026-01-22",
-      "theme": "Internacional",
+      "theme": "China",
       "summary": "A visita do navio chinês ao Rio expôs fragilidades diplomáticas, falhas legais e o silêncio constrangedor das autoridades brasileiras",
       "modified_at": "2026-01-22T20:09:38-03:00",
       "available": true,
@@ -3950,6 +3950,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/o-racismo-e-a-usurpacao-dos-direitos-do-negro/",
+      "title": "O racismo e a usurpação dos direitos do negro",
+      "url": "https://www.poder360.com.br/opiniao/o-racismo-e-a-usurpacao-dos-direitos-do-negro/",
+      "published_at": "2026-04-30T05:58:09-03:00",
+      "listed_date": "2026-04-30",
+      "theme": "Brasil",
+      "summary": "O crime pelo qual querem me condenar é o mais perigoso no Brasil de hoje: falar a verdade e defender a razão",
+      "modified_at": "2026-04-30T05:58:09-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://twitter.com/realdonaldtrump",
       "title": "Donald Trump",
       "url": "https://twitter.com/realdonaldtrump",
@@ -3959,7 +3972,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 8,
-      "coverage": 0.0264,
+      "coverage": 0.0263,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-comida-o-corante-e-os-adoradores-de-politicos/",
         "https://www.poder360.com.br/opiniao/a-groenlandia-as-terras-estrangeiras-e-a-fanta-uva/",
@@ -3985,7 +3998,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 7,
-      "coverage": 0.0231,
+      "coverage": 0.023,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
@@ -4488,11 +4501,11 @@
     },
     {
       "id": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
-      "title": "revista",
+      "title": "O Médico (e o) Político",
       "url": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
       "domain": "uol.com.br",
       "source_name": "Uol",
-      "summary": "Texto do link frequente: “revista”",
+      "summary": "Texto do link frequente: “O Médico (e o) Político”",
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
@@ -4502,7 +4515,7 @@
         "https://www.poder360.com.br/opiniao/o-genocida-o-vingador-e-a-inversao-dos-papeis/",
         "https://www.poder360.com.br/opiniao/os-medicos-pela-vida-e-as-bromelias-da-alma/"
       ],
-      "anchor_text": "revista",
+      "anchor_text": "O Médico (e o) Político",
       "raw_host": "piaui.folha.uol.com.br",
       "available": true,
       "status_code": null
@@ -5029,11 +5042,11 @@
     },
     {
       "id": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
-      "title": "esta reportagem",
+      "title": "afirma",
       "url": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
       "domain": "globo.com",
       "source_name": "Globo",
-      "summary": "Texto do link frequente: “esta reportagem”",
+      "summary": "Texto do link frequente: “afirma”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -5042,7 +5055,7 @@
         "https://www.poder360.com.br/opiniao/a-pedofilia-e-o-perdao-inexplicavel-da-esquerda/",
         "https://www.poder360.com.br/opiniao/o-pedofilo-a-onu-e-a-privatizacao-do-mar/"
       ],
-      "anchor_text": "esta reportagem",
+      "anchor_text": "afirma",
       "raw_host": "g1.globo.com",
       "available": true,
       "status_code": null
@@ -8372,6 +8385,14 @@
     {
       "source": "https://www.poder360.com.br/opiniao/o-q-anon-as-teorias-conspiratorias-e-os-signos-que-queremos-ver-por-paula-schmitt/",
       "target": "https://amazon.com/Three-Trillion-Dollar-War-Conflict/dp/0393067017"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-racismo-e-a-usurpacao-dos-direitos-do-negro/",
+      "target": "https://www.poder360.com.br/opiniao/a-simulacao-de-odio-e-o-nariz-de-negro/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-racismo-e-a-usurpacao-dos-direitos-do-negro/",
+      "target": "https://www.poder360.com.br/opiniao/bem-vindo-ao-libano/"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/o-racismo-identitario-e-os-supremacistas-da-corte/",
