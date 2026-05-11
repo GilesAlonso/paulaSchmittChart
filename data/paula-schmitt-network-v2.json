@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generated_at": "2026-05-04T07:54:27Z",
+    "generated_at": "2026-05-11T08:29:37Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 431,
-    "total_edges": 581,
-    "total_articles": 304,
-    "total_external_sources": 127,
+    "total_nodes": 433,
+    "total_edges": 587,
+    "total_articles": 305,
+    "total_external_sources": 128,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
   },
@@ -3799,7 +3799,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-oceania-a-eurasia-e-a-asia-leste/",
       "published_at": "2026-01-29T05:59:39-03:00",
       "listed_date": "2026-01-29",
-      "theme": "Internacional",
+      "theme": "Economia",
       "summary": "Tensões entre China e EUA, capital global e guerras compõem um tabuleiro de poder que ultrapassa narrativas nacionais",
       "modified_at": "2026-01-29T05:59:39-03:00",
       "available": true,
@@ -3963,6 +3963,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/o-lobo-o-cordeiro-e-a-ignorancia/",
+      "title": "O lobo, o cordeiro e a ignorância",
+      "url": "https://www.poder360.com.br/opiniao/o-lobo-o-cordeiro-e-a-ignorancia/",
+      "published_at": "2026-05-07T05:58:01-03:00",
+      "listed_date": "2026-05-07",
+      "theme": "Economia",
+      "summary": "Capitalismo de Estado combina intervenção estatal e concentração de renda, reforçando privilégios e ampliando distorções econômicas; tudo em nome de causas supostamente nobres",
+      "modified_at": "2026-05-07T05:58:01-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://twitter.com/realdonaldtrump",
       "title": "Donald Trump",
       "url": "https://twitter.com/realdonaldtrump",
@@ -3972,7 +3985,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 8,
-      "coverage": 0.0263,
+      "coverage": 0.0262,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-comida-o-corante-e-os-adoradores-de-politicos/",
         "https://www.poder360.com.br/opiniao/a-groenlandia-as-terras-estrangeiras-e-a-fanta-uva/",
@@ -4023,7 +4036,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0132,
+      "coverage": 0.0131,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/o-aborto-da-razao-e-o-monstro/",
@@ -4045,7 +4058,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0132,
+      "coverage": 0.0131,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-entrega-da-amazonia-a-divisao-do-territorio-e-o-deposito-de-lixo/",
         "https://www.poder360.com.br/opiniao/o-clube-de-roma-e-o-cacique/",
@@ -4067,7 +4080,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0132,
+      "coverage": 0.0131,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-indicacao-de-dino-a-privatizacao-do-governo-e-a-erosao-da-democracia/",
         "https://www.poder360.com.br/opiniao/a-publicidade-o-gado-marcado-e-o-desenvolvimento-internacional/",
@@ -4089,7 +4102,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-adultizacao-a-infantilizacao-de-adultos-e-os-brasileiros-de-pavlov/",
         "https://www.poder360.com.br/opiniao/a-gripe-aviaria-e-os-abutres-premonitorios/",
@@ -4110,7 +4123,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-expulsao-dos-alunos-e-a-admissao-da-pfizer/",
         "https://www.poder360.com.br/opiniao/a-unanimidade-obrigatoria-e-a-edicao-da-realidade-escreve-paula-schmitt/",
@@ -4131,7 +4144,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-quarentena-na-inglaterra-e-os-manes-do-mundo/",
         "https://www.poder360.com.br/opiniao/o-novo-chefe-da-saude-e-a-surpresa-promissora/",
@@ -4152,7 +4165,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-fiocruz-e-o-sigilo-de-15-anos/",
         "https://www.poder360.com.br/opiniao/a-igreja-da-vacina-e-a-fe-que-remove-a-razao-escreve-paula-schmitt/",
@@ -4173,7 +4186,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-obsolescencia-programada-o-negocio-sustentavel-e-a-vacina-dos-ovos-de-ouro-escreve-paula-schmitt/",
         "https://www.poder360.com.br/opiniao/as-maos-sujas-de-quem-lava-as-maos-por-paula-schmitt/",
@@ -4194,7 +4207,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-origem-do-virus-e-o-jornalismo-de-sicofancia/",
         "https://www.poder360.com.br/opiniao/o-new-york-times-e-o-dedo-que-aponta-para-o-espelho/",
@@ -4215,7 +4228,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-quarentena-na-inglaterra-e-os-manes-do-mundo/",
         "https://www.poder360.com.br/opiniao/a-vacina-da-covid-o-capitalismo-de-incentivos-e-a-premiacao-do-erro-analisa-paula-schmitt/",
@@ -4236,7 +4249,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-astrazeneca-a-anticiencia-e-o-pensamento-acritico/",
         "https://www.poder360.com.br/opiniao/na-pratica-a-teoria-da-conspiracao-e-outra/",
@@ -4257,7 +4270,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-astrazeneca-a-anticiencia-e-o-pensamento-acritico/",
         "https://www.poder360.com.br/opiniao/o-forum-economico-mundial-a-nisia-e-o-milei/",
@@ -4278,7 +4291,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-indicacao-de-dino-a-privatizacao-do-governo-e-a-erosao-da-democracia/",
         "https://www.poder360.com.br/opiniao/o-marmita-de-bilionario-e-a-censura-pos-coito/",
@@ -4299,7 +4312,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-amazonia-a-suastica-e-o-gene-de-indio/",
         "https://www.poder360.com.br/opiniao/a-vacina-da-covid-o-capitalismo-de-incentivos-e-a-premiacao-do-erro-analisa-paula-schmitt/",
@@ -4320,7 +4333,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-pandemia-a-tempestade-e-o-arco-iris-escreve-paula-schmitt/",
         "https://www.poder360.com.br/opiniao/intervencao-na-natureza-tem-seu-preco-alerta-paula-schmitt/",
@@ -4341,7 +4354,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-pandemia-das-coincidencias-e-o-vazamento-de-gas-por-paula-schmitt/",
         "https://www.poder360.com.br/opiniao/a-pandemia-e-os-homens-de-visao-por-paula-schmitt/",
@@ -4362,7 +4375,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-venezuela-e-o-significado-magico/",
         "https://www.poder360.com.br/opiniao/gilmar-voce-deixou-cair-isso-aqui/",
@@ -4383,7 +4396,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-venezuela-e-o-significado-magico/",
         "https://www.poder360.com.br/opiniao/gilmar-voce-deixou-cair-isso-aqui/",
@@ -4404,7 +4417,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-oms-e-a-volta-dos-que-mal-foram-por-paula-schmitt/",
         "https://www.poder360.com.br/opiniao/a-unanimidade-verificada-e-a-caca-aos-insubmissos-escreve-paula-schmitt/",
@@ -4425,7 +4438,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-ivermectina-a-realidade-nao-mediada-e-os-estudos-bem-projetados-escreve-paula-schmitt-2/",
         "https://www.poder360.com.br/opiniao/a-novafala-e-o-totalitarismo-introjetado/",
@@ -4446,7 +4459,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-explosao-em-beirute-e-algumas-teorias-por-paula-schmitt/",
         "https://www.poder360.com.br/opiniao/desonestidade-intelectual-e-o-politicamente-correto-por-paula-schmitt/",
@@ -4467,7 +4480,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/o-estudo-da-lancet-e-a-contaminacao-das-noticias-escreve-paula-schmitt/",
         "https://www.poder360.com.br/opiniao/o-racismo-identitario-e-os-supremacistas-da-corte/",
@@ -4488,7 +4501,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-infantilizacao-do-adulto/",
         "https://www.poder360.com.br/opiniao/o-clube-de-roma-e-o-cacique/",
@@ -4501,21 +4514,21 @@
     },
     {
       "id": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
-      "title": "O Médico (e o) Político",
+      "title": "revista",
       "url": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
       "domain": "uol.com.br",
       "source_name": "Uol",
-      "summary": "Texto do link frequente: “O Médico (e o) Político”",
+      "summary": "Texto do link frequente: “revista”",
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
-      "coverage": 0.0099,
+      "coverage": 0.0098,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-quarentena-na-inglaterra-e-os-manes-do-mundo/",
         "https://www.poder360.com.br/opiniao/o-genocida-o-vingador-e-a-inversao-dos-papeis/",
         "https://www.poder360.com.br/opiniao/os-medicos-pela-vida-e-as-bromelias-da-alma/"
       ],
-      "anchor_text": "O Médico (e o) Político",
+      "anchor_text": "revista",
       "raw_host": "piaui.folha.uol.com.br",
       "available": true,
       "status_code": null
@@ -4737,6 +4750,26 @@
       ],
       "anchor_text": "revelou",
       "raw_host": "bbc.com",
+      "available": true,
+      "status_code": null
+    },
+    {
+      "id": "https://paulaschmitt.blogspot.com/2014/04/interview-with-michael-shermer-founder.html",
+      "title": "Interview With Michael Shermer Founder",
+      "url": "https://paulaschmitt.blogspot.com/2014/04/interview-with-michael-shermer-founder.html",
+      "domain": "blogspot.com",
+      "source_name": "Blogspot",
+      "summary": "Texto do link frequente: “postada num blog”",
+      "type": "external_source",
+      "theme": null,
+      "citation_count": 2,
+      "coverage": 0.0066,
+      "cited_by": [
+        "https://www.poder360.com.br/opiniao/a-vacina-obrigatoria-e-a-certeza-dos-que-nao-sabem-por-paula-schmitt/",
+        "https://www.poder360.com.br/opiniao/o-controle-da-mente-e-o-x-da-persuasao/"
+      ],
+      "anchor_text": "postada num blog",
+      "raw_host": "paulaschmitt.blogspot.com",
       "available": true,
       "status_code": null
     },
@@ -5042,11 +5075,11 @@
     },
     {
       "id": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
-      "title": "afirma",
+      "title": "esta reportagem",
       "url": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
       "domain": "globo.com",
       "source_name": "Globo",
-      "summary": "Texto do link frequente: “afirma”",
+      "summary": "Texto do link frequente: “esta reportagem”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -5055,7 +5088,7 @@
         "https://www.poder360.com.br/opiniao/a-pedofilia-e-o-perdao-inexplicavel-da-esquerda/",
         "https://www.poder360.com.br/opiniao/o-pedofilo-a-onu-e-a-privatizacao-do-mar/"
       ],
-      "anchor_text": "afirma",
+      "anchor_text": "esta reportagem",
       "raw_host": "g1.globo.com",
       "available": true,
       "status_code": null
@@ -7331,6 +7364,10 @@
       "target": "https://en.wikipedia.org/wiki/Unethical_human_experimentation_in_the_United_States"
     },
     {
+      "source": "https://www.poder360.com.br/opiniao/a-vacina-obrigatoria-e-a-certeza-dos-que-nao-sabem-por-paula-schmitt/",
+      "target": "https://paulaschmitt.blogspot.com/2014/04/interview-with-michael-shermer-founder.html"
+    },
+    {
       "source": "https://www.poder360.com.br/opiniao/a-vaza-jato-e-o-sequestro-de-jornalistas-brasileiros-por-paula-schmitt/",
       "target": "https://twitter.com/schmittpaula/status/1169067745184559106"
     },
@@ -7948,6 +7985,10 @@
     },
     {
       "source": "https://www.poder360.com.br/opiniao/o-controle-da-mente-e-o-x-da-persuasao/",
+      "target": "https://paulaschmitt.blogspot.com/2014/04/interview-with-michael-shermer-founder.html"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-controle-da-mente-e-o-x-da-persuasao/",
       "target": "https://www.poder360.com.br/opiniao/a-obediencia-contagiante-e-a-blusinha-que-mais-sai/"
     },
     {
@@ -8161,6 +8202,22 @@
     {
       "source": "https://www.poder360.com.br/opiniao/o-livre-mercado-e-os-truques-da-concentracao-de-renda/",
       "target": "https://www.poder360.com.br/opiniao/o-valor-da-vida-e-a-eficacia-financeira/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-lobo-o-cordeiro-e-a-ignorancia/",
+      "target": "https://www.poder360.com.br/opiniao/o-capitalismo-de-estado-e-a-urina-de-midas/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-lobo-o-cordeiro-e-a-ignorancia/",
+      "target": "https://www.poder360.com.br/opiniao/o-sangramento-coletivo-e-a-pobreza-mental-escreve-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-lobo-o-cordeiro-e-a-ignorancia/",
+      "target": "https://www.poder360.com.br/opiniao/o-sindicalista-o-patrao-e-o-resto/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-lobo-o-cordeiro-e-a-ignorancia/",
+      "target": "https://www.poder360.com.br/opiniao/o-sociocapitalismo-e-a-galinha-dos-ovos-de-aids/"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/o-marajo-a-protecao-da-natureza-e-a-desprotecao-da-gente/",
