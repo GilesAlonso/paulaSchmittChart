@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated_at": "2026-05-18T08:49:52Z",
+    "generated_at": "2026-05-25T09:00:56Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 435,
-    "total_edges": 594,
-    "total_articles": 306,
+    "total_nodes": 436,
+    "total_edges": 599,
+    "total_articles": 307,
     "total_external_sources": 129,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
@@ -3825,7 +3825,7 @@
       "url": "https://www.poder360.com.br/opiniao/peter-thiel-a-inteligencia-artificial-e-o-homem-deus/",
       "published_at": "2026-02-12T05:52:43-03:00",
       "listed_date": "2026-02-12",
-      "theme": "Internacional",
+      "theme": "Economia",
       "summary": "Bilionário da Palantir, em contrato com diferentes governos, aposta na vigilância preditiva e no transumanismo como um novo tipo de controle social e gestão pública",
       "modified_at": "2026-02-12T05:52:43-03:00",
       "available": true,
@@ -3989,6 +3989,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/o-jornalismo-de-acesso-e-o-furo-seletivo/",
+      "title": "O jornalismo de acesso e o furo seletivo",
+      "url": "https://www.poder360.com.br/opiniao/o-jornalismo-de-acesso-e-o-furo-seletivo/",
+      "published_at": "2026-05-21T05:58:46-03:00",
+      "listed_date": "2026-05-21",
+      "theme": "Mídia",
+      "summary": "A reportagem do “Intercept Brasil” sobre a relação de Flávio Bolsonaro com o ex-dono do Banco Master, Daniel Vorcaro, foi bombástica, mas ela foi jornalismo?",
+      "modified_at": "2026-05-21T05:58:46-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://fda.gov/",
       "title": "FDA",
       "url": "https://fda.gov/",
@@ -4050,7 +4063,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0131,
+      "coverage": 0.013,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/o-aborto-da-razao-e-o-monstro/",
@@ -4072,7 +4085,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0131,
+      "coverage": 0.013,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-entrega-da-amazonia-a-divisao-do-territorio-e-o-deposito-de-lixo/",
         "https://www.poder360.com.br/opiniao/o-clube-de-roma-e-o-cacique/",
@@ -4094,7 +4107,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0131,
+      "coverage": 0.013,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-indicacao-de-dino-a-privatizacao-do-governo-e-a-erosao-da-democracia/",
         "https://www.poder360.com.br/opiniao/a-publicidade-o-gado-marcado-e-o-desenvolvimento-internacional/",
@@ -4103,6 +4116,27 @@
       ],
       "anchor_text": "Usaid",
       "raw_host": "usaid.gov",
+      "available": true,
+      "status_code": null
+    },
+    {
+      "id": "https://972mag.com/109-definitions-of-terrorism",
+      "title": "autora de uma entrevist",
+      "url": "https://972mag.com/109-definitions-of-terrorism",
+      "domain": "972mag.com",
+      "source_name": "972Mag",
+      "summary": "Texto do link frequente: “autora de uma entrevist”",
+      "type": "external_source",
+      "theme": null,
+      "citation_count": 3,
+      "coverage": 0.0098,
+      "cited_by": [
+        "https://www.poder360.com.br/opiniao/a-guerra-o-humanismo-e-o-outro/",
+        "https://www.poder360.com.br/opiniao/o-jornalismo-de-acesso-e-o-furo-seletivo/",
+        "https://www.poder360.com.br/opiniao/o-massacre-de-blumenau-e-seus-beneficios/"
+      ],
+      "anchor_text": "autora de uma entrevist",
+      "raw_host": "972mag.com",
       "available": true,
       "status_code": null
     },
@@ -4528,11 +4562,11 @@
     },
     {
       "id": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
-      "title": "O Médico (e o) Político",
+      "title": "revista",
       "url": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
       "domain": "uol.com.br",
       "source_name": "Uol",
-      "summary": "Texto do link frequente: “O Médico (e o) Político”",
+      "summary": "Texto do link frequente: “revista”",
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
@@ -4542,28 +4576,8 @@
         "https://www.poder360.com.br/opiniao/o-genocida-o-vingador-e-a-inversao-dos-papeis/",
         "https://www.poder360.com.br/opiniao/os-medicos-pela-vida-e-as-bromelias-da-alma/"
       ],
-      "anchor_text": "O Médico (e o) Político",
+      "anchor_text": "revista",
       "raw_host": "piaui.folha.uol.com.br",
-      "available": true,
-      "status_code": null
-    },
-    {
-      "id": "https://972mag.com/109-definitions-of-terrorism",
-      "title": "ter entrevistado",
-      "url": "https://972mag.com/109-definitions-of-terrorism",
-      "domain": "972mag.com",
-      "source_name": "972Mag",
-      "summary": "Texto do link frequente: “ter entrevistado”",
-      "type": "external_source",
-      "theme": null,
-      "citation_count": 2,
-      "coverage": 0.0065,
-      "cited_by": [
-        "https://www.poder360.com.br/opiniao/a-guerra-o-humanismo-e-o-outro/",
-        "https://www.poder360.com.br/opiniao/o-massacre-de-blumenau-e-seus-beneficios/"
-      ],
-      "anchor_text": "ter entrevistado",
-      "raw_host": "972mag.com",
       "available": true,
       "status_code": null
     },
@@ -8212,6 +8226,26 @@
     {
       "source": "https://www.poder360.com.br/opiniao/o-jornalismo-da-mediocridade-e-a-censura-de-mercado/",
       "target": "https://twitter.com/HenriqueSoldani"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-jornalismo-de-acesso-e-o-furo-seletivo/",
+      "target": "https://972mag.com/109-definitions-of-terrorism"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-jornalismo-de-acesso-e-o-furo-seletivo/",
+      "target": "https://www.poder360.com.br/opiniao/a-era-da-manipulacao-e-os-ataques-de-falsa-bandeira-escreve-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-jornalismo-de-acesso-e-o-furo-seletivo/",
+      "target": "https://www.poder360.com.br/opiniao/a-vaza-jato-e-o-sequestro-de-jornalistas-brasileiros-por-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-jornalismo-de-acesso-e-o-furo-seletivo/",
+      "target": "https://www.poder360.com.br/opiniao/reminiscencias-e-digressoes-para-nao-ter-que-falar-da-pandemia-obrigada-por-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-jornalismo-de-acesso-e-o-furo-seletivo/",
+      "target": "https://www.poder360.com.br/opiniao/vaza-jato-glenn-greenwald-e-uma-coincidencia-intrigante-por-paula-schmitt/"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/o-jornalismo-que-esconde/",
