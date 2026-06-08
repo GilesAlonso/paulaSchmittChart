@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated_at": "2026-06-01T10:22:55Z",
+    "generated_at": "2026-06-08T09:26:46Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 438,
-    "total_edges": 602,
-    "total_articles": 308,
+    "total_nodes": 439,
+    "total_edges": 611,
+    "total_articles": 309,
     "total_external_sources": 130,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
@@ -2590,7 +2590,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-aquecimento-resfriado-e-o-semsenso-cientifico/",
       "published_at": "2023-12-21T05:58:21-03:00",
       "listed_date": "2023-12-21",
-      "theme": null,
+      "theme": "Internacional",
       "summary": "Elite que defende a eugenia é a mesma que vem há décadas dizendo que as mudanças climá-ticas vão destruir o mundo, escreve Paula Schmitt",
       "modified_at": "2023-12-21T05:58:21-03:00",
       "available": true,
@@ -4015,6 +4015,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/a-burrice-artificial-e-a-ignorancia-que-se-ignora/",
+      "title": "A burrice artificial e a ignorância que se ignora",
+      "url": "https://www.poder360.com.br/opiniao/a-burrice-artificial-e-a-ignorancia-que-se-ignora/",
+      "published_at": "2026-06-04T05:54:38-03:00",
+      "listed_date": "2026-06-04",
+      "theme": "Mídia",
+      "summary": "Caso de doença fictícia expõe limites da IA; parceria entre “Folha” e ChatGPT pode estreitar referências e levanta dúvidas sobre pluralidade de informações",
+      "modified_at": "2026-06-04T05:54:38-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://fda.gov/",
       "title": "FDA",
       "url": "https://fda.gov/",
@@ -4024,7 +4037,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 8,
-      "coverage": 0.026,
+      "coverage": 0.0259,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
@@ -4050,7 +4063,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 8,
-      "coverage": 0.026,
+      "coverage": 0.0259,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-comida-o-corante-e-os-adoradores-de-politicos/",
         "https://www.poder360.com.br/opiniao/a-groenlandia-as-terras-estrangeiras-e-a-fanta-uva/",
@@ -4076,7 +4089,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.013,
+      "coverage": 0.0129,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/o-aborto-da-razao-e-o-monstro/",
@@ -4098,7 +4111,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.013,
+      "coverage": 0.0129,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-entrega-da-amazonia-a-divisao-do-territorio-e-o-deposito-de-lixo/",
         "https://www.poder360.com.br/opiniao/o-clube-de-roma-e-o-cacique/",
@@ -4120,7 +4133,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.013,
+      "coverage": 0.0129,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-indicacao-de-dino-a-privatizacao-do-governo-e-a-erosao-da-democracia/",
         "https://www.poder360.com.br/opiniao/a-publicidade-o-gado-marcado-e-o-desenvolvimento-internacional/",
@@ -6739,6 +6752,42 @@
     {
       "source": "https://www.poder360.com.br/opiniao/a-astrazeneca-a-anticiencia-e-o-pensamento-acritico/",
       "target": "https://www.poder360.com.br/opiniao/a-pfizer-e-a-imunidade-que-ela-nao-promete-mas-que-exige-de-todos-nos-por-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-burrice-artificial-e-a-ignorancia-que-se-ignora/",
+      "target": "https://www.poder360.com.br/opiniao/a-corte-que-condena-a-vitima-e-absolve-o-culpado/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-burrice-artificial-e-a-ignorancia-que-se-ignora/",
+      "target": "https://www.poder360.com.br/opiniao/a-gripe-aviaria-e-os-abutres-premonitorios/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-burrice-artificial-e-a-ignorancia-que-se-ignora/",
+      "target": "https://www.poder360.com.br/opiniao/gary-webb-a-cia-e-os-assessores-de-imprensa/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-burrice-artificial-e-a-ignorancia-que-se-ignora/",
+      "target": "https://www.poder360.com.br/opiniao/o-11-de-setembro-e-a-fe-que-move-as-versoes-oficiais-por-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-burrice-artificial-e-a-ignorancia-que-se-ignora/",
+      "target": "https://www.poder360.com.br/opiniao/o-aquecimento-resfriado-e-o-semsenso-cientifico/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-burrice-artificial-e-a-ignorancia-que-se-ignora/",
+      "target": "https://www.poder360.com.br/opiniao/o-estudo-da-lancet-e-a-contaminacao-das-noticias-escreve-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-burrice-artificial-e-a-ignorancia-que-se-ignora/",
+      "target": "https://www.poder360.com.br/opiniao/o-estudo-de-manaus-as-22-mortes-e-os-resultados-previsiveis-escreve-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-burrice-artificial-e-a-ignorancia-que-se-ignora/",
+      "target": "https://www.poder360.com.br/opiniao/o-remedio-que-prevenia-as-mortes-por-hemofilia-mas-nao-do-jeito-que-voce-pensa-escreve-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-burrice-artificial-e-a-ignorancia-que-se-ignora/",
+      "target": "https://www.poder360.com.br/opiniao/o-sociocapitalismo-e-a-galinha-dos-ovos-de-aids/"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
