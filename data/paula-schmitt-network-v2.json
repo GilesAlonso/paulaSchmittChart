@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated_at": "2026-06-29T09:40:10Z",
+    "generated_at": "2026-07-06T09:12:38Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 443,
-    "total_edges": 616,
-    "total_articles": 311,
+    "total_nodes": 444,
+    "total_edges": 620,
+    "total_articles": 312,
     "total_external_sources": 132,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
@@ -3890,7 +3890,7 @@
       "url": "https://www.poder360.com.br/opiniao/bolsonaro-a-pequena-midia-e-o-ar-que-se-respira/",
       "published_at": "2026-03-19T05:57:00-03:00",
       "listed_date": "2026-03-19",
-      "theme": "Mídia",
+      "theme": "Brasil",
       "summary": "Polarização política e atuação da imprensa alimentam narrativas extremadas e distorcem o debate público",
       "modified_at": "2026-03-19T05:57:00-03:00",
       "available": true,
@@ -4054,6 +4054,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/a-renuncia-de-tulsi-gabbard-e-a-manufatura-do-sarscov/",
+      "title": "A renúncia de Tulsi Gabbard e a manufatura do SarsCov",
+      "url": "https://www.poder360.com.br/opiniao/a-renuncia-de-tulsi-gabbard-e-a-manufatura-do-sarscov/",
+      "published_at": "2026-07-02T05:50:03-03:00",
+      "listed_date": "2026-07-02",
+      "theme": "Internacional",
+      "summary": "Ex-diretora de Inteligência Nacional ocupava o cargo mais alto da espionagem dos Estados Unidos",
+      "modified_at": "2026-07-02T05:50:03-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://fda.gov/",
       "title": "FDA",
       "url": "https://fda.gov/",
@@ -4063,7 +4076,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 8,
-      "coverage": 0.0257,
+      "coverage": 0.0256,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
@@ -4089,7 +4102,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 8,
-      "coverage": 0.0257,
+      "coverage": 0.0256,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-comida-o-corante-e-os-adoradores-de-politicos/",
         "https://www.poder360.com.br/opiniao/a-groenlandia-as-terras-estrangeiras-e-a-fanta-uva/",
@@ -4115,7 +4128,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0129,
+      "coverage": 0.0128,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/o-aborto-da-razao-e-o-monstro/",
@@ -4137,7 +4150,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0129,
+      "coverage": 0.0128,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-entrega-da-amazonia-a-divisao-do-territorio-e-o-deposito-de-lixo/",
         "https://www.poder360.com.br/opiniao/o-clube-de-roma-e-o-cacique/",
@@ -4159,7 +4172,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0129,
+      "coverage": 0.0128,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-indicacao-de-dino-a-privatizacao-do-governo-e-a-erosao-da-democracia/",
         "https://www.poder360.com.br/opiniao/a-publicidade-o-gado-marcado-e-o-desenvolvimento-internacional/",
@@ -5155,11 +5168,11 @@
     },
     {
       "id": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
-      "title": "esta reportagem",
+      "title": "afirma",
       "url": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
       "domain": "globo.com",
       "source_name": "Globo",
-      "summary": "Texto do link frequente: “esta reportagem”",
+      "summary": "Texto do link frequente: “afirma”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -5168,7 +5181,7 @@
         "https://www.poder360.com.br/opiniao/a-pedofilia-e-o-perdao-inexplicavel-da-esquerda/",
         "https://www.poder360.com.br/opiniao/o-pedofilo-a-onu-e-a-privatizacao-do-mar/"
       ],
-      "anchor_text": "esta reportagem",
+      "anchor_text": "afirma",
       "raw_host": "g1.globo.com",
       "available": true,
       "status_code": null
@@ -6515,11 +6528,11 @@
     },
     {
       "id": "https://twitter.com/tabataamaralsp",
-      "title": "@tabataamaralsp",
+      "title": "seu perfil no X",
       "url": "https://twitter.com/tabataamaralsp",
       "domain": "twitter.com",
       "source_name": "Twitter / X",
-      "summary": "Texto do link frequente: “@tabataamaralsp”",
+      "summary": "Texto do link frequente: “seu perfil no X”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -6528,7 +6541,7 @@
         "https://www.poder360.com.br/opiniao/o-marajo-a-protecao-da-natureza-e-a-desprotecao-da-gente/",
         "https://www.poder360.com.br/opiniao/o-sangramento-coletivo-e-a-pobreza-mental-escreve-paula-schmitt/"
       ],
-      "anchor_text": "@tabataamaralsp",
+      "anchor_text": "seu perfil no X",
       "raw_host": "twitter.com",
       "available": true,
       "status_code": null
@@ -7482,6 +7495,22 @@
     {
       "source": "https://www.poder360.com.br/opiniao/a-receita-de-bolo-e-o-mosquito-humano/",
       "target": "https://www.poder360.com.br/opiniao/intervencao-na-natureza-tem-seu-preco-alerta-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-renuncia-de-tulsi-gabbard-e-a-manufatura-do-sarscov/",
+      "target": "https://www.poder360.com.br/opiniao/a-corte-que-condena-a-vitima-e-absolve-o-culpado/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-renuncia-de-tulsi-gabbard-e-a-manufatura-do-sarscov/",
+      "target": "https://www.poder360.com.br/opiniao/o-sangramento-coletivo-e-a-pobreza-mental-escreve-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-renuncia-de-tulsi-gabbard-e-a-manufatura-do-sarscov/",
+      "target": "https://www.poder360.com.br/opiniao/o-sociocapitalismo-e-a-galinha-dos-ovos-de-aids/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-renuncia-de-tulsi-gabbard-e-a-manufatura-do-sarscov/",
+      "target": "https://www.poder360.com.br/opiniao/sao-francisco-e-a-brisa-suave-de-bacterias-e-dioxina/"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/a-simulacao-de-odio-e-o-nariz-de-negro/",
