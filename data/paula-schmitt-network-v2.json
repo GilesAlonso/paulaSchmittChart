@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated_at": "2026-07-06T09:12:38Z",
+    "generated_at": "2026-07-13T08:24:17Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 444,
-    "total_edges": 620,
-    "total_articles": 312,
+    "total_nodes": 445,
+    "total_edges": 621,
+    "total_articles": 313,
     "total_external_sources": 132,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
@@ -3903,7 +3903,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-virus-furtivo-e-a-certeza-do-caos/",
       "published_at": "2026-04-02T05:54:54-03:00",
       "listed_date": "2026-04-02",
-      "theme": "Saúde",
+      "theme": "Internacional",
       "summary": "Caso da Unicamp expõe conexões inquietantes, omissões da mídia e riscos ignorados na manipulação viral global",
       "modified_at": "2026-04-02T05:54:54-03:00",
       "available": true,
@@ -4067,6 +4067,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/mulher-no-volante-perigo-constante/",
+      "title": "Mulher no volante, perigo constante",
+      "url": "https://www.poder360.com.br/opiniao/mulher-no-volante-perigo-constante/",
+      "published_at": "2026-07-09T05:58:21-03:00",
+      "listed_date": "2026-07-09",
+      "theme": "Eleições",
+      "summary": "Narrativas sobre voto e gênero ganham espaço e são usadas para distrair e aprofundar divisões políticas e sociais",
+      "modified_at": "2026-07-09T05:58:21-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://fda.gov/",
       "title": "FDA",
       "url": "https://fda.gov/",
@@ -4202,6 +4215,27 @@
       ],
       "anchor_text": "autora de uma entrevist",
       "raw_host": "972mag.com",
+      "available": true,
+      "status_code": null
+    },
+    {
+      "id": "https://amazon.com.br/Consenso-Inc-monopólio-indústria-obediência/dp/6559574318",
+      "title": "Consenso Inc.",
+      "url": "https://amazon.com.br/Consenso-Inc-monopólio-indústria-obediência/dp/6559574318",
+      "domain": "amazon.com.br",
+      "source_name": "Amazon",
+      "summary": "Texto do link frequente: “Consenso Inc.”",
+      "type": "external_source",
+      "theme": null,
+      "citation_count": 3,
+      "coverage": 0.0096,
+      "cited_by": [
+        "https://www.poder360.com.br/opiniao/charlie-kirk-e-o-direito-de-portar-palavras/",
+        "https://www.poder360.com.br/opiniao/mulher-no-volante-perigo-constante/",
+        "https://www.poder360.com.br/opiniao/o-viva-rio-e-a-morte-do-morro/"
+      ],
+      "anchor_text": "Consenso Inc.",
+      "raw_host": "amazon.com.br",
       "available": true,
       "status_code": null
     },
@@ -4627,11 +4661,11 @@
     },
     {
       "id": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
-      "title": "revista",
+      "title": "O Médico (e o) Político",
       "url": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
       "domain": "uol.com.br",
       "source_name": "Uol",
-      "summary": "Texto do link frequente: “revista”",
+      "summary": "Texto do link frequente: “O Médico (e o) Político”",
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
@@ -4641,7 +4675,7 @@
         "https://www.poder360.com.br/opiniao/o-genocida-o-vingador-e-a-inversao-dos-papeis/",
         "https://www.poder360.com.br/opiniao/os-medicos-pela-vida-e-as-bromelias-da-alma/"
       ],
-      "anchor_text": "revista",
+      "anchor_text": "O Médico (e o) Político",
       "raw_host": "piaui.folha.uol.com.br",
       "available": true,
       "status_code": null
@@ -4723,26 +4757,6 @@
       ],
       "anchor_text": "livro publicado em 2008",
       "raw_host": "amazon.com",
-      "available": true,
-      "status_code": null
-    },
-    {
-      "id": "https://amazon.com.br/Consenso-Inc-monopólio-indústria-obediência/dp/6559574318",
-      "title": "Consenso Inc.",
-      "url": "https://amazon.com.br/Consenso-Inc-monopólio-indústria-obediência/dp/6559574318",
-      "domain": "amazon.com.br",
-      "source_name": "Amazon",
-      "summary": "Texto do link frequente: “Consenso Inc.”",
-      "type": "external_source",
-      "theme": null,
-      "citation_count": 2,
-      "coverage": 0.0064,
-      "cited_by": [
-        "https://www.poder360.com.br/opiniao/charlie-kirk-e-o-direito-de-portar-palavras/",
-        "https://www.poder360.com.br/opiniao/o-viva-rio-e-a-morte-do-morro/"
-      ],
-      "anchor_text": "Consenso Inc.",
-      "raw_host": "amazon.com.br",
       "available": true,
       "status_code": null
     },
@@ -5168,11 +5182,11 @@
     },
     {
       "id": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
-      "title": "afirma",
+      "title": "esta reportagem",
       "url": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
       "domain": "globo.com",
       "source_name": "Globo",
-      "summary": "Texto do link frequente: “afirma”",
+      "summary": "Texto do link frequente: “esta reportagem”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -5181,7 +5195,7 @@
         "https://www.poder360.com.br/opiniao/a-pedofilia-e-o-perdao-inexplicavel-da-esquerda/",
         "https://www.poder360.com.br/opiniao/o-pedofilo-a-onu-e-a-privatizacao-do-mar/"
       ],
-      "anchor_text": "afirma",
+      "anchor_text": "esta reportagem",
       "raw_host": "g1.globo.com",
       "available": true,
       "status_code": null
@@ -6528,11 +6542,11 @@
     },
     {
       "id": "https://twitter.com/tabataamaralsp",
-      "title": "seu perfil no X",
+      "title": "@tabataamaralsp",
       "url": "https://twitter.com/tabataamaralsp",
       "domain": "twitter.com",
       "source_name": "Twitter / X",
-      "summary": "Texto do link frequente: “seu perfil no X”",
+      "summary": "Texto do link frequente: “@tabataamaralsp”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -6541,7 +6555,7 @@
         "https://www.poder360.com.br/opiniao/o-marajo-a-protecao-da-natureza-e-a-desprotecao-da-gente/",
         "https://www.poder360.com.br/opiniao/o-sangramento-coletivo-e-a-pobreza-mental-escreve-paula-schmitt/"
       ],
-      "anchor_text": "seu perfil no X",
+      "anchor_text": "@tabataamaralsp",
       "raw_host": "twitter.com",
       "available": true,
       "status_code": null
@@ -7935,6 +7949,10 @@
     {
       "source": "https://www.poder360.com.br/opiniao/mkultra-e-o-balaio-de-besteiras/",
       "target": "https://www.poder360.com.br/opiniao/as-armas-biologicas-e-a-defesa-que-mata-por-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/mulher-no-volante-perigo-constante/",
+      "target": "https://amazon.com.br/Consenso-Inc-monopólio-indústria-obediência/dp/6559574318"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/na-pratica-a-teoria-da-conspiracao-e-outra/",
