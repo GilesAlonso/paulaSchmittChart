@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated_at": "2026-07-13T08:24:17Z",
+    "generated_at": "2026-07-20T08:01:41Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 445,
-    "total_edges": 621,
-    "total_articles": 313,
+    "total_nodes": 446,
+    "total_edges": 627,
+    "total_articles": 314,
     "total_external_sources": 132,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
@@ -3916,7 +3916,7 @@
       "url": "https://www.poder360.com.br/opiniao/sam-altman-o-poder-injustificado-e-a-lei-da-misoginia/",
       "published_at": "2026-04-09T05:57:23-03:00",
       "listed_date": "2026-04-09",
-      "theme": "Internacional",
+      "theme": "Congresso",
       "summary": "Acusações contra o CEO da OpenAI expõem riscos do poder concentrado e remetem a controvérsias de projeto brasileiro para criminalizar ódio contra a mulher",
       "modified_at": "2026-04-09T05:57:23-03:00",
       "available": true,
@@ -4080,6 +4080,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/kayfabe-o-teatro-das-tesouras-e-a-serra-que-afia-o-ferro/",
+      "title": "Kayfabe, o teatro das tesouras e a serra que afia o ferro",
+      "url": "https://www.poder360.com.br/opiniao/kayfabe-o-teatro-das-tesouras-e-a-serra-que-afia-o-ferro/",
+      "published_at": "2026-07-16T05:57:46-03:00",
+      "listed_date": "2026-07-16",
+      "theme": "Internacional",
+      "summary": "Robert Kennedy, ex-ídolo da esquerda, é criticado no governo Trump por fazer exatamente o que prometia quando era adorado por democratas",
+      "modified_at": "2026-07-16T05:57:46-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://fda.gov/",
       "title": "FDA",
       "url": "https://fda.gov/",
@@ -4089,7 +4102,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 8,
-      "coverage": 0.0256,
+      "coverage": 0.0255,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
@@ -4115,7 +4128,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 8,
-      "coverage": 0.0256,
+      "coverage": 0.0255,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-comida-o-corante-e-os-adoradores-de-politicos/",
         "https://www.poder360.com.br/opiniao/a-groenlandia-as-terras-estrangeiras-e-a-fanta-uva/",
@@ -4141,7 +4154,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0128,
+      "coverage": 0.0127,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/o-aborto-da-razao-e-o-monstro/",
@@ -4163,7 +4176,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0128,
+      "coverage": 0.0127,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-entrega-da-amazonia-a-divisao-do-territorio-e-o-deposito-de-lixo/",
         "https://www.poder360.com.br/opiniao/o-clube-de-roma-e-o-cacique/",
@@ -4185,7 +4198,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0128,
+      "coverage": 0.0127,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-indicacao-de-dino-a-privatizacao-do-governo-e-a-erosao-da-democracia/",
         "https://www.poder360.com.br/opiniao/a-publicidade-o-gado-marcado-e-o-desenvolvimento-internacional/",
@@ -4592,6 +4605,27 @@
         "https://www.poder360.com.br/opiniao/o-direito-de-nao-saber-e-o-dever-de-informar-comenta-paula-schmitt/"
       ],
       "anchor_text": "tweet",
+      "raw_host": "twitter.com",
+      "available": true,
+      "status_code": null
+    },
+    {
+      "id": "https://twitter.com/realDonaldTrump",
+      "title": "Donald Trump",
+      "url": "https://twitter.com/realDonaldTrump",
+      "domain": "twitter.com",
+      "source_name": "Twitter / X",
+      "summary": "Texto do link frequente: “Donald Trump”",
+      "type": "external_source",
+      "theme": null,
+      "citation_count": 3,
+      "coverage": 0.0096,
+      "cited_by": [
+        "https://www.poder360.com.br/opiniao/a-albania-e-a-privatizacao-do-mundo/",
+        "https://www.poder360.com.br/opiniao/brasil-o-aterro-sanitario-do-mundo/",
+        "https://www.poder360.com.br/opiniao/kayfabe-o-teatro-das-tesouras-e-a-serra-que-afia-o-ferro/"
+      ],
+      "anchor_text": "Donald Trump",
       "raw_host": "twitter.com",
       "available": true,
       "status_code": null
@@ -6261,26 +6295,6 @@
       "status_code": null
     },
     {
-      "id": "https://twitter.com/realDonaldTrump",
-      "title": "Donald Trump",
-      "url": "https://twitter.com/realDonaldTrump",
-      "domain": "twitter.com",
-      "source_name": "Twitter / X",
-      "summary": "Texto do link frequente: “Donald Trump”",
-      "type": "external_source",
-      "theme": null,
-      "citation_count": 2,
-      "coverage": 0.0064,
-      "cited_by": [
-        "https://www.poder360.com.br/opiniao/a-albania-e-a-privatizacao-do-mundo/",
-        "https://www.poder360.com.br/opiniao/brasil-o-aterro-sanitario-do-mundo/"
-      ],
-      "anchor_text": "Donald Trump",
-      "raw_host": "twitter.com",
-      "available": true,
-      "status_code": null
-    },
-    {
       "id": "https://twitter.com/realdonaldtrump?lang=pt",
       "title": "Donald Trump",
       "url": "https://twitter.com/realdonaldtrump?lang=pt",
@@ -6542,11 +6556,11 @@
     },
     {
       "id": "https://twitter.com/tabataamaralsp",
-      "title": "@tabataamaralsp",
+      "title": "seu perfil no X",
       "url": "https://twitter.com/tabataamaralsp",
       "domain": "twitter.com",
       "source_name": "Twitter / X",
-      "summary": "Texto do link frequente: “@tabataamaralsp”",
+      "summary": "Texto do link frequente: “seu perfil no X”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -6555,7 +6569,7 @@
         "https://www.poder360.com.br/opiniao/o-marajo-a-protecao-da-natureza-e-a-desprotecao-da-gente/",
         "https://www.poder360.com.br/opiniao/o-sangramento-coletivo-e-a-pobreza-mental-escreve-paula-schmitt/"
       ],
-      "anchor_text": "@tabataamaralsp",
+      "anchor_text": "seu perfil no X",
       "raw_host": "twitter.com",
       "available": true,
       "status_code": null
@@ -7941,6 +7955,30 @@
     {
       "source": "https://www.poder360.com.br/opiniao/israel-hezbollah-e-o-medo-como-arma-de-contagio/",
       "target": "https://www.poder360.com.br/opiniao/a-vacina-o-medo-e-as-explosoes-em-beirute-por-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/kayfabe-o-teatro-das-tesouras-e-a-serra-que-afia-o-ferro/",
+      "target": "https://twitter.com/realDonaldTrump"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/kayfabe-o-teatro-das-tesouras-e-a-serra-que-afia-o-ferro/",
+      "target": "https://www.poder360.com.br/opiniao/a-realidade-as-operacoes-psicologicas-e-o-aperto-de-mao/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/kayfabe-o-teatro-das-tesouras-e-a-serra-que-afia-o-ferro/",
+      "target": "https://www.poder360.com.br/opiniao/black-cube-e-a-industria-da-mentira/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/kayfabe-o-teatro-das-tesouras-e-a-serra-que-afia-o-ferro/",
+      "target": "https://www.poder360.com.br/opiniao/cameras-chinesas-controle-e-o-silencio-da-direita-em-sao-paulo/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/kayfabe-o-teatro-das-tesouras-e-a-serra-que-afia-o-ferro/",
+      "target": "https://www.poder360.com.br/opiniao/o-8-de-janeiro-a-reedicao-da-realidade-e-a-arquitetura-das-consequencias/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/kayfabe-o-teatro-das-tesouras-e-a-serra-que-afia-o-ferro/",
+      "target": "https://www.poder360.com.br/opiniao/o-8-de-janeiro-os-inocentes-e-a-investigacao-visual/"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/mkultra-e-o-balaio-de-besteiras/",
