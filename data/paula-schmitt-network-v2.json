@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generated_at": "2026-07-27T08:35:08Z",
+    "generated_at": "2026-08-03T08:27:56Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 449,
-    "total_edges": 633,
-    "total_articles": 315,
-    "total_external_sources": 134,
+    "total_nodes": 451,
+    "total_edges": 636,
+    "total_articles": 316,
+    "total_external_sources": 135,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
   },
@@ -3942,7 +3942,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-processo-da-bayer-as-terapias-genicas-e-o-jornalismo-de-compadrio/",
       "published_at": "2026-04-23T05:57:08-03:00",
       "listed_date": "2026-04-23",
-      "theme": "Mídia",
+      "theme": "Infográficos",
       "summary": "Como um processo de patente questiona a imprensa e sua afirmação de que as injeções da covid não são uma terapia genética",
       "modified_at": "2026-04-23T05:57:08-03:00",
       "available": true,
@@ -4106,6 +4106,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/o-medico-e-o-monstro/",
+      "title": "O médico e o monstro",
+      "url": "https://www.poder360.com.br/opiniao/o-medico-e-o-monstro/",
+      "published_at": "2026-07-30T06:00:45-03:00",
+      "listed_date": "2026-07-30",
+      "theme": "Saúde",
+      "summary": "O diário de Fauci mostra como o chefe da pandemia nadava de braçada na fama, no cinismo e na sociopatia enquanto o mundo afundava na desgraça que ele ajudou a criar",
+      "modified_at": "2026-07-30T06:00:45-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://fda.gov/",
       "title": "FDA",
       "url": "https://fda.gov/",
@@ -4115,7 +4128,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 9,
-      "coverage": 0.0286,
+      "coverage": 0.0285,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
@@ -4142,7 +4155,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 8,
-      "coverage": 0.0254,
+      "coverage": 0.0253,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-comida-o-corante-e-os-adoradores-de-politicos/",
         "https://www.poder360.com.br/opiniao/a-groenlandia-as-terras-estrangeiras-e-a-fanta-uva/",
@@ -5250,11 +5263,11 @@
     },
     {
       "id": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
-      "title": "esta reportagem",
+      "title": "afirma",
       "url": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
       "domain": "globo.com",
       "source_name": "Globo",
-      "summary": "Texto do link frequente: “esta reportagem”",
+      "summary": "Texto do link frequente: “afirma”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -5263,7 +5276,7 @@
         "https://www.poder360.com.br/opiniao/a-pedofilia-e-o-perdao-inexplicavel-da-esquerda/",
         "https://www.poder360.com.br/opiniao/o-pedofilo-a-onu-e-a-privatizacao-do-mar/"
       ],
-      "anchor_text": "esta reportagem",
+      "anchor_text": "afirma",
       "raw_host": "g1.globo.com",
       "available": true,
       "status_code": null
@@ -6549,6 +6562,26 @@
       "status_code": null
     },
     {
+      "id": "https://twitter.com/schmittpaula/status/1557802328069214210?s=20",
+      "title": "apresentavam menor risco de transmitir a covid",
+      "url": "https://twitter.com/schmittpaula/status/1557802328069214210?s=20",
+      "domain": "twitter.com",
+      "source_name": "Twitter / X",
+      "summary": "Texto do link frequente: “apresentavam menor risco de transmitir a covid”",
+      "type": "external_source",
+      "theme": null,
+      "citation_count": 2,
+      "coverage": 0.0063,
+      "cited_by": [
+        "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
+        "https://www.poder360.com.br/opiniao/o-medico-e-o-monstro/"
+      ],
+      "anchor_text": "apresentavam menor risco de transmitir a covid",
+      "raw_host": "twitter.com",
+      "available": true,
+      "status_code": null
+    },
+    {
       "id": "https://twitter.com/schmittpaula/status/1557902460802535431?s=20",
       "title": "artigo",
       "url": "https://twitter.com/schmittpaula/status/1557902460802535431?s=20",
@@ -6610,11 +6643,11 @@
     },
     {
       "id": "https://twitter.com/tabataamaralsp",
-      "title": "@tabataamaralsp",
+      "title": "seu perfil no X",
       "url": "https://twitter.com/tabataamaralsp",
       "domain": "twitter.com",
       "source_name": "Twitter / X",
-      "summary": "Texto do link frequente: “@tabataamaralsp”",
+      "summary": "Texto do link frequente: “seu perfil no X”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -6623,7 +6656,7 @@
         "https://www.poder360.com.br/opiniao/o-marajo-a-protecao-da-natureza-e-a-desprotecao-da-gente/",
         "https://www.poder360.com.br/opiniao/o-sangramento-coletivo-e-a-pobreza-mental-escreve-paula-schmitt/"
       ],
-      "anchor_text": "@tabataamaralsp",
+      "anchor_text": "seu perfil no X",
       "raw_host": "twitter.com",
       "available": true,
       "status_code": null
@@ -6997,6 +7030,10 @@
     {
       "source": "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
       "target": "https://thelancet.com/journals/lancet/article/PIIS0140-6736(22)00089-7/fulltext"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
+      "target": "https://twitter.com/schmittpaula/status/1557802328069214210?s=20"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
@@ -8753,6 +8790,14 @@
     {
       "source": "https://www.poder360.com.br/opiniao/o-medico-bot-e-os-pacientes-sinteticos/",
       "target": "https://www.poder360.com.br/opiniao/sao-francisco-e-a-brisa-suave-de-bacterias-e-dioxina/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-medico-e-o-monstro/",
+      "target": "https://twitter.com/schmittpaula/status/1557802328069214210?s=20"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-medico-e-o-monstro/",
+      "target": "https://www.poder360.com.br/opiniao/o-gado-ao-contrario-e-as-mentes-diminutas-comenta-paula-schmitt/"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/o-morto-esta-estavel-e-outras-verdades/",
