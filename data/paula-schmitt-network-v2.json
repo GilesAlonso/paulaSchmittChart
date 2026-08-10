@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated_at": "2026-08-03T08:27:56Z",
+    "generated_at": "2026-08-10T06:10:04Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 451,
-    "total_edges": 636,
-    "total_articles": 316,
+    "total_nodes": 452,
+    "total_edges": 639,
+    "total_articles": 317,
     "total_external_sources": 135,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
@@ -4119,6 +4119,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/o-diario-de-fauci-e-o-virus-de-pai-desconhecido/",
+      "title": "O diário de Fauci e o vírus de pai desconhecido",
+      "url": "https://www.poder360.com.br/opiniao/o-diario-de-fauci-e-o-virus-de-pai-desconhecido/",
+      "published_at": "2026-08-06T05:58:40-03:00",
+      "listed_date": "2026-08-06",
+      "theme": "Coronavírus",
+      "summary": "Registros expõem contradições sobre a origem do coronavírus e o financiamento de pesquisas de risco",
+      "modified_at": "2026-08-06T05:58:40-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://fda.gov/",
       "title": "FDA",
       "url": "https://fda.gov/",
@@ -4128,7 +4141,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 9,
-      "coverage": 0.0285,
+      "coverage": 0.0284,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
@@ -4155,7 +4168,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 8,
-      "coverage": 0.0253,
+      "coverage": 0.0252,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-comida-o-corante-e-os-adoradores-de-politicos/",
         "https://www.poder360.com.br/opiniao/a-groenlandia-as-terras-estrangeiras-e-a-fanta-uva/",
@@ -4181,7 +4194,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0127,
+      "coverage": 0.0126,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/o-aborto-da-razao-e-o-monstro/",
@@ -4203,7 +4216,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0127,
+      "coverage": 0.0126,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-entrega-da-amazonia-a-divisao-do-territorio-e-o-deposito-de-lixo/",
         "https://www.poder360.com.br/opiniao/o-clube-de-roma-e-o-cacique/",
@@ -4225,7 +4238,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0127,
+      "coverage": 0.0126,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-indicacao-de-dino-a-privatizacao-do-governo-e-a-erosao-da-democracia/",
         "https://www.poder360.com.br/opiniao/a-publicidade-o-gado-marcado-e-o-desenvolvimento-internacional/",
@@ -5263,11 +5276,11 @@
     },
     {
       "id": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
-      "title": "afirma",
+      "title": "esta reportagem",
       "url": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
       "domain": "globo.com",
       "source_name": "Globo",
-      "summary": "Texto do link frequente: “afirma”",
+      "summary": "Texto do link frequente: “esta reportagem”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -5276,7 +5289,7 @@
         "https://www.poder360.com.br/opiniao/a-pedofilia-e-o-perdao-inexplicavel-da-esquerda/",
         "https://www.poder360.com.br/opiniao/o-pedofilo-a-onu-e-a-privatizacao-do-mar/"
       ],
-      "anchor_text": "afirma",
+      "anchor_text": "esta reportagem",
       "raw_host": "g1.globo.com",
       "available": true,
       "status_code": null
@@ -8426,6 +8439,18 @@
     {
       "source": "https://www.poder360.com.br/opiniao/o-dia-das-maes-e-o-amor-que-nao-morre/",
       "target": "https://www.poder360.com.br/opiniao/o-toxoplasma-gondii-o-controle-das-massas-e-o-suicidio-coletivo-escreve-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-diario-de-fauci-e-o-virus-de-pai-desconhecido/",
+      "target": "https://www.poder360.com.br/opiniao/as-armas-biologicas-e-a-defesa-que-mata-por-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-diario-de-fauci-e-o-virus-de-pai-desconhecido/",
+      "target": "https://www.poder360.com.br/opiniao/o-carrapato-o-nazista-e-suas-conexoes/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-diario-de-fauci-e-o-virus-de-pai-desconhecido/",
+      "target": "https://www.poder360.com.br/opiniao/o-labirinto-das-ideias-e-as-conexoes-espurias/"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/o-direito-de-nao-saber-e-o-dever-de-informar-comenta-paula-schmitt/",
