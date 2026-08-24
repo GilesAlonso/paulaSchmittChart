@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generated_at": "2026-08-17T05:34:29Z",
+    "generated_at": "2026-08-24T05:38:40Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 453,
-    "total_edges": 639,
-    "total_articles": 318,
-    "total_external_sources": 135,
+    "total_nodes": 455,
+    "total_edges": 645,
+    "total_articles": 319,
+    "total_external_sources": 136,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
   },
@@ -3981,7 +3981,7 @@
       "url": "https://www.poder360.com.br/opiniao/algumas-consideracoes-preliminares-sobre-o-hantavirus/",
       "published_at": "2026-05-14T05:59:39-03:00",
       "listed_date": "2026-05-14",
-      "theme": "Saúde",
+      "theme": "Economia",
       "summary": "Surto em navio reacende discussão sobre transmissão entre humanos e expõe uso do medo sanitário para atingir interesses econômicos na corrida bilionária por trás de vacinas",
       "modified_at": "2026-05-14T05:59:39-03:00",
       "available": true,
@@ -4145,6 +4145,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/o-diario-de-fauci-e-o-bilionario-que-comprou-a-saude-publica/",
+      "title": "O diário de Fauci e o bilionário que comprou a saúde pública",
+      "url": "https://www.poder360.com.br/opiniao/o-diario-de-fauci-e-o-bilionario-que-comprou-a-saude-publica/",
+      "published_at": "2026-08-20T05:58:05-03:00",
+      "listed_date": "2026-08-20",
+      "theme": "Saúde",
+      "summary": "Bill Gates, que não tem autorização para passar uma receita de losartana, exerceu poder de Estado na pandemia, ditando regras a Fauci e financiando universidades, mídia, empresas de pesquisa e órgãos públicos",
+      "modified_at": "2026-08-20T05:58:05-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://fda.gov/",
       "title": "FDA",
       "url": "https://fda.gov/",
@@ -4154,7 +4167,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 9,
-      "coverage": 0.0283,
+      "coverage": 0.0282,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
@@ -4181,7 +4194,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 8,
-      "coverage": 0.0252,
+      "coverage": 0.0251,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-comida-o-corante-e-os-adoradores-de-politicos/",
         "https://www.poder360.com.br/opiniao/a-groenlandia-as-terras-estrangeiras-e-a-fanta-uva/",
@@ -4207,7 +4220,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0126,
+      "coverage": 0.0125,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/o-aborto-da-razao-e-o-monstro/",
@@ -4229,7 +4242,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0126,
+      "coverage": 0.0125,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-entrega-da-amazonia-a-divisao-do-territorio-e-o-deposito-de-lixo/",
         "https://www.poder360.com.br/opiniao/o-clube-de-roma-e-o-cacique/",
@@ -4251,7 +4264,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0126,
+      "coverage": 0.0125,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-indicacao-de-dino-a-privatizacao-do-governo-e-a-erosao-da-democracia/",
         "https://www.poder360.com.br/opiniao/a-publicidade-o-gado-marcado-e-o-desenvolvimento-internacional/",
@@ -4579,6 +4592,27 @@
       "status_code": null
     },
     {
+      "id": "https://ox.ac.uk/",
+      "title": "Universidade de Oxford",
+      "url": "https://ox.ac.uk/",
+      "domain": "ox.ac.uk",
+      "source_name": "Ox",
+      "summary": "Texto do link frequente: “Universidade de Oxford”",
+      "type": "external_source",
+      "theme": null,
+      "citation_count": 3,
+      "coverage": 0.0094,
+      "cited_by": [
+        "https://www.poder360.com.br/opiniao/a-astrazeneca-a-anticiencia-e-o-pensamento-acritico/",
+        "https://www.poder360.com.br/opiniao/o-diario-de-fauci-e-o-bilionario-que-comprou-a-saude-publica/",
+        "https://www.poder360.com.br/opiniao/trago-excelentes-noticias-a-proxima-pandemia-ja-esta-no-forno/"
+      ],
+      "anchor_text": "Universidade de Oxford",
+      "raw_host": "ox.ac.uk",
+      "available": true,
+      "status_code": null
+    },
+    {
       "id": "https://planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
       "title": "Constituição",
       "url": "https://planalto.gov.br/ccivil_03/constituicao/constituicao.htm",
@@ -4748,11 +4782,11 @@
     },
     {
       "id": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
-      "title": "revista",
+      "title": "O Médico (e o) Político",
       "url": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
       "domain": "uol.com.br",
       "source_name": "Uol",
-      "summary": "Texto do link frequente: “revista”",
+      "summary": "Texto do link frequente: “O Médico (e o) Político”",
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
@@ -4762,7 +4796,7 @@
         "https://www.poder360.com.br/opiniao/o-genocida-o-vingador-e-a-inversao-dos-papeis/",
         "https://www.poder360.com.br/opiniao/os-medicos-pela-vida-e-as-bromelias-da-alma/"
       ],
-      "anchor_text": "revista",
+      "anchor_text": "O Médico (e o) Político",
       "raw_host": "piaui.folha.uol.com.br",
       "available": true,
       "status_code": null
@@ -5888,26 +5922,6 @@
       "status_code": null
     },
     {
-      "id": "https://ox.ac.uk/",
-      "title": "Universidade de Oxford",
-      "url": "https://ox.ac.uk/",
-      "domain": "ox.ac.uk",
-      "source_name": "Ox",
-      "summary": "Texto do link frequente: “Universidade de Oxford”",
-      "type": "external_source",
-      "theme": null,
-      "citation_count": 2,
-      "coverage": 0.0063,
-      "cited_by": [
-        "https://www.poder360.com.br/opiniao/a-astrazeneca-a-anticiencia-e-o-pensamento-acritico/",
-        "https://www.poder360.com.br/opiniao/trago-excelentes-noticias-a-proxima-pandemia-ja-esta-no-forno/"
-      ],
-      "anchor_text": "Universidade de Oxford",
-      "raw_host": "ox.ac.uk",
-      "available": true,
-      "status_code": null
-    },
-    {
       "id": "https://paho.org/en/documents/epidemiological-update-poliomyelitis-region-americas-23-march-2023",
       "title": "reportado",
       "url": "https://paho.org/en/documents/epidemiological-update-poliomyelitis-region-americas-23-march-2023",
@@ -6263,6 +6277,26 @@
         "https://www.poder360.com.br/opiniao/texas-epstein-e-a-tempestade-em-boa-hora/"
       ],
       "anchor_text": "desfaçatez",
+      "raw_host": "twitter.com",
+      "available": true,
+      "status_code": null
+    },
+    {
+      "id": "https://twitter.com/BillGates/status/1207681997612748801",
+      "title": "postou",
+      "url": "https://twitter.com/BillGates/status/1207681997612748801",
+      "domain": "twitter.com",
+      "source_name": "Twitter / X",
+      "summary": "Texto do link frequente: “postou”",
+      "type": "external_source",
+      "theme": null,
+      "citation_count": 2,
+      "coverage": 0.0063,
+      "cited_by": [
+        "https://www.poder360.com.br/opiniao/a-2a-maior-tragedia-por-paula-schmitt/",
+        "https://www.poder360.com.br/opiniao/o-diario-de-fauci-e-o-bilionario-que-comprou-a-saude-publica/"
+      ],
+      "anchor_text": "postou",
       "raw_host": "twitter.com",
       "available": true,
       "status_code": null
@@ -6669,11 +6703,11 @@
     },
     {
       "id": "https://twitter.com/tabataamaralsp",
-      "title": "seu perfil no X",
+      "title": "@tabataamaralsp",
       "url": "https://twitter.com/tabataamaralsp",
       "domain": "twitter.com",
       "source_name": "Twitter / X",
-      "summary": "Texto do link frequente: “seu perfil no X”",
+      "summary": "Texto do link frequente: “@tabataamaralsp”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -6682,7 +6716,7 @@
         "https://www.poder360.com.br/opiniao/o-marajo-a-protecao-da-natureza-e-a-desprotecao-da-gente/",
         "https://www.poder360.com.br/opiniao/o-sangramento-coletivo-e-a-pobreza-mental-escreve-paula-schmitt/"
       ],
-      "anchor_text": "seu perfil no X",
+      "anchor_text": "@tabataamaralsp",
       "raw_host": "twitter.com",
       "available": true,
       "status_code": null
@@ -6892,6 +6926,10 @@
     {
       "source": "https://www.poder360.com.br/opiniao/a-2a-maior-tragedia-por-paula-schmitt/",
       "target": "https://fda.gov/science-research/liver-toxicity-knowledge-base-ltkb/drug-induced-liver-injury-rank-dilirank-dataset"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-2a-maior-tragedia-por-paula-schmitt/",
+      "target": "https://twitter.com/BillGates/status/1207681997612748801"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/a-adultizacao-a-infantilizacao-de-adultos-e-os-brasileiros-de-pavlov/",
@@ -8452,6 +8490,26 @@
     {
       "source": "https://www.poder360.com.br/opiniao/o-dia-das-maes-e-o-amor-que-nao-morre/",
       "target": "https://www.poder360.com.br/opiniao/o-toxoplasma-gondii-o-controle-das-massas-e-o-suicidio-coletivo-escreve-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-diario-de-fauci-e-o-bilionario-que-comprou-a-saude-publica/",
+      "target": "https://ox.ac.uk/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-diario-de-fauci-e-o-bilionario-que-comprou-a-saude-publica/",
+      "target": "https://twitter.com/BillGates/status/1207681997612748801"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-diario-de-fauci-e-o-bilionario-que-comprou-a-saude-publica/",
+      "target": "https://www.poder360.com.br/opiniao/a-ivermectina-a-realidade-nao-mediada-e-os-estudos-bem-projetados-escreve-paula-schmitt-2/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-diario-de-fauci-e-o-bilionario-que-comprou-a-saude-publica/",
+      "target": "https://www.poder360.com.br/opiniao/a-pandemia-e-os-homens-de-visao-por-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/o-diario-de-fauci-e-o-bilionario-que-comprou-a-saude-publica/",
+      "target": "https://www.poder360.com.br/opiniao/o-diario-de-fauci-e-o-virus-de-pai-desconhecido/"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/o-diario-de-fauci-e-o-virus-de-pai-desconhecido/",
