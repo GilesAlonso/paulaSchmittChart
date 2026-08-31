@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated_at": "2026-08-24T05:38:40Z",
+    "generated_at": "2026-08-31T11:23:47Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 455,
-    "total_edges": 645,
-    "total_articles": 319,
+    "total_nodes": 456,
+    "total_edges": 648,
+    "total_articles": 320,
     "total_external_sources": 136,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
@@ -3994,7 +3994,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-jornalismo-de-acesso-e-o-furo-seletivo/",
       "published_at": "2026-05-21T05:58:46-03:00",
       "listed_date": "2026-05-21",
-      "theme": "Mídia",
+      "theme": "Eleições",
       "summary": "A reportagem do “Intercept Brasil” sobre a relação de Flávio Bolsonaro com o ex-dono do Banco Master, Daniel Vorcaro, foi bombástica, mas ela foi jornalismo?",
       "modified_at": "2026-05-21T05:58:46-03:00",
       "available": true,
@@ -4158,6 +4158,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/a-corte-inferior-o-monopolio-da-imprensa-e-o-jornalismo-diplomado/",
+      "title": "A Corte Inferior, o monopólio da imprensa e o jornalismo diplomado",
+      "url": "https://www.poder360.com.br/opiniao/a-corte-inferior-o-monopolio-da-imprensa-e-o-jornalismo-diplomado/",
+      "published_at": "2026-08-27T05:59:11-03:00",
+      "listed_date": "2026-08-27",
+      "theme": "Mídia",
+      "summary": "Internet rompeu o monopólio da informação e exigência de formação reduziria a competição e ampliaria barreiras ao exercício do próprio jornalismo",
+      "modified_at": "2026-08-27T05:59:11-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://fda.gov/",
       "title": "FDA",
       "url": "https://fda.gov/",
@@ -4167,7 +4180,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 9,
-      "coverage": 0.0282,
+      "coverage": 0.0281,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
@@ -4194,7 +4207,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 8,
-      "coverage": 0.0251,
+      "coverage": 0.025,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-comida-o-corante-e-os-adoradores-de-politicos/",
         "https://www.poder360.com.br/opiniao/a-groenlandia-as-terras-estrangeiras-e-a-fanta-uva/",
@@ -4207,6 +4220,28 @@
       ],
       "anchor_text": "Donald Trump",
       "raw_host": "twitter.com",
+      "available": true,
+      "status_code": null
+    },
+    {
+      "id": "https://amazon.com.br/Consenso-Inc-monopólio-indústria-obediência/dp/6559574318",
+      "title": "Consenso Inc.",
+      "url": "https://amazon.com.br/Consenso-Inc-monopólio-indústria-obediência/dp/6559574318",
+      "domain": "amazon.com.br",
+      "source_name": "Amazon",
+      "summary": "Texto do link frequente: “Consenso Inc.”",
+      "type": "external_source",
+      "theme": null,
+      "citation_count": 4,
+      "coverage": 0.0125,
+      "cited_by": [
+        "https://www.poder360.com.br/opiniao/a-corte-inferior-o-monopolio-da-imprensa-e-o-jornalismo-diplomado/",
+        "https://www.poder360.com.br/opiniao/charlie-kirk-e-o-direito-de-portar-palavras/",
+        "https://www.poder360.com.br/opiniao/mulher-no-volante-perigo-constante/",
+        "https://www.poder360.com.br/opiniao/o-viva-rio-e-a-morte-do-morro/"
+      ],
+      "anchor_text": "Consenso Inc.",
+      "raw_host": "amazon.com.br",
       "available": true,
       "status_code": null
     },
@@ -4294,27 +4329,6 @@
       ],
       "anchor_text": "autora de uma entrevist",
       "raw_host": "972mag.com",
-      "available": true,
-      "status_code": null
-    },
-    {
-      "id": "https://amazon.com.br/Consenso-Inc-monopólio-indústria-obediência/dp/6559574318",
-      "title": "Consenso Inc.",
-      "url": "https://amazon.com.br/Consenso-Inc-monopólio-indústria-obediência/dp/6559574318",
-      "domain": "amazon.com.br",
-      "source_name": "Amazon",
-      "summary": "Texto do link frequente: “Consenso Inc.”",
-      "type": "external_source",
-      "theme": null,
-      "citation_count": 3,
-      "coverage": 0.0094,
-      "cited_by": [
-        "https://www.poder360.com.br/opiniao/charlie-kirk-e-o-direito-de-portar-palavras/",
-        "https://www.poder360.com.br/opiniao/mulher-no-volante-perigo-constante/",
-        "https://www.poder360.com.br/opiniao/o-viva-rio-e-a-morte-do-morro/"
-      ],
-      "anchor_text": "Consenso Inc.",
-      "raw_host": "amazon.com.br",
       "available": true,
       "status_code": null
     },
@@ -4782,11 +4796,11 @@
     },
     {
       "id": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
-      "title": "O Médico (e o) Político",
+      "title": "revista",
       "url": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
       "domain": "uol.com.br",
       "source_name": "Uol",
-      "summary": "Texto do link frequente: “O Médico (e o) Político”",
+      "summary": "Texto do link frequente: “revista”",
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
@@ -4796,7 +4810,7 @@
         "https://www.poder360.com.br/opiniao/o-genocida-o-vingador-e-a-inversao-dos-papeis/",
         "https://www.poder360.com.br/opiniao/os-medicos-pela-vida-e-as-bromelias-da-alma/"
       ],
-      "anchor_text": "O Médico (e o) Político",
+      "anchor_text": "revista",
       "raw_host": "piaui.folha.uol.com.br",
       "available": true,
       "status_code": null
@@ -5323,11 +5337,11 @@
     },
     {
       "id": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
-      "title": "esta reportagem",
+      "title": "afirma",
       "url": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
       "domain": "globo.com",
       "source_name": "Globo",
-      "summary": "Texto do link frequente: “esta reportagem”",
+      "summary": "Texto do link frequente: “afirma”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -5336,7 +5350,7 @@
         "https://www.poder360.com.br/opiniao/a-pedofilia-e-o-perdao-inexplicavel-da-esquerda/",
         "https://www.poder360.com.br/opiniao/o-pedofilo-a-onu-e-a-privatizacao-do-mar/"
       ],
-      "anchor_text": "esta reportagem",
+      "anchor_text": "afirma",
       "raw_host": "g1.globo.com",
       "available": true,
       "status_code": null
@@ -7178,6 +7192,18 @@
     {
       "source": "https://www.poder360.com.br/opiniao/a-corte-inferior-a-gaiola-das-loucas-e-a-degeneracao-moral/",
       "target": "https://www.poder360.com.br/opiniao/o-algoz-a-vitima-e-o-tempo/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-corte-inferior-o-monopolio-da-imprensa-e-o-jornalismo-diplomado/",
+      "target": "https://amazon.com.br/Consenso-Inc-monopólio-indústria-obediência/dp/6559574318"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-corte-inferior-o-monopolio-da-imprensa-e-o-jornalismo-diplomado/",
+      "target": "https://www.poder360.com.br/opiniao/a-era-da-manipulacao-e-os-ataques-de-falsa-bandeira-escreve-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/a-corte-inferior-o-monopolio-da-imprensa-e-o-jornalismo-diplomado/",
+      "target": "https://www.poder360.com.br/opiniao/nem-tudo-por-dinheiro/"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/a-corte-que-condena-a-vitima-e-absolve-o-culpado/",
