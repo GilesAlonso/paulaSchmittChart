@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generated_at": "2026-09-07T09:59:04Z",
+    "generated_at": "2026-09-14T10:24:12Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 457,
-    "total_edges": 648,
-    "total_articles": 321,
-    "total_external_sources": 136,
+    "total_nodes": 459,
+    "total_edges": 654,
+    "total_articles": 322,
+    "total_external_sources": 137,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
   },
@@ -4020,7 +4020,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-burrice-artificial-e-a-ignorancia-que-se-ignora/",
       "published_at": "2026-06-04T05:54:38-03:00",
       "listed_date": "2026-06-04",
-      "theme": "Mídia",
+      "theme": "Internacional",
       "summary": "Caso de doença fictícia expõe limites da IA; parceria entre “Folha” e ChatGPT pode estreitar referências e levanta dúvidas sobre pluralidade de informações",
       "modified_at": "2026-06-04T05:54:38-03:00",
       "available": true,
@@ -4184,6 +4184,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/supremo-e-o-povo/",
+      "title": "Supremo é o povo",
+      "url": "https://www.poder360.com.br/opiniao/supremo-e-o-povo/",
+      "published_at": "2026-09-10T05:58:06-03:00",
+      "listed_date": "2026-09-10",
+      "theme": "Justiça",
+      "summary": "O debate legal sobre Alexandre de Moraes salpica um sazon de legalidade sobre uma ignomínia –a proteção de um juiz que não conta com o respeito de quem lhe serve o café",
+      "modified_at": "2026-09-10T05:58:06-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://fda.gov/",
       "title": "FDA",
       "url": "https://fda.gov/",
@@ -4220,7 +4233,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 8,
-      "coverage": 0.0249,
+      "coverage": 0.0248,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-comida-o-corante-e-os-adoradores-de-politicos/",
         "https://www.poder360.com.br/opiniao/a-groenlandia-as-terras-estrangeiras-e-a-fanta-uva/",
@@ -4246,7 +4259,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0125,
+      "coverage": 0.0124,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-corte-inferior-o-monopolio-da-imprensa-e-o-jornalismo-diplomado/",
         "https://www.poder360.com.br/opiniao/charlie-kirk-e-o-direito-de-portar-palavras/",
@@ -4268,7 +4281,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0125,
+      "coverage": 0.0124,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/o-aborto-da-razao-e-o-monstro/",
@@ -4290,7 +4303,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0125,
+      "coverage": 0.0124,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-entrega-da-amazonia-a-divisao-do-territorio-e-o-deposito-de-lixo/",
         "https://www.poder360.com.br/opiniao/o-clube-de-roma-e-o-cacique/",
@@ -4312,7 +4325,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0125,
+      "coverage": 0.0124,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-indicacao-de-dino-a-privatizacao-do-governo-e-a-erosao-da-democracia/",
         "https://www.poder360.com.br/opiniao/a-publicidade-o-gado-marcado-e-o-desenvolvimento-internacional/",
@@ -4809,11 +4822,11 @@
     },
     {
       "id": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
-      "title": "revista",
+      "title": "O Médico (e o) Político",
       "url": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
       "domain": "uol.com.br",
       "source_name": "Uol",
-      "summary": "Texto do link frequente: “revista”",
+      "summary": "Texto do link frequente: “O Médico (e o) Político”",
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
@@ -4823,7 +4836,7 @@
         "https://www.poder360.com.br/opiniao/o-genocida-o-vingador-e-a-inversao-dos-papeis/",
         "https://www.poder360.com.br/opiniao/os-medicos-pela-vida-e-as-bromelias-da-alma/"
       ],
-      "anchor_text": "revista",
+      "anchor_text": "O Médico (e o) Político",
       "raw_host": "piaui.folha.uol.com.br",
       "available": true,
       "status_code": null
@@ -5404,6 +5417,26 @@
         "https://www.poder360.com.br/opiniao/de-volta-por-enquanto/"
       ],
       "anchor_text": "presença de 32.691 pessoas",
+      "raw_host": "oglobo.globo.com",
+      "available": true,
+      "status_code": null
+    },
+    {
+      "id": "https://oglobo.globo.com/politica/decisao-de-gilmar-mendes-proibe-investigacao-sobre-glenn-no-caso-das-mensagens-vazadas-24202576",
+      "title": "proteção declarada de Gilmar Mendes",
+      "url": "https://oglobo.globo.com/politica/decisao-de-gilmar-mendes-proibe-investigacao-sobre-glenn-no-caso-das-mensagens-vazadas-24202576",
+      "domain": "globo.com",
+      "source_name": "Globo",
+      "summary": "Texto do link frequente: “proteção declarada de Gilmar Mendes”",
+      "type": "external_source",
+      "theme": null,
+      "citation_count": 2,
+      "coverage": 0.0062,
+      "cited_by": [
+        "https://www.poder360.com.br/opiniao/gilmar-voce-deixou-cair-isso-aqui/",
+        "https://www.poder360.com.br/opiniao/supremo-e-o-povo/"
+      ],
+      "anchor_text": "proteção declarada de Gilmar Mendes",
       "raw_host": "oglobo.globo.com",
       "available": true,
       "status_code": null
@@ -8128,6 +8161,10 @@
     },
     {
       "source": "https://www.poder360.com.br/opiniao/gilmar-voce-deixou-cair-isso-aqui/",
+      "target": "https://oglobo.globo.com/politica/decisao-de-gilmar-mendes-proibe-investigacao-sobre-glenn-no-caso-das-mensagens-vazadas-24202576"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/gilmar-voce-deixou-cair-isso-aqui/",
       "target": "https://planalto.gov.br/ccivil_03/constituicao/constituicao.htm"
     },
     {
@@ -9469,6 +9506,26 @@
     {
       "source": "https://www.poder360.com.br/opiniao/sao-francisco-e-a-brisa-suave-de-bacterias-e-dioxina/",
       "target": "https://www.poder360.com.br/opiniao/as-armas-biologicas-e-a-defesa-que-mata-por-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/supremo-e-o-povo/",
+      "target": "https://oglobo.globo.com/politica/decisao-de-gilmar-mendes-proibe-investigacao-sobre-glenn-no-caso-das-mensagens-vazadas-24202576"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/supremo-e-o-povo/",
+      "target": "https://www.poder360.com.br/opiniao/a-vaza-jato-e-o-sequestro-de-jornalistas-brasileiros-por-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/supremo-e-o-povo/",
+      "target": "https://www.poder360.com.br/opiniao/vaza-jato-glenn-greenwald-e-uma-coincidencia-intrigante-parte-2-por-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/supremo-e-o-povo/",
+      "target": "https://www.poder360.com.br/opiniao/vaza-jato-glenn-greenwald-e-uma-coincidencia-intrigante-parte-3-por-paula-schmitt/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/supremo-e-o-povo/",
+      "target": "https://www.poder360.com.br/opiniao/vaza-jato-glenn-greenwald-e-uma-coincidencia-intrigante-por-paula-schmitt/"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/taxad-o-consorcio-de-midia-e-o-capitalismo-de-conveniencia/",
