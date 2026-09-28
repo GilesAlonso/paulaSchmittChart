@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated_at": "2026-09-21T10:29:39Z",
+    "generated_at": "2026-09-28T11:31:52Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 459,
+    "total_nodes": 460,
     "total_edges": 654,
-    "total_articles": 322,
+    "total_articles": 323,
     "total_external_sources": 137,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
@@ -4033,7 +4033,7 @@
       "url": "https://www.poder360.com.br/opiniao/a-albania-e-a-privatizacao-do-mundo/",
       "published_at": "2026-06-11T05:58:46-03:00",
       "listed_date": "2026-06-11",
-      "theme": "Internacional",
+      "theme": "Economia",
       "summary": "Projeto turístico liderado por genro de Trump causa revolta popular no Leste Europeu e dá margem a diferentes teorias sobre a privatização de ilha entre os mares Adriático e Mediterrâneo",
       "modified_at": "2026-06-11T05:58:46-03:00",
       "available": true,
@@ -4197,6 +4197,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/ate-as-pedras-sabem/",
+      "title": "Até as pedras sabem",
+      "url": "https://www.poder360.com.br/opiniao/ate-as-pedras-sabem/",
+      "published_at": "2026-09-24T05:58:27-03:00",
+      "listed_date": "2026-09-24",
+      "theme": "Justiça",
+      "summary": "Sessão sobre caso Moraes-Vorcaro expõe contradições do Supremo: Corte aplica a seus ministros garantias que negou aos réus do 8 de Janeiro",
+      "modified_at": "2026-09-24T05:58:27-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://fda.gov/",
       "title": "FDA",
       "url": "https://fda.gov/",
@@ -4206,7 +4219,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 9,
-      "coverage": 0.028,
+      "coverage": 0.0279,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
@@ -4822,11 +4835,11 @@
     },
     {
       "id": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
-      "title": "O Médico (e o) Político",
+      "title": "revista",
       "url": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
       "domain": "uol.com.br",
       "source_name": "Uol",
-      "summary": "Texto do link frequente: “O Médico (e o) Político”",
+      "summary": "Texto do link frequente: “revista”",
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
@@ -4836,7 +4849,7 @@
         "https://www.poder360.com.br/opiniao/o-genocida-o-vingador-e-a-inversao-dos-papeis/",
         "https://www.poder360.com.br/opiniao/os-medicos-pela-vida-e-as-bromelias-da-alma/"
       ],
-      "anchor_text": "O Médico (e o) Político",
+      "anchor_text": "revista",
       "raw_host": "piaui.folha.uol.com.br",
       "available": true,
       "status_code": null
@@ -5363,11 +5376,11 @@
     },
     {
       "id": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
-      "title": "esta reportagem",
+      "title": "afirma",
       "url": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
       "domain": "globo.com",
       "source_name": "Globo",
-      "summary": "Texto do link frequente: “esta reportagem”",
+      "summary": "Texto do link frequente: “afirma”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -5376,7 +5389,7 @@
         "https://www.poder360.com.br/opiniao/a-pedofilia-e-o-perdao-inexplicavel-da-esquerda/",
         "https://www.poder360.com.br/opiniao/o-pedofilo-a-onu-e-a-privatizacao-do-mar/"
       ],
-      "anchor_text": "esta reportagem",
+      "anchor_text": "afirma",
       "raw_host": "g1.globo.com",
       "available": true,
       "status_code": null
