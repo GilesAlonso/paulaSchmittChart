@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated_at": "2026-09-28T11:31:52Z",
+    "generated_at": "2026-10-05T12:19:51Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 460,
+    "total_nodes": 461,
     "total_edges": 654,
-    "total_articles": 323,
+    "total_articles": 324,
     "total_external_sources": 137,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
@@ -4210,6 +4210,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/lula-flavio-e-nossa-senhora-camisa-10/",
+      "title": "Lula, Flávio e Nossa Senhora camisa 10",
+      "url": "https://www.poder360.com.br/opiniao/lula-flavio-e-nossa-senhora-camisa-10/",
+      "published_at": "2026-10-01T06:00:55-03:00",
+      "listed_date": "2026-10-01",
+      "theme": "Eleições 2026",
+      "summary": "Disputa pela Presidência leva fé ao centro da eleição depois de informação falsa sobre retirada de título da padroeira do Brasil",
+      "modified_at": "2026-10-01T06:00:55-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://fda.gov/",
       "title": "FDA",
       "url": "https://fda.gov/",
@@ -4219,7 +4232,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 9,
-      "coverage": 0.0279,
+      "coverage": 0.0278,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
@@ -4246,7 +4259,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 8,
-      "coverage": 0.0248,
+      "coverage": 0.0247,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-comida-o-corante-e-os-adoradores-de-politicos/",
         "https://www.poder360.com.br/opiniao/a-groenlandia-as-terras-estrangeiras-e-a-fanta-uva/",
@@ -4272,7 +4285,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0124,
+      "coverage": 0.0123,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-corte-inferior-o-monopolio-da-imprensa-e-o-jornalismo-diplomado/",
         "https://www.poder360.com.br/opiniao/charlie-kirk-e-o-direito-de-portar-palavras/",
@@ -4294,7 +4307,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0124,
+      "coverage": 0.0123,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/o-aborto-da-razao-e-o-monstro/",
@@ -4316,7 +4329,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0124,
+      "coverage": 0.0123,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-entrega-da-amazonia-a-divisao-do-territorio-e-o-deposito-de-lixo/",
         "https://www.poder360.com.br/opiniao/o-clube-de-roma-e-o-cacique/",
@@ -4338,7 +4351,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0124,
+      "coverage": 0.0123,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-indicacao-de-dino-a-privatizacao-do-governo-e-a-erosao-da-democracia/",
         "https://www.poder360.com.br/opiniao/a-publicidade-o-gado-marcado-e-o-desenvolvimento-internacional/",
@@ -4835,11 +4848,11 @@
     },
     {
       "id": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
-      "title": "revista",
+      "title": "O Médico (e o) Político",
       "url": "https://piaui.folha.uol.com.br/materia/o-medico-e-o-politico",
       "domain": "uol.com.br",
       "source_name": "Uol",
-      "summary": "Texto do link frequente: “revista”",
+      "summary": "Texto do link frequente: “O Médico (e o) Político”",
       "type": "external_source",
       "theme": null,
       "citation_count": 3,
@@ -4849,7 +4862,7 @@
         "https://www.poder360.com.br/opiniao/o-genocida-o-vingador-e-a-inversao-dos-papeis/",
         "https://www.poder360.com.br/opiniao/os-medicos-pela-vida-e-as-bromelias-da-alma/"
       ],
-      "anchor_text": "revista",
+      "anchor_text": "O Médico (e o) Político",
       "raw_host": "piaui.folha.uol.com.br",
       "available": true,
       "status_code": null
@@ -5376,11 +5389,11 @@
     },
     {
       "id": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
-      "title": "afirma",
+      "title": "esta reportagem",
       "url": "https://g1.globo.com/globonews/jornal-globonews-edicao-das-10/video/pedofilia-e-uma-doenca-que-nao-tem-cura-mas-tem-tratamento-6258247.ghtml",
       "domain": "globo.com",
       "source_name": "Globo",
-      "summary": "Texto do link frequente: “afirma”",
+      "summary": "Texto do link frequente: “esta reportagem”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -5389,7 +5402,7 @@
         "https://www.poder360.com.br/opiniao/a-pedofilia-e-o-perdao-inexplicavel-da-esquerda/",
         "https://www.poder360.com.br/opiniao/o-pedofilo-a-onu-e-a-privatizacao-do-mar/"
       ],
-      "anchor_text": "afirma",
+      "anchor_text": "esta reportagem",
       "raw_host": "g1.globo.com",
       "available": true,
       "status_code": null
