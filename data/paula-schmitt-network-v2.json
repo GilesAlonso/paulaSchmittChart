@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated_at": "2026-10-26T10:48:38Z",
+    "generated_at": "2026-11-02T13:08:50Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 463,
+    "total_nodes": 464,
     "total_edges": 655,
-    "total_articles": 326,
+    "total_articles": 327,
     "total_external_sources": 137,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
@@ -4085,7 +4085,7 @@
       "url": "https://www.poder360.com.br/opiniao/kayfabe-o-teatro-das-tesouras-e-a-serra-que-afia-o-ferro/",
       "published_at": "2026-07-16T05:57:46-03:00",
       "listed_date": "2026-07-16",
-      "theme": "Internacional",
+      "theme": "Eleições",
       "summary": "Robert Kennedy, ex-ídolo da esquerda, é criticado no governo Trump por fazer exatamente o que prometia quando era adorado por democratas",
       "modified_at": "2026-07-16T05:57:46-03:00",
       "available": true,
@@ -4249,6 +4249,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/el-tribunal-de-bananas-flavito-e-el-grand-donaldo-uma-serie-imperdivel/",
+      "title": "El Tribunal de Bananas, Flavito e el Grand Donaldo –uma série imperdível",
+      "url": "https://www.poder360.com.br/opiniao/el-tribunal-de-bananas-flavito-e-el-grand-donaldo-uma-serie-imperdivel/",
+      "published_at": "2026-10-29T05:58:04-03:00",
+      "listed_date": "2026-10-29",
+      "theme": "Justiça",
+      "summary": "Entre decisões judiciais, disputas políticas e interferência estrangeira, o Brasil vira cenário de uma série em que heróis e vilões trocam de papel",
+      "modified_at": "2026-10-29T05:58:04-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://fda.gov/",
       "title": "FDA",
       "url": "https://fda.gov/",
@@ -4258,7 +4271,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 9,
-      "coverage": 0.0276,
+      "coverage": 0.0275,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
@@ -4311,7 +4324,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0123,
+      "coverage": 0.0122,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-corte-inferior-o-monopolio-da-imprensa-e-o-jornalismo-diplomado/",
         "https://www.poder360.com.br/opiniao/charlie-kirk-e-o-direito-de-portar-palavras/",
@@ -4333,7 +4346,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0123,
+      "coverage": 0.0122,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/o-aborto-da-razao-e-o-monstro/",
@@ -4355,7 +4368,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0123,
+      "coverage": 0.0122,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-entrega-da-amazonia-a-divisao-do-territorio-e-o-deposito-de-lixo/",
         "https://www.poder360.com.br/opiniao/o-clube-de-roma-e-o-cacique/",
@@ -4377,7 +4390,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0123,
+      "coverage": 0.0122,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-indicacao-de-dino-a-privatizacao-do-governo-e-a-erosao-da-democracia/",
         "https://www.poder360.com.br/opiniao/a-publicidade-o-gado-marcado-e-o-desenvolvimento-internacional/",
