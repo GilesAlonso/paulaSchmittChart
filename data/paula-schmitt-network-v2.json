@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated_at": "2026-11-09T13:39:59Z",
+    "generated_at": "2026-11-16T13:26:25Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 465,
-    "total_edges": 655,
-    "total_articles": 328,
+    "total_nodes": 466,
+    "total_edges": 656,
+    "total_articles": 329,
     "total_external_sources": 137,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
@@ -4111,7 +4111,7 @@
       "url": "https://www.poder360.com.br/opiniao/o-medico-e-o-monstro/",
       "published_at": "2026-07-30T06:00:45-03:00",
       "listed_date": "2026-07-30",
-      "theme": "Saúde",
+      "theme": "Coronavírus",
       "summary": "O diário de Fauci mostra como o chefe da pandemia nadava de braçada na fama, no cinismo e na sociopatia enquanto o mundo afundava na desgraça que ele ajudou a criar",
       "modified_at": "2026-07-30T06:00:45-03:00",
       "available": true,
@@ -4275,6 +4275,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/larry-mcdonald-e-a-moeda-de-um-lado-so/",
+      "title": "Larry McDonald e a moeda de 1 lado só",
+      "url": "https://www.poder360.com.br/opiniao/larry-mcdonald-e-a-moeda-de-um-lado-so/",
+      "published_at": "2026-11-12T05:59:02-03:00",
+      "listed_date": "2026-11-12",
+      "theme": "Internacional",
+      "summary": "Divisão entre esquerda e direita esconde uma disputa mais importante: a concentração do poder político e econômico contra a liberdade individual",
+      "modified_at": "2026-11-12T05:59:02-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://fda.gov/",
       "title": "FDA",
       "url": "https://fda.gov/",
@@ -4311,7 +4324,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 8,
-      "coverage": 0.0244,
+      "coverage": 0.0243,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-comida-o-corante-e-os-adoradores-de-politicos/",
         "https://www.poder360.com.br/opiniao/a-groenlandia-as-terras-estrangeiras-e-a-fanta-uva/",
@@ -6841,11 +6854,11 @@
     },
     {
       "id": "https://twitter.com/tabataamaralsp",
-      "title": "@tabataamaralsp",
+      "title": "seu perfil no X",
       "url": "https://twitter.com/tabataamaralsp",
       "domain": "twitter.com",
       "source_name": "Twitter / X",
-      "summary": "Texto do link frequente: “@tabataamaralsp”",
+      "summary": "Texto do link frequente: “seu perfil no X”",
       "type": "external_source",
       "theme": null,
       "citation_count": 2,
@@ -6854,7 +6867,7 @@
         "https://www.poder360.com.br/opiniao/o-marajo-a-protecao-da-natureza-e-a-desprotecao-da-gente/",
         "https://www.poder360.com.br/opiniao/o-sangramento-coletivo-e-a-pobreza-mental-escreve-paula-schmitt/"
       ],
-      "anchor_text": "@tabataamaralsp",
+      "anchor_text": "seu perfil no X",
       "raw_host": "twitter.com",
       "available": true,
       "status_code": null
@@ -8292,6 +8305,10 @@
     {
       "source": "https://www.poder360.com.br/opiniao/kayfabe-o-teatro-das-tesouras-e-a-serra-que-afia-o-ferro/",
       "target": "https://www.poder360.com.br/opiniao/o-8-de-janeiro-os-inocentes-e-a-investigacao-visual/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/larry-mcdonald-e-a-moeda-de-um-lado-so/",
+      "target": "https://www.poder360.com.br/opiniao/a-piada-de-mau-gosto-os-politicos-e-seu-eleitogado/"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/mkultra-e-o-balaio-de-besteiras/",
