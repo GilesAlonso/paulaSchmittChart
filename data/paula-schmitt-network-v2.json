@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "generated_at": "2026-11-16T13:26:25Z",
+    "generated_at": "2026-11-23T15:46:35Z",
     "source": "https://www.poder360.com.br/author/paula-schmitt/",
-    "total_nodes": 466,
-    "total_edges": 656,
-    "total_articles": 329,
+    "total_nodes": 467,
+    "total_edges": 659,
+    "total_articles": 330,
     "total_external_sources": 137,
     "min_external_citation_threshold": 2,
     "max_external_coverage_threshold": 0.2
@@ -4288,6 +4288,19 @@
       "type": "article"
     },
     {
+      "id": "https://www.poder360.com.br/opiniao/leite-materno-a-coisificacao-do-ser-humano-e-interesses-inominaveis/",
+      "title": "Leite materno, a coisificação do ser humano e interesses inomináveis",
+      "url": "https://www.poder360.com.br/opiniao/leite-materno-a-coisificacao-do-ser-humano-e-interesses-inominaveis/",
+      "published_at": "2026-11-19T06:00:33-03:00",
+      "listed_date": "2026-11-19",
+      "theme": "Saúde",
+      "summary": "Países pobres são alvo de empresas e seus representantes na máquina estatal para interferir em leis que desencorajam o aleitamento materno e criar novos mercados para seus substitutos",
+      "modified_at": "2026-11-19T06:00:33-03:00",
+      "available": true,
+      "status_code": 200,
+      "type": "article"
+    },
+    {
       "id": "https://fda.gov/",
       "title": "FDA",
       "url": "https://fda.gov/",
@@ -4297,7 +4310,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 9,
-      "coverage": 0.0274,
+      "coverage": 0.0273,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/a-colonizacao-da-africa-a-prevent-senior-e-os-comedores-inuteis/",
@@ -4324,7 +4337,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 8,
-      "coverage": 0.0243,
+      "coverage": 0.0242,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-comida-o-corante-e-os-adoradores-de-politicos/",
         "https://www.poder360.com.br/opiniao/a-groenlandia-as-terras-estrangeiras-e-a-fanta-uva/",
@@ -4350,7 +4363,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0122,
+      "coverage": 0.0121,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-corte-inferior-o-monopolio-da-imprensa-e-o-jornalismo-diplomado/",
         "https://www.poder360.com.br/opiniao/charlie-kirk-e-o-direito-de-portar-palavras/",
@@ -4372,7 +4385,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0122,
+      "coverage": 0.0121,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-censura-os-macacos-obedientes-e-o-virus-simio-sv40/",
         "https://www.poder360.com.br/opiniao/o-aborto-da-razao-e-o-monstro/",
@@ -4394,7 +4407,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0122,
+      "coverage": 0.0121,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-entrega-da-amazonia-a-divisao-do-territorio-e-o-deposito-de-lixo/",
         "https://www.poder360.com.br/opiniao/o-clube-de-roma-e-o-cacique/",
@@ -4416,7 +4429,7 @@
       "type": "external_source",
       "theme": null,
       "citation_count": 4,
-      "coverage": 0.0122,
+      "coverage": 0.0121,
       "cited_by": [
         "https://www.poder360.com.br/opiniao/a-indicacao-de-dino-a-privatizacao-do-governo-e-a-erosao-da-democracia/",
         "https://www.poder360.com.br/opiniao/a-publicidade-o-gado-marcado-e-o-desenvolvimento-internacional/",
@@ -8309,6 +8322,18 @@
     {
       "source": "https://www.poder360.com.br/opiniao/larry-mcdonald-e-a-moeda-de-um-lado-so/",
       "target": "https://www.poder360.com.br/opiniao/a-piada-de-mau-gosto-os-politicos-e-seu-eleitogado/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/leite-materno-a-coisificacao-do-ser-humano-e-interesses-inominaveis/",
+      "target": "https://www.poder360.com.br/opiniao/bill-gates-a-fruta-impermeavel-e-a-estocagem-de-carbono/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/leite-materno-a-coisificacao-do-ser-humano-e-interesses-inominaveis/",
+      "target": "https://www.poder360.com.br/opiniao/eugenia-made-in-usa/"
+    },
+    {
+      "source": "https://www.poder360.com.br/opiniao/leite-materno-a-coisificacao-do-ser-humano-e-interesses-inominaveis/",
+      "target": "https://www.poder360.com.br/opiniao/o-grande-abate-de-bufalos-e-os-500-milhoes-de-humanos/"
     },
     {
       "source": "https://www.poder360.com.br/opiniao/mkultra-e-o-balaio-de-besteiras/",
